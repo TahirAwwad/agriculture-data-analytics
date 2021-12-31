@@ -1,4 +1,4 @@
-# [Data Analytics Project Template](./../../../)
+# [Agriculture Data Analytics](./../../../)
 
 ## Notebooks Managers
 > "You want to take on responsibility. You want to take on the heaviest load that you can conceive of that you might be able to move because it gives your life nobility and purpose. And that offsets the tragedy." - Dr. Jordan B. Peterson, 2018
@@ -7,11 +7,11 @@ A quick reference of which team members are responsible for which notebooks of t
 
 You can make more notebook if you feel that you have too much content in one.  
 
-### (Example) Team Member Initials:
-Charles Xavier: CX, Erik Lehnsherr: EL, Hank McCoy: HMC  
+### Team Member Initials:
+MC, MM, PN, RB, TA
 
 ### Template Team Member Initials: 
-John Doe: JD, Mark Crowe: MC
+JD, MC
 
 ### Notebooks:
 

@@ -1,6 +1,5 @@
-# [Data Analytics Project Template](https://github.com/markcrowe-com/data-analytics-project-template)
+# [Agriculture Data Analytics](https://github.com/markcrowe-com/data-analytics-project-template)
 
-This repository is a template for a Data Analytics project.
 
 > "A library serves no purpose unless someone is using it." – Atoz, 2269  
 
