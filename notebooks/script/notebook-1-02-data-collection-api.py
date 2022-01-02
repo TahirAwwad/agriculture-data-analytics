@@ -7,21 +7,44 @@
 #     Install required libraries
 
 #!pip install jsonstat.py
+get_ipython().system('pip install eurostat')
 import eurostat
 import io
 import pandas
 import requests
-import jsonstat
+#import jsonstat
 
 
 # ### Source 1: Eurostat data
 #     - Agriculture price indecies of product
+
+# ### 2015 base year of Product Prices
 
 # price indecies of product 2015 base year
 price_idx_products_annual_code = 'apri_pi15_outa'
 price_idx_products_annual_dataframe = eurostat.get_data_df(price_idx_products_annual_code, flags=False)
 price_idx_products_annual_dataframe.sample(5)
 
+# rename column
+price_idx_products_annual2015_dataframe = (price_idx_products_annual_dataframe
+                                           .rename(columns={price_idx_products_annual_dataframe
+                                                            .columns[3]:'geotime'})
+                                          )
+
+# transform years columns to a Series
+price_idx_products_annual2015_dataframe =( price_idx_products_annual2015_dataframe
+     .melt(
+         id_vars = ["p_adj",
+                    "unit",
+                    "geotime",
+                    "product"],
+         var_name = "year",
+         value_name="priceIDX")
+    )
+price_idx_products_annual2015_dataframe.sample(5)
+
+
+# ### ### 2010 base year of Product Prices
 
 # price indecies of product 2010 base year
 price_idx_products_annual2010_code = 'apri_pi10_outa'
@@ -30,31 +53,27 @@ price_idx_products_annual2010_dataframe = (price_idx_products_annual2010_datafra
                                            .rename(columns={price_idx_products_annual2010_dataframe
                                                             .columns[3]:'geotime'})
                                           )
+
+# transform years columns to a Series
+price_idx_products_annual2010_dataframe =( price_idx_products_annual2010_dataframe
+     .melt(
+         id_vars = ["p_adj",
+                    "unit",
+                    "geotime",
+                    "product"],
+         var_name = "year",
+         value_name="priceIDX")
+    )
 price_idx_products_annual2010_dataframe.sample(5)
 
-
-price_idx_products_annual2010_dataframe["geotime"].value_counts()
-
-
-price_idx_products_annual2010_dataframe_ie= price_idx_products_annual2010_dataframe.query("geotime=='IE'")
-
-
-x =( price_idx_products_annual2010_dataframe_ie
-    .melt(
-        id_vars = ["p_adj",
-                   "unit",
-                   "geotime",
-                   "product"],
-        var_name = "year",
-        value_name="priceIDX")
-   )
-x.sample(5)
+# write to csv
+price_idx_products_annual2010_dataframe.to_csv('/Users/admin/Documents/GitHub/agriculture-data-analytics/assets/TA_priceIDX_2000_2017_eurostat.csv')
 
 
 # ## CSO
-# ## Agriculture Area Used and Crop Production
+# ## Agriculture Area Used and Crop Yield
 #     AQA03 - Crop Yield (1985 - 2007)
-#     AQA04 - Crop Yield (2008 - 2020)
+#     
 
 # Note of where the URL comes from: https://data.cso.ie/table/AQA03
 
@@ -82,6 +101,12 @@ crop_yield8507_df = ( crop_yield8507_df
    )
 crop_yield8507_df.sample(5)
 
+# write to csv
+
+crop_yield8507_df.to_csv('/Users/admin/Documents/GitHub/agriculture-data-analytics/assets/TA_cropyield_1985_2007_CSO.csv')
+
+
+#     AQA04 - Crop Yield (2008 - 2020)
 
 # Note of where the URL comes from: https://data.cso.ie/table/AQA04
 
@@ -105,13 +130,19 @@ crop_yield0820_df =( crop_yield0820_df
  .reset_index()
  .rename(columns={"Crop Production":"Crop Yield"})                   
    )
-crop_yield0820_df
 
+# write to csv
+crop_yield0820_df.to_csv('/Users/admin/Documents/GitHub/agriculture-data-analytics/assets/TA_cropyield_2008_2020_CSO.csv')
+
+
+#     Join Crop Yields from 1985 to 2020 into 1 dataframe
 
 # append crop yield from 1985 tp 2020 
 crop_yield_ie_df = crop_yield8507_df.append(crop_yield0820_df)
+crop_yield_ie_df.head()
 
 # write to csv
+crop_yield_ie_df.to_csv('~/Documents/GitHub/agriculture-data-analytics/assets/TA_cropyield_1985_2020_CSO.csv')
 
 
 # ## Agricultural Input and Output Price Indices
@@ -133,13 +164,6 @@ for key, value in prc_idx_9510_df.iloc[0:,0:-1].iteritems():
 
 print(prc_idx_9510_df.head())
 
-
-
-
-
-
-
-
 # pivot
 prc_idx_9510_df =( prc_idx_9510_df
  .pivot_table( 
@@ -152,7 +176,10 @@ prc_idx_9510_df =( prc_idx_9510_df
              )
  .reset_index()
    )
-prc_idx_9510_df.sample(10)
+prc_idx_9510_df.sample(5)
+
+# write to csv
+prc_idx_9510_df.to_csv('/Users/admin/Documents/GitHub/agriculture-data-analytics/assets/TA_inputoutputpriceIDX_1995_2010_CSO.csv')
 
 
 
@@ -184,6 +211,9 @@ prc_idx_0517_df =( prc_idx_0517_df
    )
 prc_idx_0517_df.sample(10)
 
+# write to csv
+prc_idx_0517_df.to_csv('/Users/admin/Documents/GitHub/agriculture-data-analytics/assets/TA_inputoutputpriceIDX_2005_2017_CSO.csv')
+
 
 
 # Note of where the URL comes from: https://data.cso.ie/table/AQA04
@@ -214,6 +244,9 @@ prc_idx_1420_df =( prc_idx_1420_df
    )
 prc_idx_1420_df.head()
 
+# write to csv
+prc_idx_1420_df.to_csv('/Users/admin/Documents/GitHub/agriculture-data-analytics/assets/TA_inputoutputpriceIDX_2014_2020_CSO.csv')
+
 
 # ## Value at Current Prices for Output, Input and Income in Agriculture
 
@@ -226,22 +259,28 @@ response_json_rpc = requests.get(data_csv_url).json()
 
 prc_9021df = pandas.read_csv(io.StringIO(response_json_rpc["result"]), sep=",")
 
-#for key, value in prc_idx_1420_df.iloc[0:,0:-1].iteritems():
+#for key, value in prc_9021df.iteritems():
 #    print(key, value.unique())
 #    print("\n")
 
 #print(prc_idx_0517_df.head())
 
-prc_9021df
+# pivot
+prc_9021df =( prc_9021df
+ .pivot_table( 
+     columns = "Statistic"
+     ,index = ['Year',
+               'UNIT'
+              ]
+     ,values='VALUE'
+     ,dropna = True
+             )
+ .reset_index()
+   )
+prc_9021df.head()
 
-
-
-
-
-
-
-
-
+# write to csv
+prc_9021df.to_csv('/Users/admin/Documents/GitHub/agriculture-data-analytics/assets/TA_inputoutputvalue_1990_2021_CSO.csv')
 
 
 # ## Value at Current Prices for Subsidies on Products
@@ -253,8 +292,22 @@ data_csv_url = "https://ws.cso.ie/public/api.jsonrpc?data=%7B%22jsonrpc%22:%222.
 response_json_rpc = requests.get(data_csv_url).json()
 
 subsidies_df = pandas.read_csv(io.StringIO(response_json_rpc["result"]), sep=",")
-subsidies_df
+
+# pivot
+subsidies_df =( subsidies_df
+ .pivot_table( 
+     columns = "Statistic"
+     ,index = ['Year',
+               'UNIT'
+              ]
+     ,values='VALUE'
+     ,dropna = True
+             )
+ .reset_index()
+   )
+subsidies_df.head()
+
+subsidies_df.to_csv('/Users/admin/Documents/GitHub/agriculture-data-analytics/assets/TA_subsidies_1990_2020_CSO.csv')
 
 
-
-
+# # Next : EDA
