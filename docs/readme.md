@@ -9,6 +9,7 @@ This folder contains the documentation for the project.
 ## Reflections
 - [Assessment criteria](assessment-criteria.md)
 - [Knowledge, Skills and Abilities](knowledge-skills-abilities.md)
+- [Assessment specification](integrated-assessment-specification.md)
 
 ## Project Documentation
 Documentation about the project.  

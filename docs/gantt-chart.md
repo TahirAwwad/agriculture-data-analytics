@@ -4,7 +4,7 @@
 
 >"Make a bad plan. Make the best one you can, but don't get obsessive about it. Make a plan, implement it. You'll figure out when you implement it why it's stupid, exactly, and then you can fix it a little bit, and then you can fix it a bit more, and then, eventually, you get a good plan, even if you start with something that's not the best." - [Dr. Jordan B. Peterson, 2018](https://www.jordanbpeterson.com/transcripts/aubrey-marcus/)  
 
-[![](./images/gantt-chart.jfif)](https://tinyurl.com/y6yvnn6c)
+[![](./images/gantt-chart.jfif)](https://tinyurl.com/y6mf7kvy)
 
 > Gantt chart  
 
@@ -12,35 +12,31 @@ Links made with [Link Shortener Extension](https://timleland.com/link-shortener-
 
 Gantt chart made with [Mermaid](https://mermaid-js.github.io/mermaid-live-editor/edit/)  
 
-
 ### Gantt Chart Mermaid Code
 ```mermaid
 gantt
  title Data Analytics Project Template - Gantt Chart
  dateFormat  YYYY-MM-DD
  axisFormat  %b-%e
- section Guides
-  Project Structure Guide    :done,    doc01,  2021-12-23,   1d
-  Code Style                 :done,            2021-12-23,   1d
-  Jupyter notebook layout    :done,            2021-12-23,   1d
-  Build Python Package       :done,            2021-12-23,   1d
-  Build Requirements.txt     :done,            2021-12-23,   1d
- section Dev Environment
-  Install nbautoexport       :done,    doc06,  after doc01,  1d
- section Customize
-  Assessment criteria        :active,  doc07,  after doc01,  1d
-  Knowledge skills abilities :active,          after doc01,  1d
-  Install Python Package     :active,          after doc07,  2d
-  "Gantt chart"              :active,          after doc07,  2d
-  Notebook managers          :active,  doc11,  after doc07,  2d
- section Notebooks
-  bad example                :done,            after doc11,  2d
-  bad example notes          :done,    doc13,  after doc11,  2d
-  good example               :done,            after doc13,  1d
+section Setup
+  Project Setup       :done,    setup,     2021-12-19,    2021-12-22
+  Trello              :done,               2021-12-19,    2021-12-31 
+  GitHub              :done,               2021-12-22,    2021-12-31
+  IDE Setup           :done,               2021-12-22,    2022-01-03
+ section Datasets
+  Datasets            :active,  datasets,  2022-01-03,    2022-01-07
+  Basic Stats         :active,             2022-01-03,    2022-01-07
+  Sentiment Analysis  :active,             2022-01-03,    2022-01-07
+ section Machine Learning
+  Machine Learning    :active,  ml,        after datasets,    7d
  section Meetings
-  Planning                   :milestone,       2021-12-23,   1h
-  Review                     :milestone,       2021-12-26,   1h
-  Release                    :crit,milestone,  2021-12-30,   1h
+  Planning            :milestone,       2021-12-19,   1h
+  Meeting             :milestone,       2021-12-22,   1h
+  Sprint              :milestone,       2021-12-29,   1h
+  Sprint              :milestone,       2022-01-03,   1h
+  Staff Review        :crit,milestone,  2022-01-12,   1h
+  Review              :milestone,       2022-01-26,   1h
+  Submission          :crit,milestone,  2022-01-30,   1h
 ```
 
 ---
