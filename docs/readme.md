@@ -14,7 +14,7 @@ This folder contains the documentation for the project.
 Documentation about the project.  
 - [Project Structure Guide](project-structure-guide.md)
 - [Code Style Guide](code-style-guide.md)
-- [Jupyter Notebook Layout Guide.md](jupyter-notebook-layout-guide.md)
+- [Jupyter Notebook Layout Guide](jupyter-notebook-layout-guide.md)
 
 ## Project Management
 Documentation about the project.  
