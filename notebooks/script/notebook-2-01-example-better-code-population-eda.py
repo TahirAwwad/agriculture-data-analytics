@@ -31,8 +31,7 @@
 
 # <!--
 # import data_analytics.github as github
-# print(github.create_jupyter_notebook_header("markcrowe-com", "data-analytics-project-template",
-#                                             "notebooks/notebook-2-01-example-better-code-population-eda.ipynb"))
+# print(github.create_jupyter_notebook_header("markcrowe-com", "data-analytics-project-template", "notebooks/notebook-2-01-example-better-code-population-eda.ipynb", "master")
 # -->
 # <table style="margin: auto;"><tr><td><a href="https://mybinder.org/v2/gh/markcrowe-com/data-analytics-project-template/master?filepath=notebooks/notebook-2-01-example-better-code-population-eda.ipynb" target="_parent"><img src="https://mybinder.org/badge_logo.svg" alt="Open In Binder"/></a></td><td>online editors</td><td><a href="https://colab.research.google.com/github/markcrowe-com/data-analytics-project-template/blob/master/notebooks/notebook-2-01-example-better-code-population-eda.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a></td></tr></table>
 
@@ -47,8 +46,8 @@
 #!pip install -r https://github.com/markcrowe-com/data-analytics-project-template/blob/master/notebooks/script/requirements.txt --quiet
 
 
-from data_analytics.births_deaths_marriages_dataframe_labels import *
-from data_analytics.project_manager import ProjectArtifactManager, ProjectAssetManager
+from population_planning.dataframe_labels import *
+from population_planning.project_manager import ProjectArtifactManager, ProjectAssetManager
 import data_analytics.github as github
 import data_analytics.exploratory_data_analysis_reports as eda_reports
 import os
