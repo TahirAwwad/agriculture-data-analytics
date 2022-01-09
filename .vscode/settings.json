@@ -2,6 +2,7 @@
 	"cSpell.words": [
 		"annot",
 		"ARIMA",
+		"astype",
 		"Atoz",
 		"Binkley",
 		"Brandl",
@@ -14,6 +15,7 @@
 		"Crowe",
 		"dataframe",
 		"docstrings",
+		"dropna",
 		"dtype",
 		"dtypes",
 		"endswith",
@@ -50,6 +52,7 @@
 		"SARIMA",
 		"Serhiy",
 		"setuptools",
+		"spacy",
 		"startswith",
 		"Storchaka",
 		"struct",
