@@ -16,9 +16,8 @@ app = Dash(__name__)
 #df = pd.read_csv("../data/share-of-land-area-used-for-agriculture.csv")
 #df.rename(columns={'Agricultural land (% of land area)': 'Percent Pasture'}, inplace=True)
 
-df = pd.read_csv("../data/area-meadows-and-pastures.csv")
+df = pd.read_csv("./../assets/area-meadows-and-pastures.csv")
 df.rename(columns={'Land use indicators - Land under perm. meadows and pastures - 6655 - Share in Land area - 7209 - %': 'Percent Pasture'}, inplace=True)
-
 
 
 df.reset_index(inplace=True)
@@ -106,16 +105,4 @@ def update_graph(option_slctd):
 # ------------------------------------------------------------------------------
 if __name__ == '__main__':
     app.run_server(debug=False)
-
-
-
-
-
-
-
-
-get_ipython().run_line_magic('tb', '')
-
-
-
 

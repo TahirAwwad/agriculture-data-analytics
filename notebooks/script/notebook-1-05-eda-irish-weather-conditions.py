@@ -25,25 +25,24 @@ import warnings
 # Perennial Ryegrass (95% of Irish Grassland)
 # 
 # 
-# *   It may not survive very cold winters (minus 6oC or less; Cool et al., 2004).
-# *   Its optimum growth temperature is 18-20oC (Mitchell, 1956)
-# *   L. perenne is most productive in spring and autumn (Waller and Sale, 2001)
-# *   
+# - It may not survive very cold winters (minus 6oC or less; Cool et al., 2004).
+# - Its optimum growth temperature is 18-20oC (Mitchell, 1956)
+# - L. perenne is most productive in spring and autumn (Waller and Sale, 2001)
 # 
 # 
-# Rainfall - https://data.cso.ie/table/MTM01 : Ideal crops wet or dry conditions, as well of production to feed livestock.
-# Temperature - https://data.cso.ie/table/MTM02 : Viability of specific crops due to humidity (E.g. 20-25 Celsius max temp.)
-# Sunshine - https://data.cso.ie/table/MTM02 : Minimum levels of sunshine for crops to synthesise and grow.
-# Fertiliser - https://data.cso.ie/table/AJM05 :
-# Area Farmed in June - https://data.cso.ie/table/AQA06 : Percentage of grassland compared to farmland - other crops. Could also look into reduction of farmland and globalisation growth. Globalization. Opportunity to produce locally shortening supply chains. 
+# Rainfall - https://data.cso.ie/table/MTM01 : Ideal crops wet or dry conditions, as well of production to feed livestock.  
+# Temperature - https://data.cso.ie/table/MTM02 : Viability of specific crops due to humidity (E.g. 20-25 Celsius max temp.)  
+# Sunshine - https://data.cso.ie/table/MTM02 : Minimum levels of sunshine for crops to synthesise and grow.  
+# Fertiliser - https://data.cso.ie/table/AJM05 :  
+# Area Farmed in June - https://data.cso.ie/table/AQA06 : Percentage of grassland compared to farmland - other crops. Could also look into reduction of farmland and globalisation growth. Globalization. Opportunity to produce locally shortening supply chains.   
 # CLC Land Cover Change - https://data.cso.ie/table/GCA02 : Changes between grass and cropland. 
 
-area_farmed = pd.read_csv('area_farmed_june.csv')
-land_cover = pd.read_csv('clc_land_cover.csv')
-fert = pd.read_csv('fertilizers.csv')
-rain = pd.read_csv('rainfall.csv')
-sun = pd.read_csv('sunshine.csv')
-temp = pd.read_csv('temperature.csv')
+area_farmed = pd.read_csv('./../assets/cso-2022-01Jan-10-area-farmed-june-aqa06.csv')
+land_cover = pd.read_csv('./../assets/cso-2022-01Jan-10-clc-land-cover-gca02.csv')
+fert = pd.read_csv('./../assets/cso-2022-01Jan-10-fertilizers-ajm05.csv')
+rain = pd.read_csv('./../assets/cso-2022-01Jan-10-rainfall-mtm01.csv')
+sun = pd.read_csv('./../assets/cso-2022-01Jan-10-sunshine-mtm02-filtered.csv')
+temperature_dataframe = pd.read_csv('./../assets/cso-2022-01Jan-10-temperature-mtm02-filtered.csv')
 
 
 # 
@@ -122,8 +121,8 @@ def plot_sunshine(df,initial_year,location):
   plt.show()
 
 
-def plot_temp(df,initial_year,temp_type,location):
-  temp_last = df.loc[temp.Year >= initial_year] #Filter by Year
+def plot_temp(df, initial_year, temp_type,location):
+  temp_last = df.loc[df.Year >= initial_year] #Filter by Year #CHANGED varaibel to local#
   temp_last = temp_last.sort_values(by=["Year","month"]) #Sort by Year > Month
   
   #Filter by temperature type
@@ -225,22 +224,22 @@ for station in stations_to_keep:
 
 # # Temperature
 
-temp = temp.rename(columns={'Meteorological Weather Station':'Met_Station'})
+temperature_dataframe = temperature_dataframe.rename(columns={'Meteorological Weather Station':'Met_Station'})
 
 
-temp = temp.loc[temp.Met_Station.isin(stations_to_keep)]
-temp.reset_index(inplace=True,drop=True)
-temp.head()
+temperature_dataframe = temperature_dataframe.loc[temperature_dataframe.Met_Station.isin(stations_to_keep)]
+temperature_dataframe.reset_index(inplace=True,drop=True)
+temperature_dataframe.head()
 
 
-temp["Year"] = temp.Month.apply(create_year)
-temp["month"] = temp.Month.apply(create_month)
-temp.drop(["Month"],axis=1,inplace=True)
-temp.head()
+temperature_dataframe["Year"] = temperature_dataframe.Month.apply(create_year)
+temperature_dataframe["month"] = temperature_dataframe.Month.apply(create_month)
+temperature_dataframe.drop(["Month"],axis=1,inplace=True)
+temperature_dataframe.head()
 
 
 for station in stations_to_keep:
-  plot_temp(temp,2017,"Min",station)
+  plot_temp(temperature_dataframe, 2017, "Min", station)
 
 
 # # Rainfall x Sunshine Plots
@@ -254,29 +253,5 @@ for station in stations_to_keep:
 # Comparative visualization using previous function.
 
 for station in stations_to_keep:
-  compare_temp(temp,station,2017)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  compare_temp(temperature_dataframe,station,2017)
 
