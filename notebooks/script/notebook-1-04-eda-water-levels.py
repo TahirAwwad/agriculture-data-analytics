@@ -134,12 +134,19 @@ def viz_missing(missing_value_stats_dataframe: DataFrame) :
     pyplot.show()
 
 
-viz_missing(missing_value_stats_dataframe)
-
-
 missing_value_stats_dataframe = calculate_missing_value_stats(ground_water_dataframe)
 
 missing_value_stats_dataframe
+
+
+viz_missing(missing_value_stats_dataframe)
+
+
+columns:list = []
+for index, row in missing_value_stats_dataframe.iterrows():
+    if row["% Missing"] > .8:
+        columns.append(index)
+ground_water_dataframe.drop(columns, axis=1, inplace=True)
 
 
 dataframe_columns = ground_water_dataframe.columns.values.tolist()
