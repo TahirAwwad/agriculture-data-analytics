@@ -1,25 +1,12 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-import pandas as pd
-import numpy as np
-import seaborn as sns
-from datetime import datetime
-import matplotlib.pyplot as plt
-from sklearn.cluster import KMeans
-import random as rd
-from sklearn.preprocessing import MinMaxScaler
-from sklearn.linear_model import LinearRegression
-from sklearn.model_selection import train_test_split
-from sklearn.metrics import mean_squared_error
-from sklearn.tree import DecisionTreeRegressor
-from sklearn.ensemble import RandomForestRegressor
-from statsmodels.tsa.stattools import grangercausalitytests, adfuller
-from statsmodels.tsa.vector_ar.var_model import VAR
-from copy import deepcopy
-from tqdm import tqdm
-from matplotlib import pyplot
-import warnings
+from data_analytics.graphs import display_caption
+import data_analytics.github as github
+import data_analytics.exploratory_data_analysis_reports as eda_reports
+import pandas
+import matplotlib.pyplot as pyplot
+import seaborn
 
 
 # Perennial Ryegrass (95% of Irish Grassland)
@@ -37,12 +24,19 @@ import warnings
 # Area Farmed in June - https://data.cso.ie/table/AQA06 : Percentage of grassland compared to farmland - other crops. Could also look into reduction of farmland and globalisation growth. Globalization. Opportunity to produce locally shortening supply chains.   
 # CLC Land Cover Change - https://data.cso.ie/table/GCA02 : Changes between grass and cropland. 
 
-area_farmed = pd.read_csv('./../assets/cso-2022-01Jan-10-area-farmed-june-aqa06.csv')
-land_cover = pd.read_csv('./../assets/cso-2022-01Jan-10-clc-land-cover-gca02.csv')
-fert = pd.read_csv('./../assets/cso-2022-01Jan-10-fertilizers-ajm05.csv')
-rain = pd.read_csv('./../assets/cso-2022-01Jan-10-rainfall-mtm01.csv')
-sun = pd.read_csv('./../assets/cso-2022-01Jan-10-sunshine-mtm02-filtered.csv')
-temperature_dataframe = pd.read_csv('./../assets/cso-2022-01Jan-10-temperature-mtm02-filtered.csv')
+area_farmed_dataframe = pandas.read_csv('./../assets/cso-2022-01Jan-10-area-farmed-june-aqa06.csv')
+fert_dataframe = pandas.read_csv('./../assets/cso-2022-01Jan-10-fertilizers-ajm05.csv')
+land_cover_dataframe = pandas.read_csv('./../assets/cso-2022-01Jan-10-clc-land-cover-gca02.csv')
+
+
+rainfall_dataframe = pandas.read_csv('./../assets/cso-2022-01Jan-10-rainfall-mtm01.csv')
+sunshine_dataframe = pandas.read_csv('./../assets/cso-2022-01Jan-10-sunshine-mtm02-filtered.csv')
+temperature_dataframe = pandas.read_csv('./../assets/cso-2022-01Jan-10-temperature-mtm02-filtered.csv')
+
+
+eda_reports.print_dataframe_analysis_report(rainfall_dataframe, "rainfall_dataframe")
+eda_reports.print_dataframe_analysis_report(sunshine_dataframe, "sunshine_dataframe")
+eda_reports.print_dataframe_analysis_report(temperature_dataframe, "temperature_dataframe")
 
 
 # 
@@ -58,19 +52,19 @@ temperature_dataframe = pd.read_csv('./../assets/cso-2022-01Jan-10-temperature-m
 stations_to_keep = ['Casement' , 'Cork airport', 'Dublin airport', 'Shannon airport']
 
 
-area_farmed.head()
+area_farmed_dataframe.head()
 
 
-area_farmed = area_farmed.rename(columns={'Type of Land Use':'Land_Type'})
+area_farmed_dataframe = area_farmed_dataframe.rename(columns={'Type of Land Use':'Land_Type'})
 
 
-land_cover
+land_cover_dataframe
 
 
-fert
+fert_dataframe
 
 
-fert = fert.rename(columns={'Type of Fertilizer':'Fertilizer_Type'})
+fert_dataframe = fert_dataframe.rename(columns={'Type of Fertilizer':'Fertilizer_Type'})
 
 
 # # Functions
@@ -99,127 +93,145 @@ def create_month(text):
 # 
 # 
 
-def plot_rain(df,initial_year,location):
-  df_last = df.loc[df.Year >= initial_year]  #Filter by Year
-  df_last = df_last.sort_values(by=["Year","month"]) #Sort by Year > Month
-  df_last = df_last.loc[(df_last.Met_Station == location)] #Filter by location (Meteorological Station)
-  df_last.reset_index(inplace=True,drop=True) #Reset Indexes
-  pivot = df_last.pivot("month","Year" ,"VALUE") #Create Pivot Table Month x Year x Value
-  sns.set(rc = {'figure.figsize':(25,12)}) #Set figure size
-  sns.lineplot(data=pivot).set_title("Total Rainfall in {0}.".format(location)) #Plot
-  plt.show()
+def plot_rainfall(rainfall_dataframe, initial_year, location):
+    df_last = rainfall_dataframe.loc[rainfall_dataframe.Year >= initial_year]  #Filter by Year
+    df_last = df_last.sort_values(by=["Year","month"]) #Sort by Year > Month
+    df_last = df_last.loc[(df_last.Met_Station == location)] #Filter by location (Meteorological Station)
+    df_last.reset_index(inplace=True,drop=True) #Reset Indexes
+
+    caption:str = f"Total rainfall for {location}"
+    pivot = df_last.pivot("month","Year" ,"VALUE") #Create Pivot Table Month x Year x Value
+    seaborn.set(rc = {'figure.figsize':(25,12)}) #Set figure size
+    seaborn.lineplot(data=pivot).set_title(caption) #Plot
+    pyplot.show()
+    display_caption(caption)
 
 
-def plot_sunshine(df,initial_year,location):
-  df_last = df.loc[df.Year >= initial_year]  #Filter by Year
-  df_last = df_last.sort_values(by=["Year","month"]) #Sort by Year > Month
-  df_last = df_last.loc[(df_last.Met_Station == location)] #Filter by location (Meteorological Station)
-  df_last.reset_index(inplace=True,drop=True) #Reset Indexes
-  pivot = df_last.pivot("month","Year" ,"VALUE") #Create Pivot Table Month x Year x Value
-  sns.set(rc = {'figure.figsize':(25,12)}) #Set figure size
-  sns.lineplot(data=pivot).set_title("Total Rainfall in {0}.".format(location)) #Plot
-  plt.show()
+def plot_sunshine(df, initial_year, location):
+    df_last = df.loc[df.Year >= initial_year]  #Filter by Year
+    df_last = df_last.sort_values(by=["Year","month"]) #Sort by Year > Month
+    df_last = df_last.loc[(df_last.Met_Station == location)] #Filter by location (Meteorological Station)
+    df_last.reset_index(inplace=True,drop=True) #Reset Indexes
+
+    caption:str = f"Total sunshine for {location}"
+
+    pivot = df_last.pivot("month","Year" ,"VALUE") #Create Pivot Table Month x Year x Value
+    seaborn.set(rc = {'figure.figsize':(25,12)}) #Set figure size
+    seaborn.lineplot(data=pivot).set_title(caption) #Plot
+    pyplot.show()
+    display_caption(caption)
 
 
 def plot_temp(df, initial_year, temp_type,location):
-  temp_last = df.loc[df.Year >= initial_year] #Filter by Year #CHANGED varaibel to local#
-  temp_last = temp_last.sort_values(by=["Year","month"]) #Sort by Year > Month
-  
-  #Filter by temperature type
-  temp_last_final = None
-  if temp_type == "Min":
-    temp_last_final = temp_last.loc[(temp_last.Met_Station == location) & (temp_last.Statistic == "Lowest Temperature")]
-  elif temp_type == "Max":
-    temp_last_final = temp_last.loc[(temp_last.Met_Station == location) & (temp_last.Statistic == "Highest Temperature")]
+    temp_last = df.loc[df.Year >= initial_year] #Filter by Year #CHANGED varaibel to local#
+    temp_last = temp_last.sort_values(by=["Year","month"]) #Sort by Year > Month
 
-  temp_last_final.reset_index(inplace=True,drop=True) #Reset indexes
-  pivot = temp_last_final.pivot("month","Year" ,"VALUE") #Create Pivot Table Month x Year x Value
-  sns.set(rc = {'figure.figsize':(25,12)}) #Set figure size
-  sns.lineplot(data=pivot).set_title("Location: {0} - Temperature Type: {1}".format(location,temp_type)) #Plot
-  plt.show()
+    #Filter by temperature type
+    temp_last_final = None
+    if temp_type == "Min":
+        temp_last_final = temp_last.loc[(temp_last.Met_Station == location) & (temp_last.Statistic == "Lowest Temperature")]
+    elif temp_type == "Max":
+        temp_last_final = temp_last.loc[(temp_last.Met_Station == location) & (temp_last.Statistic == "Highest Temperature")]
+
+    temp_last_final.reset_index(inplace=True, drop=True) #Reset indexes
+
+    caption:str = f"Location: {location} - Temperature Type: {temp_type}"
+    pivot = temp_last_final.pivot("month","Year" ,"VALUE") #Create Pivot Table Month x Year x Value
+    seaborn.set(rc = {'figure.figsize':(25,12)}) #Set figure size
+    seaborn.lineplot(data=pivot).set_title(caption)
+    pyplot.show()
+    display_caption(caption)
 
 
 # Creating an average of our last 5 years should provide relevant indicators of when to plant, grow and harvest. The last five years have been chosen due to rising global temperature, considering old data could corrupt the data with unnacurate representations of our current seasons.
 
-def get_average_rain_sun(df,met_station,min_year):
-  temporary = df.loc[(df.Met_Station == met_station) & (df.Year >= min_year)]
-  temporary.reset_index(inplace=True,drop=True)
-  return list(temporary.groupby(by="month").mean()["VALUE"])
+def get_average_rain_sun(dataframe, met_station, min_year):
+    temporary = dataframe.loc[(dataframe.Met_Station == met_station) & (dataframe.Year >= min_year)]
+    temporary.reset_index(inplace=True, drop=True)
+    return list(temporary.groupby(by="month").mean()["VALUE"])
 
-def compare_rain_sun(rain,sun,met_station,min_year):
-  temp_df = pd.DataFrame()
-  temp_df["month"] = range(1,13)
-  temp_df["rain"] = get_average_rain_sun(rain,met_station,min_year)
-  temp_df["sun"] = get_average_rain_sun(sun,met_station,min_year)
-  sns.lineplot(x='month', y='value', hue='variable', 
-             data=pd.melt(temp_df, ['month'])).set_title("Rainfall x Sunshine in {0}.".format(met_station))
-  plt.show()
+def compare_rain_sun(rainfall_dataframe, sunshine_dataframe, met_station, min_year):
+    temp_df = pandas.DataFrame()
+    temp_df["month"] = range(1,13)
+    temp_df["rain"] = get_average_rain_sun(rainfall_dataframe, met_station, min_year)
+    temp_df["sun"] =  get_average_rain_sun(sunshine_dataframe, met_station, min_year)
+
+    caption:str = f"Rainfall x Sunshine in {met_station}."
+
+    seaborn.lineplot(x='month', y='value', hue='variable', data=pandas.melt(temp_df, ['month'])).set_title(caption)
+    pyplot.show()
+    display_caption(caption)
 
 
-def get_average_temperature(df,met_station,min_year):
-  temp_max = df.loc[(df.Met_Station == met_station) & (df.Year >= min_year) & (df.Statistic == "Highest Temperature")]
-  temp_min = df.loc[(df.Met_Station == met_station) & (df.Year >= min_year) & (df.Statistic == "Lowest Temperature")]
-  temp_min.reset_index(inplace=True,drop=True)
-  temp_max.reset_index(inplace=True,drop=True)
-  return list(temp_min.groupby(by="month").mean()["VALUE"]), list(temp_max.groupby(by="month").mean()["VALUE"])
+def get_average_temperature(dataframe, met_station, min_year):
+    temp_max = dataframe.loc[(dataframe.Met_Station == met_station) & 
+                             (dataframe.Year >= min_year) & (dataframe.Statistic == "Highest Temperature")]
+    temp_min = dataframe.loc[(dataframe.Met_Station == met_station) & 
+                             (dataframe.Year >= min_year) & (dataframe.Statistic == "Lowest Temperature")]
+    temp_min.reset_index(inplace=True, drop=True)
+    temp_max.reset_index(inplace=True, drop=True)
+    return list(temp_min.groupby(by="month").mean()["VALUE"]), list(temp_max.groupby(by="month").mean()["VALUE"])
 
-def compare_temp(temp,met_station,min_year):
-  temp_df = pd.DataFrame()
-  temp_df["month"] = range(1,13)
-  temp_df["temp_min"], temp_df["temp_max"] = get_average_temperature(temp,met_station,min_year)
-  sns.lineplot(x='month', y='value', hue='variable',
-             data=pd.melt(temp_df, ['month'])).set_title("Highest Temperature x Lowest Temperature in {0}.".format(met_station))
-  plt.show()
+def compare_temp(temp, met_station, min_year):
+    temp_df = pandas.DataFrame()
+    temp_df["month"] = range(1,13)
+    temp_df["temp_min"], temp_df["temp_max"] = get_average_temperature(temp, met_station, min_year)
+    
+    caption:str = f"High v Low Temperatures from {met_station}."
+    seaborn.lineplot(x='month', y='value', hue='variable',
+             data=pandas.melt(temp_df, ['month'])).set_title(caption)
+    pyplot.show()
+    display_caption(caption)
 
 
 # # Rain
 # ---
 
-rain = rain.rename(columns={'Meteorological Weather Station':'Met_Station'})
-rain.head()
+rainfall_dataframe = rainfall_dataframe.rename(columns={'Meteorological Weather Station':'Met_Station'})
+rainfall_dataframe.head()
 
 
-rain["Year"] = rain.Month.apply(create_year)
+rainfall_dataframe["Year"] = rainfall_dataframe.Month.apply(create_year)
 
 
-rain["month"] = rain.Month.apply(create_month)
+rainfall_dataframe["month"] = rainfall_dataframe.Month.apply(create_month)
 
 
-rain.drop(["Month"],axis=1,inplace=True)
+rainfall_dataframe.drop(["Month"],axis=1,inplace=True)
 
 
-rain = rain.loc[rain.Met_Station.isin(stations_to_keep)]
-rain = rain.loc[rain.Statistic == 'Total Rainfall']
-rain.reset_index(inplace=True,drop=True)
-rain.head()
+rainfall_dataframe = rainfall_dataframe.loc[rainfall_dataframe.Met_Station.isin(stations_to_keep)]
+rainfall_dataframe = rainfall_dataframe.loc[rainfall_dataframe.Statistic == 'Total Rainfall']
+rainfall_dataframe.reset_index(inplace=True,drop=True)
+rainfall_dataframe.head()
 
 
 for station in stations_to_keep:
-  plot_rain(rain, 2017,station)
+    plot_rainfall(rainfall_dataframe, 2017,station)
 
 
 # # Sunshine
 
-sun = sun.rename(columns={'Meteorological Weather Station':'Met_Station'})
+sunshine_dataframe = sunshine_dataframe.rename(columns={'Meteorological Weather Station':'Met_Station'})
 
 
-sun = sun.loc[sun.Met_Station.isin(stations_to_keep)]
-sun = sun.loc[sun.Statistic == 'Total Sunshine Hours']
-sun.reset_index(inplace=True,drop=True)
-sun.head()
+sunshine_dataframe = sunshine_dataframe.loc[sunshine_dataframe.Met_Station.isin(stations_to_keep)]
+sunshine_dataframe = sunshine_dataframe.loc[sunshine_dataframe.Statistic == 'Total Sunshine Hours']
+sunshine_dataframe.reset_index(inplace=True, drop=True)
+sunshine_dataframe.head()
 
 
-sun["Year"] = sun.Month.apply(create_year)
-sun["month"] = sun.Month.apply(create_month)
-sun.drop(["Month"],axis=1,inplace=True)
-sun.head()
+sunshine_dataframe["Year"]  = sunshine_dataframe.Month.apply(create_year)
+sunshine_dataframe["month"] = sunshine_dataframe.Month.apply(create_month)
+sunshine_dataframe.drop(["Month"],axis=1, inplace=True)
+sunshine_dataframe.head()
 
 
-sun.loc[(sun.Met_Station == "Claremorris") & (sun.Year > 2017)]
+sunshine_dataframe.loc[(sunshine_dataframe.Met_Station == "Claremorris") & (sunshine_dataframe.Year > 2017)]
 
 
 for station in stations_to_keep:
-  plot_sunshine(sun, 2017,station)
+    plot_sunshine(sunshine_dataframe, 2017,station)
 
 
 # # Temperature
@@ -239,13 +251,13 @@ temperature_dataframe.head()
 
 
 for station in stations_to_keep:
-  plot_temp(temperature_dataframe, 2017, "Min", station)
+    plot_temp(temperature_dataframe, 2017, "Min", station)
 
 
 # # Rainfall x Sunshine Plots
 
 for station in stations_to_keep:
-  compare_rain_sun(rain,sun,station,2017)
+    compare_rain_sun(rainfall_dataframe, sunshine_dataframe, station,2017)
 
 
 # # Highest x Lowest Temperature Plots
@@ -253,5 +265,5 @@ for station in stations_to_keep:
 # Comparative visualization using previous function.
 
 for station in stations_to_keep:
-  compare_temp(temperature_dataframe,station,2017)
+    compare_temp(temperature_dataframe,station,2017)
 
