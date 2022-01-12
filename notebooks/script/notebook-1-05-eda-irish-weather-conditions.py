@@ -24,14 +24,14 @@ import seaborn
 # Area Farmed in June - https://data.cso.ie/table/AQA06 : Percentage of grassland compared to farmland - other crops. Could also look into reduction of farmland and globalisation growth. Globalization. Opportunity to produce locally shortening supply chains.   
 # CLC Land Cover Change - https://data.cso.ie/table/GCA02 : Changes between grass and cropland. 
 
-area_farmed_dataframe = pandas.read_csv('./../assets/cso-2022-01Jan-10-area-farmed-june-aqa06.csv')
-fert_dataframe = pandas.read_csv('./../assets/cso-2022-01Jan-10-fertilizers-ajm05.csv')
-land_cover_dataframe = pandas.read_csv('./../assets/cso-2022-01Jan-10-clc-land-cover-gca02.csv')
+area_farmed_dataframe = pandas.read_csv('./../assets/cso-area-farmed-june-aqa06-2022-01Jan-10.csv')
+fert_dataframe = pandas.read_csv('./../assets/cso-fertilizers-ajm05-2022-01Jan-10.csv')
+land_cover_dataframe = pandas.read_csv('./../assets/cso-clc-land-cover-gca02-2022-01Jan-10.csv')
 
 
-rainfall_dataframe = pandas.read_csv('./../assets/cso-2022-01Jan-10-rainfall-mtm01.csv')
-sunshine_dataframe = pandas.read_csv('./../assets/cso-2022-01Jan-10-sunshine-mtm03.csv')
-temperature_dataframe = pandas.read_csv('./../assets/cso-2022-01Jan-10-temperature-mtm02.csv')
+rainfall_dataframe = pandas.read_csv('./../assets/cso-rainfall-mtm01-2022-01Jan-10.csv')
+sunshine_dataframe = pandas.read_csv('./../assets/cso-sunshine-mtm03-2022-01Jan-10.csv')
+temperature_dataframe = pandas.read_csv('./../assets/cso-temperature-mtm02-2022-01Jan-10.csv')
 
 
 eda_reports.print_dataframe_analysis_report(rainfall_dataframe, "rainfall_dataframe")
