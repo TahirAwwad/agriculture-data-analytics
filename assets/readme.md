@@ -8,7 +8,9 @@ This folder contains the assets used in the project. These files are not to be m
 
 ## Datasets
 
-- Sample Dataset: [Population estimates 1950-2021](2021-12Dec-11-population-estimates-1950-2021-pea01.csv) downloaded from [CSO: PEA01](https://data.cso.ie/table/pea01) on December 11<sup>th</sup>, 2021
+- [Exports of Cattle and Beef 1930-2020](cso-tsa04-exports-of-cattle-and-beef-1930-2020-2022-01Jan-13.csv) downloaded from [CSO: TSA04](https://data.cso.ie/table/TSA04) on January 13<sup>th</sup>, 2022
+
+- [Exports of Cattle and Beef 1970-2021](cso-tsm04-exports-of-cattle-and-beef-1970-2021-2022-01Jan-13.csv) downloaded from [CSO: TSM04](https://data.cso.ie/table/TSM04) on January 13<sup>th</sup>, 2022
 
 ---
 **Template footnote**  

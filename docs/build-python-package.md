@@ -32,20 +32,20 @@ The package is then available at <https://pypi.org/project/PACKAGE_URL/>
 To install the package from [pypi.org](https://pypi.org), run the following command:
 
 ```bash
-pip install PACKAGE_NAME
+pip install agriculture_data_analytics
 ```
 
 ### Local installation
 To install the package from local sources, run the following command:
 
 ```bash
-pip install .\dist\PACKAGE_NAME-0.0.1-py3-none-any.whl
+pip install .\dist\agriculture_data_analytics-0.0.1-py3-none-any.whl
 ```
 
 To force a reinstall of the package from local sources, run the following command:
 
 ```bash
-pip install .\dist\PACKAGE_NAME-0.0.1-py3-none-any.whl --force-reinstall
+pip install .\dist\agriculture_data_analytics-0.0.1-py3-none-any.whl --force-reinstall
 ```
 
 Conda:  

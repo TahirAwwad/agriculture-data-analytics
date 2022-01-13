@@ -1,8 +1,7 @@
-# Names of the Series in the DataFrame for the 2021-12Dec-11-population-estimates-1950-2021-pea01.csv
+# Names of the Series in the DataFrames
 
-AGE_GROUP = "Age Group"
-SEX = 'Sex'
+STATE = 'State'
 STATISTIC = 'Statistic'
-UNIT = 'UNIT'
-VALUE = 'VALUE'
+UNIT = 'Unit'
+VALUE = 'Value'
 YEAR = 'Year'
