@@ -27,7 +27,7 @@
 # }
 # </style>
 
-# ## EDA of the cattle and beef exports (1930 - 2020)
+# ## EDA of Bovine Tuberculosis
 
 # <!--
 # import data_analytics.github as github
@@ -37,7 +37,7 @@
 
 # ### Objective
 
-# The objective is to provide an Exploratory Data Analysis (EDA) of the `cso-tsa04-exports-of-cattle-and-beef-1930-2020-2022-01Jan-13.csv` file provided by the <a href="https://data.cso.ie/table/TSA04" target="_new">CSO: TSA04 Table</a>. The EDA is performed to investigate and clean the data, to spot anomalies.  
+# The objective is to provide an Exploratory Data Analysis (EDA) of the `cso-daa01-bovine-tuberculosis-2022-01-Jan-15.csv` file provided by the <a href="https://data.cso.ie/table/DAA01" target="_new">CSO: DAA01 Table</a>. The EDA is performed to investigate and clean the data, to spot anomalies.  
 
 # ### Setup
 
@@ -62,7 +62,7 @@ artifact_manager: ProjectArtifactManager = ProjectArtifactManager()
 asset_manager: ProjectAssetManager = ProjectAssetManager()
 artifact_manager.is_remote = asset_manager.is_remote = True
 github.display_jupyter_notebook_data_sources(
-    [asset_manager.get_cattle_beef_exports_filepath()])
+    [asset_manager.get_bovine_tuberculosis_filepath()])
 artifact_manager.is_remote = asset_manager.is_remote = False
 
 
@@ -70,21 +70,29 @@ artifact_manager.is_remote = asset_manager.is_remote = False
 
 # #### Create Data Frames
 
-filepath: str = asset_manager.get_cattle_beef_exports_filepath()
-beef_export_dataframe: DataFrame = pandas.read_csv(filepath)
+filepath: str = asset_manager.get_bovine_tuberculosis_filepath()
+bovine_tuberculosis_dataframe: DataFrame = pandas.read_csv(filepath)
 
 
 # #### Renaming Columns
 
 old_to_new_column_names_dictionary = {
-    "Exports of Beef": BEEF_TONNES,
-    "Exports of Cattle": CATTLE,
+    "Regional Veterinary Offices": VETERINARY_OFFICE,
+    "Herds in County": HERDS_COUNT,
+    "Animals in County": ANIMAL_COUNT,
+    "Herds Restricted since 1st of January": RESTRICTED_HERDS_AT_START_OF_YEAR,
+    "Herds Restricted by 31st of December": RESTRICTED_HERDS_AT_END_OF_YEAR,
+    "Herds Tested": HERDS_TESTED,
+    "Herd Incidence": HERD_INCIDENCE_RATE,
+    "Tests on Animals": TESTS_ON_ANIMALS,
+    "Reactors per 1000 Tests A.P.T.": REACTORS_PER_1000_TESTS_APT,
+    "Reactors to date": REACTORS_TO_DATE,
     UNIT.upper(): UNIT,
     VALUE.upper(): VALUE,
 }
-beef_export_dataframe = beef_export_dataframe.rename(
+bovine_tuberculosis_dataframe = bovine_tuberculosis_dataframe.rename(
     columns=old_to_new_column_names_dictionary)
-beef_export_dataframe.head(0)
+bovine_tuberculosis_dataframe.head(0)
 
 
 # ### Data Type Analysis Quick View
@@ -96,40 +104,44 @@ beef_export_dataframe.head(0)
 # - Report the counts of any missing values.
 
 filename: str = os.path.basename(filepath)
-eda_reports.print_dataframe_analysis_report(beef_export_dataframe, filename)
+eda_reports.print_dataframe_analysis_report(bovine_tuberculosis_dataframe, filename)
 
-
-# I expected 91 records for the year range 1930-2020 but there are 182 records. The data has two records for each year.  The table is not normalized 
 
 # ### Normalizing the table
 
-beef_export_dataframe = beef_export_dataframe.set_index(
-    [YEAR, STATISTIC])[VALUE].unstack().reset_index()
-beef_export_dataframe.columns = beef_export_dataframe.columns.tolist()
-beef_export_dataframe = beef_export_dataframe.rename(
+bovine_tuberculosis_dataframe = bovine_tuberculosis_dataframe.set_index(
+    [YEAR, VETERINARY_OFFICE, STATISTIC])[VALUE].unstack().reset_index()
+bovine_tuberculosis_dataframe.columns = bovine_tuberculosis_dataframe.columns.tolist()
+bovine_tuberculosis_dataframe = bovine_tuberculosis_dataframe.rename(
     columns=old_to_new_column_names_dictionary)
 
 
-# Standardize the Units of Measurement
-
-beef_export_dataframe[CATTLE] *= 1000
-beef_export_dataframe[BEEF_TONNES] *= 1000
-
-
-beef_export_dataframe.head()
+bovine_tuberculosis_dataframe.head()
 
 
 # ### Data Type Analysis Quick View
 
-eda_reports.print_dataframe_analysis_report(beef_export_dataframe, filename)
+eda_reports.print_dataframe_analysis_report(bovine_tuberculosis_dataframe, filename)
 
 
-# ### Save Artifact
+# The table contains both data for county level and state level an aggregate of the county level data
+
+county_bovine_tuberculosis_dataframe = bovine_tuberculosis_dataframe.drop(bovine_tuberculosis_dataframe[(bovine_tuberculosis_dataframe[VETERINARY_OFFICE] == "State")].index)
+eda_reports.print_dataframe_analysis_report(county_bovine_tuberculosis_dataframe, filename)
+
+
+bovine_tuberculosis_dataframe = bovine_tuberculosis_dataframe.drop(bovine_tuberculosis_dataframe[(bovine_tuberculosis_dataframe[VETERINARY_OFFICE] != "State")].index)
+eda_reports.print_dataframe_analysis_report(bovine_tuberculosis_dataframe, filename)
+
+
+# ### Save Artifacts
 
 # Saving the output of the notebook.
 
-beef_export_dataframe.to_csv(artifact_manager.get_cattle_beef_exports_eda_filepath(),
-                             index=None)
+bovine_tuberculosis_dataframe.to_csv(
+    artifact_manager.get_bovine_tuberculosis_eda_filepath(), index=None)
+county_bovine_tuberculosis_dataframe.to_csv(
+    artifact_manager.get_county_bovine_tuberculosis_eda_filepath(), index=None)
 
 
 # Author &copy; 2021 <a href="https://github.com/markcrowe-com" target="_parent">Mark Crowe</a>. All rights reserved.
