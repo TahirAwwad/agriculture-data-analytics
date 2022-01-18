@@ -12,6 +12,7 @@ import pandas as pd
 dataframe = pd.read_csv("./../artifacts/agriculture-ie-clean.csv")
 text = str(dataframe['clean_text'])
 print(text)
+dataframe.info()
 # Creating empty WordCloud object and generating actual WordCloud.
 wordcloud = WordCloud().generate(text)
 # Display the word cloud
