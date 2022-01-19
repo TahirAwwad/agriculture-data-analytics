@@ -4,6 +4,12 @@
 
 *All these commands must be run from the `python-package` folder path in the project:*
 
+### Update the required packages
+To build the requirements.txt file run these commands:
+```bash
+pipreqs --force
+```
+
 ## Build/rebuild the Python package
 To build the Python package, run the following command:
 ```bash
