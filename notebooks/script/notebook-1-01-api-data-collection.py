@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# ## Fetch the proposed datasets understudy
+# ## Download datasets
 
 # <!--
 # import data_analytics.github as github
