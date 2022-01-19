@@ -9,6 +9,10 @@
 # -->
 # <table style="margin: auto;"><tr><td><a href="https://mybinder.org/v2/gh/markcrowe-com/agriculture-data-analytics/master?filepath=notebooks/notebook-1-01-api-data-collection.ipynb" target="_parent"><img src="https://mybinder.org/badge_logo.svg" alt="Open In Binder"/></a></td><td>online editors</td><td><a href="https://colab.research.google.com/github/markcrowe-com/agriculture-data-analytics/blob/master/notebooks/notebook-1-01-api-data-collection.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a></td></tr></table>
 
+# ### Objective
+
+# The objective is to download the datasets with the listed in [asset-link-builder.xlsx](./../artifacts/asset-link-builder.xlsx) with the [cso.ie](https://wwww.cso.ie) and [eurostat](https://ec.europa.eu/eurostat) APIs.  
+
 # ### Setup
 
 # Import required third party Python libraries, import supporting functions and sets up data source file paths.
@@ -43,7 +47,7 @@ def download_cso_table_dataframe(table_code: str) -> str:
                            sep=",")
 
 
-# ### Source 1: Eurostat data
+# ### Download Eurostat Data sources
 
 # - Agriculture price indecies of product
 
