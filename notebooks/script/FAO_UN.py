@@ -46,7 +46,18 @@ cont_region = [
 vp_beef = ['Meat indigenous, cattle', 'Meat, cattle']
 
 
-vp = pd.read_csv("./../temp/value-of-production.csv", encoding='latin1')
+filepath = "./../temp/value-of-production.csv"
+from pathlib import Path
+from zipfile import ZipFile
+
+if not Path(filepath).is_file():
+    zip_filepath = "./../assets/value-of-production.zip"
+    with ZipFile(zip_filepath, 'r') as zipObj:
+        zipObj.extractall('./../temp')
+        print('File is unzipped')
+
+
+vp = pd.read_csv(filepath, encoding='latin1')
 vp = vp.drop(['Area Code', 'Item Code', 'Element Code', 'Year Code', 'Flag'],
              axis=1)
 vp = vp.loc[vp.Area.isin(shortlist_coutries)]
@@ -60,6 +71,19 @@ vp
 
 trade_cl_beef = ['Meat, beef and veal sausages', 'Meat, beef, preparations', 'Meat, cattle',
        'Meat, cattle, boneless (beef & veal)']
+
+
+import os
+
+zipPath = "./../assets/trade-crops-livestock"
+zips = os.listdir(zipPath)
+for zipName in zips:
+    with open("./../temp/trade-crops-livestock.zip", "ab") as f:
+        with open(os.path.join(zipPath, zipName), "rb") as z:
+            f.write(z.read())
+
+with ZipFile("./../temp/trade-crops-livestock.zip", "r") as zipObj:
+    zipObj.extractall('./../temp')
 
 
 trade_cl = pd.read_csv("./../temp/trade-crops-livestock.csv",
