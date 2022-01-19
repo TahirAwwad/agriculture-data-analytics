@@ -31,13 +31,16 @@
 
 # <!--
 # import data_analytics.github as github
-# print(github.create_jupyter_notebook_header("markcrowe-com", "data-analytics-project-template", "notebooks/notebook-2-02-example-better-code-population-dv.ipynb", "master")
+# print(github.create_jupyter_notebook_header("markcrowe-com", "data-analytics-project-template", "notebooks/notebook-2-02-example-better-code-population-dv.ipynb", "master"))
 # -->
 # <table style="margin: auto;"><tr><td><a href="https://mybinder.org/v2/gh/markcrowe-com/data-analytics-project-template/master?filepath=notebooks/notebook-2-02-example-better-code-population-dv.ipynb" target="_parent"><img src="https://mybinder.org/badge_logo.svg" alt="Open In Binder"/></a></td><td>online editors</td><td><a href="https://colab.research.google.com/github/markcrowe-com/data-analytics-project-template/blob/master/notebooks/notebook-2-02-example-better-code-population-dv.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a></td></tr></table>
 
 # ### Objective
+
 # This objective is to display a population pyramid with the `population-1950-2021-eda-output.csv` file.  
+
 # ### Setup
+
 # Import required third party Python libraries, import supporting functions and sets up data source file paths.
 
 # Local
@@ -63,6 +66,7 @@ artifact_manager.is_remote = False
 
 
 # ### Graph
+
 # Create Data Frame
 
 def build_interactive_population_pyramid_chart(population_dataframe: DataFrame, age_field: str = "Age", population_field: str = "Population",
@@ -132,6 +136,7 @@ build_interactive_population_pyramid_chart(population_dataframe)
 # <a href="https://vega.github.io/editor/#/gist/f60264d419560ac188af4f6dfa5c57dd/vega-irish-population-pyramid-graph.json" target="_new"> Click here to open graph online</a>
 
 # ### Observations
+
 # There is something unexpected in the data for the years 2012 to 2017 for females in the age bracket 1 to 4 years.
 
 strange_values_dataframe = population_dataframe[[YEAR, AGE, POPULATION]];
