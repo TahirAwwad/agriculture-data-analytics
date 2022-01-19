@@ -21,6 +21,7 @@ Documentation about the project.
 Documentation about the project.  
 - [Notebook managers](notebook-managers.md)
 - [Project Gantt Chart](gantt-chart.md)
+- [Requirements](requirements-ca2.md)
 
 ### Development Environment
 To help setup your local development environment, read the following documents:

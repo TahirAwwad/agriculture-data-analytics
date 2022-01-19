@@ -1,0 +1,2971 @@
+,Statistic,Year,Regional Veterinary Offices,UNIT,VALUE
+0,Herds in County,2010,State,Number,116815.0
+1,Herds in County,2010,Carlow,Number,1353.0
+2,Herds in County,2010,Cavan,Number,4915.0
+3,Herds in County,2010,Clare,Number,6282.0
+4,Herds in County,2010,Cork North,Number,5986.0
+5,Herds in County,2010,Cork South,Number,6310.0
+6,Herds in County,2010,Donegal,Number,5579.0
+7,Herds in County,2010,Dublin,Number,398.0
+8,Herds in County,2010,Galway,Number,11796.0
+9,Herds in County,2010,Kerry,Number,6895.0
+10,Herds in County,2010,Kildare,Number,1861.0
+11,Herds in County,2010,Kilkenny,Number,3143.0
+12,Herds in County,2010,Laois,Number,2878.0
+13,Herds in County,2010,Leitrim,Number,3106.0
+14,Herds in County,2010,Limerick,Number,5627.0
+15,Herds in County,2010,Longford,Number,2445.0
+16,Herds in County,2010,Louth,Number,1196.0
+17,Herds in County,2010,Mayo,Number,9772.0
+18,Herds in County,2010,Meath,Number,3674.0
+19,Herds in County,2010,Monaghan,Number,4292.0
+20,Herds in County,2010,Offaly,Number,3170.0
+21,Herds in County,2010,Roscommon,Number,5529.0
+22,Herds in County,2010,Sligo,Number,3686.0
+23,Herds in County,2010,Tipperary North,Number,3446.0
+24,Herds in County,2010,Tipperary South,Number,3415.0
+25,Herds in County,2010,Waterford,Number,2243.0
+26,Herds in County,2010,Westmeath,Number,3076.0
+27,Herds in County,2010,Wexford,Number,3105.0
+28,Herds in County,2010,Wicklow E,Number,1079.0
+29,Herds in County,2010,Wicklow W,Number,558.0
+30,Herds in County,2011,State,Number,116061.0
+31,Herds in County,2011,Carlow,Number,1360.0
+32,Herds in County,2011,Cavan,Number,4857.0
+33,Herds in County,2011,Clare,Number,6164.0
+34,Herds in County,2011,Cork North,Number,5790.0
+35,Herds in County,2011,Cork South,Number,6217.0
+36,Herds in County,2011,Donegal,Number,5560.0
+37,Herds in County,2011,Dublin,Number,391.0
+38,Herds in County,2011,Galway,Number,11599.0
+39,Herds in County,2011,Kerry,Number,6952.0
+40,Herds in County,2011,Kildare,Number,1921.0
+41,Herds in County,2011,Kilkenny,Number,3137.0
+42,Herds in County,2011,Laois,Number,2915.0
+43,Herds in County,2011,Leitrim,Number,3093.0
+44,Herds in County,2011,Limerick,Number,5487.0
+45,Herds in County,2011,Longford,Number,2431.0
+46,Herds in County,2011,Louth,Number,1190.0
+47,Herds in County,2011,Mayo,Number,9709.0
+48,Herds in County,2011,Meath,Number,3700.0
+49,Herds in County,2011,Monaghan,Number,4259.0
+50,Herds in County,2011,Offaly,Number,3157.0
+51,Herds in County,2011,Roscommon,Number,5499.0
+52,Herds in County,2011,Sligo,Number,3646.0
+53,Herds in County,2011,Tipperary North,Number,3488.0
+54,Herds in County,2011,Tipperary South,Number,3460.0
+55,Herds in County,2011,Waterford,Number,2234.0
+56,Herds in County,2011,Westmeath,Number,3141.0
+57,Herds in County,2011,Wexford,Number,3068.0
+58,Herds in County,2011,Wicklow E,Number,1065.0
+59,Herds in County,2011,Wicklow W,Number,571.0
+60,Herds in County,2012,State,Number,115787.0
+61,Herds in County,2012,Carlow,Number,1333.0
+62,Herds in County,2012,Cavan,Number,4878.0
+63,Herds in County,2012,Clare,Number,6249.0
+64,Herds in County,2012,Cork North,Number,5812.0
+65,Herds in County,2012,Cork South,Number,6228.0
+66,Herds in County,2012,Donegal,Number,5549.0
+67,Herds in County,2012,Dublin,Number,384.0
+68,Herds in County,2012,Galway,Number,11611.0
+69,Herds in County,2012,Kerry,Number,6846.0
+70,Herds in County,2012,Kildare,Number,1881.0
+71,Herds in County,2012,Kilkenny,Number,3150.0
+72,Herds in County,2012,Laois,Number,2879.0
+73,Herds in County,2012,Leitrim,Number,3064.0
+74,Herds in County,2012,Limerick,Number,5514.0
+75,Herds in County,2012,Longford,Number,2442.0
+76,Herds in County,2012,Louth,Number,1186.0
+77,Herds in County,2012,Mayo,Number,9618.0
+78,Herds in County,2012,Meath,Number,3695.0
+79,Herds in County,2012,Monaghan,Number,4256.0
+80,Herds in County,2012,Offaly,Number,3154.0
+81,Herds in County,2012,Roscommon,Number,5477.0
+82,Herds in County,2012,Sligo,Number,3625.0
+83,Herds in County,2012,Tipperary North,Number,3445.0
+84,Herds in County,2012,Tipperary South,Number,3432.0
+85,Herds in County,2012,Waterford,Number,2242.0
+86,Herds in County,2012,Westmeath,Number,3096.0
+87,Herds in County,2012,Wexford,Number,3091.0
+88,Herds in County,2012,Wicklow E,Number,1087.0
+89,Herds in County,2012,Wicklow W,Number,563.0
+90,Herds in County,2013,State,Number,115765.0
+91,Herds in County,2013,Carlow,Number,1340.0
+92,Herds in County,2013,Cavan,Number,4860.0
+93,Herds in County,2013,Clare,Number,6265.0
+94,Herds in County,2013,Cork North,Number,5814.0
+95,Herds in County,2013,Cork South,Number,6189.0
+96,Herds in County,2013,Donegal,Number,5519.0
+97,Herds in County,2013,Dublin,Number,392.0
+98,Herds in County,2013,Galway,Number,11600.0
+99,Herds in County,2013,Kerry,Number,6765.0
+100,Herds in County,2013,Kildare,Number,1922.0
+101,Herds in County,2013,Kilkenny,Number,3183.0
+102,Herds in County,2013,Laois,Number,2884.0
+103,Herds in County,2013,Leitrim,Number,3046.0
+104,Herds in County,2013,Limerick,Number,5546.0
+105,Herds in County,2013,Longford,Number,2396.0
+106,Herds in County,2013,Louth,Number,1204.0
+107,Herds in County,2013,Mayo,Number,9637.0
+108,Herds in County,2013,Meath,Number,3758.0
+109,Herds in County,2013,Monaghan,Number,4289.0
+110,Herds in County,2013,Offaly,Number,3106.0
+111,Herds in County,2013,Roscommon,Number,5476.0
+112,Herds in County,2013,Sligo,Number,3615.0
+113,Herds in County,2013,Tipperary North,Number,3452.0
+114,Herds in County,2013,Tipperary South,Number,3441.0
+115,Herds in County,2013,Waterford,Number,2256.0
+116,Herds in County,2013,Westmeath,Number,3035.0
+117,Herds in County,2013,Wexford,Number,3122.0
+118,Herds in County,2013,Wicklow E,Number,1082.0
+119,Herds in County,2013,Wicklow W,Number,571.0
+120,Herds in County,2014,State,Number,114508.0
+121,Herds in County,2014,Carlow,Number,1330.0
+122,Herds in County,2014,Cavan,Number,4817.0
+123,Herds in County,2014,Clare,Number,6165.0
+124,Herds in County,2014,Cork North,Number,5790.0
+125,Herds in County,2014,Cork South,Number,6106.0
+126,Herds in County,2014,Donegal,Number,5452.0
+127,Herds in County,2014,Dublin,Number,388.0
+128,Herds in County,2014,Galway,Number,11422.0
+129,Herds in County,2014,Kerry,Number,6801.0
+130,Herds in County,2014,Kildare,Number,1914.0
+131,Herds in County,2014,Kilkenny,Number,3174.0
+132,Herds in County,2014,Laois,Number,2876.0
+133,Herds in County,2014,Leitrim,Number,2988.0
+134,Herds in County,2014,Limerick,Number,5483.0
+135,Herds in County,2014,Longford,Number,2384.0
+136,Herds in County,2014,Louth,Number,1196.0
+137,Herds in County,2014,Mayo,Number,9501.0
+138,Herds in County,2014,Meath,Number,3659.0
+139,Herds in County,2014,Monaghan,Number,4246.0
+140,Herds in County,2014,Offaly,Number,3091.0
+141,Herds in County,2014,Roscommon,Number,5420.0
+142,Herds in County,2014,Sligo,Number,3556.0
+143,Herds in County,2014,Tipperary North,Number,3439.0
+144,Herds in County,2014,Tipperary South,Number,3412.0
+145,Herds in County,2014,Waterford,Number,2241.0
+146,Herds in County,2014,Westmeath,Number,3015.0
+147,Herds in County,2014,Wexford,Number,3039.0
+148,Herds in County,2014,Wicklow E,Number,1054.0
+149,Herds in County,2014,Wicklow W,Number,549.0
+150,Herds in County,2015,State,Number,115091.0
+151,Herds in County,2015,Carlow,Number,1330.0
+152,Herds in County,2015,Cavan,Number,4820.0
+153,Herds in County,2015,Clare,Number,6203.0
+154,Herds in County,2015,Cork North,Number,5799.0
+155,Herds in County,2015,Cork South,Number,6130.0
+156,Herds in County,2015,Donegal,Number,5597.0
+157,Herds in County,2015,Dublin,Number,386.0
+158,Herds in County,2015,Galway,Number,11411.0
+159,Herds in County,2015,Kerry,Number,6818.0
+160,Herds in County,2015,Kildare,Number,1927.0
+161,Herds in County,2015,Kilkenny,Number,3173.0
+162,Herds in County,2015,Laois,Number,2922.0
+163,Herds in County,2015,Leitrim,Number,3023.0
+164,Herds in County,2015,Limerick,Number,5507.0
+165,Herds in County,2015,Longford,Number,2414.0
+166,Herds in County,2015,Louth,Number,1228.0
+167,Herds in County,2015,Mayo,Number,9338.0
+168,Herds in County,2015,Meath,Number,3782.0
+169,Herds in County,2015,Monaghan,Number,4253.0
+170,Herds in County,2015,Offaly,Number,3124.0
+171,Herds in County,2015,Roscommon,Number,5485.0
+172,Herds in County,2015,Sligo,Number,3566.0
+173,Herds in County,2015,Tipperary North,Number,3442.0
+174,Herds in County,2015,Tipperary South,Number,3440.0
+175,Herds in County,2015,Waterford,Number,2250.0
+176,Herds in County,2015,Westmeath,Number,3037.0
+177,Herds in County,2015,Wexford,Number,3059.0
+178,Herds in County,2015,Wicklow E,Number,1071.0
+179,Herds in County,2015,Wicklow W,Number,556.0
+180,Herds in County,2016,State,Number,114705.0
+181,Herds in County,2016,Carlow,Number,1325.0
+182,Herds in County,2016,Cavan,Number,4875.0
+183,Herds in County,2016,Clare,Number,6164.0
+184,Herds in County,2016,Cork North,Number,5874.0
+185,Herds in County,2016,Cork South,Number,6190.0
+186,Herds in County,2016,Donegal,Number,5375.0
+187,Herds in County,2016,Dublin,Number,379.0
+188,Herds in County,2016,Galway,Number,11212.0
+189,Herds in County,2016,Kerry,Number,6893.0
+190,Herds in County,2016,Kildare,Number,1910.0
+191,Herds in County,2016,Kilkenny,Number,3120.0
+192,Herds in County,2016,Laois,Number,2880.0
+193,Herds in County,2016,Leitrim,Number,2979.0
+194,Herds in County,2016,Limerick,Number,5457.0
+195,Herds in County,2016,Longford,Number,2407.0
+196,Herds in County,2016,Louth,Number,1220.0
+197,Herds in County,2016,Mayo,Number,9193.0
+198,Herds in County,2016,Meath,Number,3721.0
+199,Herds in County,2016,Monaghan,Number,4298.0
+200,Herds in County,2016,Offaly,Number,3164.0
+201,Herds in County,2016,Roscommon,Number,5497.0
+202,Herds in County,2016,Sligo,Number,3547.0
+203,Herds in County,2016,Tipperary North,Number,3499.0
+204,Herds in County,2016,Tipperary South,Number,3493.0
+205,Herds in County,2016,Waterford,Number,2214.0
+206,Herds in County,2016,Westmeath,Number,3090.0
+207,Herds in County,2016,Wexford,Number,3092.0
+208,Herds in County,2016,Wicklow E,Number,1083.0
+209,Herds in County,2016,Wicklow W,Number,554.0
+210,Herds in County,2017,State,Number,113697.0
+211,Herds in County,2017,Carlow,Number,1315.0
+212,Herds in County,2017,Cavan,Number,4851.0
+213,Herds in County,2017,Clare,Number,6101.0
+214,Herds in County,2017,Cork North,Number,5822.0
+215,Herds in County,2017,Cork South,Number,6120.0
+216,Herds in County,2017,Donegal,Number,5349.0
+217,Herds in County,2017,Dublin,Number,387.0
+218,Herds in County,2017,Galway,Number,11072.0
+219,Herds in County,2017,Kerry,Number,6754.0
+220,Herds in County,2017,Kildare,Number,1892.0
+221,Herds in County,2017,Kilkenny,Number,3084.0
+222,Herds in County,2017,Laois,Number,2858.0
+223,Herds in County,2017,Leitrim,Number,2930.0
+224,Herds in County,2017,Limerick,Number,5435.0
+225,Herds in County,2017,Longford,Number,2379.0
+226,Herds in County,2017,Louth,Number,1195.0
+227,Herds in County,2017,Mayo,Number,9033.0
+228,Herds in County,2017,Meath,Number,3694.0
+229,Herds in County,2017,Monaghan,Number,4312.0
+230,Herds in County,2017,Offaly,Number,3172.0
+231,Herds in County,2017,Roscommon,Number,5459.0
+232,Herds in County,2017,Sligo,Number,3486.0
+233,Herds in County,2017,Tipperary North,Number,3505.0
+234,Herds in County,2017,Tipperary South,Number,3505.0
+235,Herds in County,2017,Waterford,Number,2188.0
+236,Herds in County,2017,Westmeath,Number,3119.0
+237,Herds in County,2017,Wexford,Number,3058.0
+238,Herds in County,2017,Wicklow E,Number,1066.0
+239,Herds in County,2017,Wicklow W,Number,556.0
+240,Herds in County,2018,State,Number,112105.0
+241,Herds in County,2018,Carlow,Number,1296.0
+242,Herds in County,2018,Cavan,Number,4860.0
+243,Herds in County,2018,Clare,Number,6036.0
+244,Herds in County,2018,Cork North,Number,5747.0
+245,Herds in County,2018,Cork South,Number,6023.0
+246,Herds in County,2018,Donegal,Number,5202.0
+247,Herds in County,2018,Dublin,Number,372.0
+248,Herds in County,2018,Galway,Number,10936.0
+249,Herds in County,2018,Kerry,Number,6642.0
+250,Herds in County,2018,Kildare,Number,1843.0
+251,Herds in County,2018,Kilkenny,Number,3044.0
+252,Herds in County,2018,Laois,Number,2811.0
+253,Herds in County,2018,Leitrim,Number,2890.0
+254,Herds in County,2018,Limerick,Number,5351.0
+255,Herds in County,2018,Longford,Number,2356.0
+256,Herds in County,2018,Louth,Number,1186.0
+257,Herds in County,2018,Mayo,Number,8852.0
+258,Herds in County,2018,Meath,Number,3687.0
+259,Herds in County,2018,Monaghan,Number,4263.0
+260,Herds in County,2018,Offaly,Number,3126.0
+261,Herds in County,2018,Roscommon,Number,5359.0
+262,Herds in County,2018,Sligo,Number,3429.0
+263,Herds in County,2018,Tipperary North,Number,3469.0
+264,Herds in County,2018,Tipperary South,Number,3457.0
+265,Herds in County,2018,Waterford,Number,2156.0
+266,Herds in County,2018,Westmeath,Number,3096.0
+267,Herds in County,2018,Wexford,Number,3021.0
+268,Herds in County,2018,Wicklow E,Number,1055.0
+269,Herds in County,2018,Wicklow W,Number,540.0
+270,Herds in County,2019,State,Number,111004.0
+271,Herds in County,2019,Carlow,Number,1292.0
+272,Herds in County,2019,Cavan,Number,4810.0
+273,Herds in County,2019,Clare,Number,5910.0
+274,Herds in County,2019,Cork North,Number,5702.0
+275,Herds in County,2019,Cork South,Number,5926.0
+276,Herds in County,2019,Donegal,Number,5249.0
+277,Herds in County,2019,Dublin,Number,346.0
+278,Herds in County,2019,Galway,Number,10824.0
+279,Herds in County,2019,Kerry,Number,6581.0
+280,Herds in County,2019,Kildare,Number,1742.0
+281,Herds in County,2019,Kilkenny,Number,3056.0
+282,Herds in County,2019,Laois,Number,2710.0
+283,Herds in County,2019,Leitrim,Number,2863.0
+284,Herds in County,2019,Limerick,Number,5204.0
+285,Herds in County,2019,Longford,Number,2337.0
+286,Herds in County,2019,Louth,Number,1199.0
+287,Herds in County,2019,Mayo,Number,8763.0
+288,Herds in County,2019,Meath,Number,3683.0
+289,Herds in County,2019,Monaghan,Number,4235.0
+290,Herds in County,2019,Offaly,Number,3077.0
+291,Herds in County,2019,Roscommon,Number,5416.0
+292,Herds in County,2019,Sligo,Number,3371.0
+293,Herds in County,2019,Tipperary North,Number,3439.0
+294,Herds in County,2019,Tipperary South,Number,3416.0
+295,Herds in County,2019,Waterford,Number,2169.0
+296,Herds in County,2019,Westmeath,Number,3063.0
+297,Herds in County,2019,Wexford,Number,3050.0
+298,Herds in County,2019,Wicklow E,Number,1058.0
+299,Herds in County,2019,Wicklow W,Number,513.0
+300,Herds in County,2020,State,Number,110216.0
+301,Herds in County,2020,Carlow,Number,1307.0
+302,Herds in County,2020,Cavan,Number,4771.0
+303,Herds in County,2020,Clare,Number,5923.0
+304,Herds in County,2020,Cork North,Number,5520.0
+305,Herds in County,2020,Cork South,Number,5806.0
+306,Herds in County,2020,Donegal,Number,5143.0
+307,Herds in County,2020,Dublin,Number,344.0
+308,Herds in County,2020,Galway,Number,10783.0
+309,Herds in County,2020,Kerry,Number,6471.0
+310,Herds in County,2020,Kildare,Number,1748.0
+311,Herds in County,2020,Kilkenny,Number,3071.0
+312,Herds in County,2020,Laois,Number,2695.0
+313,Herds in County,2020,Leitrim,Number,2860.0
+314,Herds in County,2020,Limerick,Number,5235.0
+315,Herds in County,2020,Longford,Number,2357.0
+316,Herds in County,2020,Louth,Number,1161.0
+317,Herds in County,2020,Mayo,Number,8698.0
+318,Herds in County,2020,Meath,Number,3616.0
+319,Herds in County,2020,Monaghan,Number,4221.0
+320,Herds in County,2020,Offaly,Number,3024.0
+321,Herds in County,2020,Roscommon,Number,5377.0
+322,Herds in County,2020,Sligo,Number,3378.0
+323,Herds in County,2020,Tipperary North,Number,3405.0
+324,Herds in County,2020,Tipperary South,Number,3395.0
+325,Herds in County,2020,Waterford,Number,2189.0
+326,Herds in County,2020,Westmeath,Number,3047.0
+327,Herds in County,2020,Wexford,Number,3088.0
+328,Herds in County,2020,Wicklow E,Number,1070.0
+329,Herds in County,2020,Wicklow W,Number,513.0
+330,Herds Tested,2010,State,Number,114011.0
+331,Herds Tested,2010,Carlow,Number,1295.0
+332,Herds Tested,2010,Cavan,Number,4832.0
+333,Herds Tested,2010,Clare,Number,6134.0
+334,Herds Tested,2010,Cork North,Number,5849.0
+335,Herds Tested,2010,Cork South,Number,6107.0
+336,Herds Tested,2010,Donegal,Number,5449.0
+337,Herds Tested,2010,Dublin,Number,391.0
+338,Herds Tested,2010,Galway,Number,11639.0
+339,Herds Tested,2010,Kerry,Number,6790.0
+340,Herds Tested,2010,Kildare,Number,1798.0
+341,Herds Tested,2010,Kilkenny,Number,2989.0
+342,Herds Tested,2010,Laois,Number,2821.0
+343,Herds Tested,2010,Leitrim,Number,3061.0
+344,Herds Tested,2010,Limerick,Number,5416.0
+345,Herds Tested,2010,Longford,Number,2394.0
+346,Herds Tested,2010,Louth,Number,1131.0
+347,Herds Tested,2010,Mayo,Number,9716.0
+348,Herds Tested,2010,Meath,Number,3512.0
+349,Herds Tested,2010,Monaghan,Number,4189.0
+350,Herds Tested,2010,Offaly,Number,3013.0
+351,Herds Tested,2010,Roscommon,Number,5463.0
+352,Herds Tested,2010,Sligo,Number,3635.0
+353,Herds Tested,2010,Tipperary North,Number,3355.0
+354,Herds Tested,2010,Tipperary South,Number,3307.0
+355,Herds Tested,2010,Waterford,Number,2198.0
+356,Herds Tested,2010,Westmeath,Number,2963.0
+357,Herds Tested,2010,Wexford,Number,2981.0
+358,Herds Tested,2010,Wicklow E,Number,1043.0
+359,Herds Tested,2010,Wicklow W,Number,540.0
+360,Herds Tested,2011,State,Number,114333.0
+361,Herds Tested,2011,Carlow,Number,1326.0
+362,Herds Tested,2011,Cavan,Number,4803.0
+363,Herds Tested,2011,Clare,Number,6105.0
+364,Herds Tested,2011,Cork North,Number,5689.0
+365,Herds Tested,2011,Cork South,Number,6119.0
+366,Herds Tested,2011,Donegal,Number,5467.0
+367,Herds Tested,2011,Dublin,Number,387.0
+368,Herds Tested,2011,Galway,Number,11509.0
+369,Herds Tested,2011,Kerry,Number,6881.0
+370,Herds Tested,2011,Kildare,Number,1900.0
+371,Herds Tested,2011,Kilkenny,Number,3075.0
+372,Herds Tested,2011,Laois,Number,2900.0
+373,Herds Tested,2011,Leitrim,Number,3058.0
+374,Herds Tested,2011,Limerick,Number,5369.0
+375,Herds Tested,2011,Longford,Number,2382.0
+376,Herds Tested,2011,Louth,Number,1155.0
+377,Herds Tested,2011,Mayo,Number,9673.0
+378,Herds Tested,2011,Meath,Number,3567.0
+379,Herds Tested,2011,Monaghan,Number,4191.0
+380,Herds Tested,2011,Offaly,Number,3078.0
+381,Herds Tested,2011,Roscommon,Number,5443.0
+382,Herds Tested,2011,Sligo,Number,3613.0
+383,Herds Tested,2011,Tipperary North,Number,3419.0
+384,Herds Tested,2011,Tipperary South,Number,3373.0
+385,Herds Tested,2011,Waterford,Number,2197.0
+386,Herds Tested,2011,Westmeath,Number,3053.0
+387,Herds Tested,2011,Wexford,Number,3008.0
+388,Herds Tested,2011,Wicklow E,Number,1027.0
+389,Herds Tested,2011,Wicklow W,Number,566.0
+390,Herds Tested,2012,State,Number,113887.0
+391,Herds Tested,2012,Carlow,Number,1296.0
+392,Herds Tested,2012,Cavan,Number,4814.0
+393,Herds Tested,2012,Clare,Number,6128.0
+394,Herds Tested,2012,Cork North,Number,5692.0
+395,Herds Tested,2012,Cork South,Number,6112.0
+396,Herds Tested,2012,Donegal,Number,5439.0
+397,Herds Tested,2012,Dublin,Number,377.0
+398,Herds Tested,2012,Galway,Number,11515.0
+399,Herds Tested,2012,Kerry,Number,6758.0
+400,Herds Tested,2012,Kildare,Number,1852.0
+401,Herds Tested,2012,Kilkenny,Number,3067.0
+402,Herds Tested,2012,Laois,Number,2849.0
+403,Herds Tested,2012,Leitrim,Number,3042.0
+404,Herds Tested,2012,Limerick,Number,5394.0
+405,Herds Tested,2012,Longford,Number,2419.0
+406,Herds Tested,2012,Louth,Number,1148.0
+407,Herds Tested,2012,Mayo,Number,9560.0
+408,Herds Tested,2012,Meath,Number,3570.0
+409,Herds Tested,2012,Monaghan,Number,4170.0
+410,Herds Tested,2012,Offaly,Number,3103.0
+411,Herds Tested,2012,Roscommon,Number,5424.0
+412,Herds Tested,2012,Sligo,Number,3596.0
+413,Herds Tested,2012,Tipperary North,Number,3361.0
+414,Herds Tested,2012,Tipperary South,Number,3347.0
+415,Herds Tested,2012,Waterford,Number,2193.0
+416,Herds Tested,2012,Westmeath,Number,3054.0
+417,Herds Tested,2012,Wexford,Number,2994.0
+418,Herds Tested,2012,Wicklow E,Number,1053.0
+419,Herds Tested,2012,Wicklow W,Number,560.0
+420,Herds Tested,2013,State,Number,114051.0
+421,Herds Tested,2013,Carlow,Number,1302.0
+422,Herds Tested,2013,Cavan,Number,4804.0
+423,Herds Tested,2013,Clare,Number,6187.0
+424,Herds Tested,2013,Cork North,Number,5712.0
+425,Herds Tested,2013,Cork South,Number,6076.0
+426,Herds Tested,2013,Donegal,Number,5411.0
+427,Herds Tested,2013,Dublin,Number,383.0
+428,Herds Tested,2013,Galway,Number,11528.0
+429,Herds Tested,2013,Kerry,Number,6718.0
+430,Herds Tested,2013,Kildare,Number,1888.0
+431,Herds Tested,2013,Kilkenny,Number,3143.0
+432,Herds Tested,2013,Laois,Number,2847.0
+433,Herds Tested,2013,Leitrim,Number,3017.0
+434,Herds Tested,2013,Limerick,Number,5476.0
+435,Herds Tested,2013,Longford,Number,2366.0
+436,Herds Tested,2013,Louth,Number,1153.0
+437,Herds Tested,2013,Mayo,Number,9584.0
+438,Herds Tested,2013,Meath,Number,3645.0
+439,Herds Tested,2013,Monaghan,Number,4224.0
+440,Herds Tested,2013,Offaly,Number,3054.0
+441,Herds Tested,2013,Roscommon,Number,5410.0
+442,Herds Tested,2013,Sligo,Number,3572.0
+443,Herds Tested,2013,Tipperary North,Number,3376.0
+444,Herds Tested,2013,Tipperary South,Number,3360.0
+445,Herds Tested,2013,Waterford,Number,2237.0
+446,Herds Tested,2013,Westmeath,Number,2978.0
+447,Herds Tested,2013,Wexford,Number,2998.0
+448,Herds Tested,2013,Wicklow E,Number,1039.0
+449,Herds Tested,2013,Wicklow W,Number,563.0
+450,Herds Tested,2014,State,Number,112937.0
+451,Herds Tested,2014,Carlow,Number,1307.0
+452,Herds Tested,2014,Cavan,Number,4761.0
+453,Herds Tested,2014,Clare,Number,6138.0
+454,Herds Tested,2014,Cork North,Number,5717.0
+455,Herds Tested,2014,Cork South,Number,6019.0
+456,Herds Tested,2014,Donegal,Number,5339.0
+457,Herds Tested,2014,Dublin,Number,384.0
+458,Herds Tested,2014,Galway,Number,11330.0
+459,Herds Tested,2014,Kerry,Number,6764.0
+460,Herds Tested,2014,Kildare,Number,1890.0
+461,Herds Tested,2014,Kilkenny,Number,3144.0
+462,Herds Tested,2014,Laois,Number,2848.0
+463,Herds Tested,2014,Leitrim,Number,2951.0
+464,Herds Tested,2014,Limerick,Number,5431.0
+465,Herds Tested,2014,Longford,Number,2360.0
+466,Herds Tested,2014,Louth,Number,1153.0
+467,Herds Tested,2014,Mayo,Number,9325.0
+468,Herds Tested,2014,Meath,Number,3538.0
+469,Herds Tested,2014,Monaghan,Number,4166.0
+470,Herds Tested,2014,Offaly,Number,3042.0
+471,Herds Tested,2014,Roscommon,Number,5357.0
+472,Herds Tested,2014,Sligo,Number,3530.0
+473,Herds Tested,2014,Tipperary North,Number,3367.0
+474,Herds Tested,2014,Tipperary South,Number,3333.0
+475,Herds Tested,2014,Waterford,Number,2220.0
+476,Herds Tested,2014,Westmeath,Number,2956.0
+477,Herds Tested,2014,Wexford,Number,2993.0
+478,Herds Tested,2014,Wicklow E,Number,1031.0
+479,Herds Tested,2014,Wicklow W,Number,543.0
+480,Herds Tested,2015,State,Number,113331.0
+481,Herds Tested,2015,Carlow,Number,1298.0
+482,Herds Tested,2015,Cavan,Number,4764.0
+483,Herds Tested,2015,Clare,Number,6169.0
+484,Herds Tested,2015,Cork North,Number,5727.0
+485,Herds Tested,2015,Cork South,Number,6027.0
+486,Herds Tested,2015,Donegal,Number,5351.0
+487,Herds Tested,2015,Dublin,Number,378.0
+488,Herds Tested,2015,Galway,Number,11252.0
+489,Herds Tested,2015,Kerry,Number,6787.0
+490,Herds Tested,2015,Kildare,Number,1901.0
+491,Herds Tested,2015,Kilkenny,Number,3144.0
+492,Herds Tested,2015,Laois,Number,2904.0
+493,Herds Tested,2015,Leitrim,Number,2999.0
+494,Herds Tested,2015,Limerick,Number,5460.0
+495,Herds Tested,2015,Longford,Number,2388.0
+496,Herds Tested,2015,Louth,Number,1190.0
+497,Herds Tested,2015,Mayo,Number,9246.0
+498,Herds Tested,2015,Meath,Number,3666.0
+499,Herds Tested,2015,Monaghan,Number,4162.0
+500,Herds Tested,2015,Offaly,Number,3057.0
+501,Herds Tested,2015,Roscommon,Number,5387.0
+502,Herds Tested,2015,Sligo,Number,3537.0
+503,Herds Tested,2015,Tipperary North,Number,3365.0
+504,Herds Tested,2015,Tipperary South,Number,3356.0
+505,Herds Tested,2015,Waterford,Number,2241.0
+506,Herds Tested,2015,Westmeath,Number,2972.0
+507,Herds Tested,2015,Wexford,Number,3005.0
+508,Herds Tested,2015,Wicklow E,Number,1047.0
+509,Herds Tested,2015,Wicklow W,Number,551.0
+510,Herds Tested,2016,State,Number,112595.0
+511,Herds Tested,2016,Carlow,Number,1311.0
+512,Herds Tested,2016,Cavan,Number,4795.0
+513,Herds Tested,2016,Clare,Number,6124.0
+514,Herds Tested,2016,Cork North,Number,5643.0
+515,Herds Tested,2016,Cork South,Number,5947.0
+516,Herds Tested,2016,Donegal,Number,5300.0
+517,Herds Tested,2016,Dublin,Number,369.0
+518,Herds Tested,2016,Galway,Number,11095.0
+519,Herds Tested,2016,Kerry,Number,6608.0
+520,Herds Tested,2016,Kildare,Number,1883.0
+521,Herds Tested,2016,Kilkenny,Number,3093.0
+522,Herds Tested,2016,Laois,Number,2859.0
+523,Herds Tested,2016,Leitrim,Number,2942.0
+524,Herds Tested,2016,Limerick,Number,5395.0
+525,Herds Tested,2016,Longford,Number,2387.0
+526,Herds Tested,2016,Louth,Number,1179.0
+527,Herds Tested,2016,Mayo,Number,9132.0
+528,Herds Tested,2016,Meath,Number,3589.0
+529,Herds Tested,2016,Monaghan,Number,4187.0
+530,Herds Tested,2016,Offaly,Number,3109.0
+531,Herds Tested,2016,Roscommon,Number,5417.0
+532,Herds Tested,2016,Sligo,Number,3511.0
+533,Herds Tested,2016,Tipperary North,Number,3416.0
+534,Herds Tested,2016,Tipperary South,Number,3413.0
+535,Herds Tested,2016,Waterford,Number,2192.0
+536,Herds Tested,2016,Westmeath,Number,3013.0
+537,Herds Tested,2016,Wexford,Number,3061.0
+538,Herds Tested,2016,Wicklow E,Number,1074.0
+539,Herds Tested,2016,Wicklow W,Number,551.0
+540,Herds Tested,2017,State,Number,111901.0
+541,Herds Tested,2017,Carlow,Number,1297.0
+542,Herds Tested,2017,Cavan,Number,4757.0
+543,Herds Tested,2017,Clare,Number,6059.0
+544,Herds Tested,2017,Cork North,Number,5720.0
+545,Herds Tested,2017,Cork South,Number,6007.0
+546,Herds Tested,2017,Donegal,Number,5207.0
+547,Herds Tested,2017,Dublin,Number,377.0
+548,Herds Tested,2017,Galway,Number,10977.0
+549,Herds Tested,2017,Kerry,Number,6661.0
+550,Herds Tested,2017,Kildare,Number,1866.0
+551,Herds Tested,2017,Kilkenny,Number,3051.0
+552,Herds Tested,2017,Laois,Number,2834.0
+553,Herds Tested,2017,Leitrim,Number,2895.0
+554,Herds Tested,2017,Limerick,Number,5358.0
+555,Herds Tested,2017,Longford,Number,2358.0
+556,Herds Tested,2017,Louth,Number,1148.0
+557,Herds Tested,2017,Mayo,Number,8936.0
+558,Herds Tested,2017,Meath,Number,3572.0
+559,Herds Tested,2017,Monaghan,Number,4194.0
+560,Herds Tested,2017,Offaly,Number,3111.0
+561,Herds Tested,2017,Roscommon,Number,5390.0
+562,Herds Tested,2017,Sligo,Number,3452.0
+563,Herds Tested,2017,Tipperary North,Number,3425.0
+564,Herds Tested,2017,Tipperary South,Number,3395.0
+565,Herds Tested,2017,Waterford,Number,2169.0
+566,Herds Tested,2017,Westmeath,Number,3058.0
+567,Herds Tested,2017,Wexford,Number,3020.0
+568,Herds Tested,2017,Wicklow E,Number,1055.0
+569,Herds Tested,2017,Wicklow W,Number,552.0
+570,Herds Tested,2018,State,Number,110454.0
+571,Herds Tested,2018,Carlow,Number,1273.0
+572,Herds Tested,2018,Cavan,Number,4799.0
+573,Herds Tested,2018,Clare,Number,5969.0
+574,Herds Tested,2018,Cork North,Number,5649.0
+575,Herds Tested,2018,Cork South,Number,5930.0
+576,Herds Tested,2018,Donegal,Number,5126.0
+577,Herds Tested,2018,Dublin,Number,357.0
+578,Herds Tested,2018,Galway,Number,10822.0
+579,Herds Tested,2018,Kerry,Number,6570.0
+580,Herds Tested,2018,Kildare,Number,1791.0
+581,Herds Tested,2018,Kilkenny,Number,3009.0
+582,Herds Tested,2018,Laois,Number,2779.0
+583,Herds Tested,2018,Leitrim,Number,2868.0
+584,Herds Tested,2018,Limerick,Number,5261.0
+585,Herds Tested,2018,Longford,Number,2333.0
+586,Herds Tested,2018,Louth,Number,1147.0
+587,Herds Tested,2018,Mayo,Number,8771.0
+588,Herds Tested,2018,Meath,Number,3581.0
+589,Herds Tested,2018,Monaghan,Number,4164.0
+590,Herds Tested,2018,Offaly,Number,3081.0
+591,Herds Tested,2018,Roscommon,Number,5294.0
+592,Herds Tested,2018,Sligo,Number,3400.0
+593,Herds Tested,2018,Tipperary North,Number,3400.0
+594,Herds Tested,2018,Tipperary South,Number,3362.0
+595,Herds Tested,2018,Waterford,Number,2124.0
+596,Herds Tested,2018,Westmeath,Number,3047.0
+597,Herds Tested,2018,Wexford,Number,2982.0
+598,Herds Tested,2018,Wicklow E,Number,1030.0
+599,Herds Tested,2018,Wicklow W,Number,535.0
+600,Herds Tested,2019,State,Number,109175.0
+601,Herds Tested,2019,Carlow,Number,1270.0
+602,Herds Tested,2019,Cavan,Number,4744.0
+603,Herds Tested,2019,Clare,Number,5845.0
+604,Herds Tested,2019,Cork North,Number,5588.0
+605,Herds Tested,2019,Cork South,Number,5798.0
+606,Herds Tested,2019,Donegal,Number,5043.0
+607,Herds Tested,2019,Dublin,Number,337.0
+608,Herds Tested,2019,Galway,Number,10698.0
+609,Herds Tested,2019,Kerry,Number,6494.0
+610,Herds Tested,2019,Kildare,Number,1697.0
+611,Herds Tested,2019,Kilkenny,Number,3027.0
+612,Herds Tested,2019,Laois,Number,2681.0
+613,Herds Tested,2019,Leitrim,Number,2839.0
+614,Herds Tested,2019,Limerick,Number,5106.0
+615,Herds Tested,2019,Longford,Number,2309.0
+616,Herds Tested,2019,Louth,Number,1159.0
+617,Herds Tested,2019,Mayo,Number,8656.0
+618,Herds Tested,2019,Meath,Number,3579.0
+619,Herds Tested,2019,Monaghan,Number,4162.0
+620,Herds Tested,2019,Offaly,Number,3032.0
+621,Herds Tested,2019,Roscommon,Number,5352.0
+622,Herds Tested,2019,Sligo,Number,3335.0
+623,Herds Tested,2019,Tipperary North,Number,3371.0
+624,Herds Tested,2019,Tipperary South,Number,3349.0
+625,Herds Tested,2019,Waterford,Number,2135.0
+626,Herds Tested,2019,Westmeath,Number,3013.0
+627,Herds Tested,2019,Wexford,Number,3011.0
+628,Herds Tested,2019,Wicklow E,Number,1042.0
+629,Herds Tested,2019,Wicklow W,Number,503.0
+630,Herds Tested,2020,State,Number,108407.0
+631,Herds Tested,2020,Carlow,Number,1283.0
+632,Herds Tested,2020,Cavan,Number,4711.0
+633,Herds Tested,2020,Clare,Number,5830.0
+634,Herds Tested,2020,Cork North,Number,5424.0
+635,Herds Tested,2020,Cork South,Number,5709.0
+636,Herds Tested,2020,Donegal,Number,5041.0
+637,Herds Tested,2020,Dublin,Number,325.0
+638,Herds Tested,2020,Galway,Number,10649.0
+639,Herds Tested,2020,Kerry,Number,6400.0
+640,Herds Tested,2020,Kildare,Number,1696.0
+641,Herds Tested,2020,Kilkenny,Number,3016.0
+642,Herds Tested,2020,Laois,Number,2646.0
+643,Herds Tested,2020,Leitrim,Number,2834.0
+644,Herds Tested,2020,Limerick,Number,5123.0
+645,Herds Tested,2020,Longford,Number,2313.0
+646,Herds Tested,2020,Louth,Number,1113.0
+647,Herds Tested,2020,Mayo,Number,8611.0
+648,Herds Tested,2020,Meath,Number,3528.0
+649,Herds Tested,2020,Monaghan,Number,4124.0
+650,Herds Tested,2020,Offaly,Number,2978.0
+651,Herds Tested,2020,Roscommon,Number,5339.0
+652,Herds Tested,2020,Sligo,Number,3346.0
+653,Herds Tested,2020,Tipperary North,Number,3330.0
+654,Herds Tested,2020,Tipperary South,Number,3324.0
+655,Herds Tested,2020,Waterford,Number,2141.0
+656,Herds Tested,2020,Westmeath,Number,2998.0
+657,Herds Tested,2020,Wexford,Number,3016.0
+658,Herds Tested,2020,Wicklow E,Number,1054.0
+659,Herds Tested,2020,Wicklow W,Number,505.0
+660,Herds Restricted since 1st of January,2010,State,Number,5304.0
+661,Herds Restricted since 1st of January,2010,Carlow,Number,52.0
+662,Herds Restricted since 1st of January,2010,Cavan,Number,257.0
+663,Herds Restricted since 1st of January,2010,Clare,Number,350.0
+664,Herds Restricted since 1st of January,2010,Cork North,Number,259.0
+665,Herds Restricted since 1st of January,2010,Cork South,Number,385.0
+666,Herds Restricted since 1st of January,2010,Donegal,Number,182.0
+667,Herds Restricted since 1st of January,2010,Dublin,Number,28.0
+668,Herds Restricted since 1st of January,2010,Galway,Number,463.0
+669,Herds Restricted since 1st of January,2010,Kerry,Number,151.0
+670,Herds Restricted since 1st of January,2010,Kildare,Number,94.0
+671,Herds Restricted since 1st of January,2010,Kilkenny,Number,185.0
+672,Herds Restricted since 1st of January,2010,Laois,Number,154.0
+673,Herds Restricted since 1st of January,2010,Leitrim,Number,84.0
+674,Herds Restricted since 1st of January,2010,Limerick,Number,169.0
+675,Herds Restricted since 1st of January,2010,Longford,Number,82.0
+676,Herds Restricted since 1st of January,2010,Louth,Number,68.0
+677,Herds Restricted since 1st of January,2010,Mayo,Number,189.0
+678,Herds Restricted since 1st of January,2010,Meath,Number,281.0
+679,Herds Restricted since 1st of January,2010,Monaghan,Number,149.0
+680,Herds Restricted since 1st of January,2010,Offaly,Number,195.0
+681,Herds Restricted since 1st of January,2010,Roscommon,Number,256.0
+682,Herds Restricted since 1st of January,2010,Sligo,Number,113.0
+683,Herds Restricted since 1st of January,2010,Tipperary North,Number,232.0
+684,Herds Restricted since 1st of January,2010,Tipperary South,Number,173.0
+685,Herds Restricted since 1st of January,2010,Waterford,Number,122.0
+686,Herds Restricted since 1st of January,2010,Westmeath,Number,200.0
+687,Herds Restricted since 1st of January,2010,Wexford,Number,241.0
+688,Herds Restricted since 1st of January,2010,Wicklow E,Number,164.0
+689,Herds Restricted since 1st of January,2010,Wicklow W,Number,26.0
+690,Herds Restricted since 1st of January,2011,State,Number,4780.0
+691,Herds Restricted since 1st of January,2011,Carlow,Number,66.0
+692,Herds Restricted since 1st of January,2011,Cavan,Number,190.0
+693,Herds Restricted since 1st of January,2011,Clare,Number,286.0
+694,Herds Restricted since 1st of January,2011,Cork North,Number,310.0
+695,Herds Restricted since 1st of January,2011,Cork South,Number,355.0
+696,Herds Restricted since 1st of January,2011,Donegal,Number,185.0
+697,Herds Restricted since 1st of January,2011,Dublin,Number,21.0
+698,Herds Restricted since 1st of January,2011,Galway,Number,384.0
+699,Herds Restricted since 1st of January,2011,Kerry,Number,184.0
+700,Herds Restricted since 1st of January,2011,Kildare,Number,71.0
+701,Herds Restricted since 1st of January,2011,Kilkenny,Number,206.0
+702,Herds Restricted since 1st of January,2011,Laois,Number,130.0
+703,Herds Restricted since 1st of January,2011,Leitrim,Number,72.0
+704,Herds Restricted since 1st of January,2011,Limerick,Number,152.0
+705,Herds Restricted since 1st of January,2011,Longford,Number,102.0
+706,Herds Restricted since 1st of January,2011,Louth,Number,50.0
+707,Herds Restricted since 1st of January,2011,Mayo,Number,182.0
+708,Herds Restricted since 1st of January,2011,Meath,Number,273.0
+709,Herds Restricted since 1st of January,2011,Monaghan,Number,113.0
+710,Herds Restricted since 1st of January,2011,Offaly,Number,144.0
+711,Herds Restricted since 1st of January,2011,Roscommon,Number,215.0
+712,Herds Restricted since 1st of January,2011,Sligo,Number,93.0
+713,Herds Restricted since 1st of January,2011,Tipperary North,Number,148.0
+714,Herds Restricted since 1st of January,2011,Tipperary South,Number,133.0
+715,Herds Restricted since 1st of January,2011,Waterford,Number,113.0
+716,Herds Restricted since 1st of January,2011,Westmeath,Number,160.0
+717,Herds Restricted since 1st of January,2011,Wexford,Number,285.0
+718,Herds Restricted since 1st of January,2011,Wicklow E,Number,114.0
+719,Herds Restricted since 1st of January,2011,Wicklow W,Number,43.0
+720,Herds Restricted since 1st of January,2012,State,Number,4856.0
+721,Herds Restricted since 1st of January,2012,Carlow,Number,61.0
+722,Herds Restricted since 1st of January,2012,Cavan,Number,186.0
+723,Herds Restricted since 1st of January,2012,Clare,Number,310.0
+724,Herds Restricted since 1st of January,2012,Cork North,Number,290.0
+725,Herds Restricted since 1st of January,2012,Cork South,Number,367.0
+726,Herds Restricted since 1st of January,2012,Donegal,Number,233.0
+727,Herds Restricted since 1st of January,2012,Dublin,Number,25.0
+728,Herds Restricted since 1st of January,2012,Galway,Number,291.0
+729,Herds Restricted since 1st of January,2012,Kerry,Number,180.0
+730,Herds Restricted since 1st of January,2012,Kildare,Number,78.0
+731,Herds Restricted since 1st of January,2012,Kilkenny,Number,203.0
+732,Herds Restricted since 1st of January,2012,Laois,Number,140.0
+733,Herds Restricted since 1st of January,2012,Leitrim,Number,69.0
+734,Herds Restricted since 1st of January,2012,Limerick,Number,219.0
+735,Herds Restricted since 1st of January,2012,Longford,Number,84.0
+736,Herds Restricted since 1st of January,2012,Louth,Number,54.0
+737,Herds Restricted since 1st of January,2012,Mayo,Number,192.0
+738,Herds Restricted since 1st of January,2012,Meath,Number,264.0
+739,Herds Restricted since 1st of January,2012,Monaghan,Number,114.0
+740,Herds Restricted since 1st of January,2012,Offaly,Number,140.0
+741,Herds Restricted since 1st of January,2012,Roscommon,Number,252.0
+742,Herds Restricted since 1st of January,2012,Sligo,Number,126.0
+743,Herds Restricted since 1st of January,2012,Tipperary North,Number,185.0
+744,Herds Restricted since 1st of January,2012,Tipperary South,Number,117.0
+745,Herds Restricted since 1st of January,2012,Waterford,Number,103.0
+746,Herds Restricted since 1st of January,2012,Westmeath,Number,173.0
+747,Herds Restricted since 1st of January,2012,Wexford,Number,234.0
+748,Herds Restricted since 1st of January,2012,Wicklow E,Number,112.0
+749,Herds Restricted since 1st of January,2012,Wicklow W,Number,54.0
+750,Herds Restricted since 1st of January,2013,State,Number,4430.0
+751,Herds Restricted since 1st of January,2013,Carlow,Number,33.0
+752,Herds Restricted since 1st of January,2013,Cavan,Number,212.0
+753,Herds Restricted since 1st of January,2013,Clare,Number,299.0
+754,Herds Restricted since 1st of January,2013,Cork North,Number,257.0
+755,Herds Restricted since 1st of January,2013,Cork South,Number,306.0
+756,Herds Restricted since 1st of January,2013,Donegal,Number,214.0
+757,Herds Restricted since 1st of January,2013,Dublin,Number,31.0
+758,Herds Restricted since 1st of January,2013,Galway,Number,312.0
+759,Herds Restricted since 1st of January,2013,Kerry,Number,188.0
+760,Herds Restricted since 1st of January,2013,Kildare,Number,70.0
+761,Herds Restricted since 1st of January,2013,Kilkenny,Number,168.0
+762,Herds Restricted since 1st of January,2013,Laois,Number,96.0
+763,Herds Restricted since 1st of January,2013,Leitrim,Number,70.0
+764,Herds Restricted since 1st of January,2013,Limerick,Number,165.0
+765,Herds Restricted since 1st of January,2013,Longford,Number,63.0
+766,Herds Restricted since 1st of January,2013,Louth,Number,59.0
+767,Herds Restricted since 1st of January,2013,Mayo,Number,184.0
+768,Herds Restricted since 1st of January,2013,Meath,Number,222.0
+769,Herds Restricted since 1st of January,2013,Monaghan,Number,133.0
+770,Herds Restricted since 1st of January,2013,Offaly,Number,126.0
+771,Herds Restricted since 1st of January,2013,Roscommon,Number,239.0
+772,Herds Restricted since 1st of January,2013,Sligo,Number,104.0
+773,Herds Restricted since 1st of January,2013,Tipperary North,Number,172.0
+774,Herds Restricted since 1st of January,2013,Tipperary South,Number,98.0
+775,Herds Restricted since 1st of January,2013,Waterford,Number,79.0
+776,Herds Restricted since 1st of January,2013,Westmeath,Number,150.0
+777,Herds Restricted since 1st of January,2013,Wexford,Number,253.0
+778,Herds Restricted since 1st of January,2013,Wicklow E,Number,85.0
+779,Herds Restricted since 1st of January,2013,Wicklow W,Number,42.0
+780,Herds Restricted since 1st of January,2014,State,Number,4111.0
+781,Herds Restricted since 1st of January,2014,Carlow,Number,26.0
+782,Herds Restricted since 1st of January,2014,Cavan,Number,179.0
+783,Herds Restricted since 1st of January,2014,Clare,Number,299.0
+784,Herds Restricted since 1st of January,2014,Cork North,Number,264.0
+785,Herds Restricted since 1st of January,2014,Cork South,Number,255.0
+786,Herds Restricted since 1st of January,2014,Donegal,Number,152.0
+787,Herds Restricted since 1st of January,2014,Dublin,Number,28.0
+788,Herds Restricted since 1st of January,2014,Galway,Number,321.0
+789,Herds Restricted since 1st of January,2014,Kerry,Number,204.0
+790,Herds Restricted since 1st of January,2014,Kildare,Number,85.0
+791,Herds Restricted since 1st of January,2014,Kilkenny,Number,139.0
+792,Herds Restricted since 1st of January,2014,Laois,Number,92.0
+793,Herds Restricted since 1st of January,2014,Leitrim,Number,88.0
+794,Herds Restricted since 1st of January,2014,Limerick,Number,137.0
+795,Herds Restricted since 1st of January,2014,Longford,Number,50.0
+796,Herds Restricted since 1st of January,2014,Louth,Number,43.0
+797,Herds Restricted since 1st of January,2014,Mayo,Number,130.0
+798,Herds Restricted since 1st of January,2014,Meath,Number,194.0
+799,Herds Restricted since 1st of January,2014,Monaghan,Number,106.0
+800,Herds Restricted since 1st of January,2014,Offaly,Number,146.0
+801,Herds Restricted since 1st of January,2014,Roscommon,Number,231.0
+802,Herds Restricted since 1st of January,2014,Sligo,Number,109.0
+803,Herds Restricted since 1st of January,2014,Tipperary North,Number,145.0
+804,Herds Restricted since 1st of January,2014,Tipperary South,Number,107.0
+805,Herds Restricted since 1st of January,2014,Waterford,Number,61.0
+806,Herds Restricted since 1st of January,2014,Westmeath,Number,182.0
+807,Herds Restricted since 1st of January,2014,Wexford,Number,208.0
+808,Herds Restricted since 1st of January,2014,Wicklow E,Number,84.0
+809,Herds Restricted since 1st of January,2014,Wicklow W,Number,46.0
+810,Herds Restricted since 1st of January,2015,State,Number,3823.0
+811,Herds Restricted since 1st of January,2015,Carlow,Number,57.0
+812,Herds Restricted since 1st of January,2015,Cavan,Number,187.0
+813,Herds Restricted since 1st of January,2015,Clare,Number,253.0
+814,Herds Restricted since 1st of January,2015,Cork North,Number,206.0
+815,Herds Restricted since 1st of January,2015,Cork South,Number,231.0
+816,Herds Restricted since 1st of January,2015,Donegal,Number,106.0
+817,Herds Restricted since 1st of January,2015,Dublin,Number,27.0
+818,Herds Restricted since 1st of January,2015,Galway,Number,289.0
+819,Herds Restricted since 1st of January,2015,Kerry,Number,139.0
+820,Herds Restricted since 1st of January,2015,Kildare,Number,82.0
+821,Herds Restricted since 1st of January,2015,Kilkenny,Number,133.0
+822,Herds Restricted since 1st of January,2015,Laois,Number,126.0
+823,Herds Restricted since 1st of January,2015,Leitrim,Number,87.0
+824,Herds Restricted since 1st of January,2015,Limerick,Number,105.0
+825,Herds Restricted since 1st of January,2015,Longford,Number,61.0
+826,Herds Restricted since 1st of January,2015,Louth,Number,47.0
+827,Herds Restricted since 1st of January,2015,Mayo,Number,134.0
+828,Herds Restricted since 1st of January,2015,Meath,Number,197.0
+829,Herds Restricted since 1st of January,2015,Monaghan,Number,129.0
+830,Herds Restricted since 1st of January,2015,Offaly,Number,159.0
+831,Herds Restricted since 1st of January,2015,Roscommon,Number,163.0
+832,Herds Restricted since 1st of January,2015,Sligo,Number,124.0
+833,Herds Restricted since 1st of January,2015,Tipperary North,Number,138.0
+834,Herds Restricted since 1st of January,2015,Tipperary South,Number,105.0
+835,Herds Restricted since 1st of January,2015,Waterford,Number,60.0
+836,Herds Restricted since 1st of January,2015,Westmeath,Number,147.0
+837,Herds Restricted since 1st of January,2015,Wexford,Number,189.0
+838,Herds Restricted since 1st of January,2015,Wicklow E,Number,71.0
+839,Herds Restricted since 1st of January,2015,Wicklow W,Number,71.0
+840,Herds Restricted since 1st of January,2016,State,Number,3682.0
+841,Herds Restricted since 1st of January,2016,Carlow,Number,33.0
+842,Herds Restricted since 1st of January,2016,Cavan,Number,157.0
+843,Herds Restricted since 1st of January,2016,Clare,Number,235.0
+844,Herds Restricted since 1st of January,2016,Cork North,Number,246.0
+845,Herds Restricted since 1st of January,2016,Cork South,Number,212.0
+846,Herds Restricted since 1st of January,2016,Donegal,Number,117.0
+847,Herds Restricted since 1st of January,2016,Dublin,Number,26.0
+848,Herds Restricted since 1st of January,2016,Galway,Number,289.0
+849,Herds Restricted since 1st of January,2016,Kerry,Number,164.0
+850,Herds Restricted since 1st of January,2016,Kildare,Number,67.0
+851,Herds Restricted since 1st of January,2016,Kilkenny,Number,113.0
+852,Herds Restricted since 1st of January,2016,Laois,Number,120.0
+853,Herds Restricted since 1st of January,2016,Leitrim,Number,46.0
+854,Herds Restricted since 1st of January,2016,Limerick,Number,131.0
+855,Herds Restricted since 1st of January,2016,Longford,Number,56.0
+856,Herds Restricted since 1st of January,2016,Louth,Number,46.0
+857,Herds Restricted since 1st of January,2016,Mayo,Number,143.0
+858,Herds Restricted since 1st of January,2016,Meath,Number,201.0
+859,Herds Restricted since 1st of January,2016,Monaghan,Number,168.0
+860,Herds Restricted since 1st of January,2016,Offaly,Number,149.0
+861,Herds Restricted since 1st of January,2016,Roscommon,Number,140.0
+862,Herds Restricted since 1st of January,2016,Sligo,Number,92.0
+863,Herds Restricted since 1st of January,2016,Tipperary North,Number,148.0
+864,Herds Restricted since 1st of January,2016,Tipperary South,Number,102.0
+865,Herds Restricted since 1st of January,2016,Waterford,Number,59.0
+866,Herds Restricted since 1st of January,2016,Westmeath,Number,136.0
+867,Herds Restricted since 1st of January,2016,Wexford,Number,139.0
+868,Herds Restricted since 1st of January,2016,Wicklow E,Number,78.0
+869,Herds Restricted since 1st of January,2016,Wicklow W,Number,69.0
+870,Herds Restricted since 1st of January,2017,State,Number,3885.0
+871,Herds Restricted since 1st of January,2017,Carlow,Number,46.0
+872,Herds Restricted since 1st of January,2017,Cavan,Number,263.0
+873,Herds Restricted since 1st of January,2017,Clare,Number,204.0
+874,Herds Restricted since 1st of January,2017,Cork North,Number,270.0
+875,Herds Restricted since 1st of January,2017,Cork South,Number,246.0
+876,Herds Restricted since 1st of January,2017,Donegal,Number,104.0
+877,Herds Restricted since 1st of January,2017,Dublin,Number,21.0
+878,Herds Restricted since 1st of January,2017,Galway,Number,284.0
+879,Herds Restricted since 1st of January,2017,Kerry,Number,180.0
+880,Herds Restricted since 1st of January,2017,Kildare,Number,68.0
+881,Herds Restricted since 1st of January,2017,Kilkenny,Number,99.0
+882,Herds Restricted since 1st of January,2017,Laois,Number,93.0
+883,Herds Restricted since 1st of January,2017,Leitrim,Number,83.0
+884,Herds Restricted since 1st of January,2017,Limerick,Number,121.0
+885,Herds Restricted since 1st of January,2017,Longford,Number,52.0
+886,Herds Restricted since 1st of January,2017,Louth,Number,46.0
+887,Herds Restricted since 1st of January,2017,Mayo,Number,197.0
+888,Herds Restricted since 1st of January,2017,Meath,Number,206.0
+889,Herds Restricted since 1st of January,2017,Monaghan,Number,207.0
+890,Herds Restricted since 1st of January,2017,Offaly,Number,114.0
+891,Herds Restricted since 1st of January,2017,Roscommon,Number,146.0
+892,Herds Restricted since 1st of January,2017,Sligo,Number,105.0
+893,Herds Restricted since 1st of January,2017,Tipperary North,Number,146.0
+894,Herds Restricted since 1st of January,2017,Tipperary South,Number,111.0
+895,Herds Restricted since 1st of January,2017,Waterford,Number,36.0
+896,Herds Restricted since 1st of January,2017,Westmeath,Number,175.0
+897,Herds Restricted since 1st of January,2017,Wexford,Number,138.0
+898,Herds Restricted since 1st of January,2017,Wicklow E,Number,63.0
+899,Herds Restricted since 1st of January,2017,Wicklow W,Number,61.0
+900,Herds Restricted since 1st of January,2018,State,Number,3874.0
+901,Herds Restricted since 1st of January,2018,Carlow,Number,35.0
+902,Herds Restricted since 1st of January,2018,Cavan,Number,201.0
+903,Herds Restricted since 1st of January,2018,Clare,Number,225.0
+904,Herds Restricted since 1st of January,2018,Cork North,Number,320.0
+905,Herds Restricted since 1st of January,2018,Cork South,Number,161.0
+906,Herds Restricted since 1st of January,2018,Donegal,Number,87.0
+907,Herds Restricted since 1st of January,2018,Dublin,Number,30.0
+908,Herds Restricted since 1st of January,2018,Galway,Number,241.0
+909,Herds Restricted since 1st of January,2018,Kerry,Number,172.0
+910,Herds Restricted since 1st of January,2018,Kildare,Number,63.0
+911,Herds Restricted since 1st of January,2018,Kilkenny,Number,88.0
+912,Herds Restricted since 1st of January,2018,Laois,Number,100.0
+913,Herds Restricted since 1st of January,2018,Leitrim,Number,58.0
+914,Herds Restricted since 1st of January,2018,Limerick,Number,94.0
+915,Herds Restricted since 1st of January,2018,Longford,Number,46.0
+916,Herds Restricted since 1st of January,2018,Louth,Number,56.0
+917,Herds Restricted since 1st of January,2018,Mayo,Number,193.0
+918,Herds Restricted since 1st of January,2018,Meath,Number,193.0
+919,Herds Restricted since 1st of January,2018,Monaghan,Number,371.0
+920,Herds Restricted since 1st of January,2018,Offaly,Number,122.0
+921,Herds Restricted since 1st of January,2018,Roscommon,Number,144.0
+922,Herds Restricted since 1st of January,2018,Sligo,Number,134.0
+923,Herds Restricted since 1st of January,2018,Tipperary North,Number,165.0
+924,Herds Restricted since 1st of January,2018,Tipperary South,Number,96.0
+925,Herds Restricted since 1st of January,2018,Waterford,Number,59.0
+926,Herds Restricted since 1st of January,2018,Westmeath,Number,147.0
+927,Herds Restricted since 1st of January,2018,Wexford,Number,129.0
+928,Herds Restricted since 1st of January,2018,Wicklow E,Number,98.0
+929,Herds Restricted since 1st of January,2018,Wicklow W,Number,46.0
+930,Herds Restricted since 1st of January,2019,State,Number,4060.0
+931,Herds Restricted since 1st of January,2019,Carlow,Number,37.0
+932,Herds Restricted since 1st of January,2019,Cavan,Number,216.0
+933,Herds Restricted since 1st of January,2019,Clare,Number,273.0
+934,Herds Restricted since 1st of January,2019,Cork North,Number,342.0
+935,Herds Restricted since 1st of January,2019,Cork South,Number,181.0
+936,Herds Restricted since 1st of January,2019,Donegal,Number,117.0
+937,Herds Restricted since 1st of January,2019,Dublin,Number,18.0
+938,Herds Restricted since 1st of January,2019,Galway,Number,299.0
+939,Herds Restricted since 1st of January,2019,Kerry,Number,184.0
+940,Herds Restricted since 1st of January,2019,Kildare,Number,55.0
+941,Herds Restricted since 1st of January,2019,Kilkenny,Number,131.0
+942,Herds Restricted since 1st of January,2019,Laois,Number,114.0
+943,Herds Restricted since 1st of January,2019,Leitrim,Number,73.0
+944,Herds Restricted since 1st of January,2019,Limerick,Number,105.0
+945,Herds Restricted since 1st of January,2019,Longford,Number,51.0
+946,Herds Restricted since 1st of January,2019,Louth,Number,64.0
+947,Herds Restricted since 1st of January,2019,Mayo,Number,141.0
+948,Herds Restricted since 1st of January,2019,Meath,Number,199.0
+949,Herds Restricted since 1st of January,2019,Monaghan,Number,292.0
+950,Herds Restricted since 1st of January,2019,Offaly,Number,154.0
+951,Herds Restricted since 1st of January,2019,Roscommon,Number,163.0
+952,Herds Restricted since 1st of January,2019,Sligo,Number,97.0
+953,Herds Restricted since 1st of January,2019,Tipperary North,Number,142.0
+954,Herds Restricted since 1st of January,2019,Tipperary South,Number,95.0
+955,Herds Restricted since 1st of January,2019,Waterford,Number,51.0
+956,Herds Restricted since 1st of January,2019,Westmeath,Number,157.0
+957,Herds Restricted since 1st of January,2019,Wexford,Number,147.0
+958,Herds Restricted since 1st of January,2019,Wicklow E,Number,100.0
+959,Herds Restricted since 1st of January,2019,Wicklow W,Number,62.0
+960,Herds Restricted since 1st of January,2020,State,Number,4753.0
+961,Herds Restricted since 1st of January,2020,Carlow,Number,44.0
+962,Herds Restricted since 1st of January,2020,Cavan,Number,261.0
+963,Herds Restricted since 1st of January,2020,Clare,Number,264.0
+964,Herds Restricted since 1st of January,2020,Cork North,Number,435.0
+965,Herds Restricted since 1st of January,2020,Cork South,Number,228.0
+966,Herds Restricted since 1st of January,2020,Donegal,Number,87.0
+967,Herds Restricted since 1st of January,2020,Dublin,Number,26.0
+968,Herds Restricted since 1st of January,2020,Galway,Number,349.0
+969,Herds Restricted since 1st of January,2020,Kerry,Number,165.0
+970,Herds Restricted since 1st of January,2020,Kildare,Number,74.0
+971,Herds Restricted since 1st of January,2020,Kilkenny,Number,111.0
+972,Herds Restricted since 1st of January,2020,Laois,Number,146.0
+973,Herds Restricted since 1st of January,2020,Leitrim,Number,60.0
+974,Herds Restricted since 1st of January,2020,Limerick,Number,144.0
+975,Herds Restricted since 1st of January,2020,Longford,Number,77.0
+976,Herds Restricted since 1st of January,2020,Louth,Number,85.0
+977,Herds Restricted since 1st of January,2020,Mayo,Number,223.0
+978,Herds Restricted since 1st of January,2020,Meath,Number,270.0
+979,Herds Restricted since 1st of January,2020,Monaghan,Number,303.0
+980,Herds Restricted since 1st of January,2020,Offaly,Number,165.0
+981,Herds Restricted since 1st of January,2020,Roscommon,Number,156.0
+982,Herds Restricted since 1st of January,2020,Sligo,Number,133.0
+983,Herds Restricted since 1st of January,2020,Tipperary North,Number,222.0
+984,Herds Restricted since 1st of January,2020,Tipperary South,Number,160.0
+985,Herds Restricted since 1st of January,2020,Waterford,Number,56.0
+986,Herds Restricted since 1st of January,2020,Westmeath,Number,203.0
+987,Herds Restricted since 1st of January,2020,Wexford,Number,137.0
+988,Herds Restricted since 1st of January,2020,Wicklow E,Number,96.0
+989,Herds Restricted since 1st of January,2020,Wicklow W,Number,73.0
+990,Herd Incidence,2010,State,%,4.65
+991,Herd Incidence,2010,Carlow,%,4.02
+992,Herd Incidence,2010,Cavan,%,5.32
+993,Herd Incidence,2010,Clare,%,5.71
+994,Herd Incidence,2010,Cork North,%,4.43
+995,Herd Incidence,2010,Cork South,%,6.3
+996,Herd Incidence,2010,Donegal,%,3.34
+997,Herd Incidence,2010,Dublin,%,7.16
+998,Herd Incidence,2010,Galway,%,3.98
+999,Herd Incidence,2010,Kerry,%,2.22
+1000,Herd Incidence,2010,Kildare,%,5.23
+1001,Herd Incidence,2010,Kilkenny,%,6.19
+1002,Herd Incidence,2010,Laois,%,5.46
+1003,Herd Incidence,2010,Leitrim,%,2.74
+1004,Herd Incidence,2010,Limerick,%,3.12
+1005,Herd Incidence,2010,Longford,%,3.43
+1006,Herd Incidence,2010,Louth,%,6.01
+1007,Herd Incidence,2010,Mayo,%,1.95
+1008,Herd Incidence,2010,Meath,%,8.0
+1009,Herd Incidence,2010,Monaghan,%,3.56
+1010,Herd Incidence,2010,Offaly,%,6.47
+1011,Herd Incidence,2010,Roscommon,%,4.69
+1012,Herd Incidence,2010,Sligo,%,3.11
+1013,Herd Incidence,2010,Tipperary North,%,6.92
+1014,Herd Incidence,2010,Tipperary South,%,5.23
+1015,Herd Incidence,2010,Waterford,%,5.55
+1016,Herd Incidence,2010,Westmeath,%,6.75
+1017,Herd Incidence,2010,Wexford,%,8.08
+1018,Herd Incidence,2010,Wicklow E,%,15.72
+1019,Herd Incidence,2010,Wicklow W,%,4.81
+1020,Herd Incidence,2011,State,%,4.18
+1021,Herd Incidence,2011,Carlow,%,4.98
+1022,Herd Incidence,2011,Cavan,%,3.96
+1023,Herd Incidence,2011,Clare,%,4.68
+1024,Herd Incidence,2011,Cork North,%,5.45
+1025,Herd Incidence,2011,Cork South,%,5.8
+1026,Herd Incidence,2011,Donegal,%,3.38
+1027,Herd Incidence,2011,Dublin,%,5.43
+1028,Herd Incidence,2011,Galway,%,3.34
+1029,Herd Incidence,2011,Kerry,%,2.67
+1030,Herd Incidence,2011,Kildare,%,3.74
+1031,Herd Incidence,2011,Kilkenny,%,6.7
+1032,Herd Incidence,2011,Laois,%,4.48
+1033,Herd Incidence,2011,Leitrim,%,2.35
+1034,Herd Incidence,2011,Limerick,%,2.83
+1035,Herd Incidence,2011,Longford,%,4.28
+1036,Herd Incidence,2011,Louth,%,4.33
+1037,Herd Incidence,2011,Mayo,%,1.88
+1038,Herd Incidence,2011,Meath,%,7.65
+1039,Herd Incidence,2011,Monaghan,%,2.7
+1040,Herd Incidence,2011,Offaly,%,4.68
+1041,Herd Incidence,2011,Roscommon,%,3.95
+1042,Herd Incidence,2011,Sligo,%,2.57
+1043,Herd Incidence,2011,Tipperary North,%,4.33
+1044,Herd Incidence,2011,Tipperary South,%,3.94
+1045,Herd Incidence,2011,Waterford,%,5.14
+1046,Herd Incidence,2011,Westmeath,%,5.24
+1047,Herd Incidence,2011,Wexford,%,9.47
+1048,Herd Incidence,2011,Wicklow E,%,11.1
+1049,Herd Incidence,2011,Wicklow W,%,7.6
+1050,Herd Incidence,2012,State,%,4.26
+1051,Herd Incidence,2012,Carlow,%,4.71
+1052,Herd Incidence,2012,Cavan,%,3.86
+1053,Herd Incidence,2012,Clare,%,5.06
+1054,Herd Incidence,2012,Cork North,%,5.09
+1055,Herd Incidence,2012,Cork South,%,6.0
+1056,Herd Incidence,2012,Donegal,%,4.28
+1057,Herd Incidence,2012,Dublin,%,6.63
+1058,Herd Incidence,2012,Galway,%,2.53
+1059,Herd Incidence,2012,Kerry,%,2.66
+1060,Herd Incidence,2012,Kildare,%,4.21
+1061,Herd Incidence,2012,Kilkenny,%,6.62
+1062,Herd Incidence,2012,Laois,%,4.91
+1063,Herd Incidence,2012,Leitrim,%,2.27
+1064,Herd Incidence,2012,Limerick,%,4.06
+1065,Herd Incidence,2012,Longford,%,3.47
+1066,Herd Incidence,2012,Louth,%,4.7
+1067,Herd Incidence,2012,Mayo,%,2.01
+1068,Herd Incidence,2012,Meath,%,7.39
+1069,Herd Incidence,2012,Monaghan,%,2.73
+1070,Herd Incidence,2012,Offaly,%,4.51
+1071,Herd Incidence,2012,Roscommon,%,4.65
+1072,Herd Incidence,2012,Sligo,%,3.5
+1073,Herd Incidence,2012,Tipperary North,%,5.5
+1074,Herd Incidence,2012,Tipperary South,%,3.5
+1075,Herd Incidence,2012,Waterford,%,4.7
+1076,Herd Incidence,2012,Westmeath,%,5.66
+1077,Herd Incidence,2012,Wexford,%,7.82
+1078,Herd Incidence,2012,Wicklow E,%,10.64
+1079,Herd Incidence,2012,Wicklow W,%,9.64
+1080,Herd Incidence,2013,State,%,3.88
+1081,Herd Incidence,2013,Carlow,%,2.53
+1082,Herd Incidence,2013,Cavan,%,4.41
+1083,Herd Incidence,2013,Clare,%,4.83
+1084,Herd Incidence,2013,Cork North,%,4.5
+1085,Herd Incidence,2013,Cork South,%,5.04
+1086,Herd Incidence,2013,Donegal,%,3.95
+1087,Herd Incidence,2013,Dublin,%,8.09
+1088,Herd Incidence,2013,Galway,%,2.71
+1089,Herd Incidence,2013,Kerry,%,2.8
+1090,Herd Incidence,2013,Kildare,%,3.71
+1091,Herd Incidence,2013,Kilkenny,%,5.35
+1092,Herd Incidence,2013,Laois,%,3.37
+1093,Herd Incidence,2013,Leitrim,%,2.32
+1094,Herd Incidence,2013,Limerick,%,3.01
+1095,Herd Incidence,2013,Longford,%,2.66
+1096,Herd Incidence,2013,Louth,%,5.12
+1097,Herd Incidence,2013,Mayo,%,1.92
+1098,Herd Incidence,2013,Meath,%,6.09
+1099,Herd Incidence,2013,Monaghan,%,3.15
+1100,Herd Incidence,2013,Offaly,%,4.13
+1101,Herd Incidence,2013,Roscommon,%,4.42
+1102,Herd Incidence,2013,Sligo,%,2.91
+1103,Herd Incidence,2013,Tipperary North,%,5.09
+1104,Herd Incidence,2013,Tipperary South,%,2.92
+1105,Herd Incidence,2013,Waterford,%,3.53
+1106,Herd Incidence,2013,Westmeath,%,5.04
+1107,Herd Incidence,2013,Wexford,%,8.44
+1108,Herd Incidence,2013,Wicklow E,%,8.18
+1109,Herd Incidence,2013,Wicklow W,%,7.46
+1110,Herd Incidence,2014,State,%,3.64
+1111,Herd Incidence,2014,Carlow,%,1.99
+1112,Herd Incidence,2014,Cavan,%,3.76
+1113,Herd Incidence,2014,Clare,%,4.87
+1114,Herd Incidence,2014,Cork North,%,4.62
+1115,Herd Incidence,2014,Cork South,%,4.24
+1116,Herd Incidence,2014,Donegal,%,2.85
+1117,Herd Incidence,2014,Dublin,%,7.29
+1118,Herd Incidence,2014,Galway,%,2.83
+1119,Herd Incidence,2014,Kerry,%,3.02
+1120,Herd Incidence,2014,Kildare,%,4.5
+1121,Herd Incidence,2014,Kilkenny,%,4.42
+1122,Herd Incidence,2014,Laois,%,3.23
+1123,Herd Incidence,2014,Leitrim,%,2.98
+1124,Herd Incidence,2014,Limerick,%,2.52
+1125,Herd Incidence,2014,Longford,%,2.12
+1126,Herd Incidence,2014,Louth,%,3.73
+1127,Herd Incidence,2014,Mayo,%,1.39
+1128,Herd Incidence,2014,Meath,%,5.48
+1129,Herd Incidence,2014,Monaghan,%,2.54
+1130,Herd Incidence,2014,Offaly,%,4.8
+1131,Herd Incidence,2014,Roscommon,%,4.31
+1132,Herd Incidence,2014,Sligo,%,3.09
+1133,Herd Incidence,2014,Tipperary North,%,4.31
+1134,Herd Incidence,2014,Tipperary South,%,3.21
+1135,Herd Incidence,2014,Waterford,%,2.75
+1136,Herd Incidence,2014,Westmeath,%,6.16
+1137,Herd Incidence,2014,Wexford,%,6.95
+1138,Herd Incidence,2014,Wicklow E,%,8.15
+1139,Herd Incidence,2014,Wicklow W,%,8.47
+1140,Herd Incidence,2015,State,%,3.37
+1141,Herd Incidence,2015,Carlow,%,4.39
+1142,Herd Incidence,2015,Cavan,%,3.93
+1143,Herd Incidence,2015,Clare,%,4.1
+1144,Herd Incidence,2015,Cork North,%,3.6
+1145,Herd Incidence,2015,Cork South,%,3.83
+1146,Herd Incidence,2015,Donegal,%,1.98
+1147,Herd Incidence,2015,Dublin,%,7.14
+1148,Herd Incidence,2015,Galway,%,2.57
+1149,Herd Incidence,2015,Kerry,%,2.05
+1150,Herd Incidence,2015,Kildare,%,4.31
+1151,Herd Incidence,2015,Kilkenny,%,4.23
+1152,Herd Incidence,2015,Laois,%,4.34
+1153,Herd Incidence,2015,Leitrim,%,2.9
+1154,Herd Incidence,2015,Limerick,%,1.92
+1155,Herd Incidence,2015,Longford,%,2.55
+1156,Herd Incidence,2015,Louth,%,3.95
+1157,Herd Incidence,2015,Mayo,%,1.45
+1158,Herd Incidence,2015,Meath,%,5.37
+1159,Herd Incidence,2015,Monaghan,%,3.1
+1160,Herd Incidence,2015,Offaly,%,5.2
+1161,Herd Incidence,2015,Roscommon,%,3.03
+1162,Herd Incidence,2015,Sligo,%,3.51
+1163,Herd Incidence,2015,Tipperary North,%,4.1
+1164,Herd Incidence,2015,Tipperary South,%,3.13
+1165,Herd Incidence,2015,Waterford,%,2.68
+1166,Herd Incidence,2015,Westmeath,%,4.95
+1167,Herd Incidence,2015,Wexford,%,6.29
+1168,Herd Incidence,2015,Wicklow E,%,6.78
+1169,Herd Incidence,2015,Wicklow W,%,12.89
+1170,Herd Incidence,2016,State,%,3.27
+1171,Herd Incidence,2016,Carlow,%,2.52
+1172,Herd Incidence,2016,Cavan,%,3.27
+1173,Herd Incidence,2016,Clare,%,3.84
+1174,Herd Incidence,2016,Cork North,%,4.36
+1175,Herd Incidence,2016,Cork South,%,3.56
+1176,Herd Incidence,2016,Donegal,%,2.21
+1177,Herd Incidence,2016,Dublin,%,7.05
+1178,Herd Incidence,2016,Galway,%,2.6
+1179,Herd Incidence,2016,Kerry,%,2.48
+1180,Herd Incidence,2016,Kildare,%,3.56
+1181,Herd Incidence,2016,Kilkenny,%,3.65
+1182,Herd Incidence,2016,Laois,%,4.2
+1183,Herd Incidence,2016,Leitrim,%,1.56
+1184,Herd Incidence,2016,Limerick,%,2.43
+1185,Herd Incidence,2016,Longford,%,2.35
+1186,Herd Incidence,2016,Louth,%,3.9
+1187,Herd Incidence,2016,Mayo,%,1.57
+1188,Herd Incidence,2016,Meath,%,5.6
+1189,Herd Incidence,2016,Monaghan,%,4.01
+1190,Herd Incidence,2016,Offaly,%,4.79
+1191,Herd Incidence,2016,Roscommon,%,2.58
+1192,Herd Incidence,2016,Sligo,%,2.62
+1193,Herd Incidence,2016,Tipperary North,%,4.33
+1194,Herd Incidence,2016,Tipperary South,%,2.99
+1195,Herd Incidence,2016,Waterford,%,2.69
+1196,Herd Incidence,2016,Westmeath,%,4.51
+1197,Herd Incidence,2016,Wexford,%,4.54
+1198,Herd Incidence,2016,Wicklow E,%,7.26
+1199,Herd Incidence,2016,Wicklow W,%,12.52
+1200,Herd Incidence,2017,State,%,3.47
+1201,Herd Incidence,2017,Carlow,%,3.55
+1202,Herd Incidence,2017,Cavan,%,5.53
+1203,Herd Incidence,2017,Clare,%,3.37
+1204,Herd Incidence,2017,Cork North,%,4.72
+1205,Herd Incidence,2017,Cork South,%,4.1
+1206,Herd Incidence,2017,Donegal,%,2.0
+1207,Herd Incidence,2017,Dublin,%,5.57
+1208,Herd Incidence,2017,Galway,%,2.59
+1209,Herd Incidence,2017,Kerry,%,2.7
+1210,Herd Incidence,2017,Kildare,%,3.64
+1211,Herd Incidence,2017,Kilkenny,%,3.24
+1212,Herd Incidence,2017,Laois,%,3.28
+1213,Herd Incidence,2017,Leitrim,%,2.87
+1214,Herd Incidence,2017,Limerick,%,2.26
+1215,Herd Incidence,2017,Longford,%,2.21
+1216,Herd Incidence,2017,Louth,%,4.01
+1217,Herd Incidence,2017,Mayo,%,2.2
+1218,Herd Incidence,2017,Meath,%,5.77
+1219,Herd Incidence,2017,Monaghan,%,4.94
+1220,Herd Incidence,2017,Offaly,%,3.66
+1221,Herd Incidence,2017,Roscommon,%,2.71
+1222,Herd Incidence,2017,Sligo,%,3.04
+1223,Herd Incidence,2017,Tipperary North,%,4.26
+1224,Herd Incidence,2017,Tipperary South,%,3.27
+1225,Herd Incidence,2017,Waterford,%,1.66
+1226,Herd Incidence,2017,Westmeath,%,5.72
+1227,Herd Incidence,2017,Wexford,%,4.57
+1228,Herd Incidence,2017,Wicklow E,%,5.97
+1229,Herd Incidence,2017,Wicklow W,%,11.05
+1230,Herd Incidence,2018,State,%,3.51
+1231,Herd Incidence,2018,Carlow,%,2.75
+1232,Herd Incidence,2018,Cavan,%,4.19
+1233,Herd Incidence,2018,Clare,%,3.77
+1234,Herd Incidence,2018,Cork North,%,5.66
+1235,Herd Incidence,2018,Cork South,%,2.72
+1236,Herd Incidence,2018,Donegal,%,1.7
+1237,Herd Incidence,2018,Dublin,%,8.4
+1238,Herd Incidence,2018,Galway,%,2.23
+1239,Herd Incidence,2018,Kerry,%,2.62
+1240,Herd Incidence,2018,Kildare,%,3.52
+1241,Herd Incidence,2018,Kilkenny,%,2.92
+1242,Herd Incidence,2018,Laois,%,3.6
+1243,Herd Incidence,2018,Leitrim,%,2.02
+1244,Herd Incidence,2018,Limerick,%,1.79
+1245,Herd Incidence,2018,Longford,%,1.97
+1246,Herd Incidence,2018,Louth,%,4.88
+1247,Herd Incidence,2018,Mayo,%,2.2
+1248,Herd Incidence,2018,Meath,%,5.39
+1249,Herd Incidence,2018,Monaghan,%,8.91
+1250,Herd Incidence,2018,Offaly,%,3.96
+1251,Herd Incidence,2018,Roscommon,%,2.72
+1252,Herd Incidence,2018,Sligo,%,3.94
+1253,Herd Incidence,2018,Tipperary North,%,4.85
+1254,Herd Incidence,2018,Tipperary South,%,2.86
+1255,Herd Incidence,2018,Waterford,%,2.78
+1256,Herd Incidence,2018,Westmeath,%,4.82
+1257,Herd Incidence,2018,Wexford,%,4.33
+1258,Herd Incidence,2018,Wicklow E,%,9.51
+1259,Herd Incidence,2018,Wicklow W,%,8.6
+1260,Herd Incidence,2019,State,%,3.72
+1261,Herd Incidence,2019,Carlow,%,2.91
+1262,Herd Incidence,2019,Cavan,%,4.55
+1263,Herd Incidence,2019,Clare,%,4.67
+1264,Herd Incidence,2019,Cork North,%,6.12
+1265,Herd Incidence,2019,Cork South,%,3.12
+1266,Herd Incidence,2019,Donegal,%,2.32
+1267,Herd Incidence,2019,Dublin,%,5.34
+1268,Herd Incidence,2019,Galway,%,2.79
+1269,Herd Incidence,2019,Kerry,%,2.83
+1270,Herd Incidence,2019,Kildare,%,3.24
+1271,Herd Incidence,2019,Kilkenny,%,4.33
+1272,Herd Incidence,2019,Laois,%,4.25
+1273,Herd Incidence,2019,Leitrim,%,2.57
+1274,Herd Incidence,2019,Limerick,%,2.06
+1275,Herd Incidence,2019,Longford,%,2.21
+1276,Herd Incidence,2019,Louth,%,5.52
+1277,Herd Incidence,2019,Mayo,%,1.63
+1278,Herd Incidence,2019,Meath,%,5.56
+1279,Herd Incidence,2019,Monaghan,%,7.02
+1280,Herd Incidence,2019,Offaly,%,5.08
+1281,Herd Incidence,2019,Roscommon,%,3.05
+1282,Herd Incidence,2019,Sligo,%,2.91
+1283,Herd Incidence,2019,Tipperary North,%,4.21
+1284,Herd Incidence,2019,Tipperary South,%,2.84
+1285,Herd Incidence,2019,Waterford,%,2.39
+1286,Herd Incidence,2019,Westmeath,%,5.21
+1287,Herd Incidence,2019,Wexford,%,4.88
+1288,Herd Incidence,2019,Wicklow E,%,9.6
+1289,Herd Incidence,2019,Wicklow W,%,12.33
+1290,Herd Incidence,2020,State,%,4.38
+1291,Herd Incidence,2020,Carlow,%,3.43
+1292,Herd Incidence,2020,Cavan,%,5.54
+1293,Herd Incidence,2020,Clare,%,4.53
+1294,Herd Incidence,2020,Cork North,%,8.02
+1295,Herd Incidence,2020,Cork South,%,3.99
+1296,Herd Incidence,2020,Donegal,%,1.73
+1297,Herd Incidence,2020,Dublin,%,8.0
+1298,Herd Incidence,2020,Galway,%,3.28
+1299,Herd Incidence,2020,Kerry,%,2.58
+1300,Herd Incidence,2020,Kildare,%,4.36
+1301,Herd Incidence,2020,Kilkenny,%,3.68
+1302,Herd Incidence,2020,Laois,%,5.52
+1303,Herd Incidence,2020,Leitrim,%,2.12
+1304,Herd Incidence,2020,Limerick,%,2.81
+1305,Herd Incidence,2020,Longford,%,3.33
+1306,Herd Incidence,2020,Louth,%,7.64
+1307,Herd Incidence,2020,Mayo,%,2.59
+1308,Herd Incidence,2020,Meath,%,7.65
+1309,Herd Incidence,2020,Monaghan,%,7.35
+1310,Herd Incidence,2020,Offaly,%,5.54
+1311,Herd Incidence,2020,Roscommon,%,2.92
+1312,Herd Incidence,2020,Sligo,%,3.97
+1313,Herd Incidence,2020,Tipperary North,%,6.67
+1314,Herd Incidence,2020,Tipperary South,%,4.81
+1315,Herd Incidence,2020,Waterford,%,2.62
+1316,Herd Incidence,2020,Westmeath,%,6.77
+1317,Herd Incidence,2020,Wexford,%,4.54
+1318,Herd Incidence,2020,Wicklow E,%,9.11
+1319,Herd Incidence,2020,Wicklow W,%,14.46
+1320,Herds Restricted by 31st of December,2010,State,Number,2849.0
+1321,Herds Restricted by 31st of December,2010,Carlow,Number,28.0
+1322,Herds Restricted by 31st of December,2010,Cavan,Number,124.0
+1323,Herds Restricted by 31st of December,2010,Clare,Number,175.0
+1324,Herds Restricted by 31st of December,2010,Cork North,Number,119.0
+1325,Herds Restricted by 31st of December,2010,Cork South,Number,216.0
+1326,Herds Restricted by 31st of December,2010,Donegal,Number,100.0
+1327,Herds Restricted by 31st of December,2010,Dublin,Number,16.0
+1328,Herds Restricted by 31st of December,2010,Galway,Number,221.0
+1329,Herds Restricted by 31st of December,2010,Kerry,Number,84.0
+1330,Herds Restricted by 31st of December,2010,Kildare,Number,58.0
+1331,Herds Restricted by 31st of December,2010,Kilkenny,Number,103.0
+1332,Herds Restricted by 31st of December,2010,Laois,Number,71.0
+1333,Herds Restricted by 31st of December,2010,Leitrim,Number,37.0
+1334,Herds Restricted by 31st of December,2010,Limerick,Number,109.0
+1335,Herds Restricted by 31st of December,2010,Longford,Number,49.0
+1336,Herds Restricted by 31st of December,2010,Louth,Number,41.0
+1337,Herds Restricted by 31st of December,2010,Mayo,Number,96.0
+1338,Herds Restricted by 31st of December,2010,Meath,Number,156.0
+1339,Herds Restricted by 31st of December,2010,Monaghan,Number,91.0
+1340,Herds Restricted by 31st of December,2010,Offaly,Number,96.0
+1341,Herds Restricted by 31st of December,2010,Roscommon,Number,132.0
+1342,Herds Restricted by 31st of December,2010,Sligo,Number,49.0
+1343,Herds Restricted by 31st of December,2010,Tipperary North,Number,138.0
+1344,Herds Restricted by 31st of December,2010,Tipperary South,Number,90.0
+1345,Herds Restricted by 31st of December,2010,Waterford,Number,60.0
+1346,Herds Restricted by 31st of December,2010,Westmeath,Number,117.0
+1347,Herds Restricted by 31st of December,2010,Wexford,Number,148.0
+1348,Herds Restricted by 31st of December,2010,Wicklow E,Number,104.0
+1349,Herds Restricted by 31st of December,2010,Wicklow W,Number,21.0
+1350,Herds Restricted by 31st of December,2011,State,Number,2578.0
+1351,Herds Restricted by 31st of December,2011,Carlow,Number,42.0
+1352,Herds Restricted by 31st of December,2011,Cavan,Number,84.0
+1353,Herds Restricted by 31st of December,2011,Clare,Number,144.0
+1354,Herds Restricted by 31st of December,2011,Cork North,Number,147.0
+1355,Herds Restricted by 31st of December,2011,Cork South,Number,211.0
+1356,Herds Restricted by 31st of December,2011,Donegal,Number,105.0
+1357,Herds Restricted by 31st of December,2011,Dublin,Number,12.0
+1358,Herds Restricted by 31st of December,2011,Galway,Number,179.0
+1359,Herds Restricted by 31st of December,2011,Kerry,Number,112.0
+1360,Herds Restricted by 31st of December,2011,Kildare,Number,43.0
+1361,Herds Restricted by 31st of December,2011,Kilkenny,Number,107.0
+1362,Herds Restricted by 31st of December,2011,Laois,Number,65.0
+1363,Herds Restricted by 31st of December,2011,Leitrim,Number,31.0
+1364,Herds Restricted by 31st of December,2011,Limerick,Number,89.0
+1365,Herds Restricted by 31st of December,2011,Longford,Number,49.0
+1366,Herds Restricted by 31st of December,2011,Louth,Number,34.0
+1367,Herds Restricted by 31st of December,2011,Mayo,Number,86.0
+1368,Herds Restricted by 31st of December,2011,Meath,Number,165.0
+1369,Herds Restricted by 31st of December,2011,Monaghan,Number,55.0
+1370,Herds Restricted by 31st of December,2011,Offaly,Number,81.0
+1371,Herds Restricted by 31st of December,2011,Roscommon,Number,109.0
+1372,Herds Restricted by 31st of December,2011,Sligo,Number,38.0
+1373,Herds Restricted by 31st of December,2011,Tipperary North,Number,103.0
+1374,Herds Restricted by 31st of December,2011,Tipperary South,Number,68.0
+1375,Herds Restricted by 31st of December,2011,Waterford,Number,70.0
+1376,Herds Restricted by 31st of December,2011,Westmeath,Number,86.0
+1377,Herds Restricted by 31st of December,2011,Wexford,Number,157.0
+1378,Herds Restricted by 31st of December,2011,Wicklow E,Number,77.0
+1379,Herds Restricted by 31st of December,2011,Wicklow W,Number,29.0
+1380,Herds Restricted by 31st of December,2012,State,Number,2665.0
+1381,Herds Restricted by 31st of December,2012,Carlow,Number,40.0
+1382,Herds Restricted by 31st of December,2012,Cavan,Number,99.0
+1383,Herds Restricted by 31st of December,2012,Clare,Number,151.0
+1384,Herds Restricted by 31st of December,2012,Cork North,Number,165.0
+1385,Herds Restricted by 31st of December,2012,Cork South,Number,221.0
+1386,Herds Restricted by 31st of December,2012,Donegal,Number,152.0
+1387,Herds Restricted by 31st of December,2012,Dublin,Number,15.0
+1388,Herds Restricted by 31st of December,2012,Galway,Number,154.0
+1389,Herds Restricted by 31st of December,2012,Kerry,Number,90.0
+1390,Herds Restricted by 31st of December,2012,Kildare,Number,43.0
+1391,Herds Restricted by 31st of December,2012,Kilkenny,Number,123.0
+1392,Herds Restricted by 31st of December,2012,Laois,Number,77.0
+1393,Herds Restricted by 31st of December,2012,Leitrim,Number,32.0
+1394,Herds Restricted by 31st of December,2012,Limerick,Number,111.0
+1395,Herds Restricted by 31st of December,2012,Longford,Number,42.0
+1396,Herds Restricted by 31st of December,2012,Louth,Number,31.0
+1397,Herds Restricted by 31st of December,2012,Mayo,Number,83.0
+1398,Herds Restricted by 31st of December,2012,Meath,Number,152.0
+1399,Herds Restricted by 31st of December,2012,Monaghan,Number,60.0
+1400,Herds Restricted by 31st of December,2012,Offaly,Number,78.0
+1401,Herds Restricted by 31st of December,2012,Roscommon,Number,138.0
+1402,Herds Restricted by 31st of December,2012,Sligo,Number,78.0
+1403,Herds Restricted by 31st of December,2012,Tipperary North,Number,100.0
+1404,Herds Restricted by 31st of December,2012,Tipperary South,Number,58.0
+1405,Herds Restricted by 31st of December,2012,Waterford,Number,50.0
+1406,Herds Restricted by 31st of December,2012,Westmeath,Number,107.0
+1407,Herds Restricted by 31st of December,2012,Wexford,Number,115.0
+1408,Herds Restricted by 31st of December,2012,Wicklow E,Number,72.0
+1409,Herds Restricted by 31st of December,2012,Wicklow W,Number,28.0
+1410,Herds Restricted by 31st of December,2013,State,Number,2512.0
+1411,Herds Restricted by 31st of December,2013,Carlow,Number,23.0
+1412,Herds Restricted by 31st of December,2013,Cavan,Number,114.0
+1413,Herds Restricted by 31st of December,2013,Clare,Number,151.0
+1414,Herds Restricted by 31st of December,2013,Cork North,Number,141.0
+1415,Herds Restricted by 31st of December,2013,Cork South,Number,179.0
+1416,Herds Restricted by 31st of December,2013,Donegal,Number,95.0
+1417,Herds Restricted by 31st of December,2013,Dublin,Number,18.0
+1418,Herds Restricted by 31st of December,2013,Galway,Number,160.0
+1419,Herds Restricted by 31st of December,2013,Kerry,Number,99.0
+1420,Herds Restricted by 31st of December,2013,Kildare,Number,44.0
+1421,Herds Restricted by 31st of December,2013,Kilkenny,Number,92.0
+1422,Herds Restricted by 31st of December,2013,Laois,Number,63.0
+1423,Herds Restricted by 31st of December,2013,Leitrim,Number,40.0
+1424,Herds Restricted by 31st of December,2013,Limerick,Number,107.0
+1425,Herds Restricted by 31st of December,2013,Longford,Number,39.0
+1426,Herds Restricted by 31st of December,2013,Louth,Number,34.0
+1427,Herds Restricted by 31st of December,2013,Mayo,Number,93.0
+1428,Herds Restricted by 31st of December,2013,Meath,Number,144.0
+1429,Herds Restricted by 31st of December,2013,Monaghan,Number,87.0
+1430,Herds Restricted by 31st of December,2013,Offaly,Number,71.0
+1431,Herds Restricted by 31st of December,2013,Roscommon,Number,139.0
+1432,Herds Restricted by 31st of December,2013,Sligo,Number,48.0
+1433,Herds Restricted by 31st of December,2013,Tipperary North,Number,122.0
+1434,Herds Restricted by 31st of December,2013,Tipperary South,Number,54.0
+1435,Herds Restricted by 31st of December,2013,Waterford,Number,50.0
+1436,Herds Restricted by 31st of December,2013,Westmeath,Number,92.0
+1437,Herds Restricted by 31st of December,2013,Wexford,Number,139.0
+1438,Herds Restricted by 31st of December,2013,Wicklow E,Number,56.0
+1439,Herds Restricted by 31st of December,2013,Wicklow W,Number,18.0
+1440,Herds Restricted by 31st of December,2014,State,Number,2177.0
+1441,Herds Restricted by 31st of December,2014,Carlow,Number,26.0
+1442,Herds Restricted by 31st of December,2014,Cavan,Number,96.0
+1443,Herds Restricted by 31st of December,2014,Clare,Number,156.0
+1444,Herds Restricted by 31st of December,2014,Cork North,Number,127.0
+1445,Herds Restricted by 31st of December,2014,Cork South,Number,135.0
+1446,Herds Restricted by 31st of December,2014,Donegal,Number,66.0
+1447,Herds Restricted by 31st of December,2014,Dublin,Number,13.0
+1448,Herds Restricted by 31st of December,2014,Galway,Number,172.0
+1449,Herds Restricted by 31st of December,2014,Kerry,Number,96.0
+1450,Herds Restricted by 31st of December,2014,Kildare,Number,54.0
+1451,Herds Restricted by 31st of December,2014,Kilkenny,Number,79.0
+1452,Herds Restricted by 31st of December,2014,Laois,Number,55.0
+1453,Herds Restricted by 31st of December,2014,Leitrim,Number,38.0
+1454,Herds Restricted by 31st of December,2014,Limerick,Number,66.0
+1455,Herds Restricted by 31st of December,2014,Longford,Number,36.0
+1456,Herds Restricted by 31st of December,2014,Louth,Number,19.0
+1457,Herds Restricted by 31st of December,2014,Mayo,Number,66.0
+1458,Herds Restricted by 31st of December,2014,Meath,Number,112.0
+1459,Herds Restricted by 31st of December,2014,Monaghan,Number,61.0
+1460,Herds Restricted by 31st of December,2014,Offaly,Number,87.0
+1461,Herds Restricted by 31st of December,2014,Roscommon,Number,93.0
+1462,Herds Restricted by 31st of December,2014,Sligo,Number,62.0
+1463,Herds Restricted by 31st of December,2014,Tipperary North,Number,85.0
+1464,Herds Restricted by 31st of December,2014,Tipperary South,Number,57.0
+1465,Herds Restricted by 31st of December,2014,Waterford,Number,32.0
+1466,Herds Restricted by 31st of December,2014,Westmeath,Number,95.0
+1467,Herds Restricted by 31st of December,2014,Wexford,Number,111.0
+1468,Herds Restricted by 31st of December,2014,Wicklow E,Number,57.0
+1469,Herds Restricted by 31st of December,2014,Wicklow W,Number,25.0
+1470,Herds Restricted by 31st of December,2015,State,Number,2091.0
+1471,Herds Restricted by 31st of December,2015,Carlow,Number,33.0
+1472,Herds Restricted by 31st of December,2015,Cavan,Number,111.0
+1473,Herds Restricted by 31st of December,2015,Clare,Number,125.0
+1474,Herds Restricted by 31st of December,2015,Cork North,Number,111.0
+1475,Herds Restricted by 31st of December,2015,Cork South,Number,154.0
+1476,Herds Restricted by 31st of December,2015,Donegal,Number,63.0
+1477,Herds Restricted by 31st of December,2015,Dublin,Number,20.0
+1478,Herds Restricted by 31st of December,2015,Galway,Number,152.0
+1479,Herds Restricted by 31st of December,2015,Kerry,Number,52.0
+1480,Herds Restricted by 31st of December,2015,Kildare,Number,60.0
+1481,Herds Restricted by 31st of December,2015,Kilkenny,Number,67.0
+1482,Herds Restricted by 31st of December,2015,Laois,Number,76.0
+1483,Herds Restricted by 31st of December,2015,Leitrim,Number,34.0
+1484,Herds Restricted by 31st of December,2015,Limerick,Number,63.0
+1485,Herds Restricted by 31st of December,2015,Longford,Number,37.0
+1486,Herds Restricted by 31st of December,2015,Louth,Number,21.0
+1487,Herds Restricted by 31st of December,2015,Mayo,Number,60.0
+1488,Herds Restricted by 31st of December,2015,Meath,Number,110.0
+1489,Herds Restricted by 31st of December,2015,Monaghan,Number,72.0
+1490,Herds Restricted by 31st of December,2015,Offaly,Number,85.0
+1491,Herds Restricted by 31st of December,2015,Roscommon,Number,83.0
+1492,Herds Restricted by 31st of December,2015,Sligo,Number,54.0
+1493,Herds Restricted by 31st of December,2015,Tipperary North,Number,76.0
+1494,Herds Restricted by 31st of December,2015,Tipperary South,Number,60.0
+1495,Herds Restricted by 31st of December,2015,Waterford,Number,32.0
+1496,Herds Restricted by 31st of December,2015,Westmeath,Number,95.0
+1497,Herds Restricted by 31st of December,2015,Wexford,Number,99.0
+1498,Herds Restricted by 31st of December,2015,Wicklow E,Number,49.0
+1499,Herds Restricted by 31st of December,2015,Wicklow W,Number,37.0
+1500,Herds Restricted by 31st of December,2016,State,Number,2035.0
+1501,Herds Restricted by 31st of December,2016,Carlow,Number,21.0
+1502,Herds Restricted by 31st of December,2016,Cavan,Number,79.0
+1503,Herds Restricted by 31st of December,2016,Clare,Number,135.0
+1504,Herds Restricted by 31st of December,2016,Cork North,Number,130.0
+1505,Herds Restricted by 31st of December,2016,Cork South,Number,106.0
+1506,Herds Restricted by 31st of December,2016,Donegal,Number,56.0
+1507,Herds Restricted by 31st of December,2016,Dublin,Number,19.0
+1508,Herds Restricted by 31st of December,2016,Galway,Number,147.0
+1509,Herds Restricted by 31st of December,2016,Kerry,Number,98.0
+1510,Herds Restricted by 31st of December,2016,Kildare,Number,63.0
+1511,Herds Restricted by 31st of December,2016,Kilkenny,Number,63.0
+1512,Herds Restricted by 31st of December,2016,Laois,Number,84.0
+1513,Herds Restricted by 31st of December,2016,Leitrim,Number,25.0
+1514,Herds Restricted by 31st of December,2016,Limerick,Number,71.0
+1515,Herds Restricted by 31st of December,2016,Longford,Number,33.0
+1516,Herds Restricted by 31st of December,2016,Louth,Number,25.0
+1517,Herds Restricted by 31st of December,2016,Mayo,Number,77.0
+1518,Herds Restricted by 31st of December,2016,Meath,Number,127.0
+1519,Herds Restricted by 31st of December,2016,Monaghan,Number,92.0
+1520,Herds Restricted by 31st of December,2016,Offaly,Number,72.0
+1521,Herds Restricted by 31st of December,2016,Roscommon,Number,69.0
+1522,Herds Restricted by 31st of December,2016,Sligo,Number,36.0
+1523,Herds Restricted by 31st of December,2016,Tipperary North,Number,88.0
+1524,Herds Restricted by 31st of December,2016,Tipperary South,Number,56.0
+1525,Herds Restricted by 31st of December,2016,Waterford,Number,36.0
+1526,Herds Restricted by 31st of December,2016,Westmeath,Number,74.0
+1527,Herds Restricted by 31st of December,2016,Wexford,Number,71.0
+1528,Herds Restricted by 31st of December,2016,Wicklow E,Number,48.0
+1529,Herds Restricted by 31st of December,2016,Wicklow W,Number,34.0
+1530,Herds Restricted by 31st of December,2017,State,Number,2180.0
+1531,Herds Restricted by 31st of December,2017,Carlow,Number,20.0
+1532,Herds Restricted by 31st of December,2017,Cavan,Number,164.0
+1533,Herds Restricted by 31st of December,2017,Clare,Number,110.0
+1534,Herds Restricted by 31st of December,2017,Cork North,Number,146.0
+1535,Herds Restricted by 31st of December,2017,Cork South,Number,115.0
+1536,Herds Restricted by 31st of December,2017,Donegal,Number,38.0
+1537,Herds Restricted by 31st of December,2017,Dublin,Number,16.0
+1538,Herds Restricted by 31st of December,2017,Galway,Number,146.0
+1539,Herds Restricted by 31st of December,2017,Kerry,Number,95.0
+1540,Herds Restricted by 31st of December,2017,Kildare,Number,60.0
+1541,Herds Restricted by 31st of December,2017,Kilkenny,Number,45.0
+1542,Herds Restricted by 31st of December,2017,Laois,Number,72.0
+1543,Herds Restricted by 31st of December,2017,Leitrim,Number,40.0
+1544,Herds Restricted by 31st of December,2017,Limerick,Number,54.0
+1545,Herds Restricted by 31st of December,2017,Longford,Number,38.0
+1546,Herds Restricted by 31st of December,2017,Louth,Number,21.0
+1547,Herds Restricted by 31st of December,2017,Mayo,Number,101.0
+1548,Herds Restricted by 31st of December,2017,Meath,Number,133.0
+1549,Herds Restricted by 31st of December,2017,Monaghan,Number,132.0
+1550,Herds Restricted by 31st of December,2017,Offaly,Number,73.0
+1551,Herds Restricted by 31st of December,2017,Roscommon,Number,83.0
+1552,Herds Restricted by 31st of December,2017,Sligo,Number,56.0
+1553,Herds Restricted by 31st of December,2017,Tipperary North,Number,90.0
+1554,Herds Restricted by 31st of December,2017,Tipperary South,Number,63.0
+1555,Herds Restricted by 31st of December,2017,Waterford,Number,27.0
+1556,Herds Restricted by 31st of December,2017,Westmeath,Number,114.0
+1557,Herds Restricted by 31st of December,2017,Wexford,Number,65.0
+1558,Herds Restricted by 31st of December,2017,Wicklow E,Number,35.0
+1559,Herds Restricted by 31st of December,2017,Wicklow W,Number,28.0
+1560,Herds Restricted by 31st of December,2018,State,Number,2176.0
+1561,Herds Restricted by 31st of December,2018,Carlow,Number,26.0
+1562,Herds Restricted by 31st of December,2018,Cavan,Number,107.0
+1563,Herds Restricted by 31st of December,2018,Clare,Number,124.0
+1564,Herds Restricted by 31st of December,2018,Cork North,Number,178.0
+1565,Herds Restricted by 31st of December,2018,Cork South,Number,84.0
+1566,Herds Restricted by 31st of December,2018,Donegal,Number,42.0
+1567,Herds Restricted by 31st of December,2018,Dublin,Number,15.0
+1568,Herds Restricted by 31st of December,2018,Galway,Number,113.0
+1569,Herds Restricted by 31st of December,2018,Kerry,Number,82.0
+1570,Herds Restricted by 31st of December,2018,Kildare,Number,66.0
+1571,Herds Restricted by 31st of December,2018,Kilkenny,Number,55.0
+1572,Herds Restricted by 31st of December,2018,Laois,Number,81.0
+1573,Herds Restricted by 31st of December,2018,Leitrim,Number,26.0
+1574,Herds Restricted by 31st of December,2018,Limerick,Number,50.0
+1575,Herds Restricted by 31st of December,2018,Longford,Number,30.0
+1576,Herds Restricted by 31st of December,2018,Louth,Number,24.0
+1577,Herds Restricted by 31st of December,2018,Mayo,Number,94.0
+1578,Herds Restricted by 31st of December,2018,Meath,Number,117.0
+1579,Herds Restricted by 31st of December,2018,Monaghan,Number,226.0
+1580,Herds Restricted by 31st of December,2018,Offaly,Number,79.0
+1581,Herds Restricted by 31st of December,2018,Roscommon,Number,66.0
+1582,Herds Restricted by 31st of December,2018,Sligo,Number,58.0
+1583,Herds Restricted by 31st of December,2018,Tipperary North,Number,109.0
+1584,Herds Restricted by 31st of December,2018,Tipperary South,Number,59.0
+1585,Herds Restricted by 31st of December,2018,Waterford,Number,30.0
+1586,Herds Restricted by 31st of December,2018,Westmeath,Number,87.0
+1587,Herds Restricted by 31st of December,2018,Wexford,Number,63.0
+1588,Herds Restricted by 31st of December,2018,Wicklow E,Number,52.0
+1589,Herds Restricted by 31st of December,2018,Wicklow W,Number,33.0
+1590,Herds Restricted by 31st of December,2019,State,Number,2273.0
+1591,Herds Restricted by 31st of December,2019,Carlow,Number,22.0
+1592,Herds Restricted by 31st of December,2019,Cavan,Number,108.0
+1593,Herds Restricted by 31st of December,2019,Clare,Number,134.0
+1594,Herds Restricted by 31st of December,2019,Cork North,Number,208.0
+1595,Herds Restricted by 31st of December,2019,Cork South,Number,96.0
+1596,Herds Restricted by 31st of December,2019,Donegal,Number,46.0
+1597,Herds Restricted by 31st of December,2019,Dublin,Number,18.0
+1598,Herds Restricted by 31st of December,2019,Galway,Number,167.0
+1599,Herds Restricted by 31st of December,2019,Kerry,Number,90.0
+1600,Herds Restricted by 31st of December,2019,Kildare,Number,66.0
+1601,Herds Restricted by 31st of December,2019,Kilkenny,Number,79.0
+1602,Herds Restricted by 31st of December,2019,Laois,Number,79.0
+1603,Herds Restricted by 31st of December,2019,Leitrim,Number,39.0
+1604,Herds Restricted by 31st of December,2019,Limerick,Number,46.0
+1605,Herds Restricted by 31st of December,2019,Longford,Number,33.0
+1606,Herds Restricted by 31st of December,2019,Louth,Number,33.0
+1607,Herds Restricted by 31st of December,2019,Mayo,Number,73.0
+1608,Herds Restricted by 31st of December,2019,Meath,Number,135.0
+1609,Herds Restricted by 31st of December,2019,Monaghan,Number,147.0
+1610,Herds Restricted by 31st of December,2019,Offaly,Number,100.0
+1611,Herds Restricted by 31st of December,2019,Roscommon,Number,68.0
+1612,Herds Restricted by 31st of December,2019,Sligo,Number,37.0
+1613,Herds Restricted by 31st of December,2019,Tipperary North,Number,82.0
+1614,Herds Restricted by 31st of December,2019,Tipperary South,Number,74.0
+1615,Herds Restricted by 31st of December,2019,Waterford,Number,29.0
+1616,Herds Restricted by 31st of December,2019,Westmeath,Number,100.0
+1617,Herds Restricted by 31st of December,2019,Wexford,Number,65.0
+1618,Herds Restricted by 31st of December,2019,Wicklow E,Number,63.0
+1619,Herds Restricted by 31st of December,2019,Wicklow W,Number,36.0
+1620,Herds Restricted by 31st of December,2020,State,Number,2673.0
+1621,Herds Restricted by 31st of December,2020,Carlow,Number,26.0
+1622,Herds Restricted by 31st of December,2020,Cavan,Number,143.0
+1623,Herds Restricted by 31st of December,2020,Clare,Number,113.0
+1624,Herds Restricted by 31st of December,2020,Cork North,Number,263.0
+1625,Herds Restricted by 31st of December,2020,Cork South,Number,112.0
+1626,Herds Restricted by 31st of December,2020,Donegal,Number,42.0
+1627,Herds Restricted by 31st of December,2020,Dublin,Number,18.0
+1628,Herds Restricted by 31st of December,2020,Galway,Number,176.0
+1629,Herds Restricted by 31st of December,2020,Kerry,Number,82.0
+1630,Herds Restricted by 31st of December,2020,Kildare,Number,75.0
+1631,Herds Restricted by 31st of December,2020,Kilkenny,Number,78.0
+1632,Herds Restricted by 31st of December,2020,Laois,Number,109.0
+1633,Herds Restricted by 31st of December,2020,Leitrim,Number,28.0
+1634,Herds Restricted by 31st of December,2020,Limerick,Number,67.0
+1635,Herds Restricted by 31st of December,2020,Longford,Number,43.0
+1636,Herds Restricted by 31st of December,2020,Louth,Number,39.0
+1637,Herds Restricted by 31st of December,2020,Mayo,Number,120.0
+1638,Herds Restricted by 31st of December,2020,Meath,Number,165.0
+1639,Herds Restricted by 31st of December,2020,Monaghan,Number,166.0
+1640,Herds Restricted by 31st of December,2020,Offaly,Number,96.0
+1641,Herds Restricted by 31st of December,2020,Roscommon,Number,75.0
+1642,Herds Restricted by 31st of December,2020,Sligo,Number,69.0
+1643,Herds Restricted by 31st of December,2020,Tipperary North,Number,148.0
+1644,Herds Restricted by 31st of December,2020,Tipperary South,Number,107.0
+1645,Herds Restricted by 31st of December,2020,Waterford,Number,42.0
+1646,Herds Restricted by 31st of December,2020,Westmeath,Number,115.0
+1647,Herds Restricted by 31st of December,2020,Wexford,Number,63.0
+1648,Herds Restricted by 31st of December,2020,Wicklow E,Number,47.0
+1649,Herds Restricted by 31st of December,2020,Wicklow W,Number,46.0
+1650,Animals in County,2010,State,Number,5751564.0
+1651,Animals in County,2010,Carlow,Number,86258.0
+1652,Animals in County,2010,Cavan,Number,202119.0
+1653,Animals in County,2010,Clare,Number,237260.0
+1654,Animals in County,2010,Cork North,Number,462707.0
+1655,Animals in County,2010,Cork South,Number,417478.0
+1656,Animals in County,2010,Donegal,Number,173025.0
+1657,Animals in County,2010,Dublin,Number,20455.0
+1658,Animals in County,2010,Galway,Number,356143.0
+1659,Animals in County,2010,Kerry,Number,284772.0
+1660,Animals in County,2010,Kildare,Number,103685.0
+1661,Animals in County,2010,Kilkenny,Number,282632.0
+1662,Animals in County,2010,Laois,Number,202064.0
+1663,Animals in County,2010,Leitrim,Number,67461.0
+1664,Animals in County,2010,Limerick,Number,320813.0
+1665,Animals in County,2010,Longford,Number,103406.0
+1666,Animals in County,2010,Louth,Number,74736.0
+1667,Animals in County,2010,Mayo,Number,237301.0
+1668,Animals in County,2010,Meath,Number,241554.0
+1669,Animals in County,2010,Monaghan,Number,182478.0
+1670,Animals in County,2010,Offaly,Number,190316.0
+1671,Animals in County,2010,Roscommon,Number,171826.0
+1672,Animals in County,2010,Sligo,Number,97915.0
+1673,Animals in County,2010,Tipperary North,Number,256811.0
+1674,Animals in County,2010,Tipperary South,Number,254772.0
+1675,Animals in County,2010,Waterford,Number,209529.0
+1676,Animals in County,2010,Westmeath,Number,173659.0
+1677,Animals in County,2010,Wexford,Number,235247.0
+1678,Animals in County,2010,Wicklow E,Number,67509.0
+1679,Animals in County,2010,Wicklow W,Number,37633.0
+1680,Animals in County,2011,State,Number,5819281.0
+1681,Animals in County,2011,Carlow,Number,85784.0
+1682,Animals in County,2011,Cavan,Number,205467.0
+1683,Animals in County,2011,Clare,Number,240713.0
+1684,Animals in County,2011,Cork North,Number,471086.0
+1685,Animals in County,2011,Cork South,Number,421122.0
+1686,Animals in County,2011,Donegal,Number,171436.0
+1687,Animals in County,2011,Dublin,Number,19646.0
+1688,Animals in County,2011,Galway,Number,362404.0
+1689,Animals in County,2011,Kerry,Number,288866.0
+1690,Animals in County,2011,Kildare,Number,104611.0
+1691,Animals in County,2011,Kilkenny,Number,287068.0
+1692,Animals in County,2011,Laois,Number,205420.0
+1693,Animals in County,2011,Leitrim,Number,66904.0
+1694,Animals in County,2011,Limerick,Number,329729.0
+1695,Animals in County,2011,Longford,Number,102109.0
+1696,Animals in County,2011,Louth,Number,74341.0
+1697,Animals in County,2011,Mayo,Number,236628.0
+1698,Animals in County,2011,Meath,Number,242703.0
+1699,Animals in County,2011,Monaghan,Number,185226.0
+1700,Animals in County,2011,Offaly,Number,191844.0
+1701,Animals in County,2011,Roscommon,Number,172494.0
+1702,Animals in County,2011,Sligo,Number,97846.0
+1703,Animals in County,2011,Tipperary North,Number,261294.0
+1704,Animals in County,2011,Tipperary South,Number,262528.0
+1705,Animals in County,2011,Waterford,Number,212483.0
+1706,Animals in County,2011,Westmeath,Number,175427.0
+1707,Animals in County,2011,Wexford,Number,239538.0
+1708,Animals in County,2011,Wicklow E,Number,67115.0
+1709,Animals in County,2011,Wicklow W,Number,37449.0
+1710,Animals in County,2012,State,Number,6145469.0
+1711,Animals in County,2012,Carlow,Number,92062.0
+1712,Animals in County,2012,Cavan,Number,216445.0
+1713,Animals in County,2012,Clare,Number,255186.0
+1714,Animals in County,2012,Cork North,Number,497532.0
+1715,Animals in County,2012,Cork South,Number,440351.0
+1716,Animals in County,2012,Donegal,Number,176413.0
+1717,Animals in County,2012,Dublin,Number,21432.0
+1718,Animals in County,2012,Galway,Number,383029.0
+1719,Animals in County,2012,Kerry,Number,301262.0
+1720,Animals in County,2012,Kildare,Number,111987.0
+1721,Animals in County,2012,Kilkenny,Number,306559.0
+1722,Animals in County,2012,Laois,Number,219748.0
+1723,Animals in County,2012,Leitrim,Number,70745.0
+1724,Animals in County,2012,Limerick,Number,346676.0
+1725,Animals in County,2012,Longford,Number,105955.0
+1726,Animals in County,2012,Louth,Number,78467.0
+1727,Animals in County,2012,Mayo,Number,248198.0
+1728,Animals in County,2012,Meath,Number,256343.0
+1729,Animals in County,2012,Monaghan,Number,195866.0
+1730,Animals in County,2012,Offaly,Number,204472.0
+1731,Animals in County,2012,Roscommon,Number,182126.0
+1732,Animals in County,2012,Sligo,Number,103001.0
+1733,Animals in County,2012,Tipperary North,Number,278847.0
+1734,Animals in County,2012,Tipperary South,Number,278382.0
+1735,Animals in County,2012,Waterford,Number,224151.0
+1736,Animals in County,2012,Westmeath,Number,183830.0
+1737,Animals in County,2012,Wexford,Number,254949.0
+1738,Animals in County,2012,Wicklow E,Number,71623.0
+1739,Animals in County,2012,Wicklow W,Number,39832.0
+1740,Animals in County,2013,State,Number,6146958.0
+1741,Animals in County,2013,Carlow,Number,93990.0
+1742,Animals in County,2013,Cavan,Number,213956.0
+1743,Animals in County,2013,Clare,Number,254855.0
+1744,Animals in County,2013,Cork North,Number,499164.0
+1745,Animals in County,2013,Cork South,Number,437926.0
+1746,Animals in County,2013,Donegal,Number,176763.0
+1747,Animals in County,2013,Dublin,Number,21149.0
+1748,Animals in County,2013,Galway,Number,382478.0
+1749,Animals in County,2013,Kerry,Number,301122.0
+1750,Animals in County,2013,Kildare,Number,113902.0
+1751,Animals in County,2013,Kilkenny,Number,309120.0
+1752,Animals in County,2013,Laois,Number,221133.0
+1753,Animals in County,2013,Leitrim,Number,68756.0
+1754,Animals in County,2013,Limerick,Number,345506.0
+1755,Animals in County,2013,Longford,Number,104627.0
+1756,Animals in County,2013,Louth,Number,80012.0
+1757,Animals in County,2013,Mayo,Number,242978.0
+1758,Animals in County,2013,Meath,Number,259600.0
+1759,Animals in County,2013,Monaghan,Number,193793.0
+1760,Animals in County,2013,Offaly,Number,205891.0
+1761,Animals in County,2013,Roscommon,Number,177965.0
+1762,Animals in County,2013,Sligo,Number,102421.0
+1763,Animals in County,2013,Tipperary North,Number,282415.0
+1764,Animals in County,2013,Tipperary South,Number,279557.0
+1765,Animals in County,2013,Waterford,Number,223473.0
+1766,Animals in County,2013,Westmeath,Number,182950.0
+1767,Animals in County,2013,Wexford,Number,259206.0
+1768,Animals in County,2013,Wicklow E,Number,72487.0
+1769,Animals in County,2013,Wicklow W,Number,39763.0
+1770,Animals in County,2014,State,Number,6115528.0
+1771,Animals in County,2014,Carlow,Number,92376.0
+1772,Animals in County,2014,Cavan,Number,211538.0
+1773,Animals in County,2014,Clare,Number,247683.0
+1774,Animals in County,2014,Cork North,Number,500341.0
+1775,Animals in County,2014,Cork South,Number,440393.0
+1776,Animals in County,2014,Donegal,Number,168494.0
+1777,Animals in County,2014,Dublin,Number,20656.0
+1778,Animals in County,2014,Galway,Number,382292.0
+1779,Animals in County,2014,Kerry,Number,301475.0
+1780,Animals in County,2014,Kildare,Number,114561.0
+1781,Animals in County,2014,Kilkenny,Number,310848.0
+1782,Animals in County,2014,Laois,Number,220059.0
+1783,Animals in County,2014,Leitrim,Number,67107.0
+1784,Animals in County,2014,Limerick,Number,343600.0
+1785,Animals in County,2014,Longford,Number,102950.0
+1786,Animals in County,2014,Louth,Number,81025.0
+1787,Animals in County,2014,Mayo,Number,240749.0
+1788,Animals in County,2014,Meath,Number,256946.0
+1789,Animals in County,2014,Monaghan,Number,190963.0
+1790,Animals in County,2014,Offaly,Number,205762.0
+1791,Animals in County,2014,Roscommon,Number,176843.0
+1792,Animals in County,2014,Sligo,Number,99850.0
+1793,Animals in County,2014,Tipperary North,Number,280511.0
+1794,Animals in County,2014,Tipperary South,Number,277660.0
+1795,Animals in County,2014,Waterford,Number,227627.0
+1796,Animals in County,2014,Westmeath,Number,181580.0
+1797,Animals in County,2014,Wexford,Number,261111.0
+1798,Animals in County,2014,Wicklow E,Number,71355.0
+1799,Animals in County,2014,Wicklow W,Number,39173.0
+1800,Animals in County,2015,State,Number,6321196.0
+1801,Animals in County,2015,Carlow,Number,95812.0
+1802,Animals in County,2015,Cavan,Number,216720.0
+1803,Animals in County,2015,Clare,Number,255634.0
+1804,Animals in County,2015,Cork North,Number,520831.0
+1805,Animals in County,2015,Cork South,Number,456079.0
+1806,Animals in County,2015,Donegal,Number,169242.0
+1807,Animals in County,2015,Dublin,Number,20820.0
+1808,Animals in County,2015,Galway,Number,394334.0
+1809,Animals in County,2015,Kerry,Number,310683.0
+1810,Animals in County,2015,Kildare,Number,118193.0
+1811,Animals in County,2015,Kilkenny,Number,321964.0
+1812,Animals in County,2015,Laois,Number,228844.0
+1813,Animals in County,2015,Leitrim,Number,68357.0
+1814,Animals in County,2015,Limerick,Number,357777.0
+1815,Animals in County,2015,Longford,Number,105926.0
+1816,Animals in County,2015,Louth,Number,81508.0
+1817,Animals in County,2015,Mayo,Number,248070.0
+1818,Animals in County,2015,Meath,Number,263406.0
+1819,Animals in County,2015,Monaghan,Number,197850.0
+1820,Animals in County,2015,Offaly,Number,211417.0
+1821,Animals in County,2015,Roscommon,Number,183236.0
+1822,Animals in County,2015,Sligo,Number,102138.0
+1823,Animals in County,2015,Tipperary North,Number,291575.0
+1824,Animals in County,2015,Tipperary South,Number,291924.0
+1825,Animals in County,2015,Waterford,Number,236327.0
+1826,Animals in County,2015,Westmeath,Number,187070.0
+1827,Animals in County,2015,Wexford,Number,271968.0
+1828,Animals in County,2015,Wicklow E,Number,73333.0
+1829,Animals in County,2015,Wicklow W,Number,40158.0
+1830,Animals in County,2016,State,Number,6455934.0
+1831,Animals in County,2016,Carlow,Number,98905.0
+1832,Animals in County,2016,Cavan,Number,222871.0
+1833,Animals in County,2016,Clare,Number,257768.0
+1834,Animals in County,2016,Cork North,Number,530542.0
+1835,Animals in County,2016,Cork South,Number,458753.0
+1836,Animals in County,2016,Donegal,Number,170385.0
+1837,Animals in County,2016,Dublin,Number,21363.0
+1838,Animals in County,2016,Galway,Number,398962.0
+1839,Animals in County,2016,Kerry,Number,311312.0
+1840,Animals in County,2016,Kildare,Number,122601.0
+1841,Animals in County,2016,Kilkenny,Number,328034.0
+1842,Animals in County,2016,Laois,Number,236636.0
+1843,Animals in County,2016,Leitrim,Number,68782.0
+1844,Animals in County,2016,Limerick,Number,372799.0
+1845,Animals in County,2016,Longford,Number,107843.0
+1846,Animals in County,2016,Louth,Number,87879.0
+1847,Animals in County,2016,Mayo,Number,247705.0
+1848,Animals in County,2016,Meath,Number,274358.0
+1849,Animals in County,2016,Monaghan,Number,202605.0
+1850,Animals in County,2016,Offaly,Number,220693.0
+1851,Animals in County,2016,Roscommon,Number,184407.0
+1852,Animals in County,2016,Sligo,Number,101430.0
+1853,Animals in County,2016,Tipperary North,Number,301269.0
+1854,Animals in County,2016,Tipperary South,Number,300134.0
+1855,Animals in County,2016,Waterford,Number,238378.0
+1856,Animals in County,2016,Westmeath,Number,194099.0
+1857,Animals in County,2016,Wexford,Number,277638.0
+1858,Animals in County,2016,Wicklow E,Number,75768.0
+1859,Animals in County,2016,Wicklow W,Number,42015.0
+1860,Animals in County,2017,State,Number,6513273.0
+1861,Animals in County,2017,Carlow,Number,102212.0
+1862,Animals in County,2017,Cavan,Number,218219.0
+1863,Animals in County,2017,Clare,Number,254680.0
+1864,Animals in County,2017,Cork North,Number,540081.0
+1865,Animals in County,2017,Cork South,Number,463720.0
+1866,Animals in County,2017,Donegal,Number,168346.0
+1867,Animals in County,2017,Dublin,Number,21356.0
+1868,Animals in County,2017,Galway,Number,396072.0
+1869,Animals in County,2017,Kerry,Number,305620.0
+1870,Animals in County,2017,Kildare,Number,128022.0
+1871,Animals in County,2017,Kilkenny,Number,340016.0
+1872,Animals in County,2017,Laois,Number,247198.0
+1873,Animals in County,2017,Leitrim,Number,65260.0
+1874,Animals in County,2017,Limerick,Number,374261.0
+1875,Animals in County,2017,Longford,Number,105363.0
+1876,Animals in County,2017,Louth,Number,88669.0
+1877,Animals in County,2017,Mayo,Number,243720.0
+1878,Animals in County,2017,Meath,Number,276807.0
+1879,Animals in County,2017,Monaghan,Number,200167.0
+1880,Animals in County,2017,Offaly,Number,227137.0
+1881,Animals in County,2017,Roscommon,Number,182036.0
+1882,Animals in County,2017,Sligo,Number,99947.0
+1883,Animals in County,2017,Tipperary North,Number,310390.0
+1884,Animals in County,2017,Tipperary South,Number,307063.0
+1885,Animals in County,2017,Waterford,Number,245055.0
+1886,Animals in County,2017,Westmeath,Number,194813.0
+1887,Animals in County,2017,Wexford,Number,287433.0
+1888,Animals in County,2017,Wicklow E,Number,77855.0
+1889,Animals in County,2017,Wicklow W,Number,41755.0
+1890,Animals in County,2018,State,Number,6398745.0
+1891,Animals in County,2018,Carlow,Number,99794.0
+1892,Animals in County,2018,Cavan,Number,219665.0
+1893,Animals in County,2018,Clare,Number,253863.0
+1894,Animals in County,2018,Cork North,Number,526182.0
+1895,Animals in County,2018,Cork South,Number,449698.0
+1896,Animals in County,2018,Donegal,Number,172114.0
+1897,Animals in County,2018,Dublin,Number,20766.0
+1898,Animals in County,2018,Galway,Number,396452.0
+1899,Animals in County,2018,Kerry,Number,308049.0
+1900,Animals in County,2018,Kildare,Number,122371.0
+1901,Animals in County,2018,Kilkenny,Number,326766.0
+1902,Animals in County,2018,Laois,Number,242657.0
+1903,Animals in County,2018,Leitrim,Number,66528.0
+1904,Animals in County,2018,Limerick,Number,366277.0
+1905,Animals in County,2018,Longford,Number,105303.0
+1906,Animals in County,2018,Louth,Number,86266.0
+1907,Animals in County,2018,Mayo,Number,243195.0
+1908,Animals in County,2018,Meath,Number,269302.0
+1909,Animals in County,2018,Monaghan,Number,197315.0
+1910,Animals in County,2018,Offaly,Number,223666.0
+1911,Animals in County,2018,Roscommon,Number,183128.0
+1912,Animals in County,2018,Sligo,Number,99613.0
+1913,Animals in County,2018,Tipperary North,Number,300869.0
+1914,Animals in County,2018,Tipperary South,Number,296572.0
+1915,Animals in County,2018,Waterford,Number,235893.0
+1916,Animals in County,2018,Westmeath,Number,189233.0
+1917,Animals in County,2018,Wexford,Number,279336.0
+1918,Animals in County,2018,Wicklow E,Number,76017.0
+1919,Animals in County,2018,Wicklow W,Number,41855.0
+1920,Animals in County,2019,State,Number,6363409.0
+1921,Animals in County,2019,Carlow,Number,97336.0
+1922,Animals in County,2019,Cavan,Number,218207.0
+1923,Animals in County,2019,Clare,Number,254295.0
+1924,Animals in County,2019,Cork North,Number,523265.0
+1925,Animals in County,2019,Cork South,Number,445268.0
+1926,Animals in County,2019,Donegal,Number,171254.0
+1927,Animals in County,2019,Dublin,Number,20440.0
+1928,Animals in County,2019,Galway,Number,393971.0
+1929,Animals in County,2019,Kerry,Number,306711.0
+1930,Animals in County,2019,Kildare,Number,120980.0
+1931,Animals in County,2019,Kilkenny,Number,326201.0
+1932,Animals in County,2019,Laois,Number,235720.0
+1933,Animals in County,2019,Leitrim,Number,66514.0
+1934,Animals in County,2019,Limerick,Number,372139.0
+1935,Animals in County,2019,Longford,Number,105787.0
+1936,Animals in County,2019,Louth,Number,86083.0
+1937,Animals in County,2019,Mayo,Number,241656.0
+1938,Animals in County,2019,Meath,Number,267273.0
+1939,Animals in County,2019,Monaghan,Number,197909.0
+1940,Animals in County,2019,Offaly,Number,219789.0
+1941,Animals in County,2019,Roscommon,Number,182848.0
+1942,Animals in County,2019,Sligo,Number,99835.0
+1943,Animals in County,2019,Tipperary North,Number,295751.0
+1944,Animals in County,2019,Tipperary South,Number,297366.0
+1945,Animals in County,2019,Waterford,Number,233639.0
+1946,Animals in County,2019,Westmeath,Number,192248.0
+1947,Animals in County,2019,Wexford,Number,276353.0
+1948,Animals in County,2019,Wicklow E,Number,73347.0
+1949,Animals in County,2019,Wicklow W,Number,41224.0
+1950,Animals in County,2020,State,Number,7202987.0
+1951,Animals in County,2020,Carlow,Number,108898.0
+1952,Animals in County,2020,Cavan,Number,233559.0
+1953,Animals in County,2020,Clare,Number,282277.0
+1954,Animals in County,2020,Cork North,Number,617851.0
+1955,Animals in County,2020,Cork South,Number,501019.0
+1956,Animals in County,2020,Donegal,Number,182604.0
+1957,Animals in County,2020,Dublin,Number,22567.0
+1958,Animals in County,2020,Galway,Number,432588.0
+1959,Animals in County,2020,Kerry,Number,352779.0
+1960,Animals in County,2020,Kildare,Number,137549.0
+1961,Animals in County,2020,Kilkenny,Number,376653.0
+1962,Animals in County,2020,Laois,Number,264354.0
+1963,Animals in County,2020,Leitrim,Number,67834.0
+1964,Animals in County,2020,Limerick,Number,446130.0
+1965,Animals in County,2020,Longford,Number,115559.0
+1966,Animals in County,2020,Louth,Number,95852.0
+1967,Animals in County,2020,Mayo,Number,260638.0
+1968,Animals in County,2020,Meath,Number,305449.0
+1969,Animals in County,2020,Monaghan,Number,211647.0
+1970,Animals in County,2020,Offaly,Number,249713.0
+1971,Animals in County,2020,Roscommon,Number,201716.0
+1972,Animals in County,2020,Sligo,Number,107794.0
+1973,Animals in County,2020,Tipperary North,Number,349050.0
+1974,Animals in County,2020,Tipperary South,Number,356408.0
+1975,Animals in County,2020,Waterford,Number,272528.0
+1976,Animals in County,2020,Westmeath,Number,214210.0
+1977,Animals in County,2020,Wexford,Number,310311.0
+1978,Animals in County,2020,Wicklow E,Number,80707.0
+1979,Animals in County,2020,Wicklow W,Number,44743.0
+1980,Tests on Animals,2010,State,Number,8390750.0
+1981,Tests on Animals,2010,Carlow,Number,108584.0
+1982,Tests on Animals,2010,Cavan,Number,313822.0
+1983,Tests on Animals,2010,Clare,Number,385705.0
+1984,Tests on Animals,2010,Cork North,Number,664648.0
+1985,Tests on Animals,2010,Cork South,Number,586105.0
+1986,Tests on Animals,2010,Donegal,Number,232021.0
+1987,Tests on Animals,2010,Dublin,Number,30096.0
+1988,Tests on Animals,2010,Galway,Number,500797.0
+1989,Tests on Animals,2010,Kerry,Number,402235.0
+1990,Tests on Animals,2010,Kildare,Number,138426.0
+1991,Tests on Animals,2010,Kilkenny,Number,378100.0
+1992,Tests on Animals,2010,Laois,Number,274815.0
+1993,Tests on Animals,2010,Leitrim,Number,104696.0
+1994,Tests on Animals,2010,Limerick,Number,466762.0
+1995,Tests on Animals,2010,Longford,Number,147910.0
+1996,Tests on Animals,2010,Louth,Number,105185.0
+1997,Tests on Animals,2010,Mayo,Number,333497.0
+1998,Tests on Animals,2010,Meath,Number,416730.0
+1999,Tests on Animals,2010,Monaghan,Number,248441.0
+2000,Tests on Animals,2010,Offaly,Number,271410.0
+2001,Tests on Animals,2010,Roscommon,Number,291568.0
+2002,Tests on Animals,2010,Sligo,Number,150548.0
+2003,Tests on Animals,2010,Tipperary North,Number,380595.0
+2004,Tests on Animals,2010,Tipperary South,Number,379125.0
+2005,Tests on Animals,2010,Waterford,Number,293603.0
+2006,Tests on Animals,2010,Westmeath,Number,282900.0
+2007,Tests on Animals,2010,Wexford,Number,334745.0
+2008,Tests on Animals,2010,Wicklow E,Number,114380.0
+2009,Tests on Animals,2010,Wicklow W,Number,53301.0
+2010,Tests on Animals,2011,State,Number,8332285.0
+2011,Tests on Animals,2011,Carlow,Number,110581.0
+2012,Tests on Animals,2011,Cavan,Number,299639.0
+2013,Tests on Animals,2011,Clare,Number,363493.0
+2014,Tests on Animals,2011,Cork North,Number,677129.0
+2015,Tests on Animals,2011,Cork South,Number,593580.0
+2016,Tests on Animals,2011,Donegal,Number,233334.0
+2017,Tests on Animals,2011,Dublin,Number,29001.0
+2018,Tests on Animals,2011,Galway,Number,494843.0
+2019,Tests on Animals,2011,Kerry,Number,411183.0
+2020,Tests on Animals,2011,Kildare,Number,139587.0
+2021,Tests on Animals,2011,Kilkenny,Number,398748.0
+2022,Tests on Animals,2011,Laois,Number,275124.0
+2023,Tests on Animals,2011,Leitrim,Number,99644.0
+2024,Tests on Animals,2011,Limerick,Number,466189.0
+2025,Tests on Animals,2011,Longford,Number,140002.0
+2026,Tests on Animals,2011,Louth,Number,108789.0
+2027,Tests on Animals,2011,Mayo,Number,321607.0
+2028,Tests on Animals,2011,Meath,Number,414980.0
+2029,Tests on Animals,2011,Monaghan,Number,246728.0
+2030,Tests on Animals,2011,Offaly,Number,251369.0
+2031,Tests on Animals,2011,Roscommon,Number,271590.0
+2032,Tests on Animals,2011,Sligo,Number,136753.0
+2033,Tests on Animals,2011,Tipperary North,Number,371880.0
+2034,Tests on Animals,2011,Tipperary South,Number,371715.0
+2035,Tests on Animals,2011,Waterford,Number,286047.0
+2036,Tests on Animals,2011,Westmeath,Number,275271.0
+2037,Tests on Animals,2011,Wexford,Number,371002.0
+2038,Tests on Animals,2011,Wicklow E,Number,118167.0
+2039,Tests on Animals,2011,Wicklow W,Number,54310.0
+2040,Tests on Animals,2012,State,Number,8534677.0
+2041,Tests on Animals,2012,Carlow,Number,118445.0
+2042,Tests on Animals,2012,Cavan,Number,306322.0
+2043,Tests on Animals,2012,Clare,Number,375738.0
+2044,Tests on Animals,2012,Cork North,Number,685385.0
+2045,Tests on Animals,2012,Cork South,Number,600131.0
+2046,Tests on Animals,2012,Donegal,Number,237415.0
+2047,Tests on Animals,2012,Dublin,Number,28942.0
+2048,Tests on Animals,2012,Galway,Number,490530.0
+2049,Tests on Animals,2012,Kerry,Number,417792.0
+2050,Tests on Animals,2012,Kildare,Number,142051.0
+2051,Tests on Animals,2012,Kilkenny,Number,419685.0
+2052,Tests on Animals,2012,Laois,Number,274993.0
+2053,Tests on Animals,2012,Leitrim,Number,94345.0
+2054,Tests on Animals,2012,Limerick,Number,499809.0
+2055,Tests on Animals,2012,Longford,Number,140514.0
+2056,Tests on Animals,2012,Louth,Number,108147.0
+2057,Tests on Animals,2012,Mayo,Number,336864.0
+2058,Tests on Animals,2012,Meath,Number,428439.0
+2059,Tests on Animals,2012,Monaghan,Number,261213.0
+2060,Tests on Animals,2012,Offaly,Number,253856.0
+2061,Tests on Animals,2012,Roscommon,Number,277653.0
+2062,Tests on Animals,2012,Sligo,Number,136028.0
+2063,Tests on Animals,2012,Tipperary North,Number,391074.0
+2064,Tests on Animals,2012,Tipperary South,Number,370441.0
+2065,Tests on Animals,2012,Waterford,Number,294841.0
+2066,Tests on Animals,2012,Westmeath,Number,277644.0
+2067,Tests on Animals,2012,Wexford,Number,381628.0
+2068,Tests on Animals,2012,Wicklow E,Number,119905.0
+2069,Tests on Animals,2012,Wicklow W,Number,64847.0
+2070,Tests on Animals,2013,State,Number,8474961.0
+2071,Tests on Animals,2013,Carlow,Number,119007.0
+2072,Tests on Animals,2013,Cavan,Number,304476.0
+2073,Tests on Animals,2013,Clare,Number,382336.0
+2074,Tests on Animals,2013,Cork North,Number,698714.0
+2075,Tests on Animals,2013,Cork South,Number,588299.0
+2076,Tests on Animals,2013,Donegal,Number,251465.0
+2077,Tests on Animals,2013,Dublin,Number,31274.0
+2078,Tests on Animals,2013,Galway,Number,490656.0
+2079,Tests on Animals,2013,Kerry,Number,428050.0
+2080,Tests on Animals,2013,Kildare,Number,145332.0
+2081,Tests on Animals,2013,Kilkenny,Number,425530.0
+2082,Tests on Animals,2013,Laois,Number,274984.0
+2083,Tests on Animals,2013,Leitrim,Number,93858.0
+2084,Tests on Animals,2013,Limerick,Number,492879.0
+2085,Tests on Animals,2013,Longford,Number,140689.0
+2086,Tests on Animals,2013,Louth,Number,109931.0
+2087,Tests on Animals,2013,Mayo,Number,326703.0
+2088,Tests on Animals,2013,Meath,Number,400151.0
+2089,Tests on Animals,2013,Monaghan,Number,262041.0
+2090,Tests on Animals,2013,Offaly,Number,259168.0
+2091,Tests on Animals,2013,Roscommon,Number,262559.0
+2092,Tests on Animals,2013,Sligo,Number,140999.0
+2093,Tests on Animals,2013,Tipperary North,Number,377382.0
+2094,Tests on Animals,2013,Tipperary South,Number,363186.0
+2095,Tests on Animals,2013,Waterford,Number,289412.0
+2096,Tests on Animals,2013,Westmeath,Number,272634.0
+2097,Tests on Animals,2013,Wexford,Number,370583.0
+2098,Tests on Animals,2013,Wicklow E,Number,114715.0
+2099,Tests on Animals,2013,Wicklow W,Number,57948.0
+2100,Tests on Animals,2014,State,Number,8445262.0
+2101,Tests on Animals,2014,Carlow,Number,108157.0
+2102,Tests on Animals,2014,Cavan,Number,296220.0
+2103,Tests on Animals,2014,Clare,Number,381149.0
+2104,Tests on Animals,2014,Cork North,Number,705655.0
+2105,Tests on Animals,2014,Cork South,Number,576497.0
+2106,Tests on Animals,2014,Donegal,Number,220837.0
+2107,Tests on Animals,2014,Dublin,Number,33928.0
+2108,Tests on Animals,2014,Galway,Number,489265.0
+2109,Tests on Animals,2014,Kerry,Number,431453.0
+2110,Tests on Animals,2014,Kildare,Number,148841.0
+2111,Tests on Animals,2014,Kilkenny,Number,418301.0
+2112,Tests on Animals,2014,Laois,Number,272402.0
+2113,Tests on Animals,2014,Leitrim,Number,93290.0
+2114,Tests on Animals,2014,Limerick,Number,500552.0
+2115,Tests on Animals,2014,Longford,Number,128723.0
+2116,Tests on Animals,2014,Louth,Number,111171.0
+2117,Tests on Animals,2014,Mayo,Number,320796.0
+2118,Tests on Animals,2014,Meath,Number,404428.0
+2119,Tests on Animals,2014,Monaghan,Number,257034.0
+2120,Tests on Animals,2014,Offaly,Number,267030.0
+2121,Tests on Animals,2014,Roscommon,Number,262973.0
+2122,Tests on Animals,2014,Sligo,Number,135958.0
+2123,Tests on Animals,2014,Tipperary North,Number,390056.0
+2124,Tests on Animals,2014,Tipperary South,Number,363799.0
+2125,Tests on Animals,2014,Waterford,Number,300380.0
+2126,Tests on Animals,2014,Westmeath,Number,267358.0
+2127,Tests on Animals,2014,Wexford,Number,384146.0
+2128,Tests on Animals,2014,Wicklow E,Number,116234.0
+2129,Tests on Animals,2014,Wicklow W,Number,58629.0
+2130,Tests on Animals,2015,State,Number,8429602.0
+2131,Tests on Animals,2015,Carlow,Number,114286.0
+2132,Tests on Animals,2015,Cavan,Number,297930.0
+2133,Tests on Animals,2015,Clare,Number,383201.0
+2134,Tests on Animals,2015,Cork North,Number,691179.0
+2135,Tests on Animals,2015,Cork South,Number,569407.0
+2136,Tests on Animals,2015,Donegal,Number,218270.0
+2137,Tests on Animals,2015,Dublin,Number,29407.0
+2138,Tests on Animals,2015,Galway,Number,500635.0
+2139,Tests on Animals,2015,Kerry,Number,433978.0
+2140,Tests on Animals,2015,Kildare,Number,147069.0
+2141,Tests on Animals,2015,Kilkenny,Number,419142.0
+2142,Tests on Animals,2015,Laois,Number,286727.0
+2143,Tests on Animals,2015,Leitrim,Number,97492.0
+2144,Tests on Animals,2015,Limerick,Number,465807.0
+2145,Tests on Animals,2015,Longford,Number,130204.0
+2146,Tests on Animals,2015,Louth,Number,105062.0
+2147,Tests on Animals,2015,Mayo,Number,321255.0
+2148,Tests on Animals,2015,Meath,Number,394529.0
+2149,Tests on Animals,2015,Monaghan,Number,267392.0
+2150,Tests on Animals,2015,Offaly,Number,284882.0
+2151,Tests on Animals,2015,Roscommon,Number,257872.0
+2152,Tests on Animals,2015,Sligo,Number,143315.0
+2153,Tests on Animals,2015,Tipperary North,Number,390464.0
+2154,Tests on Animals,2015,Tipperary South,Number,376306.0
+2155,Tests on Animals,2015,Waterford,Number,287336.0
+2156,Tests on Animals,2015,Westmeath,Number,267779.0
+2157,Tests on Animals,2015,Wexford,Number,370771.0
+2158,Tests on Animals,2015,Wicklow E,Number,113986.0
+2159,Tests on Animals,2015,Wicklow W,Number,63919.0
+2160,Tests on Animals,2016,State,Number,8635824.0
+2161,Tests on Animals,2016,Carlow,Number,119607.0
+2162,Tests on Animals,2016,Cavan,Number,302990.0
+2163,Tests on Animals,2016,Clare,Number,378083.0
+2164,Tests on Animals,2016,Cork North,Number,713432.0
+2165,Tests on Animals,2016,Cork South,Number,615751.0
+2166,Tests on Animals,2016,Donegal,Number,217131.0
+2167,Tests on Animals,2016,Dublin,Number,31404.0
+2168,Tests on Animals,2016,Galway,Number,516534.0
+2169,Tests on Animals,2016,Kerry,Number,429956.0
+2170,Tests on Animals,2016,Kildare,Number,150313.0
+2171,Tests on Animals,2016,Kilkenny,Number,416548.0
+2172,Tests on Animals,2016,Laois,Number,286424.0
+2173,Tests on Animals,2016,Leitrim,Number,89142.0
+2174,Tests on Animals,2016,Limerick,Number,493179.0
+2175,Tests on Animals,2016,Longford,Number,134998.0
+2176,Tests on Animals,2016,Louth,Number,103720.0
+2177,Tests on Animals,2016,Mayo,Number,319189.0
+2178,Tests on Animals,2016,Meath,Number,401834.0
+2179,Tests on Animals,2016,Monaghan,Number,287636.0
+2180,Tests on Animals,2016,Offaly,Number,292814.0
+2181,Tests on Animals,2016,Roscommon,Number,253866.0
+2182,Tests on Animals,2016,Sligo,Number,142348.0
+2183,Tests on Animals,2016,Tipperary North,Number,427999.0
+2184,Tests on Animals,2016,Tipperary South,Number,386177.0
+2185,Tests on Animals,2016,Waterford,Number,300636.0
+2186,Tests on Animals,2016,Westmeath,Number,271309.0
+2187,Tests on Animals,2016,Wexford,Number,368231.0
+2188,Tests on Animals,2016,Wicklow E,Number,114671.0
+2189,Tests on Animals,2016,Wicklow W,Number,69902.0
+2190,Tests on Animals,2017,State,Number,8882933.0
+2191,Tests on Animals,2017,Carlow,Number,125317.0
+2192,Tests on Animals,2017,Cavan,Number,335870.0
+2193,Tests on Animals,2017,Clare,Number,376122.0
+2194,Tests on Animals,2017,Cork North,Number,737432.0
+2195,Tests on Animals,2017,Cork South,Number,648076.0
+2196,Tests on Animals,2017,Donegal,Number,212312.0
+2197,Tests on Animals,2017,Dublin,Number,29983.0
+2198,Tests on Animals,2017,Galway,Number,519155.0
+2199,Tests on Animals,2017,Kerry,Number,448489.0
+2200,Tests on Animals,2017,Kildare,Number,153045.0
+2201,Tests on Animals,2017,Kilkenny,Number,449898.0
+2202,Tests on Animals,2017,Laois,Number,306618.0
+2203,Tests on Animals,2017,Leitrim,Number,93300.0
+2204,Tests on Animals,2017,Limerick,Number,513342.0
+2205,Tests on Animals,2017,Longford,Number,131474.0
+2206,Tests on Animals,2017,Louth,Number,107314.0
+2207,Tests on Animals,2017,Mayo,Number,329714.0
+2208,Tests on Animals,2017,Meath,Number,406634.0
+2209,Tests on Animals,2017,Monaghan,Number,295948.0
+2210,Tests on Animals,2017,Offaly,Number,296625.0
+2211,Tests on Animals,2017,Roscommon,Number,251964.0
+2212,Tests on Animals,2017,Sligo,Number,136865.0
+2213,Tests on Animals,2017,Tipperary North,Number,420633.0
+2214,Tests on Animals,2017,Tipperary South,Number,396451.0
+2215,Tests on Animals,2017,Waterford,Number,297173.0
+2216,Tests on Animals,2017,Westmeath,Number,292352.0
+2217,Tests on Animals,2017,Wexford,Number,385191.0
+2218,Tests on Animals,2017,Wicklow E,Number,119893.0
+2219,Tests on Animals,2017,Wicklow W,Number,65743.0
+2220,Tests on Animals,2018,State,Number,8869856.0
+2221,Tests on Animals,2018,Carlow,Number,122158.0
+2222,Tests on Animals,2018,Cavan,Number,329223.0
+2223,Tests on Animals,2018,Clare,Number,374578.0
+2224,Tests on Animals,2018,Cork North,Number,784284.0
+2225,Tests on Animals,2018,Cork South,Number,609574.0
+2226,Tests on Animals,2018,Donegal,Number,200069.0
+2227,Tests on Animals,2018,Dublin,Number,32680.0
+2228,Tests on Animals,2018,Galway,Number,519150.0
+2229,Tests on Animals,2018,Kerry,Number,441446.0
+2230,Tests on Animals,2018,Kildare,Number,154612.0
+2231,Tests on Animals,2018,Kilkenny,Number,414922.0
+2232,Tests on Animals,2018,Laois,Number,301949.0
+2233,Tests on Animals,2018,Leitrim,Number,86623.0
+2234,Tests on Animals,2018,Limerick,Number,495950.0
+2235,Tests on Animals,2018,Longford,Number,136359.0
+2236,Tests on Animals,2018,Louth,Number,107076.0
+2237,Tests on Animals,2018,Mayo,Number,334547.0
+2238,Tests on Animals,2018,Meath,Number,393511.0
+2239,Tests on Animals,2018,Monaghan,Number,373846.0
+2240,Tests on Animals,2018,Offaly,Number,298237.0
+2241,Tests on Animals,2018,Roscommon,Number,246291.0
+2242,Tests on Animals,2018,Sligo,Number,139664.0
+2243,Tests on Animals,2018,Tipperary North,Number,435034.0
+2244,Tests on Animals,2018,Tipperary South,Number,389821.0
+2245,Tests on Animals,2018,Waterford,Number,302544.0
+2246,Tests on Animals,2018,Westmeath,Number,285228.0
+2247,Tests on Animals,2018,Wexford,Number,371229.0
+2248,Tests on Animals,2018,Wicklow E,Number,123485.0
+2249,Tests on Animals,2018,Wicklow W,Number,65766.0
+2250,Tests on Animals,2019,State,Number,8827682.0
+2251,Tests on Animals,2019,Carlow,Number,123760.0
+2252,Tests on Animals,2019,Cavan,Number,332460.0
+2253,Tests on Animals,2019,Clare,Number,375832.0
+2254,Tests on Animals,2019,Cork North,Number,798849.0
+2255,Tests on Animals,2019,Cork South,Number,580538.0
+2256,Tests on Animals,2019,Donegal,Number,210692.0
+2257,Tests on Animals,2019,Dublin,Number,27711.0
+2258,Tests on Animals,2019,Galway,Number,524570.0
+2259,Tests on Animals,2019,Kerry,Number,435906.0
+2260,Tests on Animals,2019,Kildare,Number,146165.0
+2261,Tests on Animals,2019,Kilkenny,Number,419001.0
+2262,Tests on Animals,2019,Laois,Number,305448.0
+2263,Tests on Animals,2019,Leitrim,Number,89280.0
+2264,Tests on Animals,2019,Limerick,Number,492196.0
+2265,Tests on Animals,2019,Longford,Number,128903.0
+2266,Tests on Animals,2019,Louth,Number,107324.0
+2267,Tests on Animals,2019,Mayo,Number,320106.0
+2268,Tests on Animals,2019,Meath,Number,386790.0
+2269,Tests on Animals,2019,Monaghan,Number,406183.0
+2270,Tests on Animals,2019,Offaly,Number,294330.0
+2271,Tests on Animals,2019,Roscommon,Number,249728.0
+2272,Tests on Animals,2019,Sligo,Number,136966.0
+2273,Tests on Animals,2019,Tipperary North,Number,414657.0
+2274,Tests on Animals,2019,Tipperary South,Number,386916.0
+2275,Tests on Animals,2019,Waterford,Number,281986.0
+2276,Tests on Animals,2019,Westmeath,Number,273827.0
+2277,Tests on Animals,2019,Wexford,Number,388119.0
+2278,Tests on Animals,2019,Wicklow E,Number,127565.0
+2279,Tests on Animals,2019,Wicklow W,Number,61874.0
+2280,Tests on Animals,2020,State,Number,9086934.0
+2281,Tests on Animals,2020,Carlow,Number,123642.0
+2282,Tests on Animals,2020,Cavan,Number,355293.0
+2283,Tests on Animals,2020,Clare,Number,388196.0
+2284,Tests on Animals,2020,Cork North,Number,879841.0
+2285,Tests on Animals,2020,Cork South,Number,587228.0
+2286,Tests on Animals,2020,Donegal,Number,215669.0
+2287,Tests on Animals,2020,Dublin,Number,24987.0
+2288,Tests on Animals,2020,Galway,Number,543606.0
+2289,Tests on Animals,2020,Kerry,Number,439311.0
+2290,Tests on Animals,2020,Kildare,Number,148802.0
+2291,Tests on Animals,2020,Kilkenny,Number,409932.0
+2292,Tests on Animals,2020,Laois,Number,302252.0
+2293,Tests on Animals,2020,Leitrim,Number,89829.0
+2294,Tests on Animals,2020,Limerick,Number,508430.0
+2295,Tests on Animals,2020,Longford,Number,138324.0
+2296,Tests on Animals,2020,Louth,Number,126508.0
+2297,Tests on Animals,2020,Mayo,Number,327239.0
+2298,Tests on Animals,2020,Meath,Number,417790.0
+2299,Tests on Animals,2020,Monaghan,Number,349144.0
+2300,Tests on Animals,2020,Offaly,Number,303718.0
+2301,Tests on Animals,2020,Roscommon,Number,246903.0
+2302,Tests on Animals,2020,Sligo,Number,132464.0
+2303,Tests on Animals,2020,Tipperary North,Number,441627.0
+2304,Tests on Animals,2020,Tipperary South,Number,420521.0
+2305,Tests on Animals,2020,Waterford,Number,287221.0
+2306,Tests on Animals,2020,Westmeath,Number,304207.0
+2307,Tests on Animals,2020,Wexford,Number,366765.0
+2308,Tests on Animals,2020,Wicklow E,Number,131187.0
+2309,Tests on Animals,2020,Wicklow W,Number,76298.0
+2310,Reactors to date,2010,State,Number,20211.0
+2311,Reactors to date,2010,Carlow,Number,124.0
+2312,Reactors to date,2010,Cavan,Number,981.0
+2313,Reactors to date,2010,Clare,Number,1947.0
+2314,Reactors to date,2010,Cork North,Number,1078.0
+2315,Reactors to date,2010,Cork South,Number,1592.0
+2316,Reactors to date,2010,Donegal,Number,396.0
+2317,Reactors to date,2010,Dublin,Number,60.0
+2318,Reactors to date,2010,Galway,Number,1579.0
+2319,Reactors to date,2010,Kerry,Number,601.0
+2320,Reactors to date,2010,Kildare,Number,182.0
+2321,Reactors to date,2010,Kilkenny,Number,737.0
+2322,Reactors to date,2010,Laois,Number,404.0
+2323,Reactors to date,2010,Leitrim,Number,265.0
+2324,Reactors to date,2010,Limerick,Number,866.0
+2325,Reactors to date,2010,Longford,Number,248.0
+2326,Reactors to date,2010,Louth,Number,339.0
+2327,Reactors to date,2010,Mayo,Number,361.0
+2328,Reactors to date,2010,Meath,Number,1031.0
+2329,Reactors to date,2010,Monaghan,Number,645.0
+2330,Reactors to date,2010,Offaly,Number,676.0
+2331,Reactors to date,2010,Roscommon,Number,731.0
+2332,Reactors to date,2010,Sligo,Number,220.0
+2333,Reactors to date,2010,Tipperary North,Number,931.0
+2334,Reactors to date,2010,Tipperary South,Number,747.0
+2335,Reactors to date,2010,Waterford,Number,414.0
+2336,Reactors to date,2010,Westmeath,Number,883.0
+2337,Reactors to date,2010,Wexford,Number,1255.0
+2338,Reactors to date,2010,Wicklow E,Number,833.0
+2339,Reactors to date,2010,Wicklow W,Number,85.0
+2340,Reactors to date,2011,State,Number,18531.0
+2341,Reactors to date,2011,Carlow,Number,210.0
+2342,Reactors to date,2011,Cavan,Number,717.0
+2343,Reactors to date,2011,Clare,Number,1185.0
+2344,Reactors to date,2011,Cork North,Number,1137.0
+2345,Reactors to date,2011,Cork South,Number,1368.0
+2346,Reactors to date,2011,Donegal,Number,415.0
+2347,Reactors to date,2011,Dublin,Number,50.0
+2348,Reactors to date,2011,Galway,Number,1114.0
+2349,Reactors to date,2011,Kerry,Number,1169.0
+2350,Reactors to date,2011,Kildare,Number,260.0
+2351,Reactors to date,2011,Kilkenny,Number,917.0
+2352,Reactors to date,2011,Laois,Number,420.0
+2353,Reactors to date,2011,Leitrim,Number,244.0
+2354,Reactors to date,2011,Limerick,Number,468.0
+2355,Reactors to date,2011,Longford,Number,211.0
+2356,Reactors to date,2011,Louth,Number,264.0
+2357,Reactors to date,2011,Mayo,Number,313.0
+2358,Reactors to date,2011,Meath,Number,975.0
+2359,Reactors to date,2011,Monaghan,Number,361.0
+2360,Reactors to date,2011,Offaly,Number,508.0
+2361,Reactors to date,2011,Roscommon,Number,573.0
+2362,Reactors to date,2011,Sligo,Number,278.0
+2363,Reactors to date,2011,Tipperary North,Number,775.0
+2364,Reactors to date,2011,Tipperary South,Number,577.0
+2365,Reactors to date,2011,Waterford,Number,581.0
+2366,Reactors to date,2011,Westmeath,Number,880.0
+2367,Reactors to date,2011,Wexford,Number,1406.0
+2368,Reactors to date,2011,Wicklow E,Number,665.0
+2369,Reactors to date,2011,Wicklow W,Number,490.0
+2370,Reactors to date,2012,State,Number,18476.0
+2371,Reactors to date,2012,Carlow,Number,182.0
+2372,Reactors to date,2012,Cavan,Number,773.0
+2373,Reactors to date,2012,Clare,Number,1136.0
+2374,Reactors to date,2012,Cork North,Number,1279.0
+2375,Reactors to date,2012,Cork South,Number,1218.0
+2376,Reactors to date,2012,Donegal,Number,609.0
+2377,Reactors to date,2012,Dublin,Number,47.0
+2378,Reactors to date,2012,Galway,Number,997.0
+2379,Reactors to date,2012,Kerry,Number,1394.0
+2380,Reactors to date,2012,Kildare,Number,129.0
+2381,Reactors to date,2012,Kilkenny,Number,845.0
+2382,Reactors to date,2012,Laois,Number,475.0
+2383,Reactors to date,2012,Leitrim,Number,222.0
+2384,Reactors to date,2012,Limerick,Number,1084.0
+2385,Reactors to date,2012,Longford,Number,276.0
+2386,Reactors to date,2012,Louth,Number,115.0
+2387,Reactors to date,2012,Mayo,Number,492.0
+2388,Reactors to date,2012,Meath,Number,939.0
+2389,Reactors to date,2012,Monaghan,Number,684.0
+2390,Reactors to date,2012,Offaly,Number,455.0
+2391,Reactors to date,2012,Roscommon,Number,725.0
+2392,Reactors to date,2012,Sligo,Number,333.0
+2393,Reactors to date,2012,Tipperary North,Number,659.0
+2394,Reactors to date,2012,Tipperary South,Number,340.0
+2395,Reactors to date,2012,Waterford,Number,289.0
+2396,Reactors to date,2012,Westmeath,Number,903.0
+2397,Reactors to date,2012,Wexford,Number,926.0
+2398,Reactors to date,2012,Wicklow E,Number,724.0
+2399,Reactors to date,2012,Wicklow W,Number,226.0
+2400,Reactors to date,2013,State,Number,15612.0
+2401,Reactors to date,2013,Carlow,Number,85.0
+2402,Reactors to date,2013,Cavan,Number,891.0
+2403,Reactors to date,2013,Clare,Number,1205.0
+2404,Reactors to date,2013,Cork North,Number,996.0
+2405,Reactors to date,2013,Cork South,Number,1055.0
+2406,Reactors to date,2013,Donegal,Number,480.0
+2407,Reactors to date,2013,Dublin,Number,57.0
+2408,Reactors to date,2013,Galway,Number,879.0
+2409,Reactors to date,2013,Kerry,Number,778.0
+2410,Reactors to date,2013,Kildare,Number,150.0
+2411,Reactors to date,2013,Kilkenny,Number,595.0
+2412,Reactors to date,2013,Laois,Number,556.0
+2413,Reactors to date,2013,Leitrim,Number,191.0
+2414,Reactors to date,2013,Limerick,Number,921.0
+2415,Reactors to date,2013,Longford,Number,171.0
+2416,Reactors to date,2013,Louth,Number,118.0
+2417,Reactors to date,2013,Mayo,Number,446.0
+2418,Reactors to date,2013,Meath,Number,747.0
+2419,Reactors to date,2013,Monaghan,Number,675.0
+2420,Reactors to date,2013,Offaly,Number,545.0
+2421,Reactors to date,2013,Roscommon,Number,537.0
+2422,Reactors to date,2013,Sligo,Number,213.0
+2423,Reactors to date,2013,Tipperary North,Number,645.0
+2424,Reactors to date,2013,Tipperary South,Number,271.0
+2425,Reactors to date,2013,Waterford,Number,462.0
+2426,Reactors to date,2013,Westmeath,Number,533.0
+2427,Reactors to date,2013,Wexford,Number,709.0
+2428,Reactors to date,2013,Wicklow E,Number,577.0
+2429,Reactors to date,2013,Wicklow W,Number,124.0
+2430,Reactors to date,2014,State,Number,16145.0
+2431,Reactors to date,2014,Carlow,Number,31.0
+2432,Reactors to date,2014,Cavan,Number,658.0
+2433,Reactors to date,2014,Clare,Number,1735.0
+2434,Reactors to date,2014,Cork North,Number,1160.0
+2435,Reactors to date,2014,Cork South,Number,908.0
+2436,Reactors to date,2014,Donegal,Number,445.0
+2437,Reactors to date,2014,Dublin,Number,52.0
+2438,Reactors to date,2014,Galway,Number,1007.0
+2439,Reactors to date,2014,Kerry,Number,1177.0
+2440,Reactors to date,2014,Kildare,Number,178.0
+2441,Reactors to date,2014,Kilkenny,Number,391.0
+2442,Reactors to date,2014,Laois,Number,377.0
+2443,Reactors to date,2014,Leitrim,Number,251.0
+2444,Reactors to date,2014,Limerick,Number,557.0
+2445,Reactors to date,2014,Longford,Number,139.0
+2446,Reactors to date,2014,Louth,Number,115.0
+2447,Reactors to date,2014,Mayo,Number,266.0
+2448,Reactors to date,2014,Meath,Number,656.0
+2449,Reactors to date,2014,Monaghan,Number,372.0
+2450,Reactors to date,2014,Offaly,Number,300.0
+2451,Reactors to date,2014,Roscommon,Number,679.0
+2452,Reactors to date,2014,Sligo,Number,428.0
+2453,Reactors to date,2014,Tipperary North,Number,767.0
+2454,Reactors to date,2014,Tipperary South,Number,181.0
+2455,Reactors to date,2014,Waterford,Number,383.0
+2456,Reactors to date,2014,Westmeath,Number,726.0
+2457,Reactors to date,2014,Wexford,Number,988.0
+2458,Reactors to date,2014,Wicklow E,Number,1029.0
+2459,Reactors to date,2014,Wicklow W,Number,189.0
+2460,Reactors to date,2015,State,Number,15317.0
+2461,Reactors to date,2015,Carlow,Number,249.0
+2462,Reactors to date,2015,Cavan,Number,940.0
+2463,Reactors to date,2015,Clare,Number,1383.0
+2464,Reactors to date,2015,Cork North,Number,929.0
+2465,Reactors to date,2015,Cork South,Number,1127.0
+2466,Reactors to date,2015,Donegal,Number,242.0
+2467,Reactors to date,2015,Dublin,Number,63.0
+2468,Reactors to date,2015,Galway,Number,848.0
+2469,Reactors to date,2015,Kerry,Number,717.0
+2470,Reactors to date,2015,Kildare,Number,138.0
+2471,Reactors to date,2015,Kilkenny,Number,701.0
+2472,Reactors to date,2015,Laois,Number,386.0
+2473,Reactors to date,2015,Leitrim,Number,187.0
+2474,Reactors to date,2015,Limerick,Number,709.0
+2475,Reactors to date,2015,Longford,Number,155.0
+2476,Reactors to date,2015,Louth,Number,120.0
+2477,Reactors to date,2015,Mayo,Number,269.0
+2478,Reactors to date,2015,Meath,Number,796.0
+2479,Reactors to date,2015,Monaghan,Number,595.0
+2480,Reactors to date,2015,Offaly,Number,427.0
+2481,Reactors to date,2015,Roscommon,Number,400.0
+2482,Reactors to date,2015,Sligo,Number,291.0
+2483,Reactors to date,2015,Tipperary North,Number,533.0
+2484,Reactors to date,2015,Tipperary South,Number,405.0
+2485,Reactors to date,2015,Waterford,Number,246.0
+2486,Reactors to date,2015,Westmeath,Number,573.0
+2487,Reactors to date,2015,Wexford,Number,704.0
+2488,Reactors to date,2015,Wicklow E,Number,568.0
+2489,Reactors to date,2015,Wicklow W,Number,616.0
+2490,Reactors to date,2016,State,Number,16914.0
+2491,Reactors to date,2016,Carlow,Number,126.0
+2492,Reactors to date,2016,Cavan,Number,812.0
+2493,Reactors to date,2016,Clare,Number,1335.0
+2494,Reactors to date,2016,Cork North,Number,1534.0
+2495,Reactors to date,2016,Cork South,Number,884.0
+2496,Reactors to date,2016,Donegal,Number,249.0
+2497,Reactors to date,2016,Dublin,Number,53.0
+2498,Reactors to date,2016,Galway,Number,1078.0
+2499,Reactors to date,2016,Kerry,Number,1109.0
+2500,Reactors to date,2016,Kildare,Number,261.0
+2501,Reactors to date,2016,Kilkenny,Number,405.0
+2502,Reactors to date,2016,Laois,Number,523.0
+2503,Reactors to date,2016,Leitrim,Number,110.0
+2504,Reactors to date,2016,Limerick,Number,594.0
+2505,Reactors to date,2016,Longford,Number,120.0
+2506,Reactors to date,2016,Louth,Number,193.0
+2507,Reactors to date,2016,Mayo,Number,275.0
+2508,Reactors to date,2016,Meath,Number,1029.0
+2509,Reactors to date,2016,Monaghan,Number,1013.0
+2510,Reactors to date,2016,Offaly,Number,492.0
+2511,Reactors to date,2016,Roscommon,Number,376.0
+2512,Reactors to date,2016,Sligo,Number,218.0
+2513,Reactors to date,2016,Tipperary North,Number,968.0
+2514,Reactors to date,2016,Tipperary South,Number,489.0
+2515,Reactors to date,2016,Waterford,Number,567.0
+2516,Reactors to date,2016,Westmeath,Number,484.0
+2517,Reactors to date,2016,Wexford,Number,507.0
+2518,Reactors to date,2016,Wicklow E,Number,640.0
+2519,Reactors to date,2016,Wicklow W,Number,470.0
+2520,Reactors to date,2017,State,Number,17266.0
+2521,Reactors to date,2017,Carlow,Number,103.0
+2522,Reactors to date,2017,Cavan,Number,1408.0
+2523,Reactors to date,2017,Clare,Number,1207.0
+2524,Reactors to date,2017,Cork North,Number,1775.0
+2525,Reactors to date,2017,Cork South,Number,809.0
+2526,Reactors to date,2017,Donegal,Number,184.0
+2527,Reactors to date,2017,Dublin,Number,86.0
+2528,Reactors to date,2017,Galway,Number,975.0
+2529,Reactors to date,2017,Kerry,Number,1173.0
+2530,Reactors to date,2017,Kildare,Number,146.0
+2531,Reactors to date,2017,Kilkenny,Number,421.0
+2532,Reactors to date,2017,Laois,Number,667.0
+2533,Reactors to date,2017,Leitrim,Number,309.0
+2534,Reactors to date,2017,Limerick,Number,533.0
+2535,Reactors to date,2017,Longford,Number,73.0
+2536,Reactors to date,2017,Louth,Number,181.0
+2537,Reactors to date,2017,Mayo,Number,507.0
+2538,Reactors to date,2017,Meath,Number,654.0
+2539,Reactors to date,2017,Monaghan,Number,1089.0
+2540,Reactors to date,2017,Offaly,Number,346.0
+2541,Reactors to date,2017,Roscommon,Number,422.0
+2542,Reactors to date,2017,Sligo,Number,290.0
+2543,Reactors to date,2017,Tipperary North,Number,842.0
+2544,Reactors to date,2017,Tipperary South,Number,361.0
+2545,Reactors to date,2017,Waterford,Number,149.0
+2546,Reactors to date,2017,Westmeath,Number,919.0
+2547,Reactors to date,2017,Wexford,Number,907.0
+2548,Reactors to date,2017,Wicklow E,Number,421.0
+2549,Reactors to date,2017,Wicklow W,Number,309.0
+2550,Reactors to date,2018,State,Number,17491.0
+2551,Reactors to date,2018,Carlow,Number,105.0
+2552,Reactors to date,2018,Cavan,Number,893.0
+2553,Reactors to date,2018,Clare,Number,1265.0
+2554,Reactors to date,2018,Cork North,Number,2086.0
+2555,Reactors to date,2018,Cork South,Number,582.0
+2556,Reactors to date,2018,Donegal,Number,113.0
+2557,Reactors to date,2018,Dublin,Number,169.0
+2558,Reactors to date,2018,Galway,Number,838.0
+2559,Reactors to date,2018,Kerry,Number,1069.0
+2560,Reactors to date,2018,Kildare,Number,167.0
+2561,Reactors to date,2018,Kilkenny,Number,352.0
+2562,Reactors to date,2018,Laois,Number,505.0
+2563,Reactors to date,2018,Leitrim,Number,185.0
+2564,Reactors to date,2018,Limerick,Number,364.0
+2565,Reactors to date,2018,Longford,Number,207.0
+2566,Reactors to date,2018,Louth,Number,101.0
+2567,Reactors to date,2018,Mayo,Number,501.0
+2568,Reactors to date,2018,Meath,Number,754.0
+2569,Reactors to date,2018,Monaghan,Number,1677.0
+2570,Reactors to date,2018,Offaly,Number,360.0
+2571,Reactors to date,2018,Roscommon,Number,336.0
+2572,Reactors to date,2018,Sligo,Number,482.0
+2573,Reactors to date,2018,Tipperary North,Number,1296.0
+2574,Reactors to date,2018,Tipperary South,Number,399.0
+2575,Reactors to date,2018,Waterford,Number,343.0
+2576,Reactors to date,2018,Westmeath,Number,666.0
+2577,Reactors to date,2018,Wexford,Number,709.0
+2578,Reactors to date,2018,Wicklow E,Number,596.0
+2579,Reactors to date,2018,Wicklow W,Number,371.0
+2580,Reactors to date,2019,State,Number,17058.0
+2581,Reactors to date,2019,Carlow,Number,77.0
+2582,Reactors to date,2019,Cavan,Number,941.0
+2583,Reactors to date,2019,Clare,Number,1190.0
+2584,Reactors to date,2019,Cork North,Number,1993.0
+2585,Reactors to date,2019,Cork South,Number,898.0
+2586,Reactors to date,2019,Donegal,Number,219.0
+2587,Reactors to date,2019,Dublin,Number,137.0
+2588,Reactors to date,2019,Galway,Number,1181.0
+2589,Reactors to date,2019,Kerry,Number,832.0
+2590,Reactors to date,2019,Kildare,Number,84.0
+2591,Reactors to date,2019,Kilkenny,Number,507.0
+2592,Reactors to date,2019,Laois,Number,446.0
+2593,Reactors to date,2019,Leitrim,Number,258.0
+2594,Reactors to date,2019,Limerick,Number,357.0
+2595,Reactors to date,2019,Longford,Number,116.0
+2596,Reactors to date,2019,Louth,Number,194.0
+2597,Reactors to date,2019,Mayo,Number,379.0
+2598,Reactors to date,2019,Meath,Number,555.0
+2599,Reactors to date,2019,Monaghan,Number,1336.0
+2600,Reactors to date,2019,Offaly,Number,598.0
+2601,Reactors to date,2019,Roscommon,Number,464.0
+2602,Reactors to date,2019,Sligo,Number,232.0
+2603,Reactors to date,2019,Tipperary North,Number,851.0
+2604,Reactors to date,2019,Tipperary South,Number,377.0
+2605,Reactors to date,2019,Waterford,Number,148.0
+2606,Reactors to date,2019,Westmeath,Number,626.0
+2607,Reactors to date,2019,Wexford,Number,743.0
+2608,Reactors to date,2019,Wicklow E,Number,939.0
+2609,Reactors to date,2019,Wicklow W,Number,380.0
+2610,Reactors to date,2020,State,Number,22614.0
+2611,Reactors to date,2020,Carlow,Number,145.0
+2612,Reactors to date,2020,Cavan,Number,1174.0
+2613,Reactors to date,2020,Clare,Number,1569.0
+2614,Reactors to date,2020,Cork North,Number,2999.0
+2615,Reactors to date,2020,Cork South,Number,952.0
+2616,Reactors to date,2020,Donegal,Number,263.0
+2617,Reactors to date,2020,Dublin,Number,158.0
+2618,Reactors to date,2020,Galway,Number,1190.0
+2619,Reactors to date,2020,Kerry,Number,1201.0
+2620,Reactors to date,2020,Kildare,Number,177.0
+2621,Reactors to date,2020,Kilkenny,Number,368.0
+2622,Reactors to date,2020,Laois,Number,800.0
+2623,Reactors to date,2020,Leitrim,Number,164.0
+2624,Reactors to date,2020,Limerick,Number,748.0
+2625,Reactors to date,2020,Longford,Number,281.0
+2626,Reactors to date,2020,Louth,Number,286.0
+2627,Reactors to date,2020,Mayo,Number,717.0
+2628,Reactors to date,2020,Meath,Number,1001.0
+2629,Reactors to date,2020,Monaghan,Number,1154.0
+2630,Reactors to date,2020,Offaly,Number,738.0
+2631,Reactors to date,2020,Roscommon,Number,354.0
+2632,Reactors to date,2020,Sligo,Number,404.0
+2633,Reactors to date,2020,Tipperary North,Number,1370.0
+2634,Reactors to date,2020,Tipperary South,Number,1088.0
+2635,Reactors to date,2020,Waterford,Number,196.0
+2636,Reactors to date,2020,Westmeath,Number,1192.0
+2637,Reactors to date,2020,Wexford,Number,701.0
+2638,Reactors to date,2020,Wicklow E,Number,648.0
+2639,Reactors to date,2020,Wicklow W,Number,576.0
+2640,Reactors per 1000 Tests A.P.T.,2010,State,Number,2.41
+2641,Reactors per 1000 Tests A.P.T.,2010,Carlow,Number,1.14
+2642,Reactors per 1000 Tests A.P.T.,2010,Cavan,Number,3.13
+2643,Reactors per 1000 Tests A.P.T.,2010,Clare,Number,5.05
+2644,Reactors per 1000 Tests A.P.T.,2010,Cork North,Number,1.62
+2645,Reactors per 1000 Tests A.P.T.,2010,Cork South,Number,2.72
+2646,Reactors per 1000 Tests A.P.T.,2010,Donegal,Number,1.71
+2647,Reactors per 1000 Tests A.P.T.,2010,Dublin,Number,1.99
+2648,Reactors per 1000 Tests A.P.T.,2010,Galway,Number,3.15
+2649,Reactors per 1000 Tests A.P.T.,2010,Kerry,Number,1.49
+2650,Reactors per 1000 Tests A.P.T.,2010,Kildare,Number,1.31
+2651,Reactors per 1000 Tests A.P.T.,2010,Kilkenny,Number,1.95
+2652,Reactors per 1000 Tests A.P.T.,2010,Laois,Number,1.47
+2653,Reactors per 1000 Tests A.P.T.,2010,Leitrim,Number,2.53
+2654,Reactors per 1000 Tests A.P.T.,2010,Limerick,Number,1.86
+2655,Reactors per 1000 Tests A.P.T.,2010,Longford,Number,1.68
+2656,Reactors per 1000 Tests A.P.T.,2010,Louth,Number,3.22
+2657,Reactors per 1000 Tests A.P.T.,2010,Mayo,Number,1.08
+2658,Reactors per 1000 Tests A.P.T.,2010,Meath,Number,2.47
+2659,Reactors per 1000 Tests A.P.T.,2010,Monaghan,Number,2.6
+2660,Reactors per 1000 Tests A.P.T.,2010,Offaly,Number,2.49
+2661,Reactors per 1000 Tests A.P.T.,2010,Roscommon,Number,2.51
+2662,Reactors per 1000 Tests A.P.T.,2010,Sligo,Number,1.46
+2663,Reactors per 1000 Tests A.P.T.,2010,Tipperary North,Number,2.45
+2664,Reactors per 1000 Tests A.P.T.,2010,Tipperary South,Number,1.97
+2665,Reactors per 1000 Tests A.P.T.,2010,Waterford,Number,1.41
+2666,Reactors per 1000 Tests A.P.T.,2010,Westmeath,Number,3.12
+2667,Reactors per 1000 Tests A.P.T.,2010,Wexford,Number,3.75
+2668,Reactors per 1000 Tests A.P.T.,2010,Wicklow E,Number,7.28
+2669,Reactors per 1000 Tests A.P.T.,2010,Wicklow W,Number,1.59
+2670,Reactors per 1000 Tests A.P.T.,2011,State,Number,2.22
+2671,Reactors per 1000 Tests A.P.T.,2011,Carlow,Number,1.9
+2672,Reactors per 1000 Tests A.P.T.,2011,Cavan,Number,2.39
+2673,Reactors per 1000 Tests A.P.T.,2011,Clare,Number,3.26
+2674,Reactors per 1000 Tests A.P.T.,2011,Cork North,Number,1.68
+2675,Reactors per 1000 Tests A.P.T.,2011,Cork South,Number,2.3
+2676,Reactors per 1000 Tests A.P.T.,2011,Donegal,Number,1.78
+2677,Reactors per 1000 Tests A.P.T.,2011,Dublin,Number,1.72
+2678,Reactors per 1000 Tests A.P.T.,2011,Galway,Number,2.25
+2679,Reactors per 1000 Tests A.P.T.,2011,Kerry,Number,2.84
+2680,Reactors per 1000 Tests A.P.T.,2011,Kildare,Number,1.86
+2681,Reactors per 1000 Tests A.P.T.,2011,Kilkenny,Number,2.3
+2682,Reactors per 1000 Tests A.P.T.,2011,Laois,Number,1.53
+2683,Reactors per 1000 Tests A.P.T.,2011,Leitrim,Number,2.45
+2684,Reactors per 1000 Tests A.P.T.,2011,Limerick,Number,1.0
+2685,Reactors per 1000 Tests A.P.T.,2011,Longford,Number,1.51
+2686,Reactors per 1000 Tests A.P.T.,2011,Louth,Number,2.43
+2687,Reactors per 1000 Tests A.P.T.,2011,Mayo,Number,0.97
+2688,Reactors per 1000 Tests A.P.T.,2011,Meath,Number,2.35
+2689,Reactors per 1000 Tests A.P.T.,2011,Monaghan,Number,1.46
+2690,Reactors per 1000 Tests A.P.T.,2011,Offaly,Number,2.02
+2691,Reactors per 1000 Tests A.P.T.,2011,Roscommon,Number,2.11
+2692,Reactors per 1000 Tests A.P.T.,2011,Sligo,Number,2.03
+2693,Reactors per 1000 Tests A.P.T.,2011,Tipperary North,Number,2.08
+2694,Reactors per 1000 Tests A.P.T.,2011,Tipperary South,Number,1.55
+2695,Reactors per 1000 Tests A.P.T.,2011,Waterford,Number,2.03
+2696,Reactors per 1000 Tests A.P.T.,2011,Westmeath,Number,3.2
+2697,Reactors per 1000 Tests A.P.T.,2011,Wexford,Number,3.79
+2698,Reactors per 1000 Tests A.P.T.,2011,Wicklow E,Number,5.63
+2699,Reactors per 1000 Tests A.P.T.,2011,Wicklow W,Number,9.02
+2700,Reactors per 1000 Tests A.P.T.,2012,State,Number,2.16
+2701,Reactors per 1000 Tests A.P.T.,2012,Carlow,Number,1.54
+2702,Reactors per 1000 Tests A.P.T.,2012,Cavan,Number,2.52
+2703,Reactors per 1000 Tests A.P.T.,2012,Clare,Number,3.02
+2704,Reactors per 1000 Tests A.P.T.,2012,Cork North,Number,1.87
+2705,Reactors per 1000 Tests A.P.T.,2012,Cork South,Number,2.03
+2706,Reactors per 1000 Tests A.P.T.,2012,Donegal,Number,2.57
+2707,Reactors per 1000 Tests A.P.T.,2012,Dublin,Number,1.62
+2708,Reactors per 1000 Tests A.P.T.,2012,Galway,Number,2.03
+2709,Reactors per 1000 Tests A.P.T.,2012,Kerry,Number,3.34
+2710,Reactors per 1000 Tests A.P.T.,2012,Kildare,Number,0.91
+2711,Reactors per 1000 Tests A.P.T.,2012,Kilkenny,Number,2.01
+2712,Reactors per 1000 Tests A.P.T.,2012,Laois,Number,1.73
+2713,Reactors per 1000 Tests A.P.T.,2012,Leitrim,Number,2.35
+2714,Reactors per 1000 Tests A.P.T.,2012,Limerick,Number,2.17
+2715,Reactors per 1000 Tests A.P.T.,2012,Longford,Number,1.96
+2716,Reactors per 1000 Tests A.P.T.,2012,Louth,Number,1.06
+2717,Reactors per 1000 Tests A.P.T.,2012,Mayo,Number,1.46
+2718,Reactors per 1000 Tests A.P.T.,2012,Meath,Number,2.19
+2719,Reactors per 1000 Tests A.P.T.,2012,Monaghan,Number,2.62
+2720,Reactors per 1000 Tests A.P.T.,2012,Offaly,Number,1.79
+2721,Reactors per 1000 Tests A.P.T.,2012,Roscommon,Number,2.61
+2722,Reactors per 1000 Tests A.P.T.,2012,Sligo,Number,2.45
+2723,Reactors per 1000 Tests A.P.T.,2012,Tipperary North,Number,1.69
+2724,Reactors per 1000 Tests A.P.T.,2012,Tipperary South,Number,0.92
+2725,Reactors per 1000 Tests A.P.T.,2012,Waterford,Number,0.98
+2726,Reactors per 1000 Tests A.P.T.,2012,Westmeath,Number,3.25
+2727,Reactors per 1000 Tests A.P.T.,2012,Wexford,Number,2.43
+2728,Reactors per 1000 Tests A.P.T.,2012,Wicklow E,Number,6.04
+2729,Reactors per 1000 Tests A.P.T.,2012,Wicklow W,Number,3.49
+2730,Reactors per 1000 Tests A.P.T.,2013,State,Number,1.84
+2731,Reactors per 1000 Tests A.P.T.,2013,Carlow,Number,0.71
+2732,Reactors per 1000 Tests A.P.T.,2013,Cavan,Number,2.93
+2733,Reactors per 1000 Tests A.P.T.,2013,Clare,Number,3.15
+2734,Reactors per 1000 Tests A.P.T.,2013,Cork North,Number,1.43
+2735,Reactors per 1000 Tests A.P.T.,2013,Cork South,Number,1.79
+2736,Reactors per 1000 Tests A.P.T.,2013,Donegal,Number,1.91
+2737,Reactors per 1000 Tests A.P.T.,2013,Dublin,Number,1.82
+2738,Reactors per 1000 Tests A.P.T.,2013,Galway,Number,1.79
+2739,Reactors per 1000 Tests A.P.T.,2013,Kerry,Number,1.82
+2740,Reactors per 1000 Tests A.P.T.,2013,Kildare,Number,1.03
+2741,Reactors per 1000 Tests A.P.T.,2013,Kilkenny,Number,1.4
+2742,Reactors per 1000 Tests A.P.T.,2013,Laois,Number,2.02
+2743,Reactors per 1000 Tests A.P.T.,2013,Leitrim,Number,2.03
+2744,Reactors per 1000 Tests A.P.T.,2013,Limerick,Number,1.87
+2745,Reactors per 1000 Tests A.P.T.,2013,Longford,Number,1.22
+2746,Reactors per 1000 Tests A.P.T.,2013,Louth,Number,1.07
+2747,Reactors per 1000 Tests A.P.T.,2013,Mayo,Number,1.37
+2748,Reactors per 1000 Tests A.P.T.,2013,Meath,Number,1.87
+2749,Reactors per 1000 Tests A.P.T.,2013,Monaghan,Number,2.58
+2750,Reactors per 1000 Tests A.P.T.,2013,Offaly,Number,2.1
+2751,Reactors per 1000 Tests A.P.T.,2013,Roscommon,Number,2.05
+2752,Reactors per 1000 Tests A.P.T.,2013,Sligo,Number,1.51
+2753,Reactors per 1000 Tests A.P.T.,2013,Tipperary North,Number,1.71
+2754,Reactors per 1000 Tests A.P.T.,2013,Tipperary South,Number,0.75
+2755,Reactors per 1000 Tests A.P.T.,2013,Waterford,Number,1.6
+2756,Reactors per 1000 Tests A.P.T.,2013,Westmeath,Number,1.96
+2757,Reactors per 1000 Tests A.P.T.,2013,Wexford,Number,1.91
+2758,Reactors per 1000 Tests A.P.T.,2013,Wicklow E,Number,5.03
+2759,Reactors per 1000 Tests A.P.T.,2013,Wicklow W,Number,2.14
+2760,Reactors per 1000 Tests A.P.T.,2014,State,Number,1.91
+2761,Reactors per 1000 Tests A.P.T.,2014,Carlow,Number,0.29
+2762,Reactors per 1000 Tests A.P.T.,2014,Cavan,Number,2.22
+2763,Reactors per 1000 Tests A.P.T.,2014,Clare,Number,4.55
+2764,Reactors per 1000 Tests A.P.T.,2014,Cork North,Number,1.64
+2765,Reactors per 1000 Tests A.P.T.,2014,Cork South,Number,1.58
+2766,Reactors per 1000 Tests A.P.T.,2014,Donegal,Number,2.02
+2767,Reactors per 1000 Tests A.P.T.,2014,Dublin,Number,1.53
+2768,Reactors per 1000 Tests A.P.T.,2014,Galway,Number,2.06
+2769,Reactors per 1000 Tests A.P.T.,2014,Kerry,Number,2.73
+2770,Reactors per 1000 Tests A.P.T.,2014,Kildare,Number,1.2
+2771,Reactors per 1000 Tests A.P.T.,2014,Kilkenny,Number,0.93
+2772,Reactors per 1000 Tests A.P.T.,2014,Laois,Number,1.38
+2773,Reactors per 1000 Tests A.P.T.,2014,Leitrim,Number,2.69
+2774,Reactors per 1000 Tests A.P.T.,2014,Limerick,Number,1.11
+2775,Reactors per 1000 Tests A.P.T.,2014,Longford,Number,1.08
+2776,Reactors per 1000 Tests A.P.T.,2014,Louth,Number,1.03
+2777,Reactors per 1000 Tests A.P.T.,2014,Mayo,Number,0.83
+2778,Reactors per 1000 Tests A.P.T.,2014,Meath,Number,1.62
+2779,Reactors per 1000 Tests A.P.T.,2014,Monaghan,Number,1.45
+2780,Reactors per 1000 Tests A.P.T.,2014,Offaly,Number,1.12
+2781,Reactors per 1000 Tests A.P.T.,2014,Roscommon,Number,2.58
+2782,Reactors per 1000 Tests A.P.T.,2014,Sligo,Number,3.15
+2783,Reactors per 1000 Tests A.P.T.,2014,Tipperary North,Number,1.97
+2784,Reactors per 1000 Tests A.P.T.,2014,Tipperary South,Number,0.5
+2785,Reactors per 1000 Tests A.P.T.,2014,Waterford,Number,1.28
+2786,Reactors per 1000 Tests A.P.T.,2014,Westmeath,Number,2.72
+2787,Reactors per 1000 Tests A.P.T.,2014,Wexford,Number,2.57
+2788,Reactors per 1000 Tests A.P.T.,2014,Wicklow E,Number,8.85
+2789,Reactors per 1000 Tests A.P.T.,2014,Wicklow W,Number,3.22
+2790,Reactors per 1000 Tests A.P.T.,2015,State,Number,1.82
+2791,Reactors per 1000 Tests A.P.T.,2015,Carlow,Number,2.18
+2792,Reactors per 1000 Tests A.P.T.,2015,Cavan,Number,3.16
+2793,Reactors per 1000 Tests A.P.T.,2015,Clare,Number,3.61
+2794,Reactors per 1000 Tests A.P.T.,2015,Cork North,Number,1.34
+2795,Reactors per 1000 Tests A.P.T.,2015,Cork South,Number,1.98
+2796,Reactors per 1000 Tests A.P.T.,2015,Donegal,Number,1.11
+2797,Reactors per 1000 Tests A.P.T.,2015,Dublin,Number,2.14
+2798,Reactors per 1000 Tests A.P.T.,2015,Galway,Number,1.69
+2799,Reactors per 1000 Tests A.P.T.,2015,Kerry,Number,1.65
+2800,Reactors per 1000 Tests A.P.T.,2015,Kildare,Number,0.94
+2801,Reactors per 1000 Tests A.P.T.,2015,Kilkenny,Number,1.67
+2802,Reactors per 1000 Tests A.P.T.,2015,Laois,Number,1.35
+2803,Reactors per 1000 Tests A.P.T.,2015,Leitrim,Number,1.92
+2804,Reactors per 1000 Tests A.P.T.,2015,Limerick,Number,1.52
+2805,Reactors per 1000 Tests A.P.T.,2015,Longford,Number,1.19
+2806,Reactors per 1000 Tests A.P.T.,2015,Louth,Number,1.14
+2807,Reactors per 1000 Tests A.P.T.,2015,Mayo,Number,0.84
+2808,Reactors per 1000 Tests A.P.T.,2015,Meath,Number,2.02
+2809,Reactors per 1000 Tests A.P.T.,2015,Monaghan,Number,2.23
+2810,Reactors per 1000 Tests A.P.T.,2015,Offaly,Number,1.5
+2811,Reactors per 1000 Tests A.P.T.,2015,Roscommon,Number,1.55
+2812,Reactors per 1000 Tests A.P.T.,2015,Sligo,Number,2.03
+2813,Reactors per 1000 Tests A.P.T.,2015,Tipperary North,Number,1.37
+2814,Reactors per 1000 Tests A.P.T.,2015,Tipperary South,Number,1.08
+2815,Reactors per 1000 Tests A.P.T.,2015,Waterford,Number,0.86
+2816,Reactors per 1000 Tests A.P.T.,2015,Westmeath,Number,2.14
+2817,Reactors per 1000 Tests A.P.T.,2015,Wexford,Number,1.9
+2818,Reactors per 1000 Tests A.P.T.,2015,Wicklow E,Number,4.98
+2819,Reactors per 1000 Tests A.P.T.,2015,Wicklow W,Number,9.64
+2820,Reactors per 1000 Tests A.P.T.,2016,State,Number,1.96
+2821,Reactors per 1000 Tests A.P.T.,2016,Carlow,Number,1.05
+2822,Reactors per 1000 Tests A.P.T.,2016,Cavan,Number,2.68
+2823,Reactors per 1000 Tests A.P.T.,2016,Clare,Number,3.53
+2824,Reactors per 1000 Tests A.P.T.,2016,Cork North,Number,2.15
+2825,Reactors per 1000 Tests A.P.T.,2016,Cork South,Number,1.44
+2826,Reactors per 1000 Tests A.P.T.,2016,Donegal,Number,1.15
+2827,Reactors per 1000 Tests A.P.T.,2016,Dublin,Number,1.69
+2828,Reactors per 1000 Tests A.P.T.,2016,Galway,Number,2.09
+2829,Reactors per 1000 Tests A.P.T.,2016,Kerry,Number,2.58
+2830,Reactors per 1000 Tests A.P.T.,2016,Kildare,Number,1.74
+2831,Reactors per 1000 Tests A.P.T.,2016,Kilkenny,Number,0.97
+2832,Reactors per 1000 Tests A.P.T.,2016,Laois,Number,1.83
+2833,Reactors per 1000 Tests A.P.T.,2016,Leitrim,Number,1.23
+2834,Reactors per 1000 Tests A.P.T.,2016,Limerick,Number,1.2
+2835,Reactors per 1000 Tests A.P.T.,2016,Longford,Number,0.89
+2836,Reactors per 1000 Tests A.P.T.,2016,Louth,Number,1.86
+2837,Reactors per 1000 Tests A.P.T.,2016,Mayo,Number,0.86
+2838,Reactors per 1000 Tests A.P.T.,2016,Meath,Number,2.56
+2839,Reactors per 1000 Tests A.P.T.,2016,Monaghan,Number,3.52
+2840,Reactors per 1000 Tests A.P.T.,2016,Offaly,Number,1.68
+2841,Reactors per 1000 Tests A.P.T.,2016,Roscommon,Number,1.48
+2842,Reactors per 1000 Tests A.P.T.,2016,Sligo,Number,1.53
+2843,Reactors per 1000 Tests A.P.T.,2016,Tipperary North,Number,2.26
+2844,Reactors per 1000 Tests A.P.T.,2016,Tipperary South,Number,1.27
+2845,Reactors per 1000 Tests A.P.T.,2016,Waterford,Number,1.89
+2846,Reactors per 1000 Tests A.P.T.,2016,Westmeath,Number,1.78
+2847,Reactors per 1000 Tests A.P.T.,2016,Wexford,Number,1.38
+2848,Reactors per 1000 Tests A.P.T.,2016,Wicklow E,Number,5.58
+2849,Reactors per 1000 Tests A.P.T.,2016,Wicklow W,Number,6.72
+2850,Reactors per 1000 Tests A.P.T.,2017,State,Number,1.94
+2851,Reactors per 1000 Tests A.P.T.,2017,Carlow,Number,0.82
+2852,Reactors per 1000 Tests A.P.T.,2017,Cavan,Number,4.19
+2853,Reactors per 1000 Tests A.P.T.,2017,Clare,Number,3.21
+2854,Reactors per 1000 Tests A.P.T.,2017,Cork North,Number,2.41
+2855,Reactors per 1000 Tests A.P.T.,2017,Cork South,Number,1.25
+2856,Reactors per 1000 Tests A.P.T.,2017,Donegal,Number,0.87
+2857,Reactors per 1000 Tests A.P.T.,2017,Dublin,Number,2.87
+2858,Reactors per 1000 Tests A.P.T.,2017,Galway,Number,1.88
+2859,Reactors per 1000 Tests A.P.T.,2017,Kerry,Number,2.62
+2860,Reactors per 1000 Tests A.P.T.,2017,Kildare,Number,0.95
+2861,Reactors per 1000 Tests A.P.T.,2017,Kilkenny,Number,0.94
+2862,Reactors per 1000 Tests A.P.T.,2017,Laois,Number,2.18
+2863,Reactors per 1000 Tests A.P.T.,2017,Leitrim,Number,3.31
+2864,Reactors per 1000 Tests A.P.T.,2017,Limerick,Number,1.04
+2865,Reactors per 1000 Tests A.P.T.,2017,Longford,Number,0.56
+2866,Reactors per 1000 Tests A.P.T.,2017,Louth,Number,1.69
+2867,Reactors per 1000 Tests A.P.T.,2017,Mayo,Number,1.54
+2868,Reactors per 1000 Tests A.P.T.,2017,Meath,Number,1.61
+2869,Reactors per 1000 Tests A.P.T.,2017,Monaghan,Number,3.68
+2870,Reactors per 1000 Tests A.P.T.,2017,Offaly,Number,1.17
+2871,Reactors per 1000 Tests A.P.T.,2017,Roscommon,Number,1.67
+2872,Reactors per 1000 Tests A.P.T.,2017,Sligo,Number,2.12
+2873,Reactors per 1000 Tests A.P.T.,2017,Tipperary North,Number,2.0
+2874,Reactors per 1000 Tests A.P.T.,2017,Tipperary South,Number,0.91
+2875,Reactors per 1000 Tests A.P.T.,2017,Waterford,Number,0.5
+2876,Reactors per 1000 Tests A.P.T.,2017,Westmeath,Number,3.14
+2877,Reactors per 1000 Tests A.P.T.,2017,Wexford,Number,2.35
+2878,Reactors per 1000 Tests A.P.T.,2017,Wicklow E,Number,3.51
+2879,Reactors per 1000 Tests A.P.T.,2017,Wicklow W,Number,4.7
+2880,Reactors per 1000 Tests A.P.T.,2018,State,Number,1.97
+2881,Reactors per 1000 Tests A.P.T.,2018,Carlow,Number,0.86
+2882,Reactors per 1000 Tests A.P.T.,2018,Cavan,Number,2.71
+2883,Reactors per 1000 Tests A.P.T.,2018,Clare,Number,3.38
+2884,Reactors per 1000 Tests A.P.T.,2018,Cork North,Number,2.66
+2885,Reactors per 1000 Tests A.P.T.,2018,Cork South,Number,0.95
+2886,Reactors per 1000 Tests A.P.T.,2018,Donegal,Number,0.56
+2887,Reactors per 1000 Tests A.P.T.,2018,Dublin,Number,5.17
+2888,Reactors per 1000 Tests A.P.T.,2018,Galway,Number,1.61
+2889,Reactors per 1000 Tests A.P.T.,2018,Kerry,Number,2.42
+2890,Reactors per 1000 Tests A.P.T.,2018,Kildare,Number,1.08
+2891,Reactors per 1000 Tests A.P.T.,2018,Kilkenny,Number,0.85
+2892,Reactors per 1000 Tests A.P.T.,2018,Laois,Number,1.67
+2893,Reactors per 1000 Tests A.P.T.,2018,Leitrim,Number,2.14
+2894,Reactors per 1000 Tests A.P.T.,2018,Limerick,Number,0.73
+2895,Reactors per 1000 Tests A.P.T.,2018,Longford,Number,1.52
+2896,Reactors per 1000 Tests A.P.T.,2018,Louth,Number,0.94
+2897,Reactors per 1000 Tests A.P.T.,2018,Mayo,Number,1.5
+2898,Reactors per 1000 Tests A.P.T.,2018,Meath,Number,1.92
+2899,Reactors per 1000 Tests A.P.T.,2018,Monaghan,Number,4.49
+2900,Reactors per 1000 Tests A.P.T.,2018,Offaly,Number,1.21
+2901,Reactors per 1000 Tests A.P.T.,2018,Roscommon,Number,1.36
+2902,Reactors per 1000 Tests A.P.T.,2018,Sligo,Number,3.45
+2903,Reactors per 1000 Tests A.P.T.,2018,Tipperary North,Number,2.98
+2904,Reactors per 1000 Tests A.P.T.,2018,Tipperary South,Number,1.02
+2905,Reactors per 1000 Tests A.P.T.,2018,Waterford,Number,1.13
+2906,Reactors per 1000 Tests A.P.T.,2018,Westmeath,Number,2.33
+2907,Reactors per 1000 Tests A.P.T.,2018,Wexford,Number,1.91
+2908,Reactors per 1000 Tests A.P.T.,2018,Wicklow E,Number,4.83
+2909,Reactors per 1000 Tests A.P.T.,2018,Wicklow W,Number,5.64
+2910,Reactors per 1000 Tests A.P.T.,2019,State,Number,1.62
+2911,Reactors per 1000 Tests A.P.T.,2019,Carlow,Number,0.61
+2912,Reactors per 1000 Tests A.P.T.,2019,Cavan,Number,2.36
+2913,Reactors per 1000 Tests A.P.T.,2019,Clare,Number,2.66
+2914,Reactors per 1000 Tests A.P.T.,2019,Cork North,Number,1.92
+2915,Reactors per 1000 Tests A.P.T.,2019,Cork South,Number,1.17
+2916,Reactors per 1000 Tests A.P.T.,2019,Donegal,Number,0.98
+2917,Reactors per 1000 Tests A.P.T.,2019,Dublin,Number,4.8
+2918,Reactors per 1000 Tests A.P.T.,2019,Galway,Number,1.89
+2919,Reactors per 1000 Tests A.P.T.,2019,Kerry,Number,1.59
+2920,Reactors per 1000 Tests A.P.T.,2019,Kildare,Number,0.54
+2921,Reactors per 1000 Tests A.P.T.,2019,Kilkenny,Number,1.04
+2922,Reactors per 1000 Tests A.P.T.,2019,Laois,Number,1.29
+2923,Reactors per 1000 Tests A.P.T.,2019,Leitrim,Number,2.61
+2924,Reactors per 1000 Tests A.P.T.,2019,Limerick,Number,0.6
+2925,Reactors per 1000 Tests A.P.T.,2019,Longford,Number,0.74
+2926,Reactors per 1000 Tests A.P.T.,2019,Louth,Number,1.36
+2927,Reactors per 1000 Tests A.P.T.,2019,Mayo,Number,0.98
+2928,Reactors per 1000 Tests A.P.T.,2019,Meath,Number,1.3
+2929,Reactors per 1000 Tests A.P.T.,2019,Monaghan,Number,2.84
+2930,Reactors per 1000 Tests A.P.T.,2019,Offaly,Number,1.67
+2931,Reactors per 1000 Tests A.P.T.,2019,Roscommon,Number,1.71
+2932,Reactors per 1000 Tests A.P.T.,2019,Sligo,Number,1.53
+2933,Reactors per 1000 Tests A.P.T.,2019,Tipperary North,Number,1.9
+2934,Reactors per 1000 Tests A.P.T.,2019,Tipperary South,Number,0.76
+2935,Reactors per 1000 Tests A.P.T.,2019,Waterford,Number,0.48
+2936,Reactors per 1000 Tests A.P.T.,2019,Westmeath,Number,2.12
+2937,Reactors per 1000 Tests A.P.T.,2019,Wexford,Number,1.49
+2938,Reactors per 1000 Tests A.P.T.,2019,Wicklow E,Number,6.04
+2939,Reactors per 1000 Tests A.P.T.,2019,Wicklow W,Number,4.82
+2940,Reactors per 1000 Tests A.P.T.,2020,State,Number,1.94
+2941,Reactors per 1000 Tests A.P.T.,2020,Carlow,Number,1.06
+2942,Reactors per 1000 Tests A.P.T.,2020,Cavan,Number,2.54
+2943,Reactors per 1000 Tests A.P.T.,2020,Clare,Number,3.07
+2944,Reactors per 1000 Tests A.P.T.,2020,Cork North,Number,2.43
+2945,Reactors per 1000 Tests A.P.T.,2020,Cork South,Number,1.22
+2946,Reactors per 1000 Tests A.P.T.,2020,Donegal,Number,1.09
+2947,Reactors per 1000 Tests A.P.T.,2020,Dublin,Number,4.72
+2948,Reactors per 1000 Tests A.P.T.,2020,Galway,Number,1.89
+2949,Reactors per 1000 Tests A.P.T.,2020,Kerry,Number,1.82
+2950,Reactors per 1000 Tests A.P.T.,2020,Kildare,Number,1.08
+2951,Reactors per 1000 Tests A.P.T.,2020,Kilkenny,Number,0.73
+2952,Reactors per 1000 Tests A.P.T.,2020,Laois,Number,2.27
+2953,Reactors per 1000 Tests A.P.T.,2020,Leitrim,Number,1.68
+2954,Reactors per 1000 Tests A.P.T.,2020,Limerick,Number,0.97
+2955,Reactors per 1000 Tests A.P.T.,2020,Longford,Number,1.72
+2956,Reactors per 1000 Tests A.P.T.,2020,Louth,Number,1.93
+2957,Reactors per 1000 Tests A.P.T.,2020,Mayo,Number,1.44
+2958,Reactors per 1000 Tests A.P.T.,2020,Meath,Number,1.94
+2959,Reactors per 1000 Tests A.P.T.,2020,Monaghan,Number,2.86
+2960,Reactors per 1000 Tests A.P.T.,2020,Offaly,Number,2.0
+2961,Reactors per 1000 Tests A.P.T.,2020,Roscommon,Number,1.1
+2962,Reactors per 1000 Tests A.P.T.,2020,Sligo,Number,2.51
+2963,Reactors per 1000 Tests A.P.T.,2020,Tipperary North,Number,2.55
+2964,Reactors per 1000 Tests A.P.T.,2020,Tipperary South,Number,2.17
+2965,Reactors per 1000 Tests A.P.T.,2020,Waterford,Number,0.52
+2966,Reactors per 1000 Tests A.P.T.,2020,Westmeath,Number,3.26
+2967,Reactors per 1000 Tests A.P.T.,2020,Wexford,Number,1.48
+2968,Reactors per 1000 Tests A.P.T.,2020,Wicklow E,Number,3.85
+2969,Reactors per 1000 Tests A.P.T.,2020,Wicklow W,Number,5.54
