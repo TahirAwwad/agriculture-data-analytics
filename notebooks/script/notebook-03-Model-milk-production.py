@@ -1,11 +1,31 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# # Read full dataset of Agriculture Production since 1991 to 2020
+# ## Read full dataset of Agriculture Production since 1991 to 2020
+
+# <!--
+# import data_analytics.github as github
+# print(github.create_jupyter_notebook_header("markcrowe-com", "agriculture-data-analytics", "notebooks/notebook-3-03-ml-milk-production.ipynb", "master"))
+# -->
+# <table style="margin: auto;"><tr><td><a href="https://mybinder.org/v2/gh/markcrowe-com/agriculture-data-analytics/master?filepath=notebooks/notebook-3-03-ml-milk-production.ipynb" target="_parent"><img src="https://mybinder.org/badge_logo.svg" alt="Open In Binder"/></a></td><td>online editors</td><td><a href="https://colab.research.google.com/github/markcrowe-com/agriculture-data-analytics/blob/master/notebooks/notebook-3-03-ml-milk-production.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a></td></tr></table>
+
+# ### Setup
+
+# Import required third party Python libraries, import supporting functions and sets up data source file paths.
+
+# Local
+#!pip install -r script/requirements.txt --quiet --user
+# Remote option
+#!pip install -r https://github.com/markcrowe-com/agriculture-data-analytics/blob/master/notebooks/script/requirements.txt --quiet --user
+
 
 import pandas as pd
 import numpy as np
+import data_analytics.exploratory_data_analysis as eda
+import data_analytics.exploratory_data_analysis_reports as eda_reports
 
+
+# ### Load dataframe
 
 df = pd.read_csv("../assets/TA_inputoutputvalue_1990_2021_CSO.csv")
 print("data dimensions \n",df.shape)
@@ -13,15 +33,19 @@ print()
 print("data column info \n",df.info)
 
 
-# # Production of Milk
+df.head()
+eda_reports.print_dataframe_analysis_report(df)
+
+
+# ## Production of Milk
 
 ## Extract milk production dataset
 # drop redundunt columns
-df = df.drop('Unnamed: 0',axis=1)
+df = df.drop('Unnamed: 0',axis = 1)
 
 # extract milk dataset
 df_milk = df[['Year',
-              'UNIT',
+#              'UNIT',
               'All Livestock Products - Milk',
               'Taxes on Products',
               'Subsidies on Products',
@@ -57,8 +81,14 @@ df_milk.set_index('Year',drop=True,inplace=True)
 print("Milk production dataset dimenssions \n", df_milk.shape)
 
 
+eda_reports.print_dataframe_analysis_report(df_milk)
+
+
+df_milk["Intermediate Consumption - Services"].unique()
+
+
 df_milk = df[['Year',
-              'UNIT',
+#              'UNIT',
               'All Livestock Products - Milk',
               'Taxes on Products',
               'Subsidies on Products',
@@ -90,7 +120,7 @@ df_milk = df[['Year',
              ]]
 
 
-# ## Define 20% Training set 80% Test set
+# ### Define 20% Training set 80% Test set
 
 # define target & feature variables
 
@@ -104,7 +134,7 @@ from sklearn.model_selection import train_test_split
 X_train, X_test,Y_train,Y_test = train_test_split(X,Y,test_size=0.2,random_state=2021)
 
 
-# ## Model 1 RandomForest Regressor
+# ### Model 1 RandomForest Regressor
 
 from sklearn.model_selection import GridSearchCV
 from sklearn.ensemble import RandomForestRegressor
@@ -134,9 +164,12 @@ print(GS_rf_milk.best_estimator_)
 print('Best model score',GS_rf_milk.best_score_)
 
 
-# ## Model 2 XGBOOST Regressor
+# ### Model 2 XGBOOST Regressor
 
 # xgboost
+#!pip install xgboost
+
+
 from xgboost import XGBRegressor
 xgb_model_milk = XGBRegressor(random_state=2021)
 
@@ -179,7 +212,4 @@ GS_xgb_df_milk.to_csv('GS_xgb_milk_results.csv')
 
 
 predict(X_test)
-
-
-
 
