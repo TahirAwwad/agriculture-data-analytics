@@ -27,7 +27,7 @@ import data_analytics.exploratory_data_analysis_reports as eda_reports
 
 # ### Load dataframe
 
-df = pd.read_csv("../assets/TA_inputoutputvalue_1990_2021_CSO.csv")
+df = pd.read_csv("./../artifacts/TA_inputoutputvalue_1990_2021_CSO.csv")
 print("data dimensions \n",df.shape)
 print()
 print("data column info \n",df.info)
@@ -156,12 +156,12 @@ GS_rf_milk = GridSearchCV(estimator= rf_model_milk,
 # np.isnan(X_train).sum()
 # np.nan_to_num(X_train)
 # np.nan_to_num(Y_train)
-GS_rf_milk.fit(X_train,Y_train)
+GS_rf_milk.fit(X_train,Y_train) #do not run becuase of null values
 
 
 # print best model
 print(GS_rf_milk.best_estimator_)
-print('Best model score',GS_rf_milk.best_score_)
+print('Best model score', GS_rf_milk.best_score_)
 
 
 # ### Model 2 XGBOOST Regressor
@@ -193,7 +193,7 @@ GS_xgb_milk = GridSearchCV(estimator=xgb_model_milk,
                      )
 
 
-GS_xgb_milk.fit(X_train,Y_train)
+GS_xgb_milk.fit(X_train,Y_train);
 
 
 # print best model
@@ -208,7 +208,9 @@ print('Best model R2 score',GS_xgb_milk.best_score_)
 # write the Grid Search results to csv to choose best model with least resource consumption
 GS_xgb_df_milk = pd.DataFrame(GS_xgb_milk.cv_results_)
 GS_xgb_df_milk = GS_xgb_df_milk.sort_values('rank_test_r2')
-GS_xgb_df_milk.to_csv('GS_xgb_milk_results.csv')
+
+
+GS_xgb_df_milk.to_csv('./../artifacts/grid-search-xgb-milk-results.csv')
 
 
 predict(X_test)
