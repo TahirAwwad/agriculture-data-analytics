@@ -91,8 +91,8 @@ print("Milk production dataset dimenssions \n", df_milk.shape)
 
 X = df_milk.iloc[:,2:].values
 Y = df_milk.iloc[:,1].values.reshape(-1,1)
-print(np.shape(X))
-print(np.shape(Y))
+print('features shape ',np.shape(X))
+print('target shape ',np.shape(Y))
 
 # impute mean value for NA
 from sklearn.impute import SimpleImputer
@@ -104,6 +104,12 @@ Y = imp_mean.fit_transform(Y)
 # split train test split 20
 from sklearn.model_selection import train_test_split
 X_train, X_test,Y_train,Y_test = train_test_split(X,Y,test_size=0.2,random_state=2021)
+print()
+print('x_train shape ', X_train.shape)
+print('y_train shape ', Y_train.shape)
+print()
+print('x_test shape ', X_test.shape)
+print('y_test shape ', Y_test.shape)
 
 
 scaler_x = MinMaxScaler()
@@ -122,14 +128,14 @@ ytest_scale=scaler_y.transform(Y_test)
 
 
 # fill NAN values with the average  mean scaled
-np.isnan(np.sum(xtrain_scale))
-xtrain_scale[np.isnan(xtrain_scale)==True]= np.nanmean(xtrain_scale)
-np.isnan(np.sum(ytrain_scale))
-ytrain_scale[np.isnan(ytrain_scale)==True]= np.nanmean(ytrain_scale)
-np.isnan(np.sum(xtest_scale))
-xtest_scale[np.isnan(xtest_scale)==True]= np.nanmean(xtest_scale)
-np.isnan(np.sum(ytest_scale))
-ytest_scale[np.isnan(ytest_scale)==True]= np.nanmean(ytest_scale)
+#np.isnan(np.sum(xtrain_scale))
+#xtrain_scale[np.isnan(xtrain_scale)==True]= np.nanmean(xtrain_scale)
+#np.isnan(np.sum(ytrain_scale))
+#ytrain_scale[np.isnan(ytrain_scale)==True]= np.nanmean(ytrain_scale)
+#np.isnan(np.sum(xtest_scale))
+#xtest_scale[np.isnan(xtest_scale)==True]= np.nanmean(xtest_scale)
+#np.isnan(np.sum(ytest_scale))
+#ytest_scale[np.isnan(ytest_scale)==True]= np.nanmean(ytest_scale)
 
 
 # ### Model 1 RandomForest Regressor
@@ -205,12 +211,14 @@ print('Best model R2 score',GS_xgb_milk.best_score_)
 # write the Grid Search results to csv to choose best model with least resource consumption
 GS_xgb_df_milk = pd.DataFrame(GS_xgb_milk.cv_results_)
 GS_xgb_df_milk = GS_xgb_df_milk.sort_values('rank_test_r2')
+#GS_xgb_df_milk.to_csv('./../artifacts/grid-search-xgb-milk-results.csv')
 
 
-GS_xgb_df_milk.to_csv('./../artifacts/grid-search-xgb-milk-results.csv')
 
 
-predict(X_test)
+
+print(GS_xgb_milk.predict(X_test))
+print(Y_test)
 
 
 # ## ANN
@@ -271,7 +279,7 @@ predictions
 # ## ANN hyper parameter tuning
 
 #!pip install tensorflow
-#!pip install -q -U keras-tuner
+get_ipython().system('pip install keras-tuner')
 import tensorflow as tf
 from tensorflow import keras
 from tensorflow.keras import layers
