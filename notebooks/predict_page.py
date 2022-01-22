@@ -6,14 +6,14 @@ import numpy as np
 
 
 def load_model():
-    pkl_model = pickle.load(open('https://github.com/TahirAwwad/agriculture-data-analytics/blob/tahir-api/notebooks/pkl_ann_milk?raw=true','rb'))
+    pkl_model = pickle.load(open('pkl_ann_milk','rb'))
     return pkl_model
 
 
-scaler_y = pickle.load(open('https://github.com/TahirAwwad/agriculture-data-analytics/blob/tahir-api/notebooks/pkl_scaler_y?raw=true','rb'))
+pkl_scaler_y = pickle.load(open('pkl_scaler_y','rb'))
  
 
-scaler_x = pickle.load(open('https://github.com/TahirAwwad/agriculture-data-analytics/blob/tahir-api/notebooks/pkl_scaler_x?raw=true','rb'))
+pkl_scaler_x = pickle.load(open('pkl_scaler_x','rb'))
     
 
 
@@ -60,10 +60,10 @@ def show_predict_page():
                       ]])
         newdata = newdata.astype(float)
         # scale the input
-        newdata_scaled = scaler_x.transform(newdata.reshape(1,-1))
+        newdata_scaled = pkl_scaler_x.transform(newdata.reshape(1,-1))
         predicted_scaled = model.predict(newdata_scaled)
         # descale the predicted value back to original format
-        predicted_transformed = scaler_y.inverse_transform(predicted_scaled).astype(float)
+        predicted_transformed = pkl_scaler_y.inverse_transform(predicted_scaled).astype(float)
         st.subheader(f"The estimated value of Milk production is {predicted_transformed[0][0]:.2f} Million Euro")
         
     
