@@ -1,27 +1,57 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# ## Read full dataset of Agriculture Production since 1991 to 2020
-
 # <!--
 # import data_analytics.github as github
 # print(github.create_jupyter_notebook_header("markcrowe-com", "agriculture-data-analytics", "notebooks/notebook-3-03-ml-milk-production.ipynb", "master"))
 # -->
 # <table style="margin: auto;"><tr><td><a href="https://mybinder.org/v2/gh/markcrowe-com/agriculture-data-analytics/master?filepath=notebooks/notebook-3-03-ml-milk-production.ipynb" target="_parent"><img src="https://mybinder.org/badge_logo.svg" alt="Open In Binder"/></a></td><td>online editors</td><td><a href="https://colab.research.google.com/github/markcrowe-com/agriculture-data-analytics/blob/master/notebooks/notebook-3-03-ml-milk-production.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a></td></tr></table>
 
+# # Objective
+#        Create the best machine learning model to predict Milk production value in Ireland
+#        according to the historical data from Central Statistics office CSO.
+#        AEA01 Value at Current Prices for Output, Input and Income in Agriculture
+#        Downloaded https://data.cso.ie/table/AEA01
+
+# # Contents
+#     - Read data from Assets folder
+#     - Split to training / testing sets
+#     - Scale each set seperatly
+#     - Run Models
+#         - Define Hyper parameter tuning Cross Validation Grid or Random Search
+#         - Random Forest Regressor
+#         - XGBOOST Regressor
+#         - ANN
+#     - Save best model into Pickle file
+#     - Next step: Deploy selected model on a Streamlit webapp
+
 # ### Setup
 
 # Import required third party Python libraries, import supporting functions and sets up data source file paths.
 
-# Local
-get_ipython().system('pip install -r script/requirements.txt --quiet --user')
-# Remote option
-get_ipython().system('pip install -r https://github.com/markcrowe-com/agriculture-data-analytics/blob/master/notebooks/script/requirements.txt --quiet --user')
-
+#!pip install tensorflow
+#!pip install keras-tuner
 
 import pandas as pd
 import numpy as np
+from sklearn.model_selection import train_test_split
+from sklearn.impute import SimpleImputer
 from sklearn.preprocessing import MinMaxScaler
+from sklearn.model_selection import GridSearchCV
+from sklearn.ensemble import RandomForestRegressor
+from sklearn.metrics import mean_absolute_error, mean_squared_error
+from xgboost import XGBRegressor
+import tensorflow as tf
+from tensorflow import keras
+from tensorflow.keras import layers
+from keras_tuner.tuners import RandomSearch
+import pickle
+
+
+# Local
+#!pip install -r script/requirements.txt --quiet --user
+# Remote option
+#!pip install -r https://github.com/markcrowe-com/agriculture-data-analytics/blob/master/notebooks/script/requirements.txt --quiet --user
 #import data_analytics.exploratory_data_analysis as eda
 #import data_analytics.exploratory_data_analysis_reports as eda_reports
 
@@ -31,11 +61,14 @@ from sklearn.preprocessing import MinMaxScaler
 df = pd.read_csv("./../artifacts/TA_inputoutputvalue_1990_2021_CSO.csv")
 print("data dimensions \n",df.shape)
 print()
-print("data column info \n",df.info)
+#print("data column info \n",df.info)
+print()
+print('Data sample\n',df.sample(5))
 
 
-df.head()
-#eda_reports.print_dataframe_analysis_report(df)
+# create score dataframe to store model scores
+df_score = pd.DataFrame()
+print(df_score)
 
 
 # ## Production of Milk
@@ -54,25 +87,25 @@ df_milk = df[['Year',
               'Contract Work',
               'Entrepreneurial Income',
               'Factor Income',
-              'Fixed Capital Consumption - Farm Buildings',
-              'Fixed Capital Consumption - Machinery, Equipment, etc',
-              'Interest less FISIM',
-              'Operating Surplus',
-              'Livestock - Cattle',
-              'Livestock - Sheep',
-              'Land Rental',
-              'Intermediate Consumption - Contract Work',
-              'Intermediate Consumption - Crop Protection Products',
-              'Intermediate Consumption - Energy and Lubricants',
-              'Intermediate Consumption - Feeding Stuffs',
-              'Intermediate Consumption - Fertilisers',
-              'Intermediate Consumption - Financial Intermediation Services Indirect',
-              'Intermediate Consumption - Forage Plants',
-              'Intermediate Consumption - Maintenance and Repairs',
-              'Intermediate Consumption - Seeds',
+              #'Fixed Capital Consumption - Farm Buildings',
+              #'Fixed Capital Consumption - Machinery, Equipment, etc',
+              #'Interest less FISIM',
+              #'Operating Surplus',
+              #'Livestock - Cattle',
+              #'Livestock - Sheep',
+              #'Land Rental',
+              #'Intermediate Consumption - Contract Work',
+              #'Intermediate Consumption - Crop Protection Products',
+              #'Intermediate Consumption - Energy and Lubricants',
+              #'Intermediate Consumption - Feeding Stuffs',
+              #'Intermediate Consumption - Fertilisers',
+              #'Intermediate Consumption - Financial Intermediation Services Indirect',
+              #'Intermediate Consumption - Forage Plants',
+              #'Intermediate Consumption - Maintenance and Repairs',
+              #'Intermediate Consumption - Seeds',
               #'Intermediate Consumption - Services',
-              'Intermediate Consumption - Veterinary Expenses',
-              'Intermediate Consumption - Other Goods (Detergents, Small Tools, etc)',
+              #'Intermediate Consumption - Veterinary Expenses',
+              #'Intermediate Consumption - Other Goods (Detergents, Small Tools, etc)',
               #'Intermediate Consumption - Other Goods and Services'
               
              ]]
@@ -80,6 +113,7 @@ df_milk = df[['Year',
 df_milk.set_index('Year',drop=True,inplace=True)
 
 print("Milk production dataset dimenssions \n", df_milk.shape)
+print("Milk production dataset Sample \n", df_milk.head())
 
 
 #eda_reports.print_dataframe_analysis_report(df_milk)
@@ -91,201 +125,167 @@ print("Milk production dataset dimenssions \n", df_milk.shape)
 
 X = df_milk.iloc[:,2:].values
 Y = df_milk.iloc[:,1].values.reshape(-1,1)
-print('features shape ',np.shape(X))
-print('target shape ',np.shape(Y))
+print('features dimension ',np.shape(X))
+print('target dimension ',np.shape(Y))
 
-# impute mean value for NA
-from sklearn.impute import SimpleImputer
+# impute mean value for NA's
+#from sklearn.impute import SimpleImputer
 imp_mean = SimpleImputer(missing_values=np.nan, strategy='mean')
 X = imp_mean.fit_transform(X)
 Y = imp_mean.fit_transform(Y)
 
 
 # split train test split 20
-from sklearn.model_selection import train_test_split
 X_train, X_test,Y_train,Y_test = train_test_split(X,Y,test_size=0.2,random_state=2021)
 print()
-print('x_train shape ', X_train.shape)
-print('y_train shape ', Y_train.shape)
+print('x_train dimension ', X_train.shape)
+print('y_train dimension ', Y_train.shape)
 print()
-print('x_test shape ', X_test.shape)
-print('y_test shape ', Y_test.shape)
+print('x_test dimension ', X_test.shape)
+print('y_test dimension ', Y_test.shape)
 
 
+# ### Scale & Transform
+
+# Scale raining set and test set seperatly
 scaler_x = MinMaxScaler()
 scaler_y = MinMaxScaler()
-print(scaler_x.fit(X_train))
-xtrain_scale=scaler_x.transform(X_train)
 
-print(scaler_y.fit(Y_train))
-ytrain_scale=scaler_y.transform(Y_train)
+# calculate mean and std of training set 
+scaler_x.fit(X_train)
+scaler_y.fit(Y_train)
+scaler_x.fit(X_test)
+scaler_y.fit(Y_test)
 
-print(scaler_x.fit(X_test))
-xtest_scale=scaler_x.transform(X_test)
+# apply scaler to data set
+xtrain_scale = scaler_x.transform(X_train)
+ytrain_scale = scaler_y.transform(Y_train)
 
-print(scaler_x.fit(Y_test))
-ytest_scale=scaler_y.transform(Y_test)
+xtest_scale = scaler_x.transform(X_test)
+ytest_scale = scaler_y.transform(Y_test)
 
+# fit and transform in one line
+# scaler_x.fit_transform(X_train)
 
-# fill NAN values with the average  mean scaled
-#np.isnan(np.sum(xtrain_scale))
-#xtrain_scale[np.isnan(xtrain_scale)==True]= np.nanmean(xtrain_scale)
-#np.isnan(np.sum(ytrain_scale))
-#ytrain_scale[np.isnan(ytrain_scale)==True]= np.nanmean(ytrain_scale)
-#np.isnan(np.sum(xtest_scale))
-#xtest_scale[np.isnan(xtest_scale)==True]= np.nanmean(xtest_scale)
-#np.isnan(np.sum(ytest_scale))
-#ytest_scale[np.isnan(ytest_scale)==True]= np.nanmean(ytest_scale)
+# remeber to inverse the scaling on model output
+# scaler_x.inverse_transform(xtest_scale)
 
 
 # ### Model 1 RandomForest Regressor
 
-from sklearn.model_selection import GridSearchCV
-from sklearn.ensemble import RandomForestRegressor
+# #### Train RandomForest
 
+# define Random Forest Regressor
+rf_regressor_milk = RandomForestRegressor(random_state=2021)
 
-rf_model_milk = RandomForestRegressor(random_state=2021)
-
-
-params_rf_milk = {'n_estimators':[100,200,500],
+# define list of Parameters
+params_rf_milk = {'n_estimators':[100,500,800],
                   'criterion':['squared_error', 'absolute_error', 'poisson'],
-                  'max_features':["auto"]
-                  
-            }
+                  'max_features':["auto", "sqrt", "log2"],
+                  "bootstrap": [True, False]
+                   }
 
-
-GS_rf_milk = GridSearchCV(estimator= rf_model_milk,
-                     param_grid= params_rf_milk
+# Hyper parameter tuning via Grid Search Cross Validation 
+grid_rf_milk = GridSearchCV(estimator= rf_regressor_milk,
+                          param_grid= params_rf_milk,
+                          n_jobs=-1,
+                          cv=5
                      )
 
+# Fit the grid to scaled data
+grid_rf_milk.fit(xtrain_scale,ytrain_scale.reshape(-1))
 
-GS_rf_milk.fit(xtrain_scale,ytrain_scale.reshape(-1))
+# print best training model & R squared score
+print('Best training model ',grid_rf_milk.best_estimator_)
+print('Best training model score, coefficient of determination R squared', grid_rf_milk.best_score_)
 
 
-# print best model
-print(GS_rf_milk.best_estimator_)
-print('Best model score', GS_rf_milk.best_score_)
+# #### Predict RandomForest
+
+# Predict Milk Production and unscale back to original values
+y_predict = scaler_y.inverse_transform(grid_rf_milk.predict(xtest_scale).reshape(-1, 1))
+
+print('predicted milk production values \n',y_predict)
+print('actual milk production values \n',Y_test)
+
+# Calculate Mean Absolute Error
+MAE_rf = mean_absolute_error(Y_test,y_predict)
+#print(MAE_rf)
+
+# add model score to Score Dataframe
+df_score = pd.DataFrame(data={'Model':'RandomForest',
+                           'Score MAE':MAE_rf},index=['Model 1'])
+
+print(df_score)
 
 
 # ### Model 2 XGBOOST Regressor
 
-# xgboost
-get_ipython().system('pip install xgboost')
+# #### Train XGBOOST
 
+# define XGBRegressor
+xgb_regressor_milk = XGBRegressor(random_state=2021)
 
-from xgboost import XGBRegressor
-xgb_model_milk = XGBRegressor(random_state=2021)
-
-
-# make a search space of parameters to loop over
-
+# define parameters space to loop over
 params_xgb_milk = {'n_estimators':[20,40,80,160,340,500],
              'max_depth':[3,6,9],
              'gamma':[0.01,0.1],
              'learning_rate':[0.001,0.01,0.1,1]
              }
 
-
-GS_xgb_milk = GridSearchCV(estimator=xgb_model_milk,
+# Hyper parameter tuning via Grid Search Cross Validation 
+grid_xgb_milk = GridSearchCV(estimator=xgb_regressor_milk,
                      param_grid=params_xgb_milk,
                      #n_jobs=-1,
                      scoring=['r2','neg_root_mean_squared_error'],
                      refit= 'r2',
+                     n_jobs=-1,
                      cv=5,
                      verbose=4
                      )
 
-
-GS_xgb_milk.fit(xtrain_scale,ytrain_scale);
-
-
-# print best model
-print(GS_xgb_milk.best_estimator_)
+# fit grid to training scaled set
+grid_xgb_milk.fit(xtrain_scale,ytrain_scale);
 
 
-# print best parameters
+# print best training model & R squared score
+print('Best training model ',grid_xgb_milk.best_estimator_)
 print('Best model Parameters',GS_xgb_milk.best_params_)
-# best score
-print('Best model R2 score',GS_xgb_milk.best_score_)
+print('Best training model score, coefficient of determination R squared', grid_xgb_milk.best_score_)
+
+
+# #### Predict XGBOOST
+
+# Predict Milk Production and unscale back to original values
+y_predict = scaler_y.inverse_transform(grid_xgb_milk.predict(xtest_scale).reshape(-1, 1))
+
+print('predicted milk production values \n',y_predict)
+print('actual milk production values \n',Y_test)
+
+# Calculate Mean Absolute Error
+MAE_xgb = mean_absolute_error(Y_test,y_predict)
+#print(MAE_xgb)
+
+# add model score to Score Dataframe
+df_score = pd.DataFrame(data = {'Model':['RandomForest','XGBOOST'],
+                                'Score MAE': [MAE_rf,MAE_xgb]},
+                        index=['Model 1','Model 2'])
+
+print(df_score)
+
 
 # write the Grid Search results to csv to choose best model with least resource consumption
-GS_xgb_df_milk = pd.DataFrame(GS_xgb_milk.cv_results_)
-GS_xgb_df_milk = GS_xgb_df_milk.sort_values('rank_test_r2')
+
+#GS_xgb_df_milk = pd.DataFrame(GS_xgb_milk.cv_results_)
+#GS_xgb_df_milk = GS_xgb_df_milk.sort_values('rank_test_r2')
 #GS_xgb_df_milk.to_csv('./../artifacts/grid-search-xgb-milk-results.csv')
 
 
+# ## ANN Artificial Neural Network
 
+# #### Training & Keras Parameter Tuning
 
-
-print(GS_xgb_milk.predict(X_test))
-print(Y_test)
-
-
-# ## ANN
-
-#!pip install --upgrade tensorflow
-import math
-import matplotlib.pyplot as plt
-#import numpy as np
-from numpy.random import seed
-seed(2021)
-#import pandas as pd
-import statsmodels.api as sm
-import statsmodels.formula.api as smf
-import tensorflow
-tensorflow.random.set_seed(1)
-from tensorflow.python.keras.layers import Dense
-from tensorflow.keras.layers import Dropout
-from tensorflow.python.keras.models import Sequential
-from tensorflow.python.keras.wrappers.scikit_learn import KerasRegressor
-from sklearn.metrics import mean_absolute_error
-from sklearn.metrics import mean_squared_error
-#from sklearn.model_selection import train_test_split
-from sklearn.preprocessing import MinMaxScaler
-
-
-
-
-
-model = Sequential()
-# input layers  = Number of features in the training set + 1
-model.add(Dense(24, input_dim=24, kernel_initializer='normal', activation='relu'))
-# hidden layers = Training Data Samples/Factor * (Input Neurons + Output Neurons)
-model.add(Dense(30, activation='relu'))
-model.add(Dense(1, activation='linear'))
-model.summary()
-
-
-model.compile(loss='mse', optimizer='adam', metrics=['mse','mae'])
-history=model.fit(xtrain_scale, ytrain_scale, epochs=30, batch_size=150, verbose=1, validation_split=0.2)
-predictions = model.predict(xtest_scale)
-
-
-print(history.history.keys())
-# "Loss"
-plt.plot(history.history['loss'])
-plt.plot(history.history['val_loss'])
-plt.title('model loss')
-plt.ylabel('loss')
-plt.xlabel('epoch')
-plt.legend(['train', 'validation'], loc='upper left')
-plt.show()
-
-
-predictions = scaler_y.inverse_transform(predictions)
-predictions
-
-
-# ## ANN hyper parameter tuning
-
-#!pip install tensorflow
-get_ipython().system('pip install keras-tuner')
-import tensorflow as tf
-from tensorflow import keras
-from tensorflow.keras import layers
-from keras_tuner.tuners import RandomSearch
-
-
+# Define ANN model with Hyper paramter variable 
 def build_model(hp):
     model= keras.Sequential()
     for i in range(hp.Int('num_layers',2,23)):
@@ -301,29 +301,92 @@ def build_model(hp):
         loss='mean_absolute_error',
         metrics=['mean_absolute_error'])
         return model
-
-
+    
 # create a directory to store each iteration of modelling
 tuner = RandomSearch(
         build_model,
         objective='val_mean_absolute_error',
         max_trials=5,
         executions_per_trial=3,
-        directory='CA2',
-        project_name='Milk production forecast')
+        directory='ANN-tuner',
+        project_name='Milk production')
 
-
-# parameter space to search in
+# Defined parameter space to search in
 tuner.search_space_summary()
 
+# train trial models and compare with validation set
+tuner.search(xtrain_scale,ytrain_scale,epochs=50,validation_data=(xtest_scale,ytest_scale))
 
-# train the model
-tuner.search(xtrain_scale,ytrain_scale,epochs=20,validation_data=(xtest_scale,ytest_scale))
-
-
-# print best 10 models according to previously selected metric
+# print best 10 models according to val_mean_absolute_error
+print('\n')
 tuner.results_summary()
 
+# get best model from training trials
+bestANNModel = tuner.get_best_models(num_models=1)[0]
+
+# fit best model to training scaled data and scaled test data
+bestANNModel.fit(xtrain_scale,ytrain_scale,epochs=50,validation_data=(xtest_scale,ytest_scale))
+
+
+# Predict Milk Production and unscale back to original values
+y_predict = scaler_y.inverse_transform(bestANNModel.predict(xtest_scale).reshape(-1, 1))
+
+print('predicted milk production values \n',y_predict)
+print('actual milk production values \n',Y_test)
+
+# Calculate Mean Absolute Error
+MAE_ANN = mean_absolute_error(Y_test,y_predict)
+#print(MAE_xgb)
+
+# add model score to Score Dataframe
+df_score = pd.DataFrame(data = {'Model':['RandomForest','XGBOOST','ANN'],
+                                'Score MAE': [MAE_rf,MAE_xgb,MAE_ANN]},
+                        index=['Model 1','Model 2','Model 3'])
+
+print(df_score)
+
+
+# # Pickle file
+#     Save trained model into binary pickle file to use the model later with new input data from web app
+
+# Dump/write Scaler into binary pickle
+pickle.dump(scaler_x,open('pkl_scaler_x','wb'))
+
+# Read pickle file into variable to use scaler
+scaler_x_pkl_ann = pickle.load(open('pkl_scaler_x','rb'))
+
+# Dump/write Scaler into binary pickle
+pickle.dump(scaler_y,open('pkl_scaler_y','wb'))
+
+# Read pickle file into variable to use scaler
+scaler_y_pkl_ann = pickle.load(open('pkl_scaler_y','rb'))
+
+
+scaler_x_pkl_ann.transform(data_input_from_webapp.reshape(1, -1))
 
 
 
+# Dump/write model into binary pickle file in the current notebook directory
+pickle.dump(bestANNModel,open('pkl_ann_milk','wb'))
+
+# Read pickle file into variable to use model
+model_pkl_ann = pickle.load(open('pkl_ann_milk','rb'))
+
+
+## Example using pickle file with saved ANN model
+
+# take input from source as array
+data_input_from_webapp = np.array([ 357.3,  362.5,  172. , 1440.2, 2136.5])
+
+# scale input with same scaler as used in model
+scale_data_from_webapp = scaler_x.transform(data_input_from_webapp.reshape(1, -1))
+
+# predict scaled value
+scaled_prediction = bestANNModel.predict(scale_data_from_webapp)
+
+# descale prediction back to normal value
+prediction = scaler_y.inverse_transform(scaled_prediction)
+print('\n Expected Milk Production is ',prediction[0][0] )
+
+
+# # Next step Model Deployment
