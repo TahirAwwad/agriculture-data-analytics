@@ -29,8 +29,6 @@
 
 # Import required third party Python libraries, import supporting functions and sets up data source file paths.
 
-#!pip install tensorflow
-#!pip install keras-tuner
 
 import pandas as pd
 import numpy as np
@@ -48,14 +46,6 @@ from keras_tuner.tuners import RandomSearch
 import pickle
 
 
-# Local
-#!pip install -r script/requirements.txt --quiet --user
-# Remote option
-#!pip install -r https://github.com/markcrowe-com/agriculture-data-analytics/blob/master/notebooks/script/requirements.txt --quiet --user
-#import data_analytics.exploratory_data_analysis as eda
-#import data_analytics.exploratory_data_analysis_reports as eda_reports
-
-
 # ### Load dataframe
 
 df = pd.read_csv("./../artifacts/TA_inputoutputvalue_1990_2021_CSO.csv")
@@ -64,11 +54,6 @@ print()
 #print("data column info \n",df.info)
 print()
 print('Data sample\n',df.sample(5))
-
-
-# create score dataframe to store model scores
-df_score = pd.DataFrame()
-print(df_score)
 
 
 # ## Production of Milk
@@ -169,6 +154,10 @@ ytest_scale = scaler_y.transform(Y_test)
 
 # remeber to inverse the scaling on model output
 # scaler_x.inverse_transform(xtest_scale)
+
+# create a score dataframe to store model scores
+df_score = pd.DataFrame()
+print(df_score)
 
 
 # ### Model 1 RandomForest Regressor
