@@ -1,6 +1,8 @@
 import streamlit as st
 import pickle
 import numpy as np
+import scikit-learn
+
 #from sklearn.preprocessing import MinMaxScaler
 
 
@@ -10,10 +12,10 @@ def load_model():
     return pkl_model
 
 
-pkl_scaler_y = pickle.load(open('notebooks/pkl_scaler_y','rb'))
+pkl_scaler_y = pickle.load(open('tahir-api/notebooks/pkl_scaler_y','rb'))
  
 
-pkl_scaler_x = pickle.load(open('notebooks/pkl_scaler_x','rb'))
+pkl_scaler_x = pickle.load(open('tahir-api/notebooks/pkl_scaler_x','rb'))
     
 
 
