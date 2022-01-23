@@ -10,10 +10,10 @@ def load_model():
     return pkl_model
 
 
-pkl_scaler_y = pickle.load(open('pkl_scaler_y','rb'))
+pkl_scaler_y = pickle.load(open('notebooks/pkl_scaler_y','rb'))
  
 
-pkl_scaler_x = pickle.load(open('pkl_scaler_x','rb'))
+pkl_scaler_x = pickle.load(open('notebooks/pkl_scaler_x','rb'))
     
 
 
