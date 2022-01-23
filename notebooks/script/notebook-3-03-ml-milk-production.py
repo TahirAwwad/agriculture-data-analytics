@@ -350,16 +350,16 @@ print(df_score)
 #     Save trained model into binary pickle file to use the model later with new input data from web app
 
 # Dump/write Scaler into binary pickle
-pickle.dump(scaler_x,open('pkl_scaler_x','wb'))
+pickle.dump(scaler_x,open('./../artifacts/pkl_scaler_x','wb'))
 
 # Read pickle file into variable to use scaler
-scaler_x_pkl_ann = pickle.load(open('pkl_scaler_x','rb'))
+scaler_x_pkl_ann = pickle.load(open('./../artifacts/pkl_scaler_x','rb'))
 
 # Dump/write Scaler into binary pickle
-pickle.dump(scaler_y,open('pkl_scaler_y','wb'))
+pickle.dump(scaler_y,open('./../artifacts/pkl_scaler_y','wb'))
 
 # Read pickle file into variable to use scaler
-scaler_y_pkl_ann = pickle.load(open('pkl_scaler_y','rb'))
+scaler_y_pkl_ann = pickle.load(open('./../artifacts/pkl_scaler_y','rb'))
 
 
 scaler_x_pkl_ann.transform(data_input_from_webapp.reshape(1, -1))
@@ -367,10 +367,10 @@ scaler_x_pkl_ann.transform(data_input_from_webapp.reshape(1, -1))
 
 
 # Dump/write model into binary pickle file in the current notebook directory
-pickle.dump(bestANNModel,open('pkl_ann_milk','wb'))
+pickle.dump(bestANNModel,open('./../artifacts/pkl_ann_milk','wb'))
 
 # Read pickle file into variable to use model
-model_pkl_ann = pickle.load(open('pkl_ann_milk','rb'))
+model_pkl_ann = pickle.load(open('./../artifacts/pkl_ann_milk','rb'))
 
 
 ## Example using pickle file with saved ANN model
