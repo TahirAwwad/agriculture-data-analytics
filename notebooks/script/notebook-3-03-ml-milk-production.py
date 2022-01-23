@@ -362,9 +362,6 @@ pickle.dump(scaler_y,open('./../artifacts/pkl_scaler_y','wb'))
 scaler_y_pkl_ann = pickle.load(open('./../artifacts/pkl_scaler_y','rb'))
 
 
-scaler_x_pkl_ann.transform(data_input_from_webapp.reshape(1, -1))
-
-
 
 # Dump/write model into binary pickle file in the current notebook directory
 pickle.dump(bestANNModel,open('./../artifacts/pkl_ann_milk','wb'))
