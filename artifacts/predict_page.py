@@ -23,7 +23,7 @@ pkl_scaler_x = pickle.load(open('pkl_scaler_x','rb'))
 
 def show_predict_page():
     st.title("Milk production forcast")
-    st.write("""### Change the sliders to best represent the expected costs of each Expence catagory""")
+    st.sidebar.write("""### Change the sliders to best represent the expected costs of each Expence catagory""")
     
     #countries = ('Ireland','Germany','United Kingdom','Poland','Spain')
     
@@ -54,7 +54,7 @@ def show_predict_page():
     #OtherGoods = st.slider("Other Goods",0,50000,100)
     
     
-    ok = st.button("Calculate Milk production Value")
+    ok = st.sidebar.button("Calculate Milk production Value")
     
     if ok:
         newdata = np.array([[taxes,Energy,landrental,Fertilisers,feeding #,vetexp ,Subsidies ,Compensation,Contract,Entrepreneurial,Factor,Buildings,Equipment,FISIM , Surplus ,Cattle ,CropProtection ,Energy,Financial ,Forage ,Maintenance ,Seeds,OtherGoods
