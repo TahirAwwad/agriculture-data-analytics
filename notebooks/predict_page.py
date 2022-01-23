@@ -1,7 +1,9 @@
 import streamlit as st
 import pickle
 import numpy as np
+!pip install tensorflow
 from tensorflow import keras
+
 
 #from sklearn.preprocessing import MinMaxScaler
 
