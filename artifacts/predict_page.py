@@ -3,18 +3,13 @@ import pickle
 import numpy as np
 
 
-#from sklearn.preprocessing import MinMaxScaler
-
 
 def load_model():
     pkl_model = pickle.load(open('pkl_ann_milk','rb'))
     return pkl_model
 
 model = load_model()
-
 pkl_scaler_y = pickle.load(open('pkl_scaler_y','rb'))
- 
-
 pkl_scaler_x = pickle.load(open('pkl_scaler_x','rb'))
 
     
@@ -22,7 +17,8 @@ pkl_scaler_x = pickle.load(open('pkl_scaler_x','rb'))
 
 
 def show_predict_page():
-    st.title("Milk production forcast")
+    
+    #st.title("Milk production forcast")
     st.sidebar.write("""### Change the sliders to best represent the expected costs of each Expence catagory""")
     
     #countries = ('Ireland','Germany','United Kingdom','Poland','Spain')
@@ -65,6 +61,9 @@ def show_predict_page():
         predicted_scaled = model.predict(newdata_scaled)
         # descale the predicted value back to original format
         predicted_transformed = pkl_scaler_y.inverse_transform(predicted_scaled).astype(float)
-        st.subheader(f"The estimated value of Milk production is {predicted_transformed[0][0]:.2f} Million Euro")
+        st.subheader("The estimated value of Milk production is ")
+        st.metric(label="",value=round(predicted_transformed[0][0],2))
+        #st.metric(value=predicted_transformed)
+
         
     
