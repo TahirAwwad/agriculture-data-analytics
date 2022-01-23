@@ -1,10 +1,21 @@
 import streamlit as st
 import pickle
 import numpy as np
+#from tensorflow import keras
 
 #from sklearn.preprocessing import MinMaxScaler
 
 
+def load_model():
+    pkl_model = pickle.load(open('/app/agriculture-data-analytics/notebooks/pkl_ann_milk','rb'))
+    return pkl_model
+
+model = load_model()
+
+pkl_scaler_y = pickle.load(open('/app/agriculture-data-analytics/notebooks/pkl_scaler_y','rb'))
+ 
+
+pkl_scaler_x = pickle.load(open('/app/agriculture-data-analytics/notebooks/pkl_scaler_x','rb'))
 
     
 
