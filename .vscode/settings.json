@@ -1,6 +1,8 @@
 {
 	"cSpell.words": [
+		"Amilcar",
 		"annot",
+		"Aponte",
 		"ARIMA",
 		"astype",
 		"Atoz",
@@ -18,12 +20,14 @@
 		"dropna",
 		"dtype",
 		"dtypes",
+		"Emmons",
 		"endswith",
 		"gantt",
 		"geoboundaries",
 		"geodataframe",
 		"geopandas",
 		"Georg",
+		"Iantorno",
 		"ipynb",
 		"isinstance",
 		"Jablonski",
@@ -36,6 +40,7 @@
 		"Lehnsherr",
 		"markcrowe",
 		"Mizner",
+		"Moodle",
 		"nbautoexport",
 		"nunique",
 		"pandoc",
@@ -46,6 +51,7 @@
 		"pyplot",
 		"pyproject",
 		"Pythonic",
+		"Quaid",
 		"quantile",
 		"Riker",
 		"Rossum",
@@ -61,6 +67,7 @@
 		"trello",
 		"triu",
 		"Tukey",
+		"Wilcoxon",
 		"xlabel",
 		"ylabel"
 	]
