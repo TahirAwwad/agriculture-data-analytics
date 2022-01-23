@@ -250,7 +250,7 @@ grid_xgb_milk.fit(xtrain_scale,ytrain_scale);
 
 # print best training model & R squared score
 print('Best training model ',grid_xgb_milk.best_estimator_)
-print('Best model Parameters',GS_xgb_milk.best_params_)
+print('Best model Parameters',grid_xgb_milk.best_params_)
 print('Best training model score, coefficient of determination R squared', grid_xgb_milk.best_score_)
 
 

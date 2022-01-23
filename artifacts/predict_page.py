@@ -1,7 +1,6 @@
 import streamlit as st
 import pickle
 import numpy as np
-from tensorflow import keras
 
 
 #from sklearn.preprocessing import MinMaxScaler
@@ -28,13 +27,13 @@ def show_predict_page():
     
     #countries = ('Ireland','Germany','United Kingdom','Poland','Spain')
     
-    #country = st.selectbox('Countries',countries)
-    taxes = st.slider("Taxes",0,50000,1000)
-    Energy = st.slider("Energy",0,50000,100)
-    #Sheep = st.slider("Livestock Sheep",0,50000,1000)
-    landrental = st.slider("Land Rental",0,50000,1000)
-    Fertilisers = st.slider("Fertilisers",0,50000,1000)
-    feeding = st.slider("Feeding stuff",0,50000,1000)
+    #country = st.sidebar.selectbox('Countries',countries)
+    taxes = st.sidebar.slider("Taxes",0,50000,1000)
+    Energy = st.sidebar.slider("Energy",0,50000,100)
+    #Sheep = st.sidebar.slider("Livestock Sheep",0,50000,1000)
+    landrental = st.sidebar.slider("Land Rental",0,50000,1000)
+    Fertilisers = st.sidebar.slider("Fertilisers",0,50000,1000)
+    feeding = st.sidebar.slider("Feeding stuff",0,50000,1000)
     #vetexp = st.slider("Veterinary Expenses",0,50000,100)
     #Subsidies = st.slider("Subsidies",0,50000,100)
     #Compensation = st.slider("Compensation of Employees",0,50000,100)
