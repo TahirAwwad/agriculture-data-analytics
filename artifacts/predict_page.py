@@ -7,15 +7,15 @@ import numpy as np
 
 
 def load_model():
-    pkl_model = pickle.load(open('/app/agriculture-data-analytics/artifacts/pkl_ann_milk','rb'))
+    pkl_model = pickle.load(open('pkl_ann_milk','rb'))
     return pkl_model
 
 model = load_model()
 
-pkl_scaler_y = pickle.load(open('/app/agriculture-data-analytics/artifacts/pkl_scaler_y','rb'))
+pkl_scaler_y = pickle.load(open('pkl_scaler_y','rb'))
  
 
-pkl_scaler_x = pickle.load(open('/app/agriculture-data-analytics/artifacts/pkl_scaler_x','rb'))
+pkl_scaler_x = pickle.load(open('pkl_scaler_x','rb'))
 
     
 
