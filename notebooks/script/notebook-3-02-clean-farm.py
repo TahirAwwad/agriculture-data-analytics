@@ -33,14 +33,17 @@ nlp_functions = importlib.import_module("nlp_clean_functions")
 #!python -m spacy download en_core_web_sm --quiet
 
 
-get_ipython().run_cell_magic('time', '', 'dataframe = pandas.read_csv("./../assets/agriculture-ie.csv")\ndataframe = nlp_functions.add_clean_text_columns(dataframe)')
+get_ipython().run_cell_magic('time', '', 'dataframe = pandas.read_csv("./../assets/beef.csv")\ndataframe = nlp_functions.add_clean_text_columns(dataframe)')
 
 
 # ### Save Artifact
 # Saving the output of the notebook.
 
-dataframe.to_csv("./../artifacts/agriculture-ie-clean.csv")
+dataframe.to_csv("./../artifacts/beef-clean.csv")
 
 
 dataframe.head()
+
+
+
 
