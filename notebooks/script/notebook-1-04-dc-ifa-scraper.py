@@ -18,7 +18,7 @@
 # Import required third party Python libraries, import supporting functions and sets up data source file paths.
 
 # Local
-#!pip install -r script/requirements.txt 
+#!pip install -r script/requirements.txt
 # Remote option
 #!pip install -r https://raw.githubusercontent.com/markcrowe-com/agriculture-data-analytics/requirements.txt
 #Options: --quiet --user
@@ -27,7 +27,6 @@
 from agriculture_data_analytics.project_manager import ProjectAssetManager
 from agriculture_data_analytics.dataframe_labels import *
 from bs4 import BeautifulSoup
-from pandas import DataFrame
 from pandas import DataFrame
 import data_analytics.github as github
 import pandas
@@ -75,11 +74,11 @@ links = beautiful_soup.find_all("a", {"class": ""}, href=True)
 print("Article Links found:", len(links))
 
 
-page_list:list = []
+page_list: list = []
 
 for link in links:
-    url:str = link['href']
-    response:str = session.get(url)
+    url: str = link['href']
+    response: str = session.get(url)
     beautiful_soup = BeautifulSoup(response.content, 'html.parser')
     heading = beautiful_soup.find('h1').text
     date = beautiful_soup.find('time').text
@@ -91,13 +90,11 @@ for link in links:
 
 # Saving the output of the notebook.
 
-dataframe = DataFrame(page_list, columns=["URL", "Heading", "Date", "HTML Content", "Text"])
+dataframe_columns = ["URL", "Heading", "Date", "HTML Content", "Text"]
+dataframe = DataFrame(page_list, columns=dataframe_columns)
 dataframe.to_csv('./../assets/ifa-ie-beef-articles.csv', index=False)
 
 print("Dataframe saved to assets/ifa-ie-beef-articles.csv")
 
 
 # Author &copy; 2021 <a href="https://github.com/markcrowe-com" target="_parent">Mark Crowe</a>. All rights reserved.
-
-dataframe.head()
-
