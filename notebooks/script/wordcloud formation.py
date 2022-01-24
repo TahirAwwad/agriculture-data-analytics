@@ -20,9 +20,3 @@ plt.imshow(wordcloud, interpolation='bilinear')
 plt.axis("off")
 plt.show()
 
-
-
-
-
-
-
