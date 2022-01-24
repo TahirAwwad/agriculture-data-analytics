@@ -60,6 +60,7 @@
 		"setuptools",
 		"startswith",
 		"Storchaka",
+		"Streamlit",
 		"struct",
 		"tkinter",
 		"Tomlinson",
