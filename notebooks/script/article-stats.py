@@ -68,7 +68,7 @@ nltk.download('words')
 words = set(nltk.corpus.words.words())
 
 
-df = pd.read_csv("./../artifacts/ifa-ie-all-articles.csv")
+df = pd.read_csv("./../assets/ifa-ie-all-articles.csv")
 
 
 df.info()
