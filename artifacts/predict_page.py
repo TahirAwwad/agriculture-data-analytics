@@ -3,7 +3,6 @@ import pickle
 import numpy as np
 
 
-
 def load_model():
     pkl_model = pickle.load(open('pkl_ann_milk','rb'))
     return pkl_model
@@ -11,9 +10,6 @@ def load_model():
 model = load_model()
 pkl_scaler_y = pickle.load(open('pkl_scaler_y','rb'))
 pkl_scaler_x = pickle.load(open('pkl_scaler_x','rb'))
-
-    
-
 
 
 def show_predict_page():
