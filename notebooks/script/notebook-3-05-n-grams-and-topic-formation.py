@@ -49,6 +49,11 @@ import spacy
 import spacy
 import warnings 
 
+from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
+from sklearn.feature_extraction import DictVectorizer
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.preprocessing import LabelEncoder
+
 
 get_ipython().run_line_magic('matplotlib', 'inline')
 InteractiveShell.ast_node_interactivity = 'all'
