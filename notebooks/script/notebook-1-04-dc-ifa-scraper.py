@@ -29,7 +29,6 @@
 from bs4 import BeautifulSoup
 from pandas import DataFrame
 from requests.sessions import Session
-import pandas
 import requests
 
 
@@ -81,7 +80,7 @@ def get_articles_links(html: str):
     return links
 
 
-def download_articles_from_links(links):
+def download_articles_from_links(links, term: str):
     page_list: list = []
 
     for link in links:
@@ -91,31 +90,49 @@ def download_articles_from_links(links):
         heading = beautiful_soup.find('h1').text
         date = beautiful_soup.find('time').text
         html_content = beautiful_soup.find("div", {"class": "single-content"})
-        page_list.append([url, heading, date, html_content, html_content.text])
+        page_list.append(
+            [url, heading, date, term, html_content.text, html_content])
     return page_list
 
 
-def save_artiles_to_csv(page_list: [], filename: str):
-    dataframe_columns = ["URL", "Heading", "Date", "HTML Content", "Text"]
+def append_articles_to_csv(page_list, filename: str):
+    APPEND = 'a'
+    dataframe_columns = [
+        "URL", "Heading", "Date", "HTML Content", "Text", "Trend"
+    ]
     dataframe = DataFrame(page_list, columns=dataframe_columns)
-    dataframe.to_csv(f'./../assets/{filename}', index=False)
+    dataframe.to_csv(f'./../assets/{filename}',
+                     index=False,
+                     header=False,
+                     mode=APPEND)
     print(f"Dataframe saved to assets/{filename}")
+
+
+def create_articles_csv_file(filename: str):
+    dataframe_columns = [
+        "URL", "Heading", "Date", "Trend", "Text", "HTML Content"
+    ]
+    dataframe = DataFrame(columns=dataframe_columns)
+    dataframe.to_csv(f'./../assets/{filename}', index=False)
+    print(f"Created assets/{filename}")
 
 
 def download_articles(term: str, filename: str) -> None:
     html = get_articles_html(term)
     links = get_articles_links(html)
-    page_list = download_articles_from_links(links)
-    save_artiles_to_csv(page_list, filename)
+    page_list = download_articles_from_links(links, term)
+    append_articles_to_csv(page_list, filename)
 
 
 # ### Save Artifacts
 
 # Saving the output of the notebook.
 
+filename = f"ifa-ie-articles.csv"
+create_articles_csv_file(filename)
 terms = ["cattle", "dairy"]
 for term in terms:
-    download_articles(term, f"ifa-ie-{term}-articles.csv")
+    download_articles(term, filename)
 
 
 # Author &copy; 2021 <a href="https://github.com/markcrowe-com" target="_parent">Mark Crowe</a>. All rights reserved.
