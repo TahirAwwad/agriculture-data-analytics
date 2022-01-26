@@ -1,13 +1,13 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# ## Parse Irish Farmers Association
+# ## Parse Irish Farmers Association articles
 
 # <!--
 # import data_analytics.github as github
-# print(github.create_jupyter_notebook_header("markcrowe-com", "agriculture-data-analytics", "notebooks/notebook-1-04-dc-ifa-scraper.ipynb", "master"))
+# print(github.create_jupyter_notebook_header("tahirawwad", "agriculture-data-analytics", "notebooks/notebook-1-03-dc-ifa-ie-scraping.ipynb", "master"))
 # -->
-# <table style="margin: auto;"><tr><td><a href="https://mybinder.org/v2/gh/markcrowe-com/agriculture-data-analytics/master?filepath=notebooks/notebook-1-04-dc-ifa-scraper.ipynb" target="_parent"><img src="https://mybinder.org/badge_logo.svg" alt="Open In Binder"/></a></td><td>online editors</td><td><a href="https://colab.research.google.com/github/markcrowe-com/agriculture-data-analytics/blob/master/notebooks/notebook-1-04-dc-ifa-scraper.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a></td></tr></table>
+# <table style="margin: auto;"><tr><td><a href="https://mybinder.org/v2/gh/tahirawwad/agriculture-data-analytics/master?filepath=notebooks/notebook-1-03-dc-ifa-ie-scraping.ipynb" target="_parent"><img src="https://mybinder.org/badge_logo.svg" alt="Open In Binder"/></a></td><td>online editors</td><td><a href="https://colab.research.google.com/github/tahirawwad/agriculture-data-analytics/blob/master/notebooks/notebook-1-03-dc-ifa-ie-scraping.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a></td></tr></table>
 
 # ### Objective
 
@@ -20,12 +20,10 @@
 # Local
 #!pip install -r script/requirements.txt
 # Remote option
-#!pip install -r https://raw.githubusercontent.com/markcrowe-com/agriculture-data-analytics/requirements.txt
+#!pip install -r https://raw.githubusercontent.com/tahirawwad/agriculture-data-analytics/requirements.txt
 #Options: --quiet --user
 
 
-#from agriculture_data_analytics.project_manager import ProjectAssetManager
-#from agriculture_data_analytics.dataframe_labels import *
 from bs4 import BeautifulSoup
 from pandas import DataFrame
 from requests.sessions import Session

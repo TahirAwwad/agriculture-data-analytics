@@ -27,13 +27,13 @@
 # }
 # </style>
 
-# ## EDA of the cattle and beef exports (1930 - 2020)
+# ## EDA of Irish cattle and beef exports (1930 - 2020)
 
 # <!--
 # import data_analytics.github as github
-# print(github.create_jupyter_notebook_header("markcrowe-com", "agriculture-data-analytics", "notebooks/notebook-1-01-eda-irish-beef-exports.ipynb", "master"))
+# print(github.create_jupyter_notebook_header("tahirawwad", "agriculture-data-analytics", "notebooks/notebook-2-01-eda-irish-beef-exports.ipynb", "master"))
 # -->
-# <table style="margin: auto;"><tr><td><a href="https://mybinder.org/v2/gh/markcrowe-com/agriculture-data-analytics/master?filepath=notebooks/notebook-1-01-eda-irish-beef-exports.ipynb" target="_parent"><img src="https://mybinder.org/badge_logo.svg" alt="Open In Binder"/></a></td><td>online editors</td><td><a href="https://colab.research.google.com/github/markcrowe-com/agriculture-data-analytics/blob/master/notebooks/notebook-1-01-eda-irish-beef-exports.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a></td></tr></table>
+# <table style="margin: auto;"><tr><td><a href="https://mybinder.org/v2/gh/tahirawwad/agriculture-data-analytics/master?filepath=notebooks/notebook-2-01-eda-irish-beef-exports.ipynb" target="_parent"><img src="https://mybinder.org/badge_logo.svg" alt="Open In Binder"/></a></td><td>online editors</td><td><a href="https://colab.research.google.com/github/tahirawwad/agriculture-data-analytics/blob/master/notebooks/notebook-2-01-eda-irish-beef-exports.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a></td></tr></table>
 
 # ### Objective
 
@@ -44,9 +44,10 @@
 # Import required third party Python libraries, import supporting functions and sets up data source file paths.
 
 # Local
-#!pip install -r script/requirements.txt --quiet --user
+#!pip install -r script/requirements.txt
 # Remote option
-#!pip install -r "https://github.com/markcrowe-com/data-analytics-project-template/blob/master/notebooks/script/requirements.txt?raw=true" --quiet --user
+#!pip install -r https://raw.githubusercontent.com/tahirawwad/agriculture-data-analytics/requirements.txt
+#Options: --quiet --user
 
 
 from agriculture_data_analytics.project_manager import *

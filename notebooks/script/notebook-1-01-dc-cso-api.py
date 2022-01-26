@@ -5,26 +5,26 @@
 
 # <!--
 # import data_analytics.github as github
-# print(github.create_jupyter_notebook_header("markcrowe-com", "agriculture-data-analytics", "notebooks/notebook-1-01-api-data-collection.ipynb", "master"))
+# print(github.create_jupyter_notebook_header("tahirawwad", "agriculture-data-analytics", "notebooks/notebook-1-01-dc-cso-api.ipynb", "master"))
 # -->
-# <table style="margin: auto;"><tr><td><a href="https://mybinder.org/v2/gh/markcrowe-com/agriculture-data-analytics/master?filepath=notebooks/notebook-1-01-api-data-collection.ipynb" target="_parent"><img src="https://mybinder.org/badge_logo.svg" alt="Open In Binder"/></a></td><td>online editors</td><td><a href="https://colab.research.google.com/github/markcrowe-com/agriculture-data-analytics/blob/master/notebooks/notebook-1-01-api-data-collection.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a></td></tr></table>
+# <table style="margin: auto;"><tr><td><a href="https://mybinder.org/v2/gh/tahirawwad/agriculture-data-analytics/master?filepath=notebooks/notebook-1-01-dc-cso-api.ipynb" target="_parent"><img src="https://mybinder.org/badge_logo.svg" alt="Open In Binder"/></a></td><td>online editors</td><td><a href="https://colab.research.google.com/github/tahirawwad/agriculture-data-analytics/blob/master/notebooks/notebook-1-01-dc-cso-api.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a></td></tr></table>
 
 # ### Objective
 
-# The objective is to download the datasets with the listed in [asset-link-builder.xlsx](./../artifacts/asset-link-builder.xlsx) with the [cso.ie](https://wwww.cso.ie) and [eurostat](https://ec.europa.eu/eurostat) APIs.  
+# The objective is to download the datasets with the listed in [asset-link-builder.xlsx](./../artifacts/asset-link-builder.xlsx) from [cso.ie](https://wwww.cso.ie).  
 
 # ### Setup
 
 # Import required third party Python libraries, import supporting functions and sets up data source file paths.
 
 # Local
-#!pip install -r script/requirements.txt --quiet
+#!pip install -r script/requirements.txt
 # Remote option
-#!pip install -r https://github.com/markcrowe-com/agriculture-data-analytics/blob/master/notebooks/script/requirements.txt --quiet
+#!pip install -r https://raw.githubusercontent.com/tahirawwad/agriculture-data-analytics/requirements.txt
+#Options: --quiet --user
 
 
 from pandas import DataFrame
-import eurostat
 import io
 import pandas
 import requests
@@ -45,50 +45,6 @@ def download_cso_table_data(table_code: str,
 def download_cso_table_dataframe(table_code: str) -> str:
     return pandas.read_csv(io.StringIO(download_cso_table_data(table_code)),
                            sep=",")
-
-
-# ### Download Eurostat Data sources
-
-# - Agriculture price indecies of product
-
-# #### 2015 base year of Product Prices
-
-# price indecies of product 2015 base year
-price_idx_products_annual_code = 'apri_pi15_outa'
-
-price_idx_products_annual_dataframe = eurostat.get_data_df(
-    price_idx_products_annual_code, flags=False)
-
-# rename column
-price_idx_products_annual2015_dataframe = price_idx_products_annual_dataframe.rename(
-    columns={price_idx_products_annual_dataframe.columns[3]: 'geotime'})
-
-# transform years columns to a Series
-price_idx_products_annual2015_dataframe = price_idx_products_annual2015_dataframe.melt(
-    id_vars=["p_adj", "unit", "geotime", "product"],
-    var_name="year",
-    value_name="priceIDX")
-price_idx_products_annual2015_dataframe.sample(5)
-
-
-# #### 2010 base year of Product Prices
-
-# price indecies of product 2010 base year
-price_idx_products_annual2010_code = 'apri_pi10_outa'
-price_idx_products_annual2010_dataframe = eurostat.get_data_df(
-    price_idx_products_annual2010_code, flags=False)
-
-price_idx_products_annual2010_dataframe = price_idx_products_annual2010_dataframe.rename(
-    columns={price_idx_products_annual2010_dataframe.columns[3]: 'geotime'})
-
-# transform years columns to a Series
-price_idx_products_annual2010_dataframe = price_idx_products_annual2010_dataframe.melt(
-    id_vars=["p_adj", "unit", "geotime", "product"],
-    var_name="year",
-    value_name="priceIDX")
-
-price_idx_products_annual2010_dataframe.to_csv(
-    './../assets/TA_priceIDX_2000_2017_eurostat.csv')
 
 
 # ### Download CSO Data sources
