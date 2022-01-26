@@ -42,7 +42,7 @@ df = pd.read_csv("./../artifacts/TA_inputoutputvalue_1990_2021_CSO.csv")
 df = df.drop('Unnamed: 0',axis = 1)
 
 # extract milk dataset
-df_milk = df[['Year',
+df = df[['Year',
 #              'UNIT',
               'All Livestock Products - Milk',
               'Taxes on Products',
@@ -74,16 +74,16 @@ df_milk = df[['Year',
               
              ]]
 # Assign year as index
-df_milk.set_index('Year',drop=True,inplace=True)
+df.set_index('Year',drop=True,inplace=True)
 # rename column
-df_milk = df_milk.rename(columns={'All Livestock Products - Milk':'Milk Production'})
+df = df.rename(columns={'All Livestock Products - Milk':'Milk Production'})
 
 
 #print("Milk production dataset dimenssions \n", df_milk.shape,'\n')
 #print( df_milk.info())
 
 # chosse only Milk production column
-df_milk = df_milk['Milk Production']
+df_milk = df['Milk Production']
 fig = px.bar(df_milk,title='Irish Milk Production Value over Time - Thousands Euro')
 fig.show()
 
@@ -109,6 +109,12 @@ fig.show()
 
 # Test Normality via Shapiro-Wilk test of Normality
 print(pg.normality(df_milk))
+
+# test with kruswales independece test
+print('\n',stats.ks_1samp(df['Milk Production'], stats.norm.cdf))
+# null hypothesis is that the two distributions are identical
+
+
 # Test Normality via QQplot
 ax = pg.qqplot(df_milk, dist='norm')
 
@@ -121,6 +127,22 @@ ax = pg.qqplot(df_milk, dist='norm')
 
 stats.ttest_1samp(df_milk.iloc[25:], # sample data
                  df_milk.iloc[20:25].mean()) # population mean)
+
+
+# average production of years 2015 to 2021 is greater than average production of years 2009 to 2014
+stats.mannwhitneyu(df_milk.iloc[25:],df_milk.iloc[19:25],alternative='greater')
+
+
+
+
+
+# ## Correlation
+
+Correlation over the years or patern
+px.line(df.iloc[:,0:4])
+
+# correlaton non parametric (robust)
+pg.corr(df['Milk Production'], df['Subsidies on Products'],method='bicor').round(3)
 
 
 

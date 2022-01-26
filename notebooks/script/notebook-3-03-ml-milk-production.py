@@ -297,7 +297,7 @@ tuner = RandomSearch(
         objective='val_mean_absolute_error',
         max_trials=5,
         executions_per_trial=3,
-        directory='ANN-tuner',
+        directory='./../temp/ANN-tuner',
         project_name='Milk production')
 
 # Defined parameter space to search in
