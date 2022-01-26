@@ -138,7 +138,7 @@ stats.mannwhitneyu(df_milk.iloc[25:],df_milk.iloc[19:25],alternative='greater')
 
 # ## Correlation
 
-Correlation over the years or patern
+# Correlation over the years or patern
 px.line(df.iloc[:,0:4])
 
 # correlaton non parametric (robust)
