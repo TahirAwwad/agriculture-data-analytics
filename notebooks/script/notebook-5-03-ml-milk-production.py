@@ -290,7 +290,12 @@ def build_model(hp):
         loss='mean_absolute_error',
         metrics=['mean_absolute_error'])
         return model
-    
+
+#import os
+#if os.path
+#    os.remove("")
+
+
 # create a directory to store each iteration of modelling
 tuner = RandomSearch(
         build_model,
@@ -338,25 +343,28 @@ print(df_score)
 # # Pickle file
 #     Save trained model into binary pickle file to use the model later with new input data from web app
 
-# Dump/write Scaler into binary pickle
-pickle.dump(scaler_x,open('./../artifacts/pkl_scaler_x','wb'))
-
-# Read pickle file into variable to use scaler
-scaler_x_pkl_ann = pickle.load(open('./../artifacts/pkl_scaler_x','rb'))
+model_name="milk-production"
+directory = f'./../artifacts/{model_name}/'
 
 # Dump/write Scaler into binary pickle
-pickle.dump(scaler_y,open('./../artifacts/pkl_scaler_y','wb'))
+pickle.dump(scaler_x,open(f'{directory}pkl_scaler_x','wb'))
 
 # Read pickle file into variable to use scaler
-scaler_y_pkl_ann = pickle.load(open('./../artifacts/pkl_scaler_y','rb'))
+scaler_x_pkl_ann = pickle.load(open(f'{directory}pkl_scaler_x','rb'))
+
+# Dump/write Scaler into binary pickle
+pickle.dump(scaler_y,open(f'{directory}pkl_scaler_y','wb'))
+
+# Read pickle file into variable to use scaler
+scaler_y_pkl_ann = pickle.load(open(f'{directory}pkl_scaler_y','rb'))
 
 
 
 # Dump/write model into binary pickle file in the current notebook directory
-pickle.dump(bestANNModel,open('./../artifacts/pkl_ann_milk','wb'))
+pickle.dump(bestANNModel,open(f'{directory}pkl_ann_milk','wb'))
 
 # Read pickle file into variable to use model
-model_pkl_ann = pickle.load(open('./../artifacts/pkl_ann_milk','rb'))
+model_pkl_ann = pickle.load(open(f'{directory}pkl_ann_milk','rb'))
 
 
 ## Example using pickle file with saved ANN model
