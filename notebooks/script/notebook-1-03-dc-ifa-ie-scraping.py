@@ -32,10 +32,6 @@ import requests
 
 # ### Functions
 
-#asset_manager: ProjectAssetManager = ProjectAssetManager()
-#asset_manager.is_remote = False
-
-
 session: Session = requests.Session()
 
 session.headers = {

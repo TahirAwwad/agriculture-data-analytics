@@ -47,6 +47,3 @@ dataframe.head()
 
 dataframe['clean_text'].iloc[0]
 
-
-
-
