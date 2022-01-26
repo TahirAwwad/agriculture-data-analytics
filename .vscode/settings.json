@@ -4,6 +4,7 @@
 		"annot",
 		"Aponte",
 		"ARIMA",
+		"astype",
 		"Atoz",
 		"Binkley",
 		"Brandl",
@@ -26,8 +27,10 @@
 		"geopandas",
 		"Georg",
 		"Iantorno",
+		"inplace",
 		"ipynb",
 		"isinstance",
+		"iterrows",
 		"Jablonski",
 		"Janeway",
 		"jfif",
@@ -60,12 +63,14 @@
 		"Storchaka",
 		"struct",
 		"tkinter",
+		"tolist",
 		"Tomlinson",
 		"trello",
 		"triu",
 		"Tukey",
 		"Wilcoxon",
 		"xlabel",
+		"xticks",
 		"ylabel"
 	]
 }
