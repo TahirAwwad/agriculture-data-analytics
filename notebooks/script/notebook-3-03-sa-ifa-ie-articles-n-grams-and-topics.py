@@ -77,7 +77,9 @@ words = set(nltk.corpus.words.words())
 
 # ### Load File
 
-df = pd.read_csv("./../artifacts/ifa-ie-beef-articles-clean.csv")
+filename: str = "./../assets/ifa-ie-articles.csv"
+#df = pd.read_csv("./../artifacts/ifa-ie-beef-articles-clean.csv")
+df = pd.read_csv(filename)
 
 
 df.info()
