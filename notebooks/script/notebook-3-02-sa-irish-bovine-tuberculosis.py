@@ -70,6 +70,7 @@ from matplotlib import rcParams
 from pandas import DataFrame
 import data_analytics.github as github
 import data_analytics.exploratory_data_analysis as eda
+import data_analytics.graphs as eda_graphs
 import data_analytics.exploratory_data_analysis_reports as eda_reports
 import numpy
 import os
@@ -104,6 +105,42 @@ county_bovine_tuberculosis_dataframe.head()
 
 county_bovine_tuberculosis_dataframe.describe()
 
+
+# ### Correlation
+
+# Year is our interval. We drop the Year for correlation.
+
+# Correlation size | Interpretation
+# -|-
+# &plusmn; 1.00 to 1.00 | Perfect correlation
+# &plusmn; 0.90 to 0.99 | Very high correlation
+# &plusmn; 0.70 to 0.90 | High correlation
+# &plusmn; 0.50 to 0.70 | Moderate correlation
+# &plusmn; 0.30 to 0.50 | Low correlation
+# &plusmn; 0.00 to 0.30 | Negligible correlation
+# 
+# <p class="Caption">Correlation Interpretation Table</p>
+# 
+# This table suggests the interpretation of correlation size at different absolute values. These cut-offs are arbitrary and should be used judiciously while interpreting the dataset.
+
+correlation_dataframe = county_bovine_tuberculosis_dataframe.drop(columns=[YEAR])
+
+
+eda_graphs.display_correlation_matrix_pyramid_heatmap(correlation_dataframe.corr());
+
+
+# <p class="Caption">Bovine TB Correlation Matrix Heat Map Pyramid</p>
+
+# #### Correlations suggesting investigation
+# Consider correlation Threshold &GreaterEqual; 0.85.  
+# 
+# Feature one  | Feature two |  Correlation size
+# :-|:-|-
+# Animal Count | Tests on Animals | 0.99
+# Restricted Herds at end of Year | Reactors to date | 0.86
+# Restricted Herds at end of Year | Restricted Herds at start of Year | 0.97
+# Restricted Herds at start of Year | Reactors to date | 0.85
+# Herds Tested | Herds Count | 1
 
 # ### Central Tendency
 
