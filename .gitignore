@@ -263,3 +263,4 @@ $RECYCLE.BIN/
 
 *.bak
 *.ini
+temp/*
