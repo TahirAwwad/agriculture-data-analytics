@@ -1,4 +1,4 @@
-from project_name.project_manager import ProjectArtifactManager, ProjectAssetManager
+from agriculture_data_analytics.project_manager import ProjectArtifactManager, ProjectAssetManager
 import unittest
 import os
 import sys
