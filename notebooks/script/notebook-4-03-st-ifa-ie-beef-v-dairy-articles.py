@@ -94,6 +94,12 @@ vader_scores = vader_scorer(df)
 df = pd.concat([df,vader_scores], axis=1)
 
 
+beef_dataframe = df[df['Trend'] == 'beef']
+dairy_dataframe = df[df['Trend'] == 'dairy']
+#TODO: Michael
+dairy_dataframe.head()
+
+
 # Hypothesis 1:
 # Null Hypothesis is that sentiment for the beef and the dairy was the same
 
