@@ -24,6 +24,38 @@ from matplotlib import pyplot
 import warnings
 
 
+from pathlib import Path
+from zipfile import ZipFile
+import os
+
+
+def join_split_zip_files(split_zip_files_directory: str, destination_dir: str = './temp/', zip_filename: str = 'temp.zip') -> None:
+    split_zip_files = os.listdir(split_zip_files_directory)
+    zip_filepath = os.path.join(destination_dir, zip_filename)
+    if os.path.isfile(zip_filepath):
+        os.remove(zip_filepath)
+    for split_zip_file in split_zip_files:
+        with open(zip_filepath, "ab") as zip_file:
+            with open(os.path.join(split_zip_files_directory, split_zip_file), "rb") as split_zip:
+                zip_file.write(split_zip.read())
+    return zip_filepath
+
+
+def unzip_file(zip_filepath: str, destination_dir: str) -> None:
+    with ZipFile(zip_filepath, 'r') as zipfile:
+        zipfile.extractall(destination_dir)
+
+
+def unzip_required_asset(filepath: str, zip_path: str, destination_dir: str) -> None:
+    if not os.path.isfile(filepath):
+        if os.path.isfile(zip_path):
+            unzip_file(zip_path, destination_dir)
+        elif os.path.isdir(zip_path):
+            zip_filepath = join_split_zip_files(zip_path, destination_dir)
+            unzip_file(zip_filepath, destination_dir)
+            os.remove(zip_filepath)
+
+
 shortlist_coutries = [
     'Argentina', 'Australia', 'Brazil', 'Canada', 'China', 'Colombia', 'Egypt',
     'Ethiopia', 'France', 'Germany', 'India', 'Ireland', 'Italy', 'Kenya',
@@ -46,15 +78,10 @@ cont_region = [
 vp_beef = ['Meat indigenous, cattle', 'Meat, cattle']
 
 
-filepath = "./../temp/value-of-production.csv"
-from pathlib import Path
-from zipfile import ZipFile
-
-if not Path(filepath).is_file():
-    zip_filepath = "./../assets/value-of-production.zip"
-    with ZipFile(zip_filepath, 'r') as zipObj:
-        zipObj.extractall('./../temp')
-        print('File is unzipped')
+filepath = './../temp/value-of-production.csv'
+zip_filepath = './../assets/value-of-production.zip'
+temp_directory= './../temp'
+unzip_required_asset(filepath, zip_filepath, temp_directory)
 
 
 vp = pd.read_csv(filepath, encoding='latin1')
@@ -73,28 +100,20 @@ trade_cl_beef = ['Meat, beef and veal sausages', 'Meat, beef, preparations', 'Me
        'Meat, cattle, boneless (beef & veal)']
 
 
-import os
-
-zipPath = "./../assets/trade-crops-livestock"
-zips = os.listdir(zipPath)
-for zipName in zips:
-    with open("./../temp/trade-crops-livestock.zip", "ab") as f:
-        with open(os.path.join(zipPath, zipName), "rb") as z:
-            f.write(z.read())
-
-with ZipFile("./../temp/trade-crops-livestock.zip", "r") as zipObj:
-    zipObj.extractall('./../temp')
+filepath = './../temp/trade-crops-livestock.csv'
+zip_filepath = './../assets/trade-crops-livestock/'
+temp_directory= './../temp'
+unzip_required_asset(filepath, zip_filepath, temp_directory)
 
 
-trade_cl = pd.read_csv("./../temp/trade-crops-livestock.csv",
-                       encoding='latin1')
+trade_cl = pd.read_csv(filepath, encoding='latin1')
 trade_cl = trade_cl.drop(
     ['Area Code', 'Item Code', 'Element Code', 'Year Code', 'Flag'], axis=1)
 trade_cl = trade_cl.loc[trade_cl.Area.isin(shortlist_coutries)]
 trade_cl = trade_cl.loc[trade_cl.Item.isin(trade_cl_beef)]
 trade_cl = trade_cl.sort_values(by=["Area", "Item", "Year"])
 trade_cl.reset_index(inplace=True, drop=True)
-trade_cl
+trade_cl.sample(5)
 
 
 trade_cl.Unit.unique()
@@ -118,7 +137,12 @@ sua_beef = ['Meat, cattle']
 #'Meat, cattle, boneless (beef & veal)', 'Beef and Buffalo Meat', 'Beef Mutton Pigmeat Prim']
 
 
-sua = pd.read_csv("SUA_Crops_Livestock.csv", encoding='latin1')
+filepath = './../temp/sua-crops-livestock.csv'
+zip_filepath = './../assets/sua-crops-livestock.zip'
+temp_directory= './../temp'
+unzip_required_asset(filepath, zip_filepath, temp_directory)
+
+sua = pd.read_csv(filepath, encoding='latin1')
 sua = sua.drop(['Area Code', 'Item Code', 'Element Code', 'Year Code', 'Flag'],
                axis=1)
 sua = sua.loc[sua.Area.isin(shortlist_coutries)]
