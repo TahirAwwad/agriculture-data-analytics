@@ -1,0 +1,508 @@
+,Year,Type of Crop,UNIT,Area under Crops,Crop Yield,Crop Yield per Hectare
+0,2008,Beans and peas,000 Hectares,2.5,,
+1,2008,Beans and peas,000 Tonnes,,11.1,
+2,2008,Beans and peas,Tonnes,,,4.5
+3,2008,Oilseed rape,000 Hectares,5.6,,
+4,2008,Oilseed rape,000 Tonnes,,20.3,
+5,2008,Oilseed rape,Tonnes,,,3.6
+6,2008,Potatoes,000 Hectares,11.2,,
+7,2008,Potatoes,000 Tonnes,,344.9,
+8,2008,Potatoes,Tonnes,,,30.7
+9,2008,Spring barley,000 Hectares,166.0,,
+10,2008,Spring barley,000 Tonnes,,1112.4,
+11,2008,Spring barley,Tonnes,,,6.7
+12,2008,Spring oats,000 Hectares,4.2,,
+13,2008,Spring oats,000 Tonnes,,26.4,
+14,2008,Spring oats,Tonnes,,,6.3
+15,2008,Spring wheat,000 Hectares,23.2,,
+16,2008,Spring wheat,000 Tonnes,,153.0,
+17,2008,Spring wheat,Tonnes,,,6.6
+18,2008,Total barley,000 Hectares,187.2,,
+19,2008,Total barley,000 Tonnes,,1294.1,
+20,2008,Total barley,Tonnes,,,6.9
+21,2008,Total oats,000 Hectares,22.9,,
+22,2008,Total oats,000 Tonnes,,174.3,
+23,2008,Total oats,Tonnes,,,7.6
+24,2008,Total wheat,000 Hectares,110.7,,
+25,2008,Total wheat,000 Tonnes,,992.8,
+26,2008,Total wheat,Tonnes,,,9.0
+27,2008,"Total wheat, oats and barley",000 Hectares,320.7,,
+28,2008,"Total wheat, oats and barley",000 Tonnes,,2461.3,
+29,2008,"Total wheat, oats and barley",Tonnes,,,7.7
+30,2008,Winter barley,000 Hectares,21.1,,
+31,2008,Winter barley,000 Tonnes,,181.8,
+32,2008,Winter barley,Tonnes,,,8.6
+33,2008,Winter oats,000 Hectares,18.7,,
+34,2008,Winter oats,000 Tonnes,,147.9,
+35,2008,Winter oats,Tonnes,,,7.9
+36,2008,Winter wheat,000 Hectares,87.5,,
+37,2008,Winter wheat,000 Tonnes,,839.9,
+38,2008,Winter wheat,Tonnes,,,9.6
+39,2009,Beans and peas,000 Hectares,4.2,,
+40,2009,Beans and peas,000 Tonnes,,22.2,
+41,2009,Beans and peas,Tonnes,,,5.3
+42,2009,Oilseed rape,000 Hectares,6.3,,
+43,2009,Oilseed rape,000 Tonnes,,23.7,
+44,2009,Oilseed rape,Tonnes,,,3.7
+45,2009,Potatoes,000 Hectares,12.2,,
+46,2009,Potatoes,000 Tonnes,,336.1,
+47,2009,Potatoes,Tonnes,,,27.6
+48,2009,Spring barley,000 Hectares,174.3,,
+49,2009,Spring barley,000 Tonnes,,1063.1,
+50,2009,Spring barley,Tonnes,,,6.1
+51,2009,Spring oats,000 Hectares,11.3,,
+52,2009,Spring oats,000 Tonnes,,74.4,
+53,2009,Spring oats,Tonnes,,,6.6
+54,2009,Spring wheat,000 Hectares,20.2,,
+55,2009,Spring wheat,000 Tonnes,,137.4,
+56,2009,Spring wheat,Tonnes,,,6.8
+57,2009,Total barley,000 Hectares,193.6,,
+58,2009,Total barley,000 Tonnes,,1227.3,
+59,2009,Total barley,Tonnes,,,6.3
+60,2009,Total oats,000 Hectares,20.4,,
+61,2009,Total oats,000 Tonnes,,145.7,
+62,2009,Total oats,Tonnes,,,7.1
+63,2009,Total wheat,000 Hectares,84.5,,
+64,2009,Total wheat,000 Tonnes,,690.1,
+65,2009,Total wheat,Tonnes,,,8.2
+66,2009,"Total wheat, oats and barley",000 Hectares,298.5,,
+67,2009,"Total wheat, oats and barley",000 Tonnes,,2063.0,
+68,2009,"Total wheat, oats and barley",Tonnes,,,6.9
+69,2009,Winter barley,000 Hectares,19.3,,
+70,2009,Winter barley,000 Tonnes,,164.2,
+71,2009,Winter barley,Tonnes,,,8.5
+72,2009,Winter oats,000 Hectares,9.1,,
+73,2009,Winter oats,000 Tonnes,,71.3,
+74,2009,Winter oats,Tonnes,,,7.8
+75,2009,Winter wheat,000 Hectares,64.3,,
+76,2009,Winter wheat,000 Tonnes,,552.7,
+77,2009,Winter wheat,Tonnes,,,8.6
+78,2010,Beans and peas,000 Hectares,4.6,,
+79,2010,Beans and peas,000 Tonnes,,25.0,
+80,2010,Beans and peas,Tonnes,,,5.5
+81,2010,Oilseed rape,000 Hectares,8.0,,
+82,2010,Oilseed rape,000 Tonnes,,28.1,
+83,2010,Oilseed rape,Tonnes,,,3.5
+84,2010,Potatoes,000 Hectares,12.2,,
+85,2010,Potatoes,000 Tonnes,,419.6,
+86,2010,Potatoes,Tonnes,,,34.4
+87,2010,Spring barley,000 Hectares,146.0,,
+88,2010,Spring barley,000 Tonnes,,977.9,
+89,2010,Spring barley,Tonnes,,,6.7
+90,2010,Spring oats,000 Hectares,9.4,,
+91,2010,Spring oats,000 Tonnes,,67.6,
+92,2010,Spring oats,Tonnes,,,7.2
+93,2010,Spring wheat,000 Hectares,18.0,,
+94,2010,Spring wheat,000 Tonnes,,137.2,
+95,2010,Spring wheat,Tonnes,,,7.6
+96,2010,Total barley,000 Hectares,174.8,,
+97,2010,Total barley,000 Tonnes,,1223.1,
+98,2010,Total barley,Tonnes,,,7.0
+99,2010,Total oats,000 Hectares,19.7,,
+100,2010,Total oats,000 Tonnes,,148.1,
+101,2010,Total oats,Tonnes,,,7.5
+102,2010,Total wheat,000 Hectares,77.8,,
+103,2010,Total wheat,000 Tonnes,,669.2,
+104,2010,Total wheat,Tonnes,,,8.6
+105,2010,"Total wheat, oats and barley",000 Hectares,272.3,,
+106,2010,"Total wheat, oats and barley",000 Tonnes,,2040.3,
+107,2010,"Total wheat, oats and barley",Tonnes,,,7.5
+108,2010,Winter barley,000 Hectares,28.8,,
+109,2010,Winter barley,000 Tonnes,,245.1,
+110,2010,Winter barley,Tonnes,,,8.5
+111,2010,Winter oats,000 Hectares,10.3,,
+112,2010,Winter oats,000 Tonnes,,80.5,
+113,2010,Winter oats,Tonnes,,,7.8
+114,2010,Winter wheat,000 Hectares,59.8,,
+115,2010,Winter wheat,000 Tonnes,,532.0,
+116,2010,Winter wheat,Tonnes,,,8.9
+117,2011,Beans and peas,000 Hectares,2.9,,
+118,2011,Beans and peas,000 Tonnes,,16.5,
+119,2011,Beans and peas,Tonnes,,,5.7
+120,2011,Oilseed rape,000 Hectares,12.4,,
+121,2011,Oilseed rape,000 Tonnes,,55.9,
+122,2011,Oilseed rape,Tonnes,,,4.5
+123,2011,Potatoes,000 Hectares,10.4,,
+124,2011,Potatoes,000 Tonnes,,356.1,
+125,2011,Potatoes,Tonnes,,,34.4
+126,2011,Spring barley,000 Hectares,144.8,,
+127,2011,Spring barley,000 Tonnes,,1085.8,
+128,2011,Spring barley,Tonnes,,,7.5
+129,2011,Spring oats,000 Hectares,12.4,,
+130,2011,Spring oats,000 Tonnes,,97.6,
+131,2011,Spring oats,Tonnes,,,7.9
+132,2011,Spring wheat,000 Hectares,16.4,,
+133,2011,Spring wheat,000 Tonnes,,136.4,
+134,2011,Spring wheat,Tonnes,,,8.3
+135,2011,Total barley,000 Hectares,180.6,,
+136,2011,Total barley,000 Tonnes,,1412.0,
+137,2011,Total barley,Tonnes,,,7.8
+138,2011,Total oats,000 Hectares,21.4,,
+139,2011,Total oats,000 Tonnes,,168.1,
+140,2011,Total oats,Tonnes,,,7.9
+141,2011,Total wheat,000 Hectares,94.2,,
+142,2011,Total wheat,000 Tonnes,,929.2,
+143,2011,Total wheat,Tonnes,,,9.9
+144,2011,"Total wheat, oats and barley",000 Hectares,296.2,,
+145,2011,"Total wheat, oats and barley",000 Tonnes,,2509.4,
+146,2011,"Total wheat, oats and barley",Tonnes,,,8.5
+147,2011,Winter barley,000 Hectares,35.9,,
+148,2011,Winter barley,000 Tonnes,,326.3,
+149,2011,Winter barley,Tonnes,,,9.1
+150,2011,Winter oats,000 Hectares,9.0,,
+151,2011,Winter oats,000 Tonnes,,70.5,
+152,2011,Winter oats,Tonnes,,,7.8
+153,2011,Winter wheat,000 Hectares,77.7,,
+154,2011,Winter wheat,000 Tonnes,,792.9,
+155,2011,Winter wheat,Tonnes,,,10.2
+156,2012,Beans and peas,000 Hectares,4.1,,
+157,2012,Beans and peas,000 Tonnes,,19.7,
+158,2012,Beans and peas,Tonnes,,,4.8
+159,2012,Oilseed rape,000 Hectares,17.5,,
+160,2012,Oilseed rape,000 Tonnes,,58.7,
+161,2012,Oilseed rape,Tonnes,,,3.2
+162,2012,Potatoes,000 Hectares,9.0,,
+163,2012,Potatoes,000 Tonnes,,232.0,
+164,2012,Potatoes,Tonnes,,,25.8
+165,2012,Spring barley,000 Hectares,151.8,,
+166,2012,Spring barley,000 Tonnes,,940.9,
+167,2012,Spring barley,Tonnes,,,6.2
+168,2012,Spring oats,000 Hectares,13.8,,
+169,2012,Spring oats,000 Tonnes,,88.4,
+170,2012,Spring oats,Tonnes,,,6.4
+171,2012,Spring wheat,000 Hectares,13.5,,
+172,2012,Spring wheat,000 Tonnes,,82.2,
+173,2012,Spring wheat,Tonnes,,,6.1
+174,2012,Total barley,000 Hectares,192.8,,
+175,2012,Total barley,000 Tonnes,,1260.7,
+176,2012,Total barley,Tonnes,,,6.5
+177,2012,Total oats,000 Hectares,23.7,,
+178,2012,Total oats,000 Tonnes,,156.5,
+179,2012,Total oats,Tonnes,,,6.6
+180,2012,Total wheat,000 Hectares,98.0,,
+181,2012,Total wheat,000 Tonnes,,707.9,
+182,2012,Total wheat,Tonnes,,,7.2
+183,2012,"Total wheat, oats and barley",000 Hectares,314.5,,
+184,2012,"Total wheat, oats and barley",000 Tonnes,,2125.1,
+185,2012,"Total wheat, oats and barley",Tonnes,,,6.8
+186,2012,Winter barley,000 Hectares,41.0,,
+187,2012,Winter barley,000 Tonnes,,319.8,
+188,2012,Winter barley,Tonnes,,,7.8
+189,2012,Winter oats,000 Hectares,9.9,,
+190,2012,Winter oats,000 Tonnes,,68.2,
+191,2012,Winter oats,Tonnes,,,6.9
+192,2012,Winter wheat,000 Hectares,84.6,,
+193,2012,Winter wheat,000 Tonnes,,625.7,
+194,2012,Winter wheat,Tonnes,,,7.4
+195,2013,Beans and peas,000 Hectares,4.5,,
+196,2013,Beans and peas,000 Tonnes,,23.3,
+197,2013,Beans and peas,Tonnes,,,5.2
+198,2013,Oilseed rape,000 Hectares,13.7,,
+199,2013,Oilseed rape,000 Tonnes,,49.2,
+200,2013,Oilseed rape,Tonnes,,,3.6
+201,2013,Potatoes,000 Hectares,10.7,,
+202,2013,Potatoes,000 Tonnes,,410.1,
+203,2013,Potatoes,Tonnes,,,38.2
+204,2013,Spring barley,000 Hectares,183.5,,
+205,2013,Spring barley,000 Tonnes,,1320.9,
+206,2013,Spring barley,Tonnes,,,7.2
+207,2013,Spring oats,000 Hectares,21.3,,
+208,2013,Spring oats,000 Tonnes,,149.1,
+209,2013,Spring oats,Tonnes,,,7.0
+210,2013,Spring wheat,000 Hectares,15.2,,
+211,2013,Spring wheat,000 Tonnes,,123.3,
+212,2013,Spring wheat,Tonnes,,,8.1
+213,2013,Total barley,000 Hectares,219.4,,
+214,2013,Total barley,000 Tonnes,,1662.8,
+215,2013,Total barley,Tonnes,,,7.6
+216,2013,Total oats,000 Hectares,26.7,,
+217,2013,Total oats,000 Tonnes,,192.5,
+218,2013,Total oats,Tonnes,,,7.2
+219,2013,Total wheat,000 Hectares,60.6,,
+220,2013,Total wheat,000 Tonnes,,545.3,
+221,2013,Total wheat,Tonnes,,,9.0
+222,2013,"Total wheat, oats and barley",000 Hectares,306.7,,
+223,2013,"Total wheat, oats and barley",000 Tonnes,,2400.6,
+224,2013,"Total wheat, oats and barley",Tonnes,,,7.8
+225,2013,Winter barley,000 Hectares,36.0,,
+226,2013,Winter barley,000 Tonnes,,341.8,
+227,2013,Winter barley,Tonnes,,,9.5
+228,2013,Winter oats,000 Hectares,5.4,,
+229,2013,Winter oats,000 Tonnes,,43.4,
+230,2013,Winter oats,Tonnes,,,8.1
+231,2013,Winter wheat,000 Hectares,45.4,,
+232,2013,Winter wheat,000 Tonnes,,422.1,
+233,2013,Winter wheat,Tonnes,,,9.3
+234,2014,Beans and peas,000 Hectares,3.5,,
+235,2014,Beans and peas,000 Tonnes,,20.3,
+236,2014,Beans and peas,Tonnes,,,5.7
+237,2014,Oilseed rape,000 Hectares,9.4,,
+238,2014,Oilseed rape,000 Tonnes,,34.2,
+239,2014,Oilseed rape,Tonnes,,,3.6
+240,2014,Potatoes,000 Hectares,9.5,,
+241,2014,Potatoes,000 Tonnes,,383.0,
+242,2014,Potatoes,Tonnes,,,40.5
+243,2014,Spring barley,000 Hectares,155.6,,
+244,2014,Spring barley,000 Tonnes,,1172.5,
+245,2014,Spring barley,Tonnes,,,7.5
+246,2014,Spring oats,000 Hectares,8.5,,
+247,2014,Spring oats,000 Tonnes,,61.9,
+248,2014,Spring oats,Tonnes,,,7.3
+249,2014,Spring wheat,000 Hectares,6.5,,
+250,2014,Spring wheat,000 Tonnes,,53.6,
+251,2014,Spring wheat,Tonnes,,,8.3
+252,2014,Total barley,000 Hectares,215.7,,
+253,2014,Total barley,000 Tonnes,,1731.2,
+254,2014,Total barley,Tonnes,,,8.0
+255,2014,Total oats,000 Hectares,18.6,,
+256,2014,Total oats,000 Tonnes,,149.7,
+257,2014,Total oats,Tonnes,,,8.0
+258,2014,Total wheat,000 Hectares,71.6,,
+259,2014,Total wheat,000 Tonnes,,717.0,
+260,2014,Total wheat,Tonnes,,,10.0
+261,2014,"Total wheat, oats and barley",000 Hectares,305.9,,
+262,2014,"Total wheat, oats and barley",000 Tonnes,,2597.8,
+263,2014,"Total wheat, oats and barley",Tonnes,,,8.5
+264,2014,Winter barley,000 Hectares,60.1,,
+265,2014,Winter barley,000 Tonnes,,558.7,
+266,2014,Winter barley,Tonnes,,,9.3
+267,2014,Winter oats,000 Hectares,10.1,,
+268,2014,Winter oats,000 Tonnes,,87.8,
+269,2014,Winter oats,Tonnes,,,8.7
+270,2014,Winter wheat,000 Hectares,65.1,,
+271,2014,Winter wheat,000 Tonnes,,663.4,
+272,2014,Winter wheat,Tonnes,,,10.2
+273,2015,Beans and peas,000 Hectares,10.7,,
+274,2015,Beans and peas,000 Tonnes,,69.3,
+275,2015,Beans and peas,Tonnes,,,6.5
+276,2015,Oilseed rape,000 Hectares,8.9,,
+277,2015,Oilseed rape,000 Tonnes,,39.9,
+278,2015,Oilseed rape,Tonnes,,,4.5
+279,2015,Potatoes,000 Hectares,8.5,,
+280,2015,Potatoes,000 Tonnes,,360.1,
+281,2015,Potatoes,Tonnes,,,42.3
+282,2015,Spring barley,000 Hectares,133.0,,
+283,2015,Spring barley,000 Tonnes,,1027.4,
+284,2015,Spring barley,Tonnes,,,7.7
+285,2015,Spring oats,000 Hectares,12.1,,
+286,2015,Spring oats,000 Tonnes,,93.0,
+287,2015,Spring oats,Tonnes,,,7.7
+288,2015,Spring wheat,000 Hectares,10.1,,
+289,2015,Spring wheat,000 Tonnes,,86.5,
+290,2015,Spring wheat,Tonnes,,,8.6
+291,2015,Total barley,000 Hectares,202.8,,
+292,2015,Total barley,000 Tonnes,,1739.2,
+293,2015,Total barley,Tonnes,,,8.6
+294,2015,Total oats,000 Hectares,23.4,,
+295,2015,Total oats,000 Tonnes,,197.7,
+296,2015,Total oats,Tonnes,,,8.4
+297,2015,Total wheat,000 Hectares,65.3,,
+298,2015,Total wheat,000 Tonnes,,696.6,
+299,2015,Total wheat,Tonnes,,,10.7
+300,2015,"Total wheat, oats and barley",000 Hectares,291.6,,
+301,2015,"Total wheat, oats and barley",000 Tonnes,,2633.6,
+302,2015,"Total wheat, oats and barley",Tonnes,,,9.0
+303,2015,Winter barley,000 Hectares,69.8,,
+304,2015,Winter barley,000 Tonnes,,711.9,
+305,2015,Winter barley,Tonnes,,,10.2
+306,2015,Winter oats,000 Hectares,11.4,,
+307,2015,Winter oats,000 Tonnes,,104.7,
+308,2015,Winter oats,Tonnes,,,9.2
+309,2015,Winter wheat,000 Hectares,55.3,,
+310,2015,Winter wheat,000 Tonnes,,610.1,
+311,2015,Winter wheat,Tonnes,,,11.0
+312,2016,Beans and peas,000 Hectares,12.5,,
+313,2016,Beans and peas,000 Tonnes,,70.6,
+314,2016,Beans and peas,Tonnes,,,5.7
+315,2016,Oilseed rape,000 Hectares,9.9,,
+316,2016,Oilseed rape,000 Tonnes,,34.1,
+317,2016,Oilseed rape,Tonnes,,,3.5
+318,2016,Potatoes,000 Hectares,9.0,,
+319,2016,Potatoes,000 Tonnes,,352.0,
+320,2016,Potatoes,Tonnes,,,38.9
+321,2016,Spring barley,000 Hectares,114.6,,
+322,2016,Spring barley,000 Tonnes,,835.5,
+323,2016,Spring barley,Tonnes,,,7.3
+324,2016,Spring oats,000 Hectares,10.0,,
+325,2016,Spring oats,000 Tonnes,,73.0,
+326,2016,Spring oats,Tonnes,,,7.3
+327,2016,Spring wheat,000 Hectares,7.5,,
+328,2016,Spring wheat,000 Tonnes,,60.3,
+329,2016,Spring wheat,Tonnes,,,8.0
+330,2016,Total barley,000 Hectares,189.2,,
+331,2016,Total barley,000 Tonnes,,1479.9,
+332,2016,Total barley,Tonnes,,,7.8
+333,2016,Total oats,000 Hectares,23.2,,
+334,2016,Total oats,000 Tonnes,,183.3,
+335,2016,Total oats,Tonnes,,,7.9
+336,2016,Total wheat,000 Hectares,67.9,,
+337,2016,Total wheat,000 Tonnes,,647.7,
+338,2016,Total wheat,Tonnes,,,9.5
+339,2016,"Total wheat, oats and barley",000 Hectares,280.3,,
+340,2016,"Total wheat, oats and barley",000 Tonnes,,2310.9,
+341,2016,"Total wheat, oats and barley",Tonnes,,,8.2
+342,2016,Winter barley,000 Hectares,74.6,,
+343,2016,Winter barley,000 Tonnes,,644.4,
+344,2016,Winter barley,Tonnes,,,8.6
+345,2016,Winter oats,000 Hectares,13.2,,
+346,2016,Winter oats,000 Tonnes,,110.3,
+347,2016,Winter oats,Tonnes,,,8.3
+348,2016,Winter wheat,000 Hectares,60.4,,
+349,2016,Winter wheat,000 Tonnes,,587.5,
+350,2016,Winter wheat,Tonnes,,,9.7
+351,2017,Beans and peas,000 Hectares,13.7,,
+352,2017,Beans and peas,000 Tonnes,,90.2,
+353,2017,Beans and peas,Tonnes,,,6.6
+354,2017,Oilseed rape,000 Hectares,10.1,,
+355,2017,Oilseed rape,000 Tonnes,,41.7,
+356,2017,Oilseed rape,Tonnes,,,4.1
+357,2017,Potatoes,000 Hectares,9.2,,
+358,2017,Potatoes,000 Tonnes,,412.4,
+359,2017,Potatoes,Tonnes,,,44.9
+360,2017,Spring barley,000 Hectares,115.2,,
+361,2017,Spring barley,000 Tonnes,,913.7,
+362,2017,Spring barley,Tonnes,,,7.9
+363,2017,Spring oats,000 Hectares,10.0,,
+364,2017,Spring oats,000 Tonnes,,76.4,
+365,2017,Spring oats,Tonnes,,,7.6
+366,2017,Spring wheat,000 Hectares,6.8,,
+367,2017,Spring wheat,000 Tonnes,,55.2,
+368,2017,Spring wheat,Tonnes,,,8.2
+369,2017,Total barley,000 Hectares,180.2,,
+370,2017,Total barley,000 Tonnes,,1505.8,
+371,2017,Total barley,Tonnes,,,8.4
+372,2017,Total oats,000 Hectares,24.4,,
+373,2017,Total oats,000 Tonnes,,205.0,
+374,2017,Total oats,Tonnes,,,8.4
+375,2017,Total wheat,000 Hectares,67.0,,
+376,2017,Total wheat,000 Tonnes,,681.7,
+377,2017,Total wheat,Tonnes,,,10.2
+378,2017,"Total wheat, oats and barley",000 Hectares,271.7,,
+379,2017,"Total wheat, oats and barley",000 Tonnes,,2392.6,
+380,2017,"Total wheat, oats and barley",Tonnes,,,8.8
+381,2017,Winter barley,000 Hectares,65.0,,
+382,2017,Winter barley,000 Tonnes,,592.2,
+383,2017,Winter barley,Tonnes,,,9.1
+384,2017,Winter oats,000 Hectares,14.4,,
+385,2017,Winter oats,000 Tonnes,,128.7,
+386,2017,Winter oats,Tonnes,,,8.9
+387,2017,Winter wheat,000 Hectares,60.3,,
+388,2017,Winter wheat,000 Tonnes,,626.6,
+389,2017,Winter wheat,Tonnes,,,10.4
+390,2018,Beans and peas,000 Hectares,8.5,,
+391,2018,Beans and peas,000 Tonnes,,22.7,
+392,2018,Beans and peas,Tonnes,,,2.7
+393,2018,Oilseed rape,000 Hectares,10.6,,
+394,2018,Oilseed rape,000 Tonnes,,40.9,
+395,2018,Oilseed rape,Tonnes,,,3.9
+396,2018,Potatoes,000 Hectares,8.2,,
+397,2018,Potatoes,000 Tonnes,,273.0,
+398,2018,Potatoes,Tonnes,,,33.2
+399,2018,Spring barley,000 Hectares,127.4,,
+400,2018,Spring barley,000 Tonnes,,716.1,
+401,2018,Spring barley,Tonnes,,,5.6
+402,2018,Spring oats,000 Hectares,7.6,,
+403,2018,Spring oats,000 Tonnes,,42.2,
+404,2018,Spring oats,Tonnes,,,5.6
+405,2018,Spring wheat,000 Hectares,3.6,,
+406,2018,Spring wheat,000 Tonnes,,22.2,
+407,2018,Spring wheat,Tonnes,,,6.2
+408,2018,Total barley,000 Hectares,185.2,,
+409,2018,Total barley,000 Tonnes,,1224.9,
+410,2018,Total barley,Tonnes,,,6.6
+411,2018,Total oats,000 Hectares,17.8,,
+412,2018,Total oats,000 Tonnes,,122.3,
+413,2018,Total oats,Tonnes,,,6.9
+414,2018,Total wheat,000 Hectares,58.0,,
+415,2018,Total wheat,000 Tonnes,,506.8,
+416,2018,Total wheat,Tonnes,,,8.7
+417,2018,"Total wheat, oats and barley",000 Hectares,261.0,,
+418,2018,"Total wheat, oats and barley",000 Tonnes,,1853.9,
+419,2018,"Total wheat, oats and barley",Tonnes,,,7.1
+420,2018,Winter barley,000 Hectares,57.9,,
+421,2018,Winter barley,000 Tonnes,,508.8,
+422,2018,Winter barley,Tonnes,,,8.8
+423,2018,Winter oats,000 Hectares,10.2,,
+424,2018,Winter oats,000 Tonnes,,80.1,
+425,2018,Winter oats,Tonnes,,,7.9
+426,2018,Winter wheat,000 Hectares,54.4,,
+427,2018,Winter wheat,000 Tonnes,,484.6,
+428,2018,Winter wheat,Tonnes,,,8.9
+429,2019,Beans and peas,000 Hectares,8.1,,
+430,2019,Beans and peas,000 Tonnes,,44.0,
+431,2019,Beans and peas,Tonnes,,,5.4
+432,2019,Oilseed rape,000 Hectares,9.2,,
+433,2019,Oilseed rape,000 Tonnes,,38.4,
+434,2019,Oilseed rape,Tonnes,,,4.2
+435,2019,Potatoes,000 Hectares,8.7,,
+436,2019,Potatoes,000 Tonnes,,382.4,
+437,2019,Potatoes,Tonnes,,,44.1
+438,2019,Spring barley,000 Hectares,96.5,,
+439,2019,Spring barley,000 Tonnes,,776.7,
+440,2019,Spring barley,Tonnes,,,8.0
+441,2019,Spring oats,000 Hectares,7.2,,
+442,2019,Spring oats,000 Tonnes,,55.5,
+443,2019,Spring oats,Tonnes,,,7.7
+444,2019,Spring wheat,000 Hectares,3.8,,
+445,2019,Spring wheat,000 Tonnes,,31.4,
+446,2019,Spring wheat,Tonnes,,,8.3
+447,2019,Total barley,000 Hectares,179.4,,
+448,2019,Total barley,000 Tonnes,,1557.6,
+449,2019,Total barley,Tonnes,,,8.7
+450,2019,Total oats,000 Hectares,23.8,,
+451,2019,Total oats,000 Tonnes,,202.6,
+452,2019,Total oats,Tonnes,,,8.5
+453,2019,Total wheat,000 Hectares,63.5,,
+454,2019,Total wheat,000 Tonnes,,636.0,
+455,2019,Total wheat,Tonnes,,,10.0
+456,2019,"Total wheat, oats and barley",000 Hectares,266.7,,
+457,2019,"Total wheat, oats and barley",000 Tonnes,,2396.2,
+458,2019,"Total wheat, oats and barley",Tonnes,,,9.0
+459,2019,Winter barley,000 Hectares,82.8,,
+460,2019,Winter barley,000 Tonnes,,780.8,
+461,2019,Winter barley,Tonnes,,,9.4
+462,2019,Winter oats,000 Hectares,16.6,,
+463,2019,Winter oats,000 Tonnes,,147.2,
+464,2019,Winter oats,Tonnes,,,8.9
+465,2019,Winter wheat,000 Hectares,59.7,,
+466,2019,Winter wheat,000 Tonnes,,604.6,
+467,2019,Winter wheat,Tonnes,,,10.1
+468,2020,Beans and peas,000 Hectares,13.7,,
+469,2020,Beans and peas,000 Tonnes,,65.7,
+470,2020,Beans and peas,Tonnes,,,4.8
+471,2020,Oilseed rape,000 Hectares,10.3,,
+472,2020,Oilseed rape,000 Tonnes,,45.1,
+473,2020,Oilseed rape,Tonnes,,,4.4
+474,2020,Potatoes,000 Hectares,8.9,,
+475,2020,Potatoes,000 Tonnes,,300.1,
+476,2020,Potatoes,Tonnes,,,33.8
+477,2020,Spring barley,000 Hectares,141.7,,
+478,2020,Spring barley,000 Tonnes,,1004.0,
+479,2020,Spring barley,Tonnes,,,7.1
+480,2020,Spring oats,000 Hectares,17.2,,
+481,2020,Spring oats,000 Tonnes,,122.3,
+482,2020,Spring oats,Tonnes,,,7.1
+483,2020,Spring wheat,000 Hectares,11.5,,
+484,2020,Spring wheat,000 Tonnes,,85.4,
+485,2020,Spring wheat,Tonnes,,,7.4
+486,2020,Total barley,000 Hectares,193.2,,
+487,2020,Total barley,000 Tonnes,,1430.3,
+488,2020,Total barley,Tonnes,,,7.4
+489,2020,Total oats,000 Hectares,25.4,,
+490,2020,Total oats,000 Tonnes,,189.9,
+491,2020,Total oats,Tonnes,,,7.5
+492,2020,Total wheat,000 Hectares,47.0,,
+493,2020,Total wheat,000 Tonnes,,393.0,
+494,2020,Total wheat,Tonnes,,,8.4
+495,2020,"Total wheat, oats and barley",000 Hectares,265.6,,
+496,2020,"Total wheat, oats and barley",000 Tonnes,,2013.2,
+497,2020,"Total wheat, oats and barley",Tonnes,,,7.6
+498,2020,Winter barley,000 Hectares,51.5,,
+499,2020,Winter barley,000 Tonnes,,426.3,
+500,2020,Winter barley,Tonnes,,,8.3
+501,2020,Winter oats,000 Hectares,8.3,,
+502,2020,Winter oats,000 Tonnes,,67.6,
+503,2020,Winter oats,Tonnes,,,8.2
+504,2020,Winter wheat,000 Hectares,35.4,,
+505,2020,Winter wheat,000 Tonnes,,307.6,
+506,2020,Winter wheat,Tonnes,,,8.7

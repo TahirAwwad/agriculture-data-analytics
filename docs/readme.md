@@ -9,17 +9,19 @@ This folder contains the documentation for the project.
 ## Reflections
 - [Assessment criteria](assessment-criteria.md)
 - [Knowledge, Skills and Abilities](knowledge-skills-abilities.md)
+- [Assessment specification](integrated-assessment-specification.md)
 
 ## Project Documentation
 Documentation about the project.  
 - [Project Structure Guide](project-structure-guide.md)
 - [Code Style Guide](code-style-guide.md)
-- [Jupyter Notebook Layout Guide.md](jupyter-notebook-layout-guide.md)
+- [Jupyter Notebook Layout Guide](jupyter-notebook-layout-guide.md)
 
 ## Project Management
 Documentation about the project.  
 - [Notebook managers](notebook-managers.md)
 - [Project Gantt Chart](gantt-chart.md)
+- [Requirements](requirements-ca2.md)
 
 ### Development Environment
 To help setup your local development environment, read the following documents:

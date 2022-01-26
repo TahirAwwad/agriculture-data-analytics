@@ -262,3 +262,5 @@ $RECYCLE.BIN/
 # End of https://www.toptal.com/developers/gitignore/api/visualstudiocode,jupyternotebooks,openframeworks+visualstudio,pythonvanilla,microsoftoffice,osx,windows
 
 *.bak
+*.ini
+temp/*
