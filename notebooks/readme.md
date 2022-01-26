@@ -4,17 +4,28 @@
 
 > "Your entire universe will not be enough to make me guilty. You are the king of the Gods, Jupiter, the king of the stones and of the stars, the king of the waves of the sea. But you are not the king of men. - Jean-Paul Sartre, 1943
 
-
 This folder contains the Jupyter notebooks for this project using the datasets in the [assets](./../assets/) and [artifacts](./../artifacts/) folders.
 
-## Bad Example of Jupyter notebook and code
-This Jupyter notebook is an example of what not to do.  
-- [Notebook 1-01: EDA and Data Visualization of the population (1950 - 2021)](notebook-1-01-example-bad-code-population.ipynb)  
+## Data collection Notebooks
 
-## Corrected Example of Jupyter notebook and code
-These Jupyter notebooks take [Notebook 1-01](notebook-1-01-example-bad-code-population.ipynb) and show a corrected better example of how to layout and code a Jupyter notebook
-- [Notebook 2-01: EDA of the population (1950 - 2021)](notebook-2-01-example-better-code-population-eda.ipynb)  
-- [Notebook 2-02: Data Visualization of the Population Pyramid](notebook-2-02-example-better-code-population-dv.ipynb)  
+- [CSO API](notebook-1-01-dc-cso-api.ipynb)  
+- [EuroStat API](notebook-1-02-dc-euro-stat-api.ipynb)  
+- [Twitter API](notebook-1-03-dc-twitter-api.ipynb)  
+- [Irish Farmers Association Scraping](notebook-1-01-dc-ifa-scraper.ipynb)  
+
+## Exploratory Data Analysis (EDA) Notebooks
+- [CSO Bovine Tuberculosis](notebook-2-01-eda-bovine-tuberculosis.ipynb)  
+- [CSO Irish beef exports](notebook-2-02-eda-irish-beef-exports.ipynb)  
+
+## Statistical Analysis (SA) Notebooks
+- [Bovine Tuberculosis](notebook-3-01-sa-bovine-tuberculosis.ipynb)  
+
+## Machine Learning (ML) Notebooks
+- [Bovine Tuberculosis Modelling](notebook-4-01-ml-bovine-tuberculosis.ipynb)  
+- [Milk Production Modelling](notebook-4-02-ml-milk-production.ipynb)  
+
+## Data Visualizations (DV) and Dashboard Notebooks
+- [World Land Utilization Choropleth map](notebook-5-01-dv-world-land-utilization-choropleth-map.ipynb)  
 
 ---
 **Template footnote**  
