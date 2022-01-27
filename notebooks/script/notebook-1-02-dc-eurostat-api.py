@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# ## Download datasets
+# ## Download eurostat datasets
 
 # <!--
 # import data_analytics.github as github
@@ -68,6 +68,6 @@ price_idx_products_annual2010_dataframe = price_idx_products_annual2010_datafram
     var_name="year",
     value_name="priceIDX")
 
-price_idx_products_annual2010_dataframe.to_csv(
-    './../assets/TA_priceIDX_2000_2017_eurostat.csv')
+filepath:str ='./../assets/TA_priceIDX_2000_2017_eurostat.csv'
+#price_idx_products_annual2010_dataframe.to_csv(filepath, index=False)
 

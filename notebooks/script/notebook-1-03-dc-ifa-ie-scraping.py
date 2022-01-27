@@ -122,7 +122,7 @@ def download_articles(term: str, filename: str) -> None:
 
 # Saving the output of the notebook.
 
-filename = f"ifa-ie-articles.csv"
+filename = "ifa-ie-articles.csv"
 create_articles_csv_file(filename)
 terms = ["cattle", "dairy"]
 for term in terms:

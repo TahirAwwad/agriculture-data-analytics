@@ -19,8 +19,8 @@
 #Options: --quiet --user
 
 
-from pandas import DataFrame
 from configparser import ConfigParser
+from pandas import DataFrame
 import csv
 import pandas
 import tweepy
@@ -89,17 +89,18 @@ screen_name = "agriculture_ie"
 
 
 tweets = tweepy_api.user_timeline(
-    screen_name=screen_name, 
-    count=200, # 200 is the maximum allowed count
-    include_rts = False,
-    tweet_mode = "extended") # Necessary to keep full_text otherwise only the first 140 words are extracted
+    screen_name=screen_name,
+    count=200,  # 200 is the maximum allowed count
+    include_rts=False,
+    tweet_mode="extended"
+)  # Necessary to keep full_text otherwise only the first 140 words are extracted
 
 
 for info in tweets[:3]:
-     print("ID: {}".format(info.id))
-     print(info.created_at)
-     print(info.full_text)
-     print("\n")
+    print("ID: {}".format(info.id))
+    print(info.created_at)
+    print(info.full_text)
+    print("\n")
 
 
 #extract additional tweets
@@ -108,15 +109,14 @@ all_tweets = []
 all_tweets.extend(tweets)
 oldest_id = tweets[-1].id
 while True:
-    tweets = tweepy_api.user_timeline(screen_name=screen_name, 
-                           # 200 is the maximum allowed count
-                           count=200,
-                           include_rts = False,
-                           max_id = oldest_id - 1,
-                           # Necessary to keep full_text 
-                           # otherwise only the first 140 words are extracted
-                           tweet_mode = 'extended'
-                           )
+    tweets = tweepy_api.user_timeline(
+        screen_name=screen_name,
+        count=200,# 200 is the maximum allowed count
+        include_rts=False,
+        max_id=oldest_id - 1,
+        # Necessary to keep full_text
+        # otherwise only the first 140 words are extracted
+        tweet_mode='extended')
     if len(tweets) == 0:
         break
     oldest_id = tweets[-1].id
@@ -124,16 +124,18 @@ while True:
     print('N of tweets downloaded till now {}'.format(len(all_tweets)))
 
 
-outtweets = [[tweet.id_str, 
-              tweet.created_at, 
-              tweet.favorite_count, 
-              tweet.retweet_count, 
-              tweet.full_text.encode("utf-8").decode("utf-8")
-             ] 
-             for idx,tweet in enumerate(all_tweets)]
+tweets_list: list = [[
+    tweet.id_str, tweet.user.screen_name, tweet.created_at,
+    tweet.favorite_count, tweet.retweet_count,
+    tweet.full_text.encode("utf-8").decode("utf-8")
+] for idx, tweet in enumerate(all_tweets)]
 
 
-dataframe = DataFrame(outtweets, columns=["id", "created_at", "favorite_count", "retweet_count", "text"])
-dataframe.to_csv('./../assets/agriculture-ie.csv', index=False)
+tweet_columns = [
+    "id", "screen_name", "created_at", "favorite_count", "retweet_count",
+    "text"
+]
+dataframe = DataFrame(tweets_list, columns=tweet_columns)
+dataframe.to_csv('./../assets/twitter-agriculture-ie.csv', index=False)
 dataframe.head(3)
 
