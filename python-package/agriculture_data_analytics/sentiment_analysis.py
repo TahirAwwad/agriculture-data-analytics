@@ -1,22 +1,30 @@
+from pandas import DataFrame
 from textblob import TextBlob
 import spacy
 
 nlp = spacy.load('en_core_web_sm')
 
+
 def clear_html_characters(html_text: str) -> str:
-    return html_text.str.replace("(<br/>)", "", regex=True
-                        ).replace('(<a).*(>).*(</a>)', '', regex=True
-                        ).replace('(&amp)', '', regex=True
-                        ).replace('(&gt)', '', regex=True
-                        ).replace('(&lt)', '',regex=True
-                        ).replace('(\xa0)', ' ',regex=True)
+    value_pairs: dict = {
+        '(<br/>)': '',
+        '(<a).*(>).*(</a>)': '',
+        '(&amp)': '',
+        '(&gt)': '',
+        '(&lt)': '',
+        '(\xa0)': ' ',
+    }
+    for key, value in value_pairs.items():
+        html_text = html_text.replace(key, value, regex=True)
+
+    return html_text
 
 
 dependency_to_delete = ['NUM', 'INTJ', 'CONJ', 'ADV',
                         'PUNCT', 'PART', 'DET', 'ADP', 'SPACE', 'PRON', 'SYM', 'x']
 
 
-def spacy_clean(text):
+def spacy_clean(text: str) -> str:
     spacy_text = ""
     doc = nlp(text)
     for token in doc:
@@ -25,8 +33,13 @@ def spacy_clean(text):
     return spacy_text.rstrip()
 
 
-def add_clean_text_columns(dataframe, text_column="text"):
-    # spacy function that removes unwanted words from Twitter posts
+def add_clean_text_columns(dataframe, text_column="text") -> DataFrame:
+    """
+    This function takes a dataframe and adds a column with a cleaned version of the text.
+    :param dataframe: DataFrame
+    :param text_column: str
+    :return: DataFrame
+    """
     dataframe["clean_text"] = clear_html_characters(
         dataframe[text_column].str.lower())
     dataframe['clean_text'] = dataframe['clean_text'].apply(
