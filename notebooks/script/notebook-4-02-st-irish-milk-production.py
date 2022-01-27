@@ -24,9 +24,14 @@
 
 # ## Import required library
 
+# Local
+#!pip install -r script/requirements.txt
+# Remote option
+#!pip install -r https://raw.githubusercontent.com/tahirawwad/agriculture-data-analytics/requirements.txt
+#Options: --quiet --user
+
+
 import pandas as pd
-#!pip install pingouin
-#!pip install plotly
 import pingouin as pg
 import scipy.stats as stats
 import math
@@ -35,15 +40,11 @@ import plotly.express as px
 
 # ## Read Data
 
-df = pd.read_csv("./../artifacts/TA_inputoutputvalue_1990_2021_CSO.csv")
+df = pd.read_csv("./../artifacts/irish-milk-production-eda-output.csv")
 
 ## Extract milk production dataset
-# drop redundunt columns
-df = df.drop('Unnamed: 0',axis = 1)
 
-# extract milk dataset
 df = df[['Year',
-#              'UNIT',
               'All Livestock Products - Milk',
               'Taxes on Products',
               'Subsidies on Products',
@@ -148,7 +149,4 @@ px.line(df.iloc[:,0:4])
 
 # correlaton non parametric (spearman)
 pg.corr(df['Milk Production'], df['Subsidies on Products'],method='spearman').round(3)
-
-
-
 
