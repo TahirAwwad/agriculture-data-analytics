@@ -67,7 +67,7 @@ github.display_jupyter_notebook_data_sources(
 artifact_manager.is_remote = asset_manager.is_remote = False
 
 
-# ### Working with population estimates CSV file
+# ### Loading the CSV file
 
 # #### Create Data Frames
 
@@ -88,7 +88,7 @@ beef_export_dataframe = beef_export_dataframe.rename(
 beef_export_dataframe.head(0)
 
 
-# ### Data Type Analysis Quick View
+# #### Data Type Analysis Quick View
 
 # Print an analysis report of each dataset.  
 # - Show the top five rows of the data frame as a quick sample.
@@ -120,7 +120,7 @@ beef_export_dataframe[BEEF_TONNES] *= 1000
 beef_export_dataframe.head()
 
 
-# ### Data Type Analysis Quick View
+# #### Data Type Analysis Quick View
 
 eda_reports.print_dataframe_analysis_report(beef_export_dataframe, filename)
 
