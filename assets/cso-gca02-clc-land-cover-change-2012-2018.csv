@@ -1,0 +1,73 @@
+Statistic,Year,State,UNIT,VALUE
+Change from Non-irrigated arable land to Pastures,2012 - 2018,State,Area (hectares),58248
+Change from Pastures to Non-irrigated arable land,2012 - 2018,State,Area (hectares),54111
+Change from Pastures to Transitional woodland-shrub,2012 - 2018,State,Area (hectares),10428
+Change from Land principally occupied by agriculture to Transitional woodland-shrub,2012 - 2018,State,Area (hectares),2812
+Change from Pastures to Construction sites,2012 - 2018,State,Area (hectares),1091
+Change from Non-irrigated arable land to Transitional woodland-shrub,2012 - 2018,State,Area (hectares),656
+Change from Non-irrigated arable land to Construction sites,2012 - 2018,State,Area (hectares),369
+Change from Pastures to Road and rail networks and associated land,2012 - 2018,State,Area (hectares),242
+Change from Pastures to Industrial or commercial units,2012 - 2018,State,Area (hectares),204
+Change from Fruit trees and berry plantations to Non-irrigated arable land,2012 - 2018,State,Area (hectares),89
+Change from Land principally occupied by agriculture to Non-irrigated arable land,2012 - 2018,State,Area (hectares),77
+Change from Pastures to Complex cultivation patterns,2012 - 2018,State,Area (hectares),72
+Change from Land principally occupied by agriculture to Mineral extraction sites,2012 - 2018,State,Area (hectares),71
+Change from Non-irrigated arable land to Industrial or commercial units,2012 - 2018,State,Area (hectares),68
+Change from Complex cultivation patterns to Pastures,2012 - 2018,State,Area (hectares),66
+Change from Pastures to Discontinuous urban fabric,2012 - 2018,State,Area (hectares),64
+Change from Natural grasslands to Transitional woodland-shrub,2012 - 2018,State,Area (hectares),64
+Change from Pastures to Mineral extraction sites,2012 - 2018,State,Area (hectares),58
+Change from Fruit trees and berry plantations to Pastures,2012 - 2018,State,Area (hectares),54
+Change from Land principally occupied by agriculture to Pastures,2012 - 2018,State,Area (hectares),51
+Change from Non-irrigated arable land to Sport and leisure facilities,2012 - 2018,State,Area (hectares),40
+Change from Non-irrigated arable land to Mineral extraction sites,2012 - 2018,State,Area (hectares),38
+Change from Pastures to Broad-leaved forest,2012 - 2018,State,Area (hectares),34
+Change from Mineral extraction sites to Pastures,2012 - 2018,State,Area (hectares),32
+Change from Pastures to Dump sites,2012 - 2018,State,Area (hectares),32
+Change from Non-irrigated arable land to Discontinuous urban fabric,2012 - 2018,State,Area (hectares),30
+Change from Peat bogs to Non-irrigated arable land,2012 - 2018,State,Area (hectares),20
+Change from Pastures to Sport and leisure facilities,2012 - 2018,State,Area (hectares),19
+Change from Construction sites to Pastures,2012 - 2018,State,Area (hectares),16
+Change from Mixed forest to Non-irrigated arable land,2012 - 2018,State,Area (hectares),12
+Change from Pastures to Coniferous forest,2012 - 2018,State,Area (hectares),12
+Change from Construction sites to Transitional woodland-shrub,2012 - 2018,State,Area (hectares),7
+Change from Land principally occupied by agriculture to Construction sites,2012 - 2018,State,Area (hectares),7
+Change from Inland marshes to Non-irrigated arable land,2012 - 2018,State,Area (hectares),5
+Change from Sport and leisure facilities to Non-irrigated arable land,2012 - 2018,State,Area (hectares),5
+All landcover changes from or to grasslands or croplands,2012 - 2018,State,Area (hectares),129204
+% Change from Non-irrigated arable land to Pastures,2012 - 2018,State,%,45.1
+% Change from Pastures to Non-irrigated arable land,2012 - 2018,State,%,41.9
+% Change from Pastures to Transitional woodland-shrub,2012 - 2018,State,%,8.1
+% Change from Land principally occupied by agriculture to Transitional woodland-shrub,2012 - 2018,State,%,2.2
+% Change from Pastures to Construction sites,2012 - 2018,State,%,0.8
+% Change from Non-irrigated arable land to Transitional woodland-shrub,2012 - 2018,State,%,0.5
+% Change from Non-irrigated arable land to Construction sites,2012 - 2018,State,%,0.3
+% Change from Pastures to Road and rail networks and associated land,2012 - 2018,State,%,0.2
+% Change from Pastures to Industrial or commercial units,2012 - 2018,State,%,0.2
+% Change from Fruit trees and berry plantations to Non-irrigated arable land,2012 - 2018,State,%,0.1
+% Change from Land principally occupied by agriculture to Non-irrigated arable land,2012 - 2018,State,%,0.1
+% Change from Pastures to Complex cultivation patterns,2012 - 2018,State,%,0.1
+% Change from Land principally occupied by agriculture to Mineral extraction sites,2012 - 2018,State,%,0.1
+% Change from Non-irrigated arable land to Industrial or commercial units,2012 - 2018,State,%,0.1
+% Change from Complex cultivation patterns to Pastures,2012 - 2018,State,%,0.1
+% Change from Pastures to Discontinuous urban fabric,2012 - 2018,State,%,0.1
+% Change from Natural grasslands to Transitional woodland-shrub,2012 - 2018,State,%,0.1
+% Change from Pastures to Mineral extraction sites,2012 - 2018,State,%,<0.1
+% Change from Fruit trees and berry plantations to Pastures,2012 - 2018,State,%,<0.1
+% Change from Land principally occupied by agriculture to Pastures,2012 - 2018,State,%,<0.1
+% Change from Non-irrigated arable land to Sport and leisure facilities,2012 - 2018,State,%,<0.1
+% Change from Non-irrigated arable land to Mineral extraction sites,2012 - 2018,State,%,<0.1
+% Change from Pastures to Broad-leaved forest,2012 - 2018,State,%,<0.1
+% Change from Mineral extraction sites to Pastures,2012 - 2018,State,%,<0.1
+% Change from Pastures to Dump sites,2012 - 2018,State,%,<0.1
+% Change from Non-irrigated arable land to Discontinuous urban fabric,2012 - 2018,State,%,<0.1
+% Change from Peat bogs to Non-irrigated arable land,2012 - 2018,State,%,<0.1
+% Change from Pastures to Sport and leisure facilities,2012 - 2018,State,%,<0.1
+% Change from Construction sites to Pastures,2012 - 2018,State,%,<0.1
+% Change from Mixed forest to Non-irrigated arable land,2012 - 2018,State,%,<0.1
+% Change from Pastures to Coniferous forest,2012 - 2018,State,%,<0.1
+% Change from Construction sites to Transitional woodland-shrub,2012 - 2018,State,%,<0.1
+% Change from Land principally occupied by agriculture to Construction sites,2012 - 2018,State,%,<0.1
+% Change from Inland marshes to Non-irrigated arable land,2012 - 2018,State,%,<0.1
+% Change from Sport and leisure facilities to Non-irrigated arable land,2012 - 2018,State,%,<0.1
+% Change for All landcover from or to grasslands or croplands,2012 - 2018,State,%,100
