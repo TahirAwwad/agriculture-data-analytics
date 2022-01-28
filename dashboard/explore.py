@@ -2,9 +2,14 @@ from pandas import read_csv, DataFrame, to_datetime
 import streamlit
 import matplotlib.pyplot as plt
 
+import os
+
+file_path = os.path.abspath(os.path.dirname(__file__))
+
 
 def laod_data():
-    df = read_csv("irish-milk-production-eda-output.csv")
+    filepath: str = "./artifacts/irish-milk-production-eda-output.csv"
+    df = read_csv(filepath)
 
     # extract milk dataset
     df_milk = df[['Year',
@@ -51,5 +56,6 @@ def show_explore_page():
     fig, ax = plt.subplots()
     ax.hist(data.iloc[:, 1], bins=20)
     streamlit.pyplot(fig)
+
 
 show_explore_page()

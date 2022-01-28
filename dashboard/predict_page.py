@@ -5,7 +5,7 @@ import numpy as np
 
 READ_BINARY = "rb"
 
-directory: str = "milk-production-models/"
+directory: str = "./artifacts/milk-production-models/"
 features_scaler_filepath: str = f'{directory}milk-features-scaler.pickle'
 target_scaler_filepath: str = f'{directory}milk-target-scaler.pickle'
 model_filepath: str = f'{directory}milk-ann-model.h5'
