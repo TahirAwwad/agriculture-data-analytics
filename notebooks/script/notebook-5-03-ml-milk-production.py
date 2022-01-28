@@ -160,20 +160,21 @@ print('y_test dimension', Y_test.shape)
 
 # #### Scale & Transform
 
-scaler_x = MinMaxScaler()
-scaler_y = MinMaxScaler()
+features_scaler = MinMaxScaler()
+features_scaler.fit(X_test)
+features_scaler.fit(X_train)
 
-scaler_x.fit(X_train)
-xtrain_scale = scaler_x.transform(X_train)
+xtest_scale = features_scaler.transform(X_test)
+xtrain_scale = features_scaler.transform(X_train)
 
-scaler_y.fit(Y_train)
-ytrain_scale = scaler_y.transform(Y_train)
 
-scaler_x.fit(X_test)
-xtest_scale = scaler_x.transform(X_test)
+target_scaler = MinMaxScaler()
 
-scaler_x.fit(Y_test)
-ytest_scale = scaler_y.transform(Y_test)
+target_scaler.fit(Y_train)
+target_scaler.fit(Y_test)
+
+ytrain_scale = target_scaler.transform(Y_train)
+ytest_scale = target_scaler.transform(Y_test)
 
 
 # ### Model Testing
@@ -217,7 +218,7 @@ print('Best training model score, coefficient of determination R squared',
 # ##### Predict RandomForest
 
 # Predict Milk Production and un-scale back to original values
-y_predict = scaler_y.inverse_transform(
+y_predict = target_scaler.inverse_transform(
     grid_rf_milk.predict(xtest_scale).reshape(-1, 1))
 
 print('predicted milk production values \n', y_predict)
@@ -275,7 +276,7 @@ print('Best training model score, coefficient of determination R squared',
 # ##### Predict XGBOOST
 
 # Predict Milk Production and un-scale back to original values
-y_predict = scaler_y.inverse_transform(
+y_predict = target_scaler.inverse_transform(
     grid_xgb_milk.predict(xtest_scale).reshape(-1, 1))
 
 print('predicted milk production values \n', y_predict)
@@ -364,7 +365,7 @@ if os.path.isdir(temp_directory):
 
 # Predict Milk Production and un-scale back to original values
 
-y_predict = scaler_y.inverse_transform(
+y_predict = target_scaler.inverse_transform(
     bestANNModel.predict(xtest_scale).reshape(-1, 1))
 
 print('predicted milk production values \n', y_predict)
@@ -399,13 +400,14 @@ filename: str = 'milk-features-scaler.pickle'
 features_scaler_filepath: str = f'{directory}{filename}'
 
 with open(features_scaler_filepath, WRITE_BINARY) as file:
-    pickle.dump(scaler_x, file)
+    pickle.dump(features_scaler, file)
+
 
 filename: str = 'milk-target-scaler.pickle'
 target_scaler_filepath: str = f'{directory}{filename}'
 
 with open(target_scaler_filepath, WRITE_BINARY) as file:
-    pickle.dump(scaler_y, file)
+    pickle.dump(target_scaler, file)
 
 
 # #### Save Models
