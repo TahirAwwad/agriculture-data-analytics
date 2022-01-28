@@ -1,61 +1,44 @@
 from pandas import read_csv, DataFrame, to_datetime
+from matplotlib import pyplot
 import streamlit
-import matplotlib.pyplot as plt
-
-import os
-
-file_path = os.path.abspath(os.path.dirname(__file__))
 
 
 def laod_data():
     filepath: str = "./artifacts/irish-milk-production-eda-output.csv"
-    df = read_csv(filepath)
+    dataframe: DataFrame = read_csv(filepath)
 
-    # extract milk dataset
-    df_milk = df[['Year',
-                  'All Livestock Products - Milk',
-                  'Taxes on Products',
-                  'Subsidies on Products',
-                  'Compensation of Employees',
-                  'Contract Work',
-                  'Entrepreneurial Income',
-                  'Factor Income',
-                  #'Fixed Capital Consumption - Farm Buildings',
-                  #'Fixed Capital Consumption - Machinery, Equipment, etc',
-                  #'Interest less FISIM',
-                  #'Operating Surplus',
-                  #'Livestock - Cattle',
-                  #'Livestock - Sheep',
-                  #'Land Rental',
-                  #'Intermediate Consumption - Contract Work',
-                  #'Intermediate Consumption - Crop Protection Products',
-                  #'Intermediate Consumption - Energy and Lubricants',
-                  #'Intermediate Consumption - Feeding Stuffs',
-                  #'Intermediate Consumption - Fertilisers',
-                  #'Intermediate Consumption - Financial Intermediation Services Indirect',
-                  #'Intermediate Consumption - Forage Plants',
-                  #'Intermediate Consumption - Maintenance and Repairs',
-                  #'Intermediate Consumption - Seeds',
-                  #'Intermediate Consumption - Services',
-                  #'Intermediate Consumption - Veterinary Expenses',
-                  #'Intermediate Consumption - Other Goods (Detergents, Small Tools, etc)',
-                  #'Intermediate Consumption - Other Goods and Services'
+    milk_columns = ['Year',
+                    'All Livestock Products - Milk',
+                    'Taxes on Products',
+                    'Subsidies on Products',
+                    'Compensation of Employees',
+                    'Contract Work',
+                    'Entrepreneurial Income',
+                    'Factor Income',
+                    ]
 
-                  ]]
-    # Assign year as index
-    df_milk.set_index('Year', drop=True, inplace=True)
-    df_milk.index = to_datetime(df_milk.index, format='%Y')
-    return df_milk
+    dataframe = dataframe[milk_columns]
+    dataframe.set_index('Year', drop=True, inplace=True)
+    dataframe.index = to_datetime(dataframe.index, format='%Y')
+    return dataframe
 
 
 def show_explore_page():
-    streamlit.header("Summary Statistics and Visual ")
-    data = laod_data()
-    streamlit.line_chart(data, use_container_width=True)
-    data.describe()
-    fig, ax = plt.subplots()
-    ax.hist(data.iloc[:, 1], bins=20)
-    streamlit.pyplot(fig)
 
+    dataframe: DataFrame = laod_data()
 
-show_explore_page()
+    streamlit.header("Milk Production - Summary Statistics")
+
+    streamlit.subheader("Data")
+    streamlit.dataframe(dataframe.head(5))
+
+    streamlit.subheader("Stats")
+    streamlit.dataframe(dataframe.describe())
+
+    streamlit.subheader("Graph")
+    streamlit.line_chart(dataframe, use_container_width=True)
+
+    streamlit.subheader("Histogram")
+    figure, axis = pyplot.subplots()
+    axis.hist(dataframe.iloc[:, 0], bins=20)
+    streamlit.pyplot(figure)
