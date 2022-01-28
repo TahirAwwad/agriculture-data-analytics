@@ -60,8 +60,9 @@ def show_predict_page():
         newdata = np.array([[taxes, Energy, landrental, Fertilisers, feeding  # ,vetexp ,Subsidies ,Compensation,Contract,Entrepreneurial,Factor,Buildings,Equipment,FISIM , Surplus ,Cattle ,CropProtection ,Energy,Financial ,Forage ,Maintenance ,Seeds,OtherGoods
                              ]])
         newdata = newdata.astype(float)
-        # scale the input
-        newdata_scaled = pkl_scaler_x.transform(newdata.reshape(-1, 1))
+
+
+        newdata_scaled = pkl_scaler_x.transform(newdata)
         predicted_scaled = model.predict(newdata_scaled)
         # descale the predicted value back to original format
         predicted_transformed = pkl_scaler_y.inverse_transform(
