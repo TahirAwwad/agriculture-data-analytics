@@ -1,4 +1,4 @@
-# [Agriculture Data Analytics](https://github.com/tahirawwad/agriculture-data-analytics) [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/tahirawwad/agriculture-data-analytics/master/dashboard.py)  
+# [Agriculture Data Analytics](https://github.com/tahirawwad/agriculture-data-analytics) [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/tahirawwad/agriculture-data-analytics/master/app.py)  
 
 > "Agriculture is civilization." - E. Emmons, (1799 – 1863)
 
