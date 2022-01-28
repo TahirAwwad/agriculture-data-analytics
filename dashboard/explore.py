@@ -3,7 +3,7 @@ from matplotlib import pyplot
 import streamlit
 
 
-def laod_data():
+def load_data():
     filepath: str = "./artifacts/irish-milk-production-eda-output.csv"
     dataframe: DataFrame = read_csv(filepath)
 
@@ -25,7 +25,7 @@ def laod_data():
 
 def show_explore_page():
 
-    dataframe: DataFrame = laod_data()
+    dataframe: DataFrame = load_data()
 
     streamlit.header("Milk Production - Summary Statistics")
 
