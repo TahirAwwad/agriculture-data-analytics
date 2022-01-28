@@ -1,3 +1,4 @@
+from sklearn.preprocessing import MinMaxScaler
 from tensorflow import keras
 import numpy
 import pickle
@@ -16,10 +17,10 @@ def show_predict_page():
     model = keras.models.load_model(model_filepath)
 
     with open(features_scaler_filepath, READ_BINARY) as file:
-        features_scaler = pickle.load(file)
+        features_scaler: MinMaxScaler = pickle.load(file)
 
     with open(target_scaler_filepath, READ_BINARY) as file:
-        target_scaler = pickle.load(file)
+        target_scaler: MinMaxScaler = pickle.load(file)
 
     streamlit.sidebar.write(
         """### Change the sliders to best represent the expected costs of each Expense category""")
