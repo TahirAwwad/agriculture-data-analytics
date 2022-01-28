@@ -112,13 +112,13 @@ feature_columns = [
     'Intermediate Consumption - Financial Intermediation Services Indirect',
     'Intermediate Consumption - Forage Plants',
     'Intermediate Consumption - Maintenance and Repairs',
-    'Intermediate Consumption - Seeds', 'Intermediate Consumption - Services',
+#    'Intermediate Consumption - Seeds', 'Intermediate Consumption - Services',
     'Intermediate Consumption - Veterinary Expenses',
-    'Intermediate Consumption - Other Goods (Detergents, Small Tools, etc)',
+#   'Intermediate Consumption - Other Goods (Detergents, Small Tools, etc)',
     'Intermediate Consumption - Other Goods and Services'
 ]
 
-feature_columns = [
+feature_columns1 = [
     'Year',
     'All Livestock Products - Milk',
     'Intermediate Consumption - Energy and Lubricants',
@@ -150,19 +150,11 @@ print(f'Features dimension: {np.shape(feature_values)[1]} Columns, {np.shape(fea
 print(f'Target dimension:   {np.shape(target_values)[1]} Column,  {np.shape(target_values)[0]} Rows')
 
 
-# #### Fill missing values
-
-# ```py
-# imp_mean = SimpleImputer(missing_values=np.nan, strategy='mean')
-# feature_values = imp_mean.fit_transform(feature_values)
-# target_values = imp_mean.fit_transform(target_values)
-# ```
-
 # #### Define Training and Test Sets
 
 # The data is liner data and should not be shuffled. Set test set size to 20%.
 
-test_size: float = 0.2
+test_size: float = 0.8
 X_train, X_test, Y_train, Y_test = train_test_split(feature_values,
                                                     target_values,
                                                     test_size=test_size,
@@ -392,7 +384,7 @@ mae_score = mean_absolute_error(Y_test, y_predict)
 # ##### Save Model Score
 
 model_scores_dataframe.loc[len(model_scores_dataframe)] = ['ANN', mae_score]
-print(model_scores_dataframe)
+model_scores_dataframe.head()
 
 
 # ### Save Artifacts
@@ -447,4 +439,12 @@ bestANNModel.save(ann_filepath, save_format='h5')
 # # descale prediction back to normal value
 # prediction = scaler_y.inverse_transform(scaled_prediction)
 # print('\n Expected Milk Production is ', prediction[0][0])
+# ```
+
+# #### Fill missing values
+
+# ```py
+# imp_mean = SimpleImputer(missing_values=np.nan, strategy='mean')
+# feature_values = imp_mean.fit_transform(feature_values)
+# target_values = imp_mean.fit_transform(target_values)
 # ```
