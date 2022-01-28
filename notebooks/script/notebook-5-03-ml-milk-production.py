@@ -76,14 +76,22 @@ dataframe: DataFrame = read_csv(dataframe_filepath)
 
 # Extract the milk production features.
 
-dataframe = dataframe[[
-    'Year', 'All Livestock Products - Milk', 'Taxes on Products',
-    'Subsidies on Products', 'Compensation of Employees', 'Contract Work',
-    'Entrepreneurial Income', 'Factor Income',
+feature_columns = [
+    'Year', 
+    'All Livestock Products - Milk',
+    'Taxes on Products',
+    'Subsidies on Products', 
+    'Compensation of Employees',
+    'Contract Work',
+    'Entrepreneurial Income',
+    'Factor Income',
     'Fixed Capital Consumption - Farm Buildings',
     'Fixed Capital Consumption - Machinery, Equipment, etc',
-    'Interest less FISIM', 'Operating Surplus', 'Livestock - Cattle',
-    'Livestock - Sheep', 'Land Rental',
+    'Interest less FISIM', 
+    'Operating Surplus', 
+    'Livestock - Cattle',
+    'Livestock - Sheep', 
+    'Land Rental',
     'Intermediate Consumption - Contract Work',
     'Intermediate Consumption - Crop Protection Products',
     'Intermediate Consumption - Energy and Lubricants',
@@ -96,7 +104,19 @@ dataframe = dataframe[[
     'Intermediate Consumption - Veterinary Expenses',
     'Intermediate Consumption - Other Goods (Detergents, Small Tools, etc)',
     'Intermediate Consumption - Other Goods and Services'
-]]
+]
+
+feature_columns = [
+    'Year',
+    'All Livestock Products - Milk',
+    'Intermediate Consumption - Energy and Lubricants',
+    'Intermediate Consumption - Feeding Stuffs',
+    'Intermediate Consumption - Fertilisers',
+    'Land Rental',
+    'Taxes on Products',
+]
+
+dataframe = dataframe[feature_columns]
 
 dataframe.set_index('Year', drop=True, inplace=True)
 
