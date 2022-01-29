@@ -61,9 +61,21 @@ from tensorflow import keras
 from tensorflow.keras import layers
 from xgboost import XGBRegressor
 import numpy as np
+import pandas 
 import os
 import pickle
 import shutil
+
+
+pandas.options.display.float_format = '{:.5f}'.format
+
+
+READ_BINARY = "rb"
+WRITE_BINARY = "wb"
+
+
+model_directory: str = "milk-production-models"
+directory: str = f'./../artifacts/{model_directory}/'
 
 
 # ### Load dataframe
@@ -100,13 +112,13 @@ feature_columns = [
     'Intermediate Consumption - Financial Intermediation Services Indirect',
     'Intermediate Consumption - Forage Plants',
     'Intermediate Consumption - Maintenance and Repairs',
-    'Intermediate Consumption - Seeds', 'Intermediate Consumption - Services',
+#    'Intermediate Consumption - Seeds', 'Intermediate Consumption - Services',
     'Intermediate Consumption - Veterinary Expenses',
-    'Intermediate Consumption - Other Goods (Detergents, Small Tools, etc)',
+#   'Intermediate Consumption - Other Goods (Detergents, Small Tools, etc)',
     'Intermediate Consumption - Other Goods and Services'
 ]
 
-feature_columns = [
+feature_columns1 = [
     'Year',
     'All Livestock Products - Milk',
     'Intermediate Consumption - Energy and Lubricants',
@@ -120,7 +132,7 @@ dataframe = dataframe[feature_columns]
 
 dataframe.set_index('Year', drop=True, inplace=True)
 
-print("Milk production dataset dimensions", dataframe.shape)
+print(f"Milk production dataset dimensions: {dataframe.shape[1]} Columns, {dataframe.shape[0]} Rows")
 
 dataframe.head()
 
@@ -131,37 +143,28 @@ dataframe.head()
 
 # Select the feature set and the target 
 
-X = dataframe.iloc[:, 1:].values
-Y = dataframe.iloc[:, 0].values.reshape(-1, 1)
-print('Features dimension:', np.shape(X))
-print('Target dimension:', np.shape(Y))
+feature_values = dataframe.iloc[:, 1:].values
+target_values = dataframe.iloc[:, 0].values.reshape(-1, 1)
+
+print(f'Features dimension: {np.shape(feature_values)[1]} Columns, {np.shape(feature_values)[0]} Rows')
+print(f'Target dimension:   {np.shape(target_values)[1]} Column,  {np.shape(target_values)[0]} Rows')
 
 
-# #### Fill missing values
+# #### Define Training and Test Sets
 
-imp_mean = SimpleImputer(missing_values=np.nan, strategy='mean')
-X = imp_mean.fit_transform(X)
-Y = imp_mean.fit_transform(Y)
+# The data is liner data and should not be shuffled. Set test set size to 20%.
 
-
-# #### Define Training set 80% Test set 20% 
-
-X_train, X_test, Y_train, Y_test = train_test_split(X,
-                                                    Y,
-                                                    test_size=0.2,
-                                                    random_state=2021)
-print()
-print('x_train dimension', X_train.shape)
-print('y_train dimension', Y_train.shape)
-print()
-print('x_test dimension', X_test.shape)
-print('y_test dimension', Y_test.shape)
+test_size: float = 0.8
+X_train, X_test, Y_train, Y_test = train_test_split(feature_values,
+                                                    target_values,
+                                                    test_size=test_size,
+                                                    shuffle=False)
 
 
 # #### Scale & Transform
 
 features_scaler = MinMaxScaler()
-features_scaler.fit(X_test)
+
 features_scaler.fit(X_train)
 
 xtest_scale = features_scaler.transform(X_test)
@@ -171,10 +174,25 @@ xtrain_scale = features_scaler.transform(X_train)
 target_scaler = MinMaxScaler()
 
 target_scaler.fit(Y_train)
-target_scaler.fit(Y_test)
 
 ytrain_scale = target_scaler.transform(Y_train)
 ytest_scale = target_scaler.transform(Y_test)
+
+
+# ##### Save Scalers
+
+filename: str = 'milk-features-scaler.pickle'
+features_scaler_filepath: str = f'{directory}{filename}'
+
+with open(features_scaler_filepath, WRITE_BINARY) as file:
+    pickle.dump(features_scaler, file)
+
+
+filename: str = 'milk-target-scaler.pickle'
+target_scaler_filepath: str = f'{directory}{filename}'
+
+with open(target_scaler_filepath, WRITE_BINARY) as file:
+    pickle.dump(target_scaler, file)
 
 
 # ### Model Testing
@@ -185,61 +203,52 @@ model_scores_dataframe = DataFrame(
     columns=['Model', 'Mean Absolute Error Score(%)'])
 
 
-# #### RandomForest Regressor
+# #### Random Forest Regressor
 
-# ##### Train RandomForest
-
-# define Random Forest Regressor
-rf_regressor_milk = RandomForestRegressor(random_state=2021)
-
-# define list of Parameters
-params_rf_milk = {
-    'n_estimators': [100, 500, 800],
-    'criterion': ['squared_error', 'absolute_error', 'poisson'],
-    'max_features': ["auto", "sqrt", "log2"],
-    "bootstrap": [True, False]
-}
+# ##### Train Model
 
 # Hyper parameter tuning via Grid Search Cross Validation
-grid_rf_milk = GridSearchCV(estimator=rf_regressor_milk,
-                            param_grid=params_rf_milk,
-                            n_jobs=-1,
-                            cv=5)
 
-# Fit the grid to scaled data
-grid_rf_milk.fit(xtrain_scale, ytrain_scale.reshape(-1))
+random_forest_regressor = RandomForestRegressor()
 
-# print best training model & R squared score
-print('Best training model ', grid_rf_milk.best_estimator_)
+random_forest_regressor_paramaters_grid = {
+    'bootstrap': [True, False],
+    'criterion': ['squared_error', 'absolute_error', 'poisson'],
+    'max_depth': [1, 3, 5],
+    'max_features': ["auto", "sqrt", "log2"],
+    'n_estimators': [100, 500, 800],  # Number of trees
+}
+
+grid_search_cv = GridSearchCV(
+    estimator=random_forest_regressor,
+    param_grid=random_forest_regressor_paramaters_grid,
+    n_jobs=-1,  # Use all processors on CPU
+    cv=5)  #cross validation 5 fold of datasets
+
+grid_search_cv.fit(xtrain_scale, ytrain_scale.reshape(-1))
+
+
+# ##### Test and Score Model
+
+print('Best training model', grid_search_cv.best_estimator_)
 print('Best training model score, coefficient of determination R squared',
-      grid_rf_milk.best_score_)
+      grid_search_cv.best_score_)
 
-
-# ##### Predict RandomForest
-
-# Predict Milk Production and un-scale back to original values
 y_predict = target_scaler.inverse_transform(
-    grid_rf_milk.predict(xtest_scale).reshape(-1, 1))
-
-print('predicted milk production values \n', y_predict)
-print('actual milk production values \n', Y_test)
-
-# Calculate Mean Absolute Error
-MAE_rf = mean_absolute_error(Y_test, y_predict)
-#print(MAE_rf)
+    grid_search_cv.predict(xtest_scale).reshape(-1, 1))
+mae_score = mean_absolute_error(Y_test, y_predict)
 
 
 # ##### Save Model Score
 
-model_scores_dataframe.loc[len(model_scores_dataframe)] = [
-    'RandomForest', MAE_rf
-]
-print(model_scores_dataframe)
+values = ['Random Forest Regressor', mae_score]
+model_scores_dataframe.loc[len(model_scores_dataframe)] = values
+model_scores_dataframe.head()
 
 
 # #### XGBOOST Regressor
 
-# ##### Train XGBOOST
+# ##### Train Model
 
 # define XGBRegressor
 xgb_regressor_milk = XGBRegressor(random_state=2021)
@@ -273,29 +282,25 @@ print('Best training model score, coefficient of determination R squared',
       grid_xgb_milk.best_score_)
 
 
-# ##### Predict XGBOOST
+# ##### Test and Score Model
 
-# Predict Milk Production and un-scale back to original values
 y_predict = target_scaler.inverse_transform(
     grid_xgb_milk.predict(xtest_scale).reshape(-1, 1))
 
-print('predicted milk production values \n', y_predict)
-print('actual milk production values \n', Y_test)
-
-# Calculate Mean Absolute Error
-MAE_xgb = mean_absolute_error(Y_test, y_predict)
-#print(MAE_xgb)
+mae_score = mean_absolute_error(Y_test, y_predict)
 
 
 # ##### Save Model Score
 
-model_scores_dataframe.loc[len(model_scores_dataframe)] = ['XGBOOST', MAE_xgb]
-print(model_scores_dataframe)
+model_scores_dataframe.loc[len(model_scores_dataframe)] = ['XGBOOST', mae_score]
+model_scores_dataframe.head()
 
 
 # #### ANN Artificial Neural Network
 
-# ##### Training & Keras Parameter Tuning
+# ##### Train Model
+
+#Training & Keras Parameter Tuning
 
 temp_directory: str = './../temp/ANN-tuner/'
 
@@ -361,7 +366,7 @@ if os.path.isdir(temp_directory):
         print(f"Error: {exception.filename} - {exception.strerror}.")
 
 
-# ##### Predict
+# ##### Test and Score Model
 
 # Predict Milk Production and un-scale back to original values
 
@@ -372,43 +377,19 @@ print('predicted milk production values \n', y_predict)
 print('actual milk production values \n', Y_test)
 
 # Calculate Mean Absolute Error
-MAE_ANN = mean_absolute_error(Y_test, y_predict)
+mae_score = mean_absolute_error(Y_test, y_predict)
 #print(MAE_xgb)
 
 
 # ##### Save Model Score
 
-model_scores_dataframe.loc[len(model_scores_dataframe)] = ['ANN', MAE_ANN]
-print(model_scores_dataframe)
+model_scores_dataframe.loc[len(model_scores_dataframe)] = ['ANN', mae_score]
+model_scores_dataframe.head()
 
 
 # ### Save Artifacts
 
 # Save trained model into binary pickle file to use the model later with new input data from web app
-
-READ_BINARY = "rb"
-WRITE_BINARY = "wb"
-
-
-model_directory: str = "milk-production-models"
-directory: str = f'./../artifacts/{model_directory}/'
-
-
-# #### Save Scalers
-
-filename: str = 'milk-features-scaler.pickle'
-features_scaler_filepath: str = f'{directory}{filename}'
-
-with open(features_scaler_filepath, WRITE_BINARY) as file:
-    pickle.dump(features_scaler, file)
-
-
-filename: str = 'milk-target-scaler.pickle'
-target_scaler_filepath: str = f'{directory}{filename}'
-
-with open(target_scaler_filepath, WRITE_BINARY) as file:
-    pickle.dump(target_scaler, file)
-
 
 # #### Save Models
 
@@ -458,4 +439,12 @@ bestANNModel.save(ann_filepath, save_format='h5')
 # # descale prediction back to normal value
 # prediction = scaler_y.inverse_transform(scaled_prediction)
 # print('\n Expected Milk Production is ', prediction[0][0])
+# ```
+
+# #### Fill missing values
+
+# ```py
+# imp_mean = SimpleImputer(missing_values=np.nan, strategy='mean')
+# feature_values = imp_mean.fit_transform(feature_values)
+# target_values = imp_mean.fit_transform(target_values)
 # ```

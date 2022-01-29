@@ -9,7 +9,7 @@ eurostat==0.2.3
 gensim==4.1.2
 ipython==8.0.1
 keras_tuner==1.1.0
-markcrowe==0.0.8
+markcrowe==0.0.9
 matplotlib==3.4.3
 nltk==3.6.7
 numpy==1.22.1
