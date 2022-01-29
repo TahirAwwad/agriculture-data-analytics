@@ -1,4 +1,4 @@
-# [Agriculture Data Analytics](https://github.com/tahirawwad/agriculture-data-analytics) [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/tahirawwad/agriculture-data-analytics/master/app.py)  
+# [Agriculture Data Analytics](https://github.com/tahirawwad/agriculture-data-analytics) [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/tahirawwad/agriculture-data-analytics/master/streamlit_app.py)  
 
 > "Agriculture is civilization." - E. Emmons, (1799 – 1863)
 
@@ -6,6 +6,24 @@
 
 ## Requirements
 - [Python &GreaterEqual; 3.8.0](https://www.python.org/downloads/)
+
+## Dashboard
+
+1. Clone the repository:
+```bash
+$ git clone https://github.com/tahirawwad/agriculture-data-analytics.git
+$ cd agriculture-data-analytics
+```
+
+2. Install dependencies:
+```bash
+$ pip install -r requirements.txt
+```
+
+3. Start the application:
+```bash
+streamlit run streamlit_app.py
+```
 
 ## Directory Structure
 
