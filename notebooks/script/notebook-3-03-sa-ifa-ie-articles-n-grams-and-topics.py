@@ -77,12 +77,18 @@ words = set(nltk.corpus.words.words())
 
 # ### Load File
 
-filename: str = "./../assets/ifa-ie-articles.csv"
+filename: str = "./../artifacts/ifa-ie-articles.csv"
 #df = pd.read_csv("./../artifacts/ifa-ie-beef-articles-clean.csv")
 df = pd.read_csv(filename)
 
 
 df.info()
+
+
+df['Text'][df['Trend'] == 'cattle'].iloc[0]
+
+
+df['Text'][df['Trend'] == 'dairy'].iloc[0]
 
 
 # ### Graph
@@ -111,7 +117,7 @@ df['review_len'].iplot(
 #df3.to_csv('df3.csv', index = False)
 
 
-
+Positive_sent = df[df['sentiment']=='positive']
 
 
 # function to prepare n-grams
@@ -135,7 +141,7 @@ def count_ngrams(lines, min_length=2, max_length=4):
     return ngrams
 
 
-def print_most_freq_ng(ngrams, num=2222):
+def print_most_freq_ng(ngrams, num=10):
     for n in sorted(ngrams):
         print('----{} most frequent {}-grams ----'.format(num, n))
         for gram, count in ngrams[n].most_common(num):
@@ -259,46 +265,13 @@ plt.show();
 
 
 
-tsne_lsa_model = TSNE(n_components=2, perplexity=50, learning_rate=100, 
-                        n_iter=2000, verbose=1, random_state=0, angle=0.75)
-tsne_lsa_vectors = tsne_lsa_model.fit_transform(lsa_topic_matrix)
 
 
-def get_mean_topic_vectors(keys, two_dim_vectors):
-    '''
-    returns a list of centroid vectors from each predicted topic category
-    '''
-    mean_topic_vectors = []
-    for t in range(n_topics):
-        reviews_in_that_topic = []
-        for i in range(len(keys)):
-            if keys[i] == t:
-                reviews_in_that_topic.append(two_dim_vectors[i])    
-        
-        reviews_in_that_topic = np.vstack(reviews_in_that_topic)
-        mean_review_in_that_topic = np.mean(reviews_in_that_topic, axis=0)
-        mean_topic_vectors.append(mean_review_in_that_topic)
-    return mean_topic_vectors
 
 
-colormap = np.array([
-    "#1f77b4", "#aec7e8", "#ff7f0e", "#ffbb78", "#2ca02c",
-    "#98df8a", "#d62728", "#ff9896", "#9467bd", "#c5b0d5",
-    "#8c564b", "#c49c94", "#e377c2", "#f7b6d2", "#7f7f7f",
-    "#c7c7c7", "#bcbd22", "#dbdb8d", "#17becf", "#9edae5" ])
-colormap = colormap[:n_topics]
 
 
-top_3_words_lsa = get_top_n_words(4, lsa_keys, document_term_matrix, tfidf_vectorizer)
-lsa_mean_topic_vectors = get_mean_topic_vectors(lsa_keys, tsne_lsa_vectors)
 
-plot = figure(title="t-SNE Clustering of {} LSA Topics".format(n_topics), plot_width=700, plot_height=700)
-plot.scatter(x=tsne_lsa_vectors[:,0], y=tsne_lsa_vectors[:,1], color=colormap[lsa_keys])
 
-for t in range(n_topics):
-    label = Label(x=lsa_mean_topic_vectors[t][0], y=lsa_mean_topic_vectors[t][1], 
-                  text=top_3_words_lsa[t], text_color=colormap[t])
-    plot.add_layout(label)
-    
-show(plot)
+
 
