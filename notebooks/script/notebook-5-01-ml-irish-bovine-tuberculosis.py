@@ -97,6 +97,16 @@ dataframe: DataFrame = read_csv(dataframe_filepath)
 print("Row, Column Count:", dataframe.shape)
 
 
+dataframe.describe()
+
+
+
+columns = list(dataframe)
+ 
+for i in columns:
+    print (dataframe[i][2])
+
+
 # ### Check the types for machine learning
 
 dataframe.dtypes
