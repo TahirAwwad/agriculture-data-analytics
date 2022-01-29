@@ -1,4 +1,4 @@
-markcrowe==0.0.8
+markcrowe==0.0.9
 pandas==1.3.5
 requests==2.26.0
 spacy==3.2.1
