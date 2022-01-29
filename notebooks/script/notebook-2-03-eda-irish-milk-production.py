@@ -27,7 +27,7 @@
 # }
 # </style>
 
-# ## EDA of Irish agriculture exports/imports values at current prices.
+# ## EDA of Irish agriculture output, input, income values at current prices.
 
 # <!--
 # import data_analytics.github as github
