@@ -151,15 +151,6 @@ print(f'Features dimension: {np.shape(feature_values)[1]} Columns, {np.shape(fea
 print(f'Target dimension:   {np.shape(target_values)[1]} Column,  {np.shape(target_values)[0]} Rows')
 
 
-feature_values
-
-
-target_values
-
-
-target_values
-
-
 # #### Define Training and Test Sets
 
 # The data is liner data and should not be shuffled. Set test set size to 20%.
