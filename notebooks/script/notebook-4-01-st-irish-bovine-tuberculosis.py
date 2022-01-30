@@ -252,9 +252,13 @@ expected_herd_incidence_dataframe[HERD_INCIDENCE_RATE].describe()
 import pingouin as pg
 
 # Test Normality via Shapiro-Wilk test of Normality
-print('Shapiro-Wilk test of Normality \n',
-      pg.normality(expected_herd_incidence_dataframe),
-      '\n')
+print('Shapiro-Wilk test of Normality')
+
+
+expected_herd_incidence_dataframe.set_index('Year')
+
+
+pg.normality(expected_herd_incidence_dataframe.set_index('Year'))
 
 
 expected_reactors_per_1000_dataframe = eda.get_expected_range_dataframe(

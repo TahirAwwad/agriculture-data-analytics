@@ -77,6 +77,10 @@ def vader_scorer(df):
 
 vader_scores = vader_scorer(df)
 df = pd.concat([df,vader_scores], axis=1)
+df
+
+
+df.to_csv(filename, index=None)
 
 
 df['compound'][df['Trend'] == 'cattle'].iplot(
@@ -178,10 +182,7 @@ ucb = diff + (1.96 * se_diff)
 # Visualise sentiment
 # Can we visualise what type of sentiment ifi had for the beef vs the dairy? Let's look at the words that were being used to better understand how the ifi described each entity:
 
-
-
-
-beef_text = " ".join(art for art in df.clean_text [df.Trend=='cattle'][co]) # Changed to cattle
+beef_text = " ".join(art for art in df.clean_text[df.Trend=='cattle']) # Changed to cattle
 dairy_text = " ".join(art for art in df.clean_text[df.Trend=='dairy'])
 
 stopwords = set(STOPWORDS)
@@ -201,13 +202,13 @@ ax[1].imshow(dairy_wordcloud)
 ax[1].set_title('dairy')
 ax[1].axis('off')
 plt.tight_layout()
-plt.show
+plt.show;
 
 
 sns.distplot(df[df.Trend == 'cattle']['compound'], label='cattle')
 sns.distplot(df[df.Trend == 'dairy']['compound'], label='dairy')
 plt.legend()
-plt.show()
+plt.show();
 
 
 
