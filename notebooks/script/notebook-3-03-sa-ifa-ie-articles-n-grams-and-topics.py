@@ -117,7 +117,7 @@ df['review_len'].iplot(
 #df3.to_csv('df3.csv', index = False)
 
 
-Positive_sent = df[df['sentiment']=='positive']
+
 
 
 # function to prepare n-grams
@@ -195,13 +195,13 @@ temp_df=bigram_df[:20]
 temp_df.head(10)
 
 
-reindexed_data = df['clean_text']
+reindexed_data = df[df.Trend=='cattle']['clean_text']
 tfidf_vectorizer = TfidfVectorizer(use_idf=True, smooth_idf=True)
 reindexed_data = reindexed_data.values
 document_term_matrix = tfidf_vectorizer.fit_transform(reindexed_data)
 
 
-n_topics = 5
+n_topics = 11
 lsa_model = TruncatedSVD(n_components=n_topics)
 lsa_topic_matrix = lsa_model.fit_transform(document_term_matrix)
 
@@ -246,7 +246,7 @@ def get_top_n_words(n, keys, document_term_matrix, tfidf_vectorizer):
     return top_words
 
 
-top_n_words_lsa = get_top_n_words(3, lsa_keys, document_term_matrix, tfidf_vectorizer)
+top_n_words_lsa = get_top_n_words(7, lsa_keys, document_term_matrix, tfidf_vectorizer)
 
 for i in range(len(top_n_words_lsa)):
     print("Topic {}: ".format(i+1), top_n_words_lsa[i])
@@ -259,12 +259,37 @@ fig, ax = plt.subplots(figsize=(16,8))
 ax.bar(lsa_categories, lsa_counts);
 ax.set_xticks(lsa_categories);
 ax.set_xticklabels(labels);
-ax.set_ylabel('Number of review text');
-ax.set_title('LSA topic counts');
+ax.set_ylabel('Number Of Reviewed Text');
+ax.set_title('Distribution of Cattle Topics');
 plt.show();
 
 
+# vectorize text data
+tfid_vec = TfidfVectorizer(tokenizer=lambda x: str(x).split())
+X = tfid_vec.fit_transform(df['clean_text'])
+X.shape
 
+
+tsne = TSNE(n_components=2,
+           perplexity=50,
+           learning_rate=300,
+           n_iter=800,
+           verbose=1)
+# tsne to our document vectors
+componets = tsne.fit_transform(X)
+
+
+def plot_embeddings(embedding, title):
+    fig = plt.figure(figsize=[15,12])
+    ax = sns.scatterplot(embedding[:,0], embedding[:,1], hue=df['Trend'])
+    plt.title(title)
+    plt.xlabel('axis 0')
+    plt.ylabel('axis 1')
+    plt.legend(bbox_to_anchor=(1.05,1), loc=2)
+    plt.show()
+    return
+
+plot_embeddings(componets, 'Visualizing word vectors for diary and cattle text')
 
 
 
