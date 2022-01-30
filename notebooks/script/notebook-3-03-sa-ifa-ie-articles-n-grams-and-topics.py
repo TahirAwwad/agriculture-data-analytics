@@ -77,12 +77,18 @@ words = set(nltk.corpus.words.words())
 
 # ### Load File
 
-filename: str = "./../assets/ifa-ie-articles.csv"
+filename: str = "./../artifacts/ifa-ie-articles.csv"
 #df = pd.read_csv("./../artifacts/ifa-ie-beef-articles-clean.csv")
 df = pd.read_csv(filename)
 
 
 df.info()
+
+
+df['Text'][df['Trend'] == 'cattle'].iloc[0]
+
+
+df['Text'][df['Trend'] == 'dairy'].iloc[0]
 
 
 # ### Graph
@@ -135,7 +141,7 @@ def count_ngrams(lines, min_length=2, max_length=4):
     return ngrams
 
 
-def print_most_freq_ng(ngrams, num=2222):
+def print_most_freq_ng(ngrams, num=10):
     for n in sorted(ngrams):
         print('----{} most frequent {}-grams ----'.format(num, n))
         for gram, count in ngrams[n].most_common(num):
@@ -189,13 +195,13 @@ temp_df=bigram_df[:20]
 temp_df.head(10)
 
 
-reindexed_data = df['clean_text']
+reindexed_data = df[df.Trend=='cattle']['clean_text']
 tfidf_vectorizer = TfidfVectorizer(use_idf=True, smooth_idf=True)
 reindexed_data = reindexed_data.values
 document_term_matrix = tfidf_vectorizer.fit_transform(reindexed_data)
 
 
-n_topics = 5
+n_topics = 11
 lsa_model = TruncatedSVD(n_components=n_topics)
 lsa_topic_matrix = lsa_model.fit_transform(document_term_matrix)
 
@@ -240,7 +246,7 @@ def get_top_n_words(n, keys, document_term_matrix, tfidf_vectorizer):
     return top_words
 
 
-top_n_words_lsa = get_top_n_words(3, lsa_keys, document_term_matrix, tfidf_vectorizer)
+top_n_words_lsa = get_top_n_words(7, lsa_keys, document_term_matrix, tfidf_vectorizer)
 
 for i in range(len(top_n_words_lsa)):
     print("Topic {}: ".format(i+1), top_n_words_lsa[i])
@@ -253,52 +259,44 @@ fig, ax = plt.subplots(figsize=(16,8))
 ax.bar(lsa_categories, lsa_counts);
 ax.set_xticks(lsa_categories);
 ax.set_xticklabels(labels);
-ax.set_ylabel('Number of review text');
-ax.set_title('LSA topic counts');
+ax.set_ylabel('Number Of Reviewed Text');
+ax.set_title('Distribution of Cattle Topics');
 plt.show();
 
 
-
-tsne_lsa_model = TSNE(n_components=2, perplexity=50, learning_rate=100, 
-                        n_iter=2000, verbose=1, random_state=0, angle=0.75)
-tsne_lsa_vectors = tsne_lsa_model.fit_transform(lsa_topic_matrix)
-
-
-def get_mean_topic_vectors(keys, two_dim_vectors):
-    '''
-    returns a list of centroid vectors from each predicted topic category
-    '''
-    mean_topic_vectors = []
-    for t in range(n_topics):
-        reviews_in_that_topic = []
-        for i in range(len(keys)):
-            if keys[i] == t:
-                reviews_in_that_topic.append(two_dim_vectors[i])    
-        
-        reviews_in_that_topic = np.vstack(reviews_in_that_topic)
-        mean_review_in_that_topic = np.mean(reviews_in_that_topic, axis=0)
-        mean_topic_vectors.append(mean_review_in_that_topic)
-    return mean_topic_vectors
+# vectorize text data
+tfid_vec = TfidfVectorizer(tokenizer=lambda x: str(x).split())
+X = tfid_vec.fit_transform(df['clean_text'])
+X.shape
 
 
-colormap = np.array([
-    "#1f77b4", "#aec7e8", "#ff7f0e", "#ffbb78", "#2ca02c",
-    "#98df8a", "#d62728", "#ff9896", "#9467bd", "#c5b0d5",
-    "#8c564b", "#c49c94", "#e377c2", "#f7b6d2", "#7f7f7f",
-    "#c7c7c7", "#bcbd22", "#dbdb8d", "#17becf", "#9edae5" ])
-colormap = colormap[:n_topics]
+tsne = TSNE(n_components=2,
+           perplexity=50,
+           learning_rate=300,
+           n_iter=800,
+           verbose=1)
+# tsne to our document vectors
+componets = tsne.fit_transform(X)
 
 
-top_3_words_lsa = get_top_n_words(4, lsa_keys, document_term_matrix, tfidf_vectorizer)
-lsa_mean_topic_vectors = get_mean_topic_vectors(lsa_keys, tsne_lsa_vectors)
+def plot_embeddings(embedding, title):
+    fig = plt.figure(figsize=[15,12])
+    ax = sns.scatterplot(embedding[:,0], embedding[:,1], hue=df['Trend'])
+    plt.title(title)
+    plt.xlabel('axis 0')
+    plt.ylabel('axis 1')
+    plt.legend(bbox_to_anchor=(1.05,1), loc=2)
+    plt.show()
+    return
 
-plot = figure(title="t-SNE Clustering of {} LSA Topics".format(n_topics), plot_width=700, plot_height=700)
-plot.scatter(x=tsne_lsa_vectors[:,0], y=tsne_lsa_vectors[:,1], color=colormap[lsa_keys])
+plot_embeddings(componets, 'Visualizing word vectors for diary and cattle text')
 
-for t in range(n_topics):
-    label = Label(x=lsa_mean_topic_vectors[t][0], y=lsa_mean_topic_vectors[t][1], 
-                  text=top_3_words_lsa[t], text_color=colormap[t])
-    plot.add_layout(label)
-    
-show(plot)
+
+
+
+
+
+
+
+
 

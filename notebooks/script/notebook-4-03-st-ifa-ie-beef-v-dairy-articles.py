@@ -48,7 +48,7 @@ nltk.download('words')
 words = set(nltk.corpus.words.words())
 
 
-filename: str = "./../assets/ifa-ie-articles.csv"
+filename: str = "./../artifacts/ifa-ie-articles.csv"
 df = pd.read_csv(filename)
 
 df.columns 
@@ -57,8 +57,11 @@ df.columns
 df.info()
 
 
+df.head(5)
+
+
 def vader_scorer(df):
-    '''Compute vaderSentiment scores for each tweet
+    '''Compute vaderSentiment scores for each article
     Args: Dataframe containing a 'text' column
     Returns: Dataframe of vader scores
     '''
@@ -76,81 +79,92 @@ vader_scores = vader_scorer(df)
 df = pd.concat([df,vader_scores], axis=1)
 
 
-# make trend lower case - mm
-df.columns = ['URL', 'Heading', 'Date', 'trend', 'Text', 'HTML Content', 'compound',
-       'neg', 'neu', 'pos']
+df['compound'][df['Trend'] == 'cattle'].iplot(
+    kind='hist',
+    bins=50,
+    xTitle='Sentiment Score',
+    linecolor='black',
+    yTitle='count',
+    title='Token Polarity Distribution Of The Cattle Articles')
 
 
-cattle_articles_dataframe = df[df['trend'] == 'cattle']
-dairy_articles_dataframe = df[df['trend'] == 'dairy']
-#TODO: Michael
-cattle_articles_dataframe.head()
-dairy_articles_dataframe.head()
+df['compound'][df['Trend'] == 'dairy'].iplot(
+    kind='hist',
+    bins=50,
+    xTitle='Sentiment Score',
+    linecolor='black',
+    yTitle='count',
+    title='Token Polarity Distribution Of The Dairy Articles')
 
 
+df.info()
 
 
+df.head(5)
 
-# Hypothesis 1:
+
+fig, ax = plt.subplots(ncols=2, figsize=(12,4))
+df[df.Trend=='cattle']['compound'].hist(ax=ax[0], bins=50)
+df[df.Trend=='dairy']['compound'].hist(ax=ax[1], bins=50)
+ax[0].set_xlabel('Cattle')
+ax[1].set_xlabel('Dairy')
+plt.show()
+
+
+# Hypothesis:
 # Null Hypothesis is that sentiment for the beef and the dairy was the same
 
 fig, ax = plt.subplots(ncols=2, figsize=(10,4))
-sns.violinplot(y='compound', x='trend', data=cattle_articles_dataframe, ax=ax[0]) 
-sns.boxplot(y='compound', x='trend', data=dairy_articles_dataframe, ax=ax[1])
+sns.violinplot(y='compound', x='Trend', data=df[df.Trend != ''], ax=ax[0])
+sns.boxplot(y='compound', x='Trend', data=df[df.Trend != ''], ax=ax[1])
 plt.tight_layout()
-#show.plt  # Was producing error - don't know what it is meant to do.
-
-#plt.show()
+plt.show()
 
 
+np.mean(df[df.Trend == 'cattle']['compound'])
+np.mean(df[df.Trend == 'dairy']['compound'])
 
 
-
-print('StDev of beef sentiment',np.std(df[df.trend == 'cattle']['compound']))
-print('StDev of NHS sentiment',np.std(df[df.trend == 'dairy']['compound']))
+print('StDev of beef sentiment',np.std(df[df.Trend == 'cattle']['compound']))
+print('StDev of dairy sentiment',np.std(df[df.Trend == 'dairy']['compound']))
 
 
 # Running SciPy's t-test:
-# 
-# Note: had sample standard deviations not been equal, then set equal_var = False to use Welch's t-statistic (ie. out standard error is calculated differently because we can't pool our two distributions together)
 
 
 
 
-stats.ttest_ind(df[df.trend == 'cattle']['compound'],
-                df[df.trend == 'dairy']['compound'], equal_var=True)
+stats.ttest_ind(df[df.Trend == 'cattle']['compound'],
+                df[df.Trend == 'dairy']['compound'], equal_var=True)
 
 
 # Alternatively could have run Statsmodel API's ztest:
 
-sm.stats.ztest(df[df.trend == 'cattle']['compound'],
-               df[df.trend == 'dairy']['compound'])
+sm.stats.ztest(df[df.Trend == 'cattle']['compound'],
+               df[df.Trend == 'dairy']['compound'])
 
 
-# So p-value is essentially 0, which says that if null hypothesis is assumed to be true, then there is 0 (or very small) chance of observing what we've just observed as the alternate hypothesis.
-# How small the p-value is, assuming proper statistical process, is how much confidence we have in rejecting the null hypothesis. Because we're saying there's no chance we'd have seen this alternate hypothesis (so far into the tail as it was) if the null was true.
-# We can construct a 95% confidence interval for our difference in sample means to further confirm this:
+# So p-value is 3.6%, which says that if null hypothesis is assumed to be true, then there is 3.62% chance of observing what we've just observed as the alternate hypothesis.If the null was true there is no chance that the alternative hypthesis is true.
+# The 95% confidence interval can be constructed
 
-p_bf = np.mean(df[df.trend == 'cattle']['compound'])
-p_dr = np.mean(df[df.trend == 'dairy']['compound'])
+p_bf = np.mean(df[df.Trend == 'cattle']['compound'])
+p_dr = np.mean(df[df.Trend == 'dairy']['compound'])
 
-num_bf = len(df[df.trend == 'cattle'])
-num_dr = len(df[df.trend == 'dairy'])
-
-
-# The s.e. for each population (as we're comparing MEANS here) is simply: sigma / sqrt(n)
-
-se_bf = np.std(df[df.trend == 'cattle']['compound']) / np.sqrt(num_bf)
-se_dr = np.std(df[df.trend == 'dairy']['compound']) / np.sqrt(num_dr)
+num_bf = len(df[df.Trend == 'cattle'])
+num_dr = len(df[df.Trend == 'dairy'])
 
 
-# Alternatively, statsmodels has a function s.e. of the mean of a distribution:
+# The s.e. for each population is sigma / sqrt(n)
 
-print('beef sentiment s.e.', stats.sem(df[df.trend == 'cattle']['compound'], axis=None))
-print('dairy sentiment s.e.', stats.sem(df[df.trend == 'dairy']['compound'], axis=None))
+se_bf = np.std(df[df.Trend == 'cattle']['compound']) / np.sqrt(num_bf)
+se_dr = np.std(df[df.Trend == 'dairy']['compound']) / np.sqrt(num_dr)
 
 
-# With the standard error for both populations to be used in CI formula below: SE(1,2) = SQR(SE1^2 + SE2^2)
+# Alternatively, statsmodels has a standard error function of the mean of a distribution:
+
+print('beef sentiment s.e.', stats.sem(df[df.Trend == 'cattle']['compound'], axis=None))
+print('dairy sentiment s.e.', stats.sem(df[df.Trend == 'dairy']['compound'], axis=None))
+
 
 se_diff = np.sqrt(se_bf**2 + se_dr**2) # Was se_br**2 + se_dr**2
 
@@ -167,11 +181,14 @@ ucb = diff + (1.96 * se_diff)
 
 
 
-beef_text = " ".join(art for art in df.Text[df.trend=='cattle']) # Changed to cattle
-dairy_text = " ".join(art for art in df.Text[df.trend=='dairy'])
+beef_text = " ".join(art for art in df.clean_text [df.Trend=='cattle'][co]) # Changed to cattle
+dairy_text = " ".join(art for art in df.clean_text[df.Trend=='dairy'])
 
 stopwords = set(STOPWORDS)
-stopwords.update(['http', 'https', 'www', 'amp', 'ly', 'bit'])
+stopwords.update(['http', 'https', 'www', 'amp', 'ly', 'bit','beef','steer','heifer',
+                  'farmer','ifa','member','livestock','chairman','irish',
+                  'cattle','say','brendan','golden','bull','young','angus','wood',
+                  'joe', 'healy','milk','dairy','tom','phelan','week','year','month','cow'])
 
 beef_wordcloud = WordCloud(stopwords=stopwords).generate(beef_text)
 dairy_wordcloud = WordCloud(stopwords=stopwords).generate(dairy_text)
@@ -185,4 +202,13 @@ ax[1].set_title('dairy')
 ax[1].axis('off')
 plt.tight_layout()
 plt.show
+
+
+sns.distplot(df[df.Trend == 'cattle']['compound'], label='cattle')
+sns.distplot(df[df.Trend == 'dairy']['compound'], label='dairy')
+plt.legend()
+plt.show()
+
+
+
 
