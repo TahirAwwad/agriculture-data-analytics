@@ -125,6 +125,8 @@ print('Visual normality test \n')
 ax = pg.qqplot(df_milk, dist='norm')
 
 
+# ## Mann-Whitney-U test
+
 #     - Shapiro-Wilk test reported p-value of 0.00004
 #     - p-value < aplha value of 0.05
 #     - we have enoughe statistical evidence to reject Null hypothesis Milk production is normaly distributed
@@ -142,7 +144,7 @@ ax = pg.qqplot(df_milk, dist='norm')
 stats.mannwhitneyu(df_milk.iloc[25:],df_milk.iloc[19:25],alternative='greater')
 
 
-# ## Correlation
+# ## Spearman Correlation 
 
 # Correlation over the years or patern
 px.line(df.iloc[:,0:4])

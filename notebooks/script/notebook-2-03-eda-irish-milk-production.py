@@ -27,7 +27,7 @@
 # }
 # </style>
 
-# ## EDA of Irish agriculture exports/imports values at current prices.
+# ## EDA of Irish agriculture output, input, income values at current prices.
 
 # <!--
 # import data_analytics.github as github
@@ -150,3 +150,6 @@ agriculture_prices1_dataframe.to_csv(
 
 
 # Author &copy; 2021 <a href="https://github.com/markcrowe-com" target="_parent">Mark Crowe</a>. All rights reserved.
+
+
+
