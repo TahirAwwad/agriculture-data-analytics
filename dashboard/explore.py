@@ -23,7 +23,7 @@ def load_data():
     return dataframe
 
 
-def show_explore_page():
+def show_page():
 
     dataframe: DataFrame = load_data()
 
