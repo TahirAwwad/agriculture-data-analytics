@@ -71,7 +71,7 @@ artifact_manager.is_remote = asset_manager.is_remote = False
 
 # #### Create Data Frames
 
-filepath: str = asset_manager.get_bovine_tuberculosis_filepath()
+filepath: str = "./../assets/cso-daa01-bovine-tuberculosis.csv"
 bovine_tuberculosis_dataframe: DataFrame = pandas.read_csv(filepath)
 
 

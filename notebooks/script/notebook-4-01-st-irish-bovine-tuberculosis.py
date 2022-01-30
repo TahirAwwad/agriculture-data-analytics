@@ -77,6 +77,8 @@ import pandas
 import matplotlib.pyplot as pyplot
 import scipy
 import seaborn
+import scipy.stats as stats
+import sklearn.preprocessing as preprocessing 
 
 
 artifact_manager = ProjectArtifactManager()
@@ -103,6 +105,29 @@ county_bovine_tuberculosis_dataframe.head()
 # Statistics of the columns
 
 county_bovine_tuberculosis_dataframe.describe()
+
+
+# ### Distribution of Herd Incidence Rate
+
+sigma = county_bovine_tuberculosis_dataframe[HERD_INCIDENCE_RATE].std()
+mean = county_bovine_tuberculosis_dataframe[HERD_INCIDENCE_RATE].mean()
+median = county_bovine_tuberculosis_dataframe[HERD_INCIDENCE_RATE].median()
+mode = county_bovine_tuberculosis_dataframe[HERD_INCIDENCE_RATE].mode().to_numpy()
+
+pyplot.title(f'Untransformed Data, Skew: {stats.skew(county_bovine_tuberculosis_dataframe[HERD_INCIDENCE_RATE]):.3f}')
+seaborn.histplot(county_bovine_tuberculosis_dataframe[HERD_INCIDENCE_RATE], kde=True)
+pyplot.axvline(mode, linestyle='--', color='green', label='mode')
+pyplot.axvline(median, linestyle='--', color='blue', label='median')
+pyplot.axvline(mean, linestyle='--', color='red', label='mean')
+pyplot.axvline(sigma, linestyle='--', color='black', label='sigma')
+pyplot.legend();
+
+
+#Yeo-Johnson
+power_transformer = preprocessing.PowerTransformer()
+ptd = power_transformer.fit_transform(county_bovine_tuberculosis_dataframe[HERD_INCIDENCE_RATE].to_numpy().reshape(-1,1))
+pyplot.title(f'Yeo Johnson, Skew: {stats.skew(ptd.squeeze()):.3f}')
+seaborn.histplot(ptd, kde=True);
 
 
 # ### Central Tendency
@@ -222,6 +247,16 @@ print(expected_herd_incidence_dataframe.shape[0], "expected values found")
 expected_herd_incidence_dataframe[HERD_INCIDENCE_RATE].describe()
 
 
+# ## Normality Test
+
+import pingouin as pg
+
+# Test Normality via Shapiro-Wilk test of Normality
+print('Shapiro-Wilk test of Normality \n',
+      pg.normality(expected_herd_incidence_dataframe),
+      '\n')
+
+
 expected_reactors_per_1000_dataframe = eda.get_expected_range_dataframe(
     county_bovine_tuberculosis_dataframe,
     REACTORS_PER_1000_TESTS_APT)[[YEAR, REACTORS_PER_1000_TESTS_APT]]
@@ -247,6 +282,29 @@ display_caption(f"Bar plot of {REACTORS_PER_1000_TESTS_APT} against Year")
 
 
 # ### Distribution
+
+sigma = expected_herd_incidence_dataframe[HERD_INCIDENCE_RATE].std()
+mean = expected_herd_incidence_dataframe[HERD_INCIDENCE_RATE].mean()
+median = expected_herd_incidence_dataframe[HERD_INCIDENCE_RATE].median()
+mode = expected_herd_incidence_dataframe[HERD_INCIDENCE_RATE].mode().to_numpy()
+
+pyplot.title(f'Untransformed Data, Skew: {stats.skew(expected_herd_incidence_dataframe[HERD_INCIDENCE_RATE]):.3f}')
+seaborn.histplot(expected_herd_incidence_dataframe[HERD_INCIDENCE_RATE], stat="density", linewidth=0, kde=True)
+pyplot.axvline(mode, linestyle='--', color='green', label='mode')
+pyplot.axvline(median, linestyle='--', color='blue', label='median')
+pyplot.axvline(mean, linestyle='--', color='red', label='mean')
+pyplot.axvline(sigma, linestyle='--', color='black', label='sigma')
+pyplot.legend();
+
+
+#Yeo-Johnson
+power_transformer = preprocessing.PowerTransformer()
+ptd = power_transformer.fit_transform(
+    expected_herd_incidence_dataframe[HERD_INCIDENCE_RATE].to_numpy().reshape(
+        -1, 1))
+pyplot.title(f'Yeo Johnson, Skew: {stats.skew(ptd.squeeze()):.3f}')
+seaborn.histplot(ptd, stat="density", linewidth=0, kde=True)
+
 
 _ = seaborn.histplot(
     data=expected_herd_incidence_dataframe[HERD_INCIDENCE_RATE], kde=True)
