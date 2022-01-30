@@ -12,7 +12,7 @@ target_scaler_filepath: str = f'{directory}milk-target-scaler.pickle'
 model_filepath: str = f'{directory}milk-ann-model.h5'
 
 
-def show_predict_page():
+def show_page():
 
     model = keras.models.load_model(model_filepath)
 

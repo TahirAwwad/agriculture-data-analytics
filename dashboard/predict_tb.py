@@ -12,18 +12,6 @@ target_scaler_filepath: str = f'{directory}target-scaler.pickle'
 model_filepath: str = f'{directory}ann-model.h5'
 
 
-def build_dummy_list(unique_values: list, selected_item: str) -> list:
-    """
-    Builds a dummy list with the selected item as 1 and the rest as 0.
-    unique_values: list of unique values in the column
-    selected_item: the item to be selected
-    return: list of 0s and 1s
-    """
-    dummy_list = [0 for _ in range(len(unique_values))]
-    dummy_list[unique_values.index(selected_item)] = 1
-    return dummy_list
-
-
 def show_page():
 
     model = keras.models.load_model(model_filepath)
