@@ -1,6 +1,8 @@
 import streamlit
 from dashboard import explore, predict_milk, predict_tb, jupyter_notebooks
 
+streamlit.set_page_config(page_title='Agriculture Data Analytics Dashboard', layout='wide')
+
 pages = ["Summary Stats", "Milk Prediction",
          "TB Prediction", "Jupyter Notebooks"]
 
